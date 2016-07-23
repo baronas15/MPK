@@ -1,0 +1,65 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">MPK</string>
+    <string name="action_back">Atgal</string>
+    <string name="action_next">Toliau</string>
+    <!-- Main -->
+    <string name="main_button1">Pradėk</string>
+    <string name="main_title1">KAIP ŠIANDIEN JAUTIESI?</string>
+    <string name="main_text1">Pasitikrink savo savijautą, išklausyk meditaciją ir pasigerink sau dieną!</string>
+    <string name="main_button2">IŠMOK MEDITUOTI</string>
+    <string name="main_button3">MEDITACIJOS</string>
+    <string name="main_button4">MANO PAŽANGA</string>
+    <string name="img_description1">Lotus posture</string>
+    <string name="img_description2">Arrow</string>
+    <!-- Activity1 -->
+    <string name="activity1_title1">SUSTOK, KVĖPUOK IR GALVOK</string>
+    <string name="activity1_text1">Užmerkite akis, giliai įkvėpkite ir galvokite kokios Jūsų mintys ir kaip jaučiasi Jūsų kūnas</string>
+    <string name="activity1_button1">Tikrinti</string>
+    <string name="activity1_img_description">image1</string>
+    <!-- Activity1_1 -->
+    <string name="activity1_1_title">Mano protinė būsena yra :</string>
+    <string name="activity1_1_emo1">PUIKI</string>
+    <string name="activity1_1_emo2">Gera</string>
+    <string name="activity1_1_emo3">Normali</string>
+    <string name="activity1_1_emo4">Prasta</string>
+    <string name="activity1_1_emo5">BLOGA</string>
+    <string name="activity1_1_img_description">A picture that describes your mind state</string>
+    <string name="activity1_1_button1">Toliau</string>
+    <!-- Activity1_2 -->
+    <string name="activity1_2_title">Mano fizinė būsena yra:</string>
+    <string name="activity1_2_emo1">PUIKI</string>
+    <string name="activity1_2_emo2">Gera</string>
+    <string name="activity1_2_emo3">Normali</string>
+    <string name="activity1_2_emo4">Prasta</string>
+    <string name="activity1_2_emo5">BLOGA</string>
+    <string name="activity1_2_img_description">A picture that describes your physical state</string>
+    <string name="activity1_2_button1">Toliau</string>
+    <!-- Activity1_3 -->
+    <string name="activity1_3_title">EMOCIŠKAI AŠ…</string>
+    <string name="activity1_3_img_description">A picture that shows different emotional states</string>
+    <string name="activity1_3_button1">Pridėti emocijas</string>
+    <string name="activity1_3_button2">Toliau</string>
+    <!-- Activity1_4 -->
+    <string name="activity1_4_button1">Pridėti</string>
+    <string name="activity1_4_img_description1">A picture of happy state</string>
+    <string name="activity1_4_img_description2">A picture of hopeful state</string>
+    <string name="activity1_4_img_description3">A picture of sad state</string>
+    <string name="activity1_4_img_description4">A picture of worried state</string>
+    <string name="activity1_4_img_description5">A picture of angry state</string>
+    <string name="activity1_4_emot1">Laiminga (-as)</string>
+    <string name="activity1_4_emot2">Entuziastinga (-as)</string>
+    <string name="activity1_4_emot3">Patenkinta (-as)</string>
+    <string name="activity1_4_emot4">Pusiausvyra</string>
+    <string name="activity1_4_emot5">Susitelkusi (-es)</string>
+    <string name="activity1_4_emot6">Atvira (-as)</string>
+    <string name="activity1_4_emot7">Issigandusi (-es)</string>
+    <string name="activity1_4_emot8">Susitelkusi (-es)</string>
+    <string name="activity1_4_emot9">Nervinga (-as)</string>
+    <string name="activity1_4_emot10">Liudna (-as)</string>
+    <string name="activity1_4_emot11">Isizeidusi (-es)</string>
+    <string name="activity1_4_emot12">Nusivylusi (-es)</string>
+    <string name="activity1_4_emot13">Pikta (-as)</string>
+    <string name="activity1_4_emot14">Pesimistiska (-as)</string>
+    <string name="activity1_4_emot15">Uzsisklendusi (-es)</string>
+</resources>

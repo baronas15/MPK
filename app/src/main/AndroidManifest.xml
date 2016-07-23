@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lt.mpk.mpk">
+
+    <application
+        android:name=".app"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.main"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.activity1" />
+        <activity android:name=".activities.activity2" />
+        <activity android:name=".activities.activity3" />
+        <activity android:name=".activities.activity4" />
+        <activity android:name=".activities.activity1_1" />
+        <activity android:name=".activities.activity1_2" />
+        <activity android:name=".activities.activity1_3" />
+        <activity android:name=".activities.activity1_4" />
+        <activity android:name=".activities.activity1_5" />
+    </application>
+
+</manifest>

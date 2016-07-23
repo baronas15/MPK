@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="toolBar">#0d47a1</color>
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryDark">#1976d2</color>
+    <color name="colorPrimaryLight">#e3f2fd</color>
+    <color name="colorAccent">#eee0f2f1</color>
+
+    <color name="primaryText">#424242</color>
+    <color name="primaryTextInverted">#fafafa</color>
+
+    <color name="checkboxBackgroundDefault">#00ffffff</color>
+    <color name="checkboxBackgroundSelected">#00bfa5</color>
+    <color name="checkboxTextDefault">#000000</color>
+    <color name="checkboxTextSelected">#ffffff</color>
+
+    <color name="radioButtonBackgroundSelect">#00bfa5</color>
+    <color name="radioButtonBackgroundDefault">#00ffffff</color>
+
+    <color name="background_default">#e9f2f9</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="indicator">#ecd95a</color>
+</resources>

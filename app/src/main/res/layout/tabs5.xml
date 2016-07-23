@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12">
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_weight="4" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="4">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity1_4_emot13"
+                android:id="@+id/checkBox13"
+                android:textColor="#000000"
+                android:textSize="@dimen/main_title_size_1"
+                android:padding="@dimen/Start_screen_padding"
+                android:button="@android:color/transparent"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity1_4_emot14"
+                android:id="@+id/checkBox14"
+                android:textColor="#000000"
+                android:textSize="@dimen/main_title_size_1"
+                android:padding="@dimen/Start_screen_padding"
+                android:button="@android:color/transparent"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity1_4_emot15"
+                android:id="@+id/checkBox15"
+                android:textColor="#000000"
+                android:textSize="@dimen/main_title_size_1"
+                android:padding="@dimen/Start_screen_padding"
+                android:button="@android:color/transparent"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_weight="4" />
+</LinearLayout>

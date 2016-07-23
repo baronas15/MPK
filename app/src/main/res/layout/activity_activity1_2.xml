@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    tools:context=".activities.activity1_2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="12">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:weightSum="12">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:paddingLeft="@dimen/Start_screen_padding"
+                android:paddingRight="@dimen/Start_screen_padding"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/activity1_2_title"
+                    android:id="@+id/activity1_2_title"
+                    android:layout_gravity="center"
+                    android:textColor="@color/primaryTextInverted"
+                    android:textSize="26sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:weightSum="12"
+                android:baselineAligned="false"
+                android:background="@color/colorPrimaryLight">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="6"
+                    android:paddingLeft="@dimen/Start_screen_padding"
+                    android:paddingBottom="@dimen/Start_screen_padding"
+                    android:paddingTop="@dimen/Start_screen_padding">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left|top"
+                        android:weightSum="10"
+                        android:id="@+id/physicalgroup">
+
+                        <RadioButton
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity1_2_emo1"
+                            android:id="@+id/physicalgroup_1"
+                            android:button="@null"
+                            android:textColor="@color/primaryText"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="22sp"
+                            android:layout_weight="2"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp" />
+
+                        <RadioButton
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity1_2_emo2"
+                            android:id="@+id/physicalgroup_2"
+                            android:button="@null"
+                            android:textColor="@color/primaryText"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="22sp"
+                            android:layout_weight="2"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp" />
+
+                        <RadioButton
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity1_2_emo3"
+                            android:id="@+id/physicalgroup_3"
+                            android:button="@null"
+                            android:textColor="@color/primaryText"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="22sp"
+                            android:layout_weight="2"
+                            android:checked="true"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp" />
+
+                        <RadioButton
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity1_2_emo4"
+                            android:id="@+id/physicalgroup_4"
+                            android:button="@null"
+                            android:textColor="@color/primaryText"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="22sp"
+                            android:layout_weight="2"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp" />
+
+                        <RadioButton
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity1_2_emo5"
+                            android:id="@+id/physicalgroup_5"
+                            android:button="@null"
+                            android:textColor="@color/primaryText"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="22sp"
+                            android:layout_weight="2"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="15dp" />
+
+                    </RadioGroup>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:paddingRight="@dimen/Start_screen_padding">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/physicalimage"
+                        android:src="@drawable/emo3"
+                        android:contentDescription="@string/activity1_2_img_description"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/activity1_2_button1"
+                    android:id="@+id/activity1_2_button1"
+                    android:background="@drawable/roundedbutton"
+                    android:textColor="@color/primaryText"
+                    android:layout_gravity="center"
+                    android:onClick="activity12button1_Click"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>
