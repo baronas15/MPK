@@ -19,6 +19,6 @@
 
     <color name="background_default">#e9f2f9</color>
     <color name="transparent">#00ffffff</color>
-    <color name="white">#fffffe</color>
+    <color name="white">#ffffff</color>
     <color name="indicator">#ecd95a</color>
 </resources>
