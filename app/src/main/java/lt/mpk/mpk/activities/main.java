@@ -158,15 +158,19 @@ public class main extends AppCompatActivity {
     //region Redirecting
     public void ButtonClick1(){
         startActivity(new Intent(main.this, activity1.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
     }
     public void PanelClick1(){
         startActivity(new Intent(main.this, activity2.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
     }
     public void PanelClick2(){
         startActivity(new Intent(main.this, activity3.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
     }
     public void PanelClick3(){
         startActivity(new Intent(main.this, activity4.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
     }
     //endregion
 }
