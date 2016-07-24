@@ -69,5 +69,11 @@ public class activity1_4 extends AppCompatActivity {
             a.setEmotional3(-1);
 
         finish();
+        overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
     }
 }
