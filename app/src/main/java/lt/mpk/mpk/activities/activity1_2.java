@@ -1,7 +1,6 @@
 package lt.mpk.mpk.activities;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -86,13 +85,13 @@ public class activity1_2 extends AppCompatActivity {
         }
 
         startActivity(new Intent(activity1_2.this, activity1_3.class));
-        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
     }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
     }
 
     //region ChangeColors

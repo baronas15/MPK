@@ -1,10 +1,7 @@
 package lt.mpk.mpk.activities;
 
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -158,19 +155,19 @@ public class main extends AppCompatActivity {
     //region Redirecting
     public void ButtonClick1(){
         startActivity(new Intent(main.this, activity1.class));
-        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
     }
     public void PanelClick1(){
         startActivity(new Intent(main.this, activity2.class));
-        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
     }
     public void PanelClick2(){
         startActivity(new Intent(main.this, activity3.class));
-        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
     }
     public void PanelClick3(){
         startActivity(new Intent(main.this, activity4.class));
-        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
     }
     //endregion
 }

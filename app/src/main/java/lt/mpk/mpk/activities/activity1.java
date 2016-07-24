@@ -27,12 +27,12 @@ public class activity1 extends AppCompatActivity {
 
     public void activity1button1_Click(View v){
         startActivity(new Intent(activity1.this, activity1_1.class));
-        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
     }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
     }
 }

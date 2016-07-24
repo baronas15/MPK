@@ -18,6 +18,7 @@ public class activity1_3 extends AppCompatActivity {
 
     public void activity13button1_Click(View v){
         startActivity(new Intent(activity1_3.this, activity1_4.class));
+        overridePendingTransition(R.anim.slide_in_down,R.anim.slide_out_down);
     }
 
     public void activity13button2_Click(View v){
@@ -27,14 +28,14 @@ public class activity1_3 extends AppCompatActivity {
 
         }else{
             startActivity(new Intent(activity1_3.this, activity1_5.class));
-            overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+            overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
         }
     }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
     }
 
     /*
