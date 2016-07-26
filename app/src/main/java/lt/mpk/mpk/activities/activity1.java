@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import lt.mpk.mpk.R;
+import lt.mpk.mpk.app;
 
 public class activity1 extends AppCompatActivity {
 
@@ -23,6 +24,11 @@ public class activity1 extends AppCompatActivity {
             tv.setTypeface(tf);
         }
         //endregion
+
+        app a = ((app)getApplicationContext());
+        a.setEmotional1(-1);
+        a.setEmotional2(-1);
+        a.setEmotional3(-1);
     }
 
     public void activity1button1_Click(View v){
