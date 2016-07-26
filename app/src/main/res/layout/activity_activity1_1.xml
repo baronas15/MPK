@@ -173,7 +173,7 @@
                     android:text="@string/activity1_1_button1"
                     android:id="@+id/activity1_1_button1"
                     android:background="@drawable/roundedbutton"
-                    android:textColor="@color/primaryText"
+                    android:textColor="@drawable/roundedbuttontext"
                     android:layout_gravity="center"
                     android:onClick="activity11button1_Click"
                     android:layout_marginLeft="20dp"

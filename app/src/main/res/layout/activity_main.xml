@@ -67,7 +67,7 @@
                             android:background = "@drawable/roundedbutton"
                             android:clickable="true"
                             android:enabled="true"
-                            android:textColor="@color/primaryText"
+                            android:textColor="@drawable/roundedbuttontext"
                             android:layout_gravity="bottom" />
                     </FrameLayout>
                 </LinearLayout>
