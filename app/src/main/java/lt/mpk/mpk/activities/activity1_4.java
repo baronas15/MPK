@@ -1,18 +1,33 @@
 package lt.mpk.mpk.activities;
 
 import android.support.design.widget.TabLayout;
-import android.support.v4.content.ContextCompat;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import lt.mpk.mpk.R;
-import lt.mpk.mpk.tabs.ViewPagerAdapter;
+import lt.mpk.mpk.tabs.TabFragment1;
+import lt.mpk.mpk.tabs.TabFragment2;
+import lt.mpk.mpk.tabs.TabFragment3;
+import lt.mpk.mpk.tabs.TabFragment4;
+import lt.mpk.mpk.tabs.TabFragment5;
 import lt.mpk.mpk.app;
 
 public class activity1_4 extends AppCompatActivity {
-
+    private int[] tabIcons = {
+            R.drawable.ic_mood_white_18dp,
+            R.drawable.ic_sentiment_satisfied_white_18dp,
+            R.drawable.ic_sentiment_neutral_white_18dp,
+            R.drawable.ic_sentiment_dissatisfied_white_18dp,
+            R.drawable.ic_mood_bad_white_18dp
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,36 +35,14 @@ public class activity1_4 extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
-        if (viewPager != null) {
-            viewPager.setAdapter(viewPagerAdapter);
-        }
+        setupViewPager(viewPager);
 
-        final TabLayout.Tab emo1 = tabLayout != null ? tabLayout.newTab() : null;
-        final TabLayout.Tab emo2 = tabLayout != null ? tabLayout.newTab() : null;
-        final TabLayout.Tab emo3 = tabLayout != null ? tabLayout.newTab() : null;
-        final TabLayout.Tab emo4 = tabLayout != null ? tabLayout.newTab() : null;
-        final TabLayout.Tab emo5 = tabLayout != null ? tabLayout.newTab() : null;
-
-        assert emo1 != null;
-        emo1.setIcon(R.drawable.ic_mood_white_18dp);
-        emo2.setIcon(R.drawable.ic_sentiment_satisfied_white_18dp);
-        emo3.setIcon(R.drawable.ic_sentiment_neutral_white_18dp);
-        emo4.setIcon(R.drawable.ic_sentiment_dissatisfied_white_18dp);
-        emo5.setIcon(R.drawable.ic_mood_bad_white_18dp);
-
-        tabLayout.addTab(emo1, 0);
-        tabLayout.addTab(emo2, 1);
-        tabLayout.addTab(emo3, 2);
-        tabLayout.addTab(emo4, 3);
-        tabLayout.addTab(emo5, 4);
-
-        tabLayout.setTabTextColors(ContextCompat.getColorStateList(this, R.color.colorAccent));
-        tabLayout.setSelectedTabIndicatorColor(ContextCompat.getColor(this, R.color.indicator));
-
-        if (viewPager != null) {
-            viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        }
+        tabLayout.setupWithViewPager(viewPager);
+        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
+        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
+        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
+        tabLayout.getTabAt(3).setIcon(tabIcons[3]);
+        tabLayout.getTabAt(4).setIcon(tabIcons[4]);
         viewPager.setCurrentItem(2);
     }
 
@@ -76,5 +69,44 @@ public class activity1_4 extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
+    }
+
+    private void setupViewPager(ViewPager viewPager) {
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFrag(new TabFragment1(), "1");
+        adapter.addFrag(new TabFragment2(), "2");
+        adapter.addFrag(new TabFragment3(), "3");
+        adapter.addFrag(new TabFragment4(), "4");
+        adapter.addFrag(new TabFragment5(), "5");
+        viewPager.setAdapter(adapter);
+    }
+
+    class ViewPagerAdapter extends FragmentPagerAdapter {
+        private final List<Fragment> mFragmentList = new ArrayList<>();
+        private final List<String> mFragmentTitleList = new ArrayList<>();
+
+        public ViewPagerAdapter(FragmentManager manager) {
+            super(manager);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return mFragmentList.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return mFragmentList.size();
+        }
+
+        public void addFrag(Fragment fragment, String title) {
+            mFragmentList.add(fragment);
+            mFragmentTitleList.add(title);
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return null;
+        }
     }
 }
