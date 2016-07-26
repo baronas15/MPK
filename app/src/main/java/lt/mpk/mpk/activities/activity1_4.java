@@ -22,11 +22,11 @@ import lt.mpk.mpk.app;
 
 public class activity1_4 extends AppCompatActivity {
     private int[] tabIcons = {
-            R.drawable.ic_mood_white_18dp,
-            R.drawable.ic_sentiment_satisfied_white_18dp,
-            R.drawable.ic_sentiment_neutral_white_18dp,
-            R.drawable.ic_sentiment_dissatisfied_white_18dp,
-            R.drawable.ic_mood_bad_white_18dp
+            R.drawable.ic_mood_white_36dp,
+            R.drawable.ic_sentiment_satisfied_white_36dp,
+            R.drawable.ic_sentiment_neutral_white_36dp,
+            R.drawable.ic_sentiment_dissatisfied_white_36dp,
+            R.drawable.ic_mood_bad_white_36dp
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
