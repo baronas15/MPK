@@ -73,17 +73,16 @@ public class activity1_4 extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new TabFragment1(), "1");
-        adapter.addFrag(new TabFragment2(), "2");
-        adapter.addFrag(new TabFragment3(), "3");
-        adapter.addFrag(new TabFragment4(), "4");
-        adapter.addFrag(new TabFragment5(), "5");
+        adapter.addFrag(new TabFragment1());
+        adapter.addFrag(new TabFragment2());
+        adapter.addFrag(new TabFragment3());
+        adapter.addFrag(new TabFragment4());
+        adapter.addFrag(new TabFragment5());
         viewPager.setAdapter(adapter);
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
-        private final List<String> mFragmentTitleList = new ArrayList<>();
 
         public ViewPagerAdapter(FragmentManager manager) {
             super(manager);
@@ -99,14 +98,8 @@ public class activity1_4 extends AppCompatActivity {
             return mFragmentList.size();
         }
 
-        public void addFrag(Fragment fragment, String title) {
+        public void addFrag(Fragment fragment) {
             mFragmentList.add(fragment);
-            mFragmentTitleList.add(title);
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return null;
         }
     }
 }
