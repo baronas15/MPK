@@ -50,6 +50,7 @@ public class activity1_4 extends AppCompatActivity {
         if (viewPager != null) {
             viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         }
+        viewPager.setCurrentItem(2);
     }
 
     public void activity14button1_Click(View v){
