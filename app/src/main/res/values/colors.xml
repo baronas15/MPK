@@ -7,6 +7,7 @@
 
     <color name="colorAccent">#eee0f2f1</color>
     <color name="colorAccentPressed">#ee4bb4af</color>
+    <color name="colorAccentDisabled">#999999</color>
 
     <color name="primaryText">#424242</color>
     <color name="primaryTextInverted">#fafafa</color>
