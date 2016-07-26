@@ -38,7 +38,6 @@ public class activity1_4 extends AppCompatActivity {
         setupViewPager(viewPager);
 
         tabLayout.setupWithViewPager(viewPager);
-        tabLayout.setOnTabSelectedListener(listener(viewPager));
         tabLayout.getTabAt(0).setIcon(tabIcons[0]);
         tabLayout.getTabAt(1).setIcon(tabIcons[1]);
         tabLayout.getTabAt(2).setIcon(tabIcons[2]);
@@ -80,26 +79,6 @@ public class activity1_4 extends AppCompatActivity {
         adapter.addFrag(new TabFragment4());
         adapter.addFrag(new TabFragment5());
         viewPager.setAdapter(adapter);
-    }
-
-    private TabLayout.OnTabSelectedListener listener(final ViewPager pager)
-    {
-        return new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                pager.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        };
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
