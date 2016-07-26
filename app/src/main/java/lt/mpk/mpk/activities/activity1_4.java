@@ -32,11 +32,11 @@ public class activity1_4 extends AppCompatActivity {
         final TabLayout.Tab emo5 = tabLayout != null ? tabLayout.newTab() : null;
 
         assert emo1 != null;
-        emo1.setIcon(R.drawable.emo1);
-        emo2.setIcon(R.drawable.emo2);
-        emo3.setIcon(R.drawable.emo3);
-        emo4.setIcon(R.drawable.emo4);
-        emo5.setIcon(R.drawable.emo5);
+        emo1.setIcon(R.drawable.ic_mood_white_18dp);
+        emo2.setIcon(R.drawable.ic_sentiment_satisfied_white_18dp);
+        emo3.setIcon(R.drawable.ic_sentiment_neutral_white_18dp);
+        emo4.setIcon(R.drawable.ic_sentiment_dissatisfied_white_18dp);
+        emo5.setIcon(R.drawable.ic_mood_bad_white_18dp);
 
         tabLayout.addTab(emo1, 0);
         tabLayout.addTab(emo2, 1);
