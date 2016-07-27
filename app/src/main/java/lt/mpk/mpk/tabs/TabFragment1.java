@@ -5,8 +5,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 
 import lt.mpk.mpk.R;
+import lt.mpk.mpk.app;
 
 public class TabFragment1 extends Fragment {
     @Override
@@ -17,6 +19,19 @@ public class TabFragment1 extends Fragment {
         h.checkBoxChangeListener(rootView,R.id.checkBox1,1,1,getActivity());
         h.checkBoxChangeListener(rootView,R.id.checkBox2,2,2,getActivity());
         h.checkBoxChangeListener(rootView,R.id.checkBox3,3,3,getActivity());
+
+        app a = (app)getActivity().getApplicationContext();
+
+        CheckBox c1 = (CheckBox)rootView.findViewById(R.id.checkBox1);
+        CheckBox c2 = (CheckBox)rootView.findViewById(R.id.checkBox2);
+        CheckBox c3 = (CheckBox)rootView.findViewById(R.id.checkBox3);
+
+        if(a.getEmotional1() == 1)
+            c1.setChecked(true);
+        if(a.getEmotional2() == 2)
+            c2.setChecked(true);
+        if(a.getEmotional3() == 3)
+            c3.setChecked(true);
 
         return rootView;
     }
