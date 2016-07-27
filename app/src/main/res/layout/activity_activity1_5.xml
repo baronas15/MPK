@@ -16,10 +16,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary">
+            android:background="@drawable/shadow_color_primary">
 
-            <TextView
-                android:text="@string/activity1_5_title"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="@string/activity1_5_title"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="@dimen/Start_screen_padding"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/main_title_size_1" />
+            </FrameLayout>
         </LinearLayout>
 
         <ScrollView
