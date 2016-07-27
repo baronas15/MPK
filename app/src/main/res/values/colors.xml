@@ -20,6 +20,7 @@
     <color name="radioButtonBackgroundSelect">#00bfa5</color>
     <color name="radioButtonBackgroundDefault">#00ffffff</color>
 
+    <color name="recyclerViewItem">#bbdefb</color>
     <color name="background_default">#e9f2f9</color>
     <color name="transparent">#00ffffff</color>
     <color name="white">#ffffff</color>
