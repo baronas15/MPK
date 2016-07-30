@@ -24,8 +24,8 @@
                 android:layout_gravity="center"
                 android:gravity="center">
                 <Button
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="@dimen/play_button_w"
+                    android:layout_height="@dimen/play_button_w"
                     android:id="@+id/activity1_5_button1"
                     android:background="@drawable/play_button"/>
             </RelativeLayout>
