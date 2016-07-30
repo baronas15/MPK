@@ -1,5 +1,6 @@
 package lt.mpk.mpk.activities;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -14,15 +15,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 import lt.mpk.mpk.R;
+import lt.mpk.mpk.app;
 
 public class activity1_5 extends AppCompatActivity {
-    private List<Card> cards;
+    //private List<Card> cards;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity1_5);
 
+        MediaPlayer mp = MediaPlayer.create(this, R.raw.antras);
+        mp.start();
+    }
+/*
         RecyclerView rv = (RecyclerView)findViewById(R.id.rv);
 
         LinearLayoutManager llm = new LinearLayoutManager(getApplicationContext());
@@ -74,12 +80,9 @@ public class activity1_5 extends AppCompatActivity {
 
     private void createData(){
         cards = new ArrayList<>();
-        cards.add(new Card("Meditacija","Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas",1));
-        cards.add(new Card("Meditacija","Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas",2));
-        cards.add(new Card("Meditacija","Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas",1));
-        cards.add(new Card("Meditacija","Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas",2));
-        cards.add(new Card("Meditacija","Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas",1));
-        cards.add(new Card("Meditacija","Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas",2));
+
+        cards.add(new Card("Meditacija1","Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas",1));
+        cards.add(new Card("Meditacija2","Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas",2));
     }
 
     class Card {
@@ -92,5 +95,5 @@ public class activity1_5 extends AppCompatActivity {
             this.text = text;
             this.id = id;
         }
-    }
+    }*/
 }
