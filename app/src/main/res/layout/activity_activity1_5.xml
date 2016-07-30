@@ -27,7 +27,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:id="@+id/activity1_5_button1"
-                    android:background="@drawable/oval_button"/>
+                    android:background="@drawable/play_button"/>
             </RelativeLayout>
         </LinearLayout>
 

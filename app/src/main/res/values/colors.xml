@@ -17,6 +17,9 @@
     <color name="checkboxTextDefault">#000000</color>
     <color name="checkboxTextSelected">#ffffff</color>
 
+    <color name="playButtonDefault">#00bfa5</color>
+    <color name="playButtonPressed">#2196f3</color>
+
     <color name="radioButtonBackgroundSelect">#00bfa5</color>
     <color name="radioButtonBackgroundDefault">#00ffffff</color>
 
