@@ -28,13 +28,15 @@ public class activity1_5 extends AppCompatActivity {
 
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.antras);
 
-        Button play_button = (Button)this.findViewById(R.id.activity1_5_button1);
+        final Button play_button = (Button)this.findViewById(R.id.activity1_5_button1);
         play_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if(mp.isPlaying()){
                     mp.pause();
+                    play_button.setBackgroundResource(R.drawable.play_button);
                 }else{
                     mp.start();
+                    play_button.setBackgroundResource(R.drawable.pause_button);
                 }
             }
         });
