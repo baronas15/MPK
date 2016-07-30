@@ -11,4 +11,5 @@
     <dimen name="fab_margin">16dp</dimen>
 
     <dimen name="play_button_w">100dp</dimen>
+    <dimen name="play_button_icon_w">50dp</dimen>
 </resources>
