@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -25,8 +26,18 @@ public class activity1_5 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity1_5);
 
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.antras);
-        mp.start();
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.antras);
+
+        Button play_button = (Button)this.findViewById(R.id.activity1_5_button1);
+        play_button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if(mp.isPlaying()){
+                    mp.pause();
+                }else{
+                    mp.start();
+                }
+            }
+        });
     }
 /*
         RecyclerView rv = (RecyclerView)findViewById(R.id.rv);
