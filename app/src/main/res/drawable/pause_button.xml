@@ -36,7 +36,7 @@
                     <corners android:radius="@dimen/play_button_w"/>
                 </shape>
             </item>
-            <item android:drawable="@drawable/ic_play_arrow_white_48dp"
+            <item android:drawable="@drawable/ic_pause_white_48dp"
                 android:width="@dimen/play_button_w"
                 android:height="@dimen/play_button_w"
                 android:gravity="center">
