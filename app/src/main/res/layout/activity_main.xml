@@ -59,6 +59,7 @@
                             android:baselineAligned="false"
                             android:weightSum="12"
                             android:layout_marginRight="@dimen/little_separator">
+                            <lt.mpk.mpk.FontFitTextView
                                 android:layout_height="wrap_content"
                                 android:layout_width="match_parent"
                                 android:text="@string/main_text1"
