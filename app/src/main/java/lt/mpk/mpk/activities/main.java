@@ -55,19 +55,6 @@ public class main extends AppCompatActivity {
             tv5.setTypeface(tf);
         }
         //endregion
-
-        //region StartButton_Listener
-        Button startButton = (Button)findViewById(R.id.activity_main_button1);
-        if (startButton != null) {
-            startButton.setOnClickListener(
-                new Button.OnClickListener() {
-                    public void onClick(View v) {
-                        ButtonClick1();
-                    }
-                }
-            );
-        }
-        //endregion
     }
 
 
@@ -98,7 +85,7 @@ public class main extends AppCompatActivity {
 
 
     //region Redirecting
-    public void ButtonClick1(){
+    public void ButtonClick1(View v){
         startActivity(new Intent(main.this, activity1.class));
         overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
     }
