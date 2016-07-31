@@ -29,6 +29,7 @@ public class activity1 extends AppCompatActivity {
         a.setEmotional1(-1);
         a.setEmotional2(-1);
         a.setEmotional3(-1);
+        a.setCurrentTab(-1);
     }
 
     public void activity1button1_Click(View v){

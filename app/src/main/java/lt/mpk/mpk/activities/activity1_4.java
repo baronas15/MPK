@@ -44,7 +44,13 @@ public class activity1_4 extends AppCompatActivity {
         tabLayout.getTabAt(2).setIcon(tabIcons[2]);
         tabLayout.getTabAt(3).setIcon(tabIcons[3]);
         tabLayout.getTabAt(4).setIcon(tabIcons[4]);
-        viewPager.setCurrentItem(2);
+
+        app a = ((app)getApplicationContext());
+
+        if(a.getCurrentTab() != -1)
+            viewPager.setCurrentItem(a.getCurrentTab());
+        else
+            viewPager.setCurrentItem(2);
     }
 
     public void activity14button1_Click(View v){
@@ -63,12 +69,18 @@ public class activity1_4 extends AppCompatActivity {
         if(a.getEmotional3() != 3*i + 3)
             a.setEmotional3(-1);
 
+        a.setCurrentTab(tabLayout.getSelectedTabPosition());
         finish();
         overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
     }
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        app a = ((app)getApplicationContext());
+        a.setCurrentTab(tabLayout.getSelectedTabPosition());
+
         overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
     }
 

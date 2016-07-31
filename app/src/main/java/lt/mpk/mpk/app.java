@@ -21,6 +21,7 @@ public class app extends Application {
     public int getEmotional3() {
         return emotional3;
     }
+    public int getCurrentTab() { return currentTab; }
 
     public void setMental(int mental) {
         this.mental = mental;
@@ -37,12 +38,14 @@ public class app extends Application {
     public void setEmotional3(int emotional3) {
         this.emotional3 = emotional3;
     }
+    public void setCurrentTab(int currentTab) { this.currentTab = currentTab; }
 
     private int mental;
     private int physical;
     private int emotional1;
     private int emotional2;
     private int emotional3;
+    private int currentTab;
 }
 
 /*
