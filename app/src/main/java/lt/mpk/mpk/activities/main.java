@@ -9,8 +9,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import lt.mpk.mpk.R;
@@ -69,69 +67,6 @@ public class main extends AppCompatActivity {
                 }
             );
         }
-        //endregion
-
-        //region LayoutButton_Listener1
-        /*LinearLayout lout1 = (LinearLayout)findViewById(R.id.activity_main_item1);
-        if (lout1 != null) {
-            lout1.setOnClickListener(
-                new LinearLayout.OnClickListener(){ public void onClick(View v){
-                        PanelClick1();
-        } } ); }
-        TextView tx1 = (TextView)findViewById(R.id.activity_main_text1);
-        if (tx1 != null) {
-            tx1.setOnClickListener(
-                new TextView.OnClickListener(){ public void onClick(View v){
-                        PanelClick1();
-        } } ); }
-        ImageView im1 = (ImageView)findViewById(R.id.activity_main_image1);
-        if (im1 != null) {
-            im1.setOnClickListener(
-                new ImageView.OnClickListener(){ public void onClick(View v){
-                        PanelClick1();
-        } } ); }*/
-        //endregion
-
-        //region LayoutButton_Listener2
-        /*LinearLayout lout2 = (LinearLayout)findViewById(R.id.activity_main_item2);
-        if (lout2 != null) {
-            lout2.setOnClickListener(
-                    new LinearLayout.OnClickListener(){ public void onClick(View v){
-                        PanelClick2();
-        } } ); }
-        TextView tx2 = (TextView)findViewById(R.id.activity_main_text2);
-        if (tx2 != null) {
-            tx2.setOnClickListener(
-                    new TextView.OnClickListener(){ public void onClick(View v){
-                        PanelClick2();
-        } } ); }
-        ImageView im2 = (ImageView)findViewById(R.id.activity_main_image2);
-        if (im2 != null) {
-            im2.setOnClickListener(
-                    new ImageView.OnClickListener(){ public void onClick(View v){
-                        PanelClick2();
-        } } ); }*/
-        //endregion
-
-        //region LayoutButton_Listener3
-        /*LinearLayout lout3 = (LinearLayout)findViewById(R.id.activity_main_item3);
-        if (lout3 != null) {
-            lout3.setOnClickListener(
-                    new LinearLayout.OnClickListener(){ public void onClick(View v){
-                        PanelClick3();
-                    } } ); }
-        TextView tx3 = (TextView)findViewById(R.id.activity_main_text3);
-        if (tx3 != null) {
-            tx3.setOnClickListener(
-                    new TextView.OnClickListener(){ public void onClick(View v){
-                        PanelClick3();
-                    } } ); }
-        ImageView im3 = (ImageView)findViewById(R.id.activity_main_image3);
-        if (im3 != null) {
-            im3.setOnClickListener(
-                    new ImageView.OnClickListener(){ public void onClick(View v){
-                        PanelClick3();
-                    } } ); }*/
         //endregion
     }
 
