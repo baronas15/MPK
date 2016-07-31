@@ -27,11 +27,11 @@ public class main extends AppCompatActivity {
 
         //region ChangeFonts
         TextView tv = (TextView) findViewById(R.id.activity_main_title);
-        TextView tv1 = (TextView) findViewById(R.id.activity_main_text1);
-        TextView tv2 = (TextView) findViewById(R.id.activity_main_text2);
-        TextView tv3 = (TextView) findViewById(R.id.activity_main_text3);
-        TextView tv4 = (TextView) findViewById(R.id.activity_main_titleText);
-        TextView tv5 = (TextView) findViewById(R.id.activity_main_button1);
+        TextView tv1 = (TextView) findViewById(R.id.activity_main_titleText);
+        TextView tv2 = (TextView) findViewById(R.id.activity_main_button1);
+        TextView tv3 = (TextView) findViewById(R.id.activity_main_text1);
+        TextView tv4 = (TextView) findViewById(R.id.activity_main_text2);
+        TextView tv5 = (TextView) findViewById(R.id.activity_main_text3);
 
         Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/goodfish.ttf");
         tv.setTypeface(tf);
