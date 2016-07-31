@@ -3,20 +3,10 @@ package lt.mpk.mpk.activities;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import lt.mpk.mpk.R;
-import lt.mpk.mpk.app;
 
 public class activity1_5 extends AppCompatActivity {
     //private List<Card> cards;
@@ -40,6 +30,12 @@ public class activity1_5 extends AppCompatActivity {
                 }
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
     }
 /*
         RecyclerView rv = (RecyclerView)findViewById(R.id.rv);
