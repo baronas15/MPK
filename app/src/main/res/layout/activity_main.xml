@@ -35,10 +35,11 @@
 
             <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="fill_parent"
                 android:orientation="horizontal"
                 android:baselineAligned="false"
-                android:weightSum="2">
+                android:weightSum="2"
+                android:layout_marginBottom="@dimen/Start_screen_padding">
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
@@ -76,14 +77,15 @@
                 <FrameLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+
                     <ImageView
                         android:src="@drawable/lotus"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:contentDescription="@string/img_description1"
                         android:adjustViewBounds="true"
-                        android:layout_gravity="end"
                         android:id="@+id/activity_main_titleImage" />
                 </FrameLayout>
             </LinearLayout>
