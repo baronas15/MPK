@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-
 import lt.mpk.mpk.R;
 
 import static android.media.MediaPlayer.create;
@@ -186,5 +185,3 @@ public class activity1_5 extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
     }
 }
-
-
