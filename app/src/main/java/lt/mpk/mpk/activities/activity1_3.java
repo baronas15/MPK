@@ -68,10 +68,7 @@ public class activity1_3 extends AppCompatActivity {
     */
 
     /*
-    Intent intent = new Intent(getApplicationContext(), main.class);
-    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-    intent.putExtra("EXIT", true);
-    startActivity(intent);
+
     */
 
 }

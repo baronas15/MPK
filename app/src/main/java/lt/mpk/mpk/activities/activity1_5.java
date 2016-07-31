@@ -1,5 +1,6 @@
 package lt.mpk.mpk.activities;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -35,6 +36,15 @@ public class activity1_5 extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
 
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+    }
+
+    public void activity15button2_Click(View v)
+    {
+        Intent intent = new Intent(getApplicationContext(), main.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("EXIT", true);
+        startActivity(intent);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
     }
 /*
