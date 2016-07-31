@@ -110,7 +110,8 @@
                     android:background="@drawable/shadow"
                     android:layout_weight="3"
                     android:clickable="true"
-                    android:id="@+id/activity_main_item1">
+                    android:id="@+id/activity_main_item1"
+                    android:onClick="PanelClick1">
 
                     <FrameLayout
                         android:layout_width="match_parent"
@@ -124,14 +125,16 @@
                             android:clickable="true"
                             android:textColor="@color/primaryText"
                             android:textSize="@dimen/main_title_size_2"
-                            android:id="@+id/activity_main_text1" />
+                            android:id="@+id/activity_main_text1"
+                            android:onClick="PanelClick1" />
                         <ImageView
                             android:src="@drawable/arrow"
                             android:layout_width="@dimen/arrowSize"
                             android:layout_height="@dimen/arrowSize"
                             android:contentDescription="@string/img_description2"
                             android:layout_gravity="center_vertical|end"
-                            android:id="@+id/activity_main_image1" />
+                            android:id="@+id/activity_main_image1"
+                            android:onClick="PanelClick1" />
                     </FrameLayout>
                 </LinearLayout>
 
@@ -143,7 +146,8 @@
                     android:background="@drawable/shadow"
                     android:layout_weight="3"
                     android:clickable="true"
-                    android:id="@+id/activity_main_item2">
+                    android:id="@+id/activity_main_item2"
+                    android:onClick="PanelClick2">
 
                     <FrameLayout
                         android:layout_width="match_parent"
@@ -176,7 +180,8 @@
                     android:background="@drawable/shadow"
                     android:layout_weight="3"
                     android:clickable="true"
-                    android:id="@+id/activity_main_item3">
+                    android:id="@+id/activity_main_item3"
+                    android:onClick="PanelClick3">
 
                     <FrameLayout
                         android:layout_width="match_parent"
