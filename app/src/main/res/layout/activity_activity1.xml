@@ -68,6 +68,7 @@
                     android:id="@+id/activity1_image"
                     android:src="@drawable/image1"
                     android:contentDescription="@string/activity1_img_description" />
+
             </FrameLayout>
         </LinearLayout>
 
