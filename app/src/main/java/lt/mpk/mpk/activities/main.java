@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -17,19 +16,21 @@ import android.widget.TextView;
 import lt.mpk.mpk.R;
 
 public class main extends AppCompatActivity {
+    private Typeface tf;
+    private Toolbar myToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar);
+        /* Initialize variables */
+        myToolbar = (Toolbar) findViewById(R.id.toolbar);
+        tf = Typeface.createFromAsset(getAssets(), "fonts/express.ttf");
+
         setSupportActionBar(myToolbar);
-        //getSupportActionBar().setDisplayShowTitleEnabled(false);
-        //myToolbar.setNavigationIcon(R.drawable.back);
 
         //region ChangeFonts
-        Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/Fondamento.ttf");
         TextView tv = (TextView) findViewById(R.id.activity_main_title);
         if (tv != null) {
             tv.setTypeface(tf);
@@ -71,7 +72,7 @@ public class main extends AppCompatActivity {
         //endregion
 
         //region LayoutButton_Listener1
-        LinearLayout lout1 = (LinearLayout)findViewById(R.id.activity_main_item1);
+        /*LinearLayout lout1 = (LinearLayout)findViewById(R.id.activity_main_item1);
         if (lout1 != null) {
             lout1.setOnClickListener(
                 new LinearLayout.OnClickListener(){ public void onClick(View v){
@@ -88,11 +89,11 @@ public class main extends AppCompatActivity {
             im1.setOnClickListener(
                 new ImageView.OnClickListener(){ public void onClick(View v){
                         PanelClick1();
-        } } ); }
+        } } ); }*/
         //endregion
 
         //region LayoutButton_Listener2
-        LinearLayout lout2 = (LinearLayout)findViewById(R.id.activity_main_item2);
+        /*LinearLayout lout2 = (LinearLayout)findViewById(R.id.activity_main_item2);
         if (lout2 != null) {
             lout2.setOnClickListener(
                     new LinearLayout.OnClickListener(){ public void onClick(View v){
@@ -109,11 +110,11 @@ public class main extends AppCompatActivity {
             im2.setOnClickListener(
                     new ImageView.OnClickListener(){ public void onClick(View v){
                         PanelClick2();
-        } } ); }
+        } } ); }*/
         //endregion
 
         //region LayoutButton_Listener3
-        LinearLayout lout3 = (LinearLayout)findViewById(R.id.activity_main_item3);
+        /*LinearLayout lout3 = (LinearLayout)findViewById(R.id.activity_main_item3);
         if (lout3 != null) {
             lout3.setOnClickListener(
                     new LinearLayout.OnClickListener(){ public void onClick(View v){
@@ -130,7 +131,7 @@ public class main extends AppCompatActivity {
             im3.setOnClickListener(
                     new ImageView.OnClickListener(){ public void onClick(View v){
                         PanelClick3();
-                    } } ); }
+                    } } ); }*/
         //endregion
     }
 
@@ -166,15 +167,15 @@ public class main extends AppCompatActivity {
         startActivity(new Intent(main.this, activity1.class));
         overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
     }
-    public void PanelClick1(){
+    public void PanelClick1(View v){
         startActivity(new Intent(main.this, activity2.class));
         overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
     }
-    public void PanelClick2(){
+    public void PanelClick2(View v){
         startActivity(new Intent(main.this, activity3.class));
         overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
     }
-    public void PanelClick3(){
+    public void PanelClick3(View v){
         startActivity(new Intent(main.this, activity4.class));
         overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
     }
