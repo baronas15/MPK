@@ -13,204 +13,183 @@
 
         <include layout="@layout/toolbar" />
 
-        <ScrollView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/scrollView"
-            android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/Start_screen_padding"
+            android:paddingRight="@dimen/Start_screen_padding"
+            android:paddingTop="25dp"
+            android:background="@color/colorPrimary"
+            android:layout_weight="3"
+            android:orientation="vertical">
 
-            <RelativeLayout
+            <TextView
+                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:text="@string/main_title1"
+                android:textSize="@dimen/main_title_size_1"
+                android:gravity="center"
+                android:textColor="@color/primaryTextInverted"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/activity_main_title" />
 
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:weightSum="2"
+                android:layout_marginBottom="@dimen/Start_screen_padding">
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/Start_screen_padding"
-                    android:paddingRight="@dimen/Start_screen_padding"
-                    android:paddingTop="25dp"
-                    android:background="@color/colorPrimary"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
                     android:orientation="vertical"
-                    android:id="@+id/activity_main_titleBar"
-                    android:layout_alignParentStart="true">
-
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:weightSum="12">
                     <TextView
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
-                        android:text="@string/main_title1"
-                        android:textSize="@dimen/main_title_size_1"
-                        android:gravity="center"
+                        android:text="@string/main_text1"
                         android:textColor="@color/primaryTextInverted"
+                        android:textSize="@dimen/main_text_size_1"
                         android:layout_marginBottom="15dp"
-                        android:id="@+id/activity_main_title" />
-
-                    <LinearLayout
+                        android:layout_weight="10"
+                        android:id="@+id/activity_main_titleText" />
+                    <FrameLayout
                         android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:orientation="horizontal"
-                        android:baselineAligned="false"
-                        android:weightSum="2"
-                        android:layout_marginBottom="@dimen/Start_screen_padding">
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="fill_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1"
-                            android:baselineAligned="false"
-                            android:weightSum="12">
-                            <TextView
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text="@string/main_text1"
-                                android:textColor="@color/primaryTextInverted"
-                                android:textSize="@dimen/main_text_size_1"
-                                android:layout_marginBottom="15dp"
-                                android:layout_weight="10"
-                                android:id="@+id/activity_main_titleText" />
-                            <FrameLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="2">
-                                <Button
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:id="@+id/activity_main_button1"
-                                    android:text="@string/main_button1"
-                                    android:background = "@drawable/roundedbutton"
-                                    android:clickable="true"
-                                    android:enabled="true"
-                                    android:textColor="@drawable/roundedbuttontext"
-                                    android:layout_gravity="bottom"
-                                    android:layout_marginRight="5dp"/>
-                            </FrameLayout>
-                        </LinearLayout>
-
-                        <FrameLayout
-                            android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+                        <Button
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_gravity="center">
-
-                            <ImageView
-                                android:src="@drawable/lotus"
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
-                                android:contentDescription="@string/img_description1"
-                                android:adjustViewBounds="true"
-                                android:id="@+id/activity_main_titleImage" />
-                        </FrameLayout>
-                    </LinearLayout>
+                            android:id="@+id/activity_main_button1"
+                            android:text="@string/main_button1"
+                            android:background = "@drawable/roundedbutton"
+                            android:clickable="true"
+                            android:enabled="true"
+                            android:textColor="@drawable/roundedbuttontext"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="5dp"/>
+                    </FrameLayout>
                 </LinearLayout>
 
-                <RelativeLayout
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:src="@drawable/lotus"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:contentDescription="@string/img_description1"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/activity_main_titleImage" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/Start_screen_padding"
+            android:paddingRight="@dimen/Start_screen_padding"
+            android:background="@drawable/shadow"
+            android:layout_weight="3"
+            android:clickable="true"
+            android:id="@+id/activity_main_item1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/activity_main_titleBar"
-                    android:layout_alignParentEnd="false"
-                    android:layout_alignParentBottom="true">
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/main_button2"
+                    android:layout_gravity="start|center"
+                    android:clickable="true"
+                    android:textColor="@color/primaryText"
+                    android:textSize="@dimen/main_title_size_2"
+                    android:id="@+id/activity_main_text1" />
+                <ImageView
+                    android:src="@drawable/arrow"
+                    android:layout_width="@dimen/arrowSize"
+                    android:layout_height="@dimen/arrowSize"
+                    android:contentDescription="@string/img_description2"
+                    android:layout_gravity="center_vertical|end"
+                    android:id="@+id/activity_main_image1" />
+            </FrameLayout>
+        </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="@dimen/Start_screen_padding"
-                        android:paddingRight="@dimen/Start_screen_padding"
-                        android:background="@drawable/shadow"
-                        android:clickable="true"
-                        android:id="@+id/activity_main_item1"
-                        android:layout_alignParentEnd="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/Start_screen_padding"
+            android:paddingRight="@dimen/Start_screen_padding"
+            android:background="@drawable/shadow"
+            android:layout_weight="3"
+            android:clickable="true"
+            android:id="@+id/activity_main_item2">
 
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:text="@string/main_button2"
-                                android:layout_gravity="start|center"
-                                android:clickable="true"
-                                android:textColor="@color/primaryText"
-                                android:textSize="@dimen/main_title_size_2"
-                                android:id="@+id/activity_main_text1" />
-                            <ImageView
-                                android:src="@drawable/arrow"
-                                android:layout_width="@dimen/arrowSize"
-                                android:layout_height="@dimen/arrowSize"
-                                android:contentDescription="@string/img_description2"
-                                android:layout_gravity="center_vertical|end"
-                                android:id="@+id/activity_main_image1" />
-                        </FrameLayout>
-                    </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/main_button3"
+                    android:layout_gravity="start|center"
+                    android:clickable="true"
+                    android:textColor="@color/primaryText"
+                    android:textSize="@dimen/main_title_size_3"
+                    android:id="@+id/activity_main_text2" />
+                <ImageView
+                    android:src="@drawable/arrow"
+                    android:layout_width="@dimen/arrowSize"
+                    android:layout_height="@dimen/arrowSize"
+                    android:contentDescription="@string/img_description2"
+                    android:layout_gravity="center_vertical|end"
+                    android:id="@+id/activity_main_image2" />
+            </FrameLayout>
+        </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/activity_main_item1"
-                        android:paddingLeft="@dimen/Start_screen_padding"
-                        android:paddingRight="@dimen/Start_screen_padding"
-                        android:background="@drawable/shadow"
-                        android:clickable="true"
-                        android:id="@+id/activity_main_item2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/Start_screen_padding"
+            android:paddingRight="@dimen/Start_screen_padding"
+            android:background="@drawable/shadow"
+            android:layout_weight="3"
+            android:clickable="true"
+            android:id="@+id/activity_main_item3">
 
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:text="@string/main_button3"
-                                android:layout_gravity="start|center"
-                                android:clickable="true"
-                                android:textColor="@color/primaryText"
-                                android:textSize="@dimen/main_title_size_3"
-                                android:id="@+id/activity_main_text2" />
-                            <ImageView
-                                android:src="@drawable/arrow"
-                                android:layout_width="@dimen/arrowSize"
-                                android:layout_height="@dimen/arrowSize"
-                                android:contentDescription="@string/img_description2"
-                                android:layout_gravity="center_vertical|end"
-                                android:id="@+id/activity_main_image2" />
-                        </FrameLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/activity_main_item2"
-                        android:paddingLeft="@dimen/Start_screen_padding"
-                        android:paddingRight="@dimen/Start_screen_padding"
-                        android:background="@drawable/shadow"
-                        android:clickable="true"
-                        android:id="@+id/activity_main_item3">
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:text="@string/main_button4"
-                                android:layout_gravity="start|center"
-                                android:clickable="true"
-                                android:textColor="@color/primaryText"
-                                android:textIsSelectable="false"
-                                android:textSize="@dimen/main_title_size_4"
-                                android:id="@+id/activity_main_text3" />
-                            <ImageView
-                                android:src="@drawable/arrow"
-                                android:layout_width="@dimen/arrowSize"
-                                android:layout_height="@dimen/arrowSize"
-                                android:contentDescription="@string/img_description2"
-                                android:layout_gravity="center_vertical|end"
-                                android:id="@+id/activity_main_image3" />
-                        </FrameLayout>
-                    </LinearLayout>
-                </RelativeLayout>
-            </RelativeLayout>
-        </ScrollView>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/main_button4"
+                    android:layout_gravity="start|center"
+                    android:clickable="true"
+                    android:textColor="@color/primaryText"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/main_title_size_4"
+                    android:id="@+id/activity_main_text3" />
+                <ImageView
+                    android:src="@drawable/arrow"
+                    android:layout_width="@dimen/arrowSize"
+                    android:layout_height="@dimen/arrowSize"
+                    android:contentDescription="@string/img_description2"
+                    android:layout_gravity="center_vertical|end"
+                    android:id="@+id/activity_main_image3" />
+            </FrameLayout>
+        </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>
