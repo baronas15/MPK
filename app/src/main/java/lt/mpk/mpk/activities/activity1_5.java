@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import java.util.concurrent.TimeUnit;
 
 import lt.mpk.mpk.R;
 
@@ -18,8 +17,6 @@ import static android.media.MediaPlayer.create;
 
 public class activity1_5 extends AppCompatActivity {
     //private List<Card> cards;
-    private double startTime = 0;
-    private double finalTime = 0;
     private SeekBar seekbar;
     private MediaPlayer mediaPlayer;
     private TextView tx1;
@@ -61,11 +58,9 @@ public class activity1_5 extends AppCompatActivity {
                 updateProgressBar();
             }
         });
-        finalTime = mediaPlayer.getDuration();
-        startTime = mediaPlayer.getCurrentPosition();
 
-        tx1.setText(""+milliSecondsToTimer(mediaPlayer.getCurrentPosition()));
-        tx2.setText(""+milliSecondsToTimer(mediaPlayer.getDuration()));
+        tx1.setText(String.format("%s", milliSecondsToTimer(mediaPlayer.getCurrentPosition())));
+        tx2.setText(String.format("%s", milliSecondsToTimer(mediaPlayer.getDuration())));
 
         final Button play_button = (Button)this.findViewById(R.id.activity1_5_button1);
         play_button.setOnClickListener(new View.OnClickListener() {
@@ -96,12 +91,12 @@ public class activity1_5 extends AppCompatActivity {
             long currentDuration = mediaPlayer.getCurrentPosition();
 
             // Displaying Total Duration time
-            tx1.setText(""+milliSecondsToTimer(currentDuration));
+            tx1.setText(String.format("%s", milliSecondsToTimer(currentDuration)));
             // Displaying time completed playing
-            tx2.setText(""+milliSecondsToTimer(totalDuration));
+            tx2.setText(String.format("%s", milliSecondsToTimer(totalDuration)));
 
             // Updating progress bar
-            int progress = (int)(getProgressPercentage(currentDuration, totalDuration));
+            int progress = getProgressPercentage(currentDuration, totalDuration);
             //Log.d("Progress", ""+progress);
             seekbar.setProgress(progress);
 
@@ -117,7 +112,7 @@ public class activity1_5 extends AppCompatActivity {
      * */
     public String milliSecondsToTimer(long milliseconds){
         String finalTimerString = "";
-        String secondsString = "";
+        String secondsString;
 
         // Convert total duration into time
         int hours = (int)( milliseconds / (1000*60*60));
@@ -142,11 +137,9 @@ public class activity1_5 extends AppCompatActivity {
 
     /**
      * Function to get Progress percentage
-     * @param currentDuration
-     * @param totalDuration
      * */
     public int getProgressPercentage(long currentDuration, long totalDuration){
-        Double percentage = (double) 0;
+        Double percentage;
 
         long currentSeconds = (int) (currentDuration / 1000);
         long totalSeconds = (int) (totalDuration / 1000);
@@ -160,16 +153,13 @@ public class activity1_5 extends AppCompatActivity {
 
     /**
      * Function to change progress to timer
-     * @param progress -
-     * @param totalDuration
      * returns current duration in milliseconds
      * */
     public int progressToTimer(int progress, int totalDuration) {
-        int currentDuration = 0;
-        totalDuration = (int) (totalDuration / 1000);
+        int currentDuration;
+        totalDuration = totalDuration / 1000;
         currentDuration = (int) ((((double)progress) / 100) * totalDuration);
 
-        // return current duration in milliseconds
         return currentDuration * 1000;
     }
 
@@ -188,6 +178,8 @@ public class activity1_5 extends AppCompatActivity {
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
     }
+}
+
 /*
         RecyclerView rv = (RecyclerView)findViewById(R.id.rv);
 
@@ -256,4 +248,3 @@ public class activity1_5 extends AppCompatActivity {
             this.id = id;
         }
     }*/
-}
