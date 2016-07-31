@@ -14,7 +14,6 @@ import lt.mpk.mpk.R;
 
 public class main extends AppCompatActivity {
     private Typeface tf;
-    private Toolbar myToolbar;
     private int enterAnim = R.anim.slide_in_right;
     private int exitAnim = R.anim.slide_out_right;
 
@@ -24,30 +23,25 @@ public class main extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         /* Create toolbar */
-        myToolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(myToolbar);
 
         //region ChangeFonts
-        tf = Typeface.createFromAsset(getAssets(), "fonts/goodfish.ttf");
         TextView tv = (TextView) findViewById(R.id.activity_main_title);
-        tv.setTypeface(tf);
-
-        tf = Typeface.createFromAsset(getAssets(), "fonts/express.ttf");
         TextView tv1 = (TextView) findViewById(R.id.activity_main_text1);
-        tv1.setTypeface(tf);
-
         TextView tv2 = (TextView) findViewById(R.id.activity_main_text2);
-        tv2.setTypeface(tf);
-
         TextView tv3 = (TextView) findViewById(R.id.activity_main_text3);
-        tv3.setTypeface(tf);
-
         TextView tv4 = (TextView) findViewById(R.id.activity_main_titleText);
-        tv4.setTypeface(tf);
-
         TextView tv5 = (TextView) findViewById(R.id.activity_main_button1);
-        tv5.setTypeface(tf);
 
+        tf = Typeface.createFromAsset(getAssets(), "fonts/goodfish.ttf");
+        tv.setTypeface(tf);
+        tf = Typeface.createFromAsset(getAssets(), "fonts/express.ttf");
+        tv1.setTypeface(tf);
+        tv2.setTypeface(tf);
+        tv3.setTypeface(tf);
+        tv4.setTypeface(tf);
+        tv5.setTypeface(tf);
         //endregion
     }
 
