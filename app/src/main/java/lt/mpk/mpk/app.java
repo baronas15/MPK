@@ -5,6 +5,12 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+/* Example usage:
+*
+* app a = ((app)getApplicationContext());
+* int mental = a.getMental();
+* a.setMental(1);
+* */
 public class app extends Application {
     public int getMental() {
         return mental;
@@ -47,11 +53,3 @@ public class app extends Application {
     private int emotional3;
     private int currentTab;
 }
-
-/*
-* Example usage:
-*
-* app a = ((app)getApplicationContext());
-* int mental = a.getMental();
-* a.setMental(1);
-* */
