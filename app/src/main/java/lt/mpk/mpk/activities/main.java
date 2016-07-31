@@ -29,7 +29,7 @@ public class main extends AppCompatActivity {
         //myToolbar.setNavigationIcon(R.drawable.back);
 
         //region ChangeFonts
-        Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/goodfish.ttf");
+        Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/Fondamento.ttf");
         TextView tv = (TextView) findViewById(R.id.activity_main_title);
         if (tv != null) {
             tv.setTypeface(tf);
@@ -45,6 +45,15 @@ public class main extends AppCompatActivity {
         TextView tv3 = (TextView) findViewById(R.id.activity_main_text3);
         if (tv3 != null) {
             tv3.setTypeface(tf);
+        }
+
+        TextView tv4 = (TextView) findViewById(R.id.activity_main_titleText);
+        if (tv4 != null) {
+            tv4.setTypeface(tf);
+        }
+        TextView tv5 = (TextView) findViewById(R.id.activity_main_button1);
+        if (tv5 != null) {
+            tv5.setTypeface(tf);
         }
         //endregion
 
