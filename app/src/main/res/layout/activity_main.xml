@@ -38,7 +38,7 @@
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:text="@string/main_title1"
-                        android:textSize="@dimen/main_title_size_1"
+                        android:textSize="@dimen/header1"
                         android:gravity="center"
                         android:textColor="@color/primaryTextInverted"
                         android:layout_marginBottom="15dp"
