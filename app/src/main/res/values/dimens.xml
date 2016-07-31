@@ -12,4 +12,5 @@
 
     <dimen name="play_button_w">100dp</dimen>
     <dimen name="play_button_icon_w">50dp</dimen>
+    <dimen name="shadow1_radius">7dp</dimen>
 </resources>

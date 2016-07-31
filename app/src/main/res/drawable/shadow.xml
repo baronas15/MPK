@@ -3,7 +3,7 @@
     <layer-list>
         <item android:top="7dp">
             <shape>
-                <solid android:color="@color/blue_200" />
+                <solid android:color="@color/blue_A100" />
             </shape>
         </item>
         <item android:bottom="2dp">

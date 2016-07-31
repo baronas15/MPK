@@ -68,7 +68,8 @@
                             android:clickable="true"
                             android:enabled="true"
                             android:textColor="@drawable/roundedbuttontext"
-                            android:layout_gravity="bottom" />
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="5dp"/>
                     </FrameLayout>
                 </LinearLayout>
 

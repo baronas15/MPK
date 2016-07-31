@@ -10,6 +10,10 @@
     <color name="blue_700">#1976d2</color>
     <color name="blue_800">#1565c0</color>
     <color name="blue_900">#0d47a1</color>
+    <color name="blue_A100">#82b1ff</color>
+    <color name="blue_A200">#448aff</color>
+    <color name="blue_A400">#2979ff</color>
+    <color name="blue_A700">#2962ff</color>
 
     <color name="toolBar">#0d47a1</color>
     <color name="colorPrimary">#2196f3</color>
