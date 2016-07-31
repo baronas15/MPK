@@ -13,7 +13,6 @@ import android.widget.TextView;
 import lt.mpk.mpk.R;
 
 public class main extends AppCompatActivity {
-    private Typeface tf;
     private int enterAnim = R.anim.slide_in_right;
     private int exitAnim = R.anim.slide_out_right;
 
@@ -34,7 +33,7 @@ public class main extends AppCompatActivity {
         TextView tv4 = (TextView) findViewById(R.id.activity_main_titleText);
         TextView tv5 = (TextView) findViewById(R.id.activity_main_button1);
 
-        tf = Typeface.createFromAsset(getAssets(), "fonts/goodfish.ttf");
+        Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/goodfish.ttf");
         tv.setTypeface(tf);
         tf = Typeface.createFromAsset(getAssets(), "fonts/express.ttf");
         tv1.setTypeface(tf);
