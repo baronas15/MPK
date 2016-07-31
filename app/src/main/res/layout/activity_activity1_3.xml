@@ -92,22 +92,24 @@
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="12">
 
                 <Button
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="@string/activity1_3_button2"
                     android:id="@+id/activity1_3_button2"
-                    android:layout_gravity="center"
                     android:background="@drawable/roundedbutton"
                     android:textColor="@drawable/roundedbuttontext"
-                    android:onClick="activity13button2_Click"
+                    android:layout_weight="8"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="5dp"
-                    android:layout_marginTop="5dp"/>
+                    android:layout_marginTop="5dp"
+                    android:onClick="activity13button2_Click"/>
             </LinearLayout>
         </FrameLayout>
 

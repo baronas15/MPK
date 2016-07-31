@@ -15,6 +15,22 @@
             </item>
         </layer-list>
     </item>
+    <item android:state_enabled="false">
+        <layer-list>
+            <item android:top="7dp">
+                <shape>
+                    <corners android:radius="@dimen/shadow1_radius" />
+                    <solid android:color="#77000000" />
+                </shape>
+            </item>
+            <item android:bottom="1dp">
+                <shape>
+                    <solid android:color="@color/buttonDisabled" />
+                    <corners android:radius="@dimen/shadow1_radius" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
     <item>
         <layer-list>
             <item android:top="10dp">
