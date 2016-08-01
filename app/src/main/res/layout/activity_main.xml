@@ -46,7 +46,7 @@
 
                     <LinearLayout
                         android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:baselineAligned="false"
                         android:weightSum="2"
@@ -94,8 +94,8 @@
 
                             <ImageView
                                 android:src="@drawable/lotus"
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:contentDescription="@string/img_description1"
                                 android:adjustViewBounds="true"
                                 android:id="@+id/activity_main_titleImage" />
