@@ -1,4 +1,8 @@
 <resources>
+    <dimen name="side_padding">50dp</dimen>
+    <dimen name="item_vertical_padding">30dp</dimen>
+    <dimen name="little_separator">5dp</dimen>
+
     <dimen name="activity_horizontal_margin">64dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="Start_screen_padding">40dp</dimen>

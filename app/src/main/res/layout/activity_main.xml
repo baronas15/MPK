@@ -50,7 +50,8 @@
                         android:orientation="horizontal"
                         android:baselineAligned="false"
                         android:weightSum="2"
-                        android:paddingTop="@dimen/item_vertical_padding">
+                        android:paddingTop="@dimen/item_vertical_padding"
+                        android:gravity="center_vertical">
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="fill_parent"
@@ -58,7 +59,8 @@
                             android:layout_weight="1"
                             android:baselineAligned="false"
                             android:weightSum="12"
-                            android:layout_marginRight="@dimen/little_separator">
+                            android:layout_marginRight="@dimen/little_separator"
+                            android:gravity="center_vertical">
                             <lt.mpk.mpk.FontFitTextView
                                 android:layout_height="wrap_content"
                                 android:layout_width="match_parent"

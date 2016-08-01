@@ -53,31 +53,29 @@
                         android:layout_weight="1"
                         android:baselineAligned="false"
                         android:weightSum="12"
-                        android:layout_marginRight="@dimen/little_separator">
+                        android:layout_marginRight="@dimen/little_separator"
+                        android:gravity="center_vertical">
                         <lt.mpk.mpk.FontFitTextView
                             android:layout_height="wrap_content"
-                            android:layout_width="match_parent"
+                            android:layout_width="fill_parent"
                             android:text="@string/main_text1"
                             android:textColor="@color/primaryTextInverted"
                             android:textSize="@dimen/main_text_size_1"
-                            android:layout_weight="10"
-                            android:id="@+id/activity_main_titleText" />
-                        <FrameLayout
+                            android:id="@+id/activity_main_titleText"
+                            android:layout_weight="10" />
+
+                        <Button
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2">
-                            <Button
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/activity_main_button1"
-                                android:text="@string/main_button1"
-                                android:background = "@drawable/roundedbutton"
-                                android:clickable="true"
-                                android:enabled="true"
-                                android:textColor="@drawable/roundedbuttontext"
-                                android:layout_gravity="bottom"
-                                android:onClick="ButtonClick1" />
-                        </FrameLayout>
+                            android:id="@+id/activity_main_button1"
+                            android:text="@string/main_button1"
+                            android:background = "@drawable/roundedbutton"
+                            android:clickable="true"
+                            android:enabled="true"
+                            android:textColor="@drawable/roundedbuttontext"
+                            android:layout_gravity="bottom"
+                            android:onClick="ButtonClick1" />
+
                     </LinearLayout>
 
                     <FrameLayout
