@@ -55,7 +55,7 @@
                         android:weightSum="12"
                         android:layout_marginRight="@dimen/little_separator"
                         android:gravity="center_vertical">
-                        <lt.mpk.mpk.FontFitTextView
+                        <TextView
                             android:layout_height="wrap_content"
                             android:layout_width="fill_parent"
                             android:text="@string/main_text1"
@@ -127,7 +127,7 @@
                             android:layout_gravity="start|center"
                             android:clickable="true"
                             android:textColor="@color/primaryText"
-                            android:textSize="@dimen/main_title_size_2"
+                            android:textSize="@dimen/header2"
                             android:id="@+id/activity_main_text1"
                             android:onClick="PanelClick1" />
                         <ImageView
@@ -166,7 +166,7 @@
                             android:layout_gravity="center|start"
                             android:clickable="true"
                             android:textColor="@color/primaryText"
-                            android:textSize="@dimen/main_title_size_3"
+                            android:textSize="@dimen/header2"
                             android:id="@+id/activity_main_text2" />
                         <ImageView
                             android:src="@drawable/arrow"
@@ -204,7 +204,7 @@
                             android:clickable="true"
                             android:textColor="@color/primaryText"
                             android:textIsSelectable="false"
-                            android:textSize="@dimen/main_title_size_4"
+                            android:textSize="@dimen/header2"
                             android:id="@+id/activity_main_text3" />
                         <ImageView
                             android:src="@drawable/arrow"
