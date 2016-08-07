@@ -1,22 +1,21 @@
 <resources>
     <dimen name="side_padding_portrait">20dp</dimen>
     <dimen name="side_padding_landscape">20dp</dimen>
-    <dimen name="item_vertical_padding">16dp</dimen>
+    <dimen name="item_vertical_padding">10dp</dimen>
     <dimen name="little_separator">5dp</dimen>
     <dimen name="arrowSize">30dp</dimen>
 
     <dimen name="header1">25sp</dimen>
     <dimen name="header2">20sp</dimen>
 
-    <dimen name="main_title_size_1">30sp</dimen>
+    <dimen name="header1_landscape">23sp</dimen>
+    <dimen name="header2_landscape">16sp</dimen>
     <dimen name="main_text_size_1">30sp</dimen>
+    <dimen name="main_text_size_1_landscape">16sp</dimen>
 
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="main_title_size_1">30sp</dimen>
     <dimen name="Start_screen_padding">40dp</dimen>
-
     <dimen name="fab_margin">16dp</dimen>
-
     <dimen name="play_button_w">100dp</dimen>
     <dimen name="play_button_icon_w">50dp</dimen>
     <dimen name="shadow1_radius">7dp</dimen>

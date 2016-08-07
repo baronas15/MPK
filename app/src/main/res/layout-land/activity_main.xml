@@ -20,7 +20,7 @@
             android:baselineAligned="false">
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:paddingLeft="@dimen/side_padding_landscape"
                 android:paddingRight="@dimen/side_padding_landscape"
@@ -34,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="@string/main_title1"
-                    android:textSize="@dimen/header1"
+                    android:textSize="@dimen/header1_landscape"
                     android:gravity="center"
                     android:textColor="@color/primaryTextInverted"
                     android:id="@+id/activity_main_title" />
@@ -60,9 +60,9 @@
                             android:layout_width="fill_parent"
                             android:text="@string/main_text1"
                             android:textColor="@color/primaryTextInverted"
-                            android:textSize="@dimen/main_text_size_1"
+                            android:textSize="@dimen/main_text_size_1_landscape"
                             android:id="@+id/activity_main_titleText"
-                            android:layout_weight="10" />
+                            android:layout_marginBottom="@dimen/little_separator" />
 
                         <Button
                             android:layout_width="fill_parent"
@@ -74,7 +74,8 @@
                             android:enabled="true"
                             android:textColor="@drawable/roundedbuttontext"
                             android:layout_gravity="bottom"
-                            android:onClick="ButtonClick1" />
+                            android:onClick="ButtonClick1"
+                            android:layout_marginTop="@dimen/little_separator" />
 
                     </LinearLayout>
 
@@ -127,7 +128,7 @@
                             android:layout_gravity="start|center"
                             android:clickable="true"
                             android:textColor="@color/primaryText"
-                            android:textSize="@dimen/header2"
+                            android:textSize="@dimen/header2_landscape"
                             android:id="@+id/activity_main_text1"
                             android:onClick="PanelClick1" />
                         <ImageView
@@ -166,7 +167,7 @@
                             android:layout_gravity="center|start"
                             android:clickable="true"
                             android:textColor="@color/primaryText"
-                            android:textSize="@dimen/header2"
+                            android:textSize="@dimen/header2_landscape"
                             android:id="@+id/activity_main_text2" />
                         <ImageView
                             android:src="@drawable/arrow"
@@ -204,7 +205,7 @@
                             android:clickable="true"
                             android:textColor="@color/primaryText"
                             android:textIsSelectable="false"
-                            android:textSize="@dimen/header2"
+                            android:textSize="@dimen/header2_landscape"
                             android:id="@+id/activity_main_text3" />
                         <ImageView
                             android:src="@drawable/arrow"
@@ -216,6 +217,7 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
