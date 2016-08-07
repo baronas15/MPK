@@ -27,8 +27,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/side_padding"
-                    android:paddingRight="@dimen/side_padding"
+                    android:paddingLeft="@dimen/side_padding_portrait"
+                    android:paddingRight="@dimen/side_padding_portrait"
                     android:paddingTop="@dimen/item_vertical_padding"
                     android:background="@color/colorPrimary"
                     android:layout_weight="3"
@@ -108,8 +108,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/side_padding"
-                    android:paddingRight="@dimen/side_padding"
+                    android:paddingLeft="@dimen/side_padding_portrait"
+                    android:paddingRight="@dimen/side_padding_portrait"
                     android:background="@drawable/shadow"
                     android:layout_weight="3"
                     android:clickable="true"
@@ -146,8 +146,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/side_padding"
-                    android:paddingRight="@dimen/side_padding"
+                    android:paddingLeft="@dimen/side_padding_portrait"
+                    android:paddingRight="@dimen/side_padding_portrait"
                     android:background="@drawable/shadow"
                     android:layout_weight="3"
                     android:clickable="true"
@@ -182,8 +182,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/side_padding"
-                    android:paddingRight="@dimen/side_padding"
+                    android:paddingLeft="@dimen/side_padding_portrait"
+                    android:paddingRight="@dimen/side_padding_portrait"
                     android:background="@drawable/shadow"
                     android:layout_weight="3"
                     android:clickable="true"

@@ -22,8 +22,8 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
-                android:paddingLeft="@dimen/side_padding"
-                android:paddingRight="@dimen/side_padding"
+                android:paddingLeft="@dimen/side_padding_landscape"
+                android:paddingRight="@dimen/side_padding_landscape"
                 android:paddingTop="@dimen/item_vertical_padding"
                 android:background="@color/colorPrimary"
                 android:layout_weight="3"
@@ -104,8 +104,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/side_padding"
-                    android:paddingRight="@dimen/side_padding"
+                    android:paddingLeft="@dimen/side_padding_landscape"
+                    android:paddingRight="@dimen/side_padding_landscape"
                     android:background="@drawable/shadow"
                     android:layout_weight="3"
                     android:clickable="true"
@@ -144,8 +144,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/side_padding"
-                    android:paddingRight="@dimen/side_padding"
+                    android:paddingLeft="@dimen/side_padding_landscape"
+                    android:paddingRight="@dimen/side_padding_landscape"
                     android:background="@drawable/shadow"
                     android:layout_weight="3"
                     android:clickable="true"
@@ -181,8 +181,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/side_padding"
-                    android:paddingRight="@dimen/side_padding"
+                    android:paddingLeft="@dimen/side_padding_landscape"
+                    android:paddingRight="@dimen/side_padding_landscape"
                     android:background="@drawable/shadow"
                     android:layout_weight="3"
                     android:clickable="true"
