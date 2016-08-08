@@ -14,6 +14,7 @@
     <dimen name="side_padding_landscape">20dp</dimen>
     <dimen name="item_vertical_padding">10dp</dimen>
     <dimen name="item_horizontal_padding">16dp</dimen>
+    <dimen name="item_vertical_padding_big">15dp</dimen>
 
     <dimen name="minButtonHeight">40dp</dimen>
     <dimen name="main_title_size_1">30sp</dimen>

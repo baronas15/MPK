@@ -13,6 +13,7 @@
     <dimen name="side_padding_landscape">20dp</dimen>
     <dimen name="item_vertical_padding">16dp</dimen>
     <dimen name="item_horizontal_padding">16dp</dimen>
+    <dimen name="item_vertical_padding_big">20dp</dimen>
     <dimen name="arrowSize">30dp</dimen>
 
     <dimen name="main_title_size_1">50sp</dimen>

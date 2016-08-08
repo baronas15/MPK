@@ -26,7 +26,7 @@
     <string name="activity1_button1">Tikrinti</string>
     <string name="activity1_img_description">image1</string>
     <!-- Activity1_1 -->
-    <string name="activity1_1_title">Mano protinė būsena yra :</string>
+    <string name="activity1_1_title">Mano protinė būsena :</string>
     <string name="activity1_1_emo1">PUIKI</string>
     <string name="activity1_1_emo2">GERA</string>
     <string name="activity1_1_emo3">NORMALI</string>

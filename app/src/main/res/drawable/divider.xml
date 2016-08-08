@@ -1,0 +1,30 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:top="6dp">
+                <shape>
+                    <solid android:color="@color/radioButtonBackgroundSelect" />
+                </shape>
+            </item>
+            <item android:bottom="1dp">
+                <shape>
+                    <solid android:color="@color/blue_200" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:top="7dp">
+                <shape>
+                    <solid android:color="@color/radioButtonBackgroundDefault" />
+                </shape>
+            </item>
+            <item android:bottom="2dp">
+                <shape>
+                    <solid android:color="@color/colorPrimary" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>
