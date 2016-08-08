@@ -24,15 +24,15 @@
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
                 android:orientation="vertical"
-                android:layout_weight="8">
+                android:layout_weight="8"
+                android:paddingLeft="@dimen/side_padding_portrait"
+                android:paddingRight="@dimen/side_padding_portrait"
+                android:background="@color/blue_500">
 
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="5"
-                    android:paddingLeft="@dimen/Start_screen_padding"
-                    android:paddingRight="@dimen/Start_screen_padding"
-                    android:background="@color/colorPrimary">
+                    android:layout_weight="5">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -42,15 +42,14 @@
                         android:id="@+id/activity1_3_title"
                         android:layout_gravity="bottom|center_horizontal"
                         android:textColor="@color/primaryTextInverted"
-                        android:textSize="26sp" />
+                        android:textSize="@dimen/header1"
+                        android:typeface="serif" />
                 </FrameLayout>
 
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="5"
-                    android:background="@color/colorPrimary"
-                    android:padding="@dimen/Start_screen_padding">
+                    android:layout_weight="5">
 
                     <Button
                         android:layout_width="wrap_content"
@@ -61,15 +60,20 @@
                         android:textColor="@drawable/roundedbuttontext"
                         android:id="@+id/activity1_3_button1"
                         android:onClick="activity13button1_Click"
-                        android:paddingLeft="15dp"
-                        android:paddingRight="15dp"/>
+                        android:paddingLeft="@dimen/item_horizontal_padding"
+                        android:paddingRight="@dimen/item_horizontal_padding"
+                        android:textSize="@dimen/header3"
+                        android:paddingTop="@dimen/item_vertical_padding"
+                        android:paddingBottom="@dimen/item_vertical_padding" />
                 </FrameLayout>
             </LinearLayout>
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
-                android:layout_weight="2">
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/side_padding_portrait"
+                android:paddingRight="@dimen/side_padding_portrait">
 
                 <ImageView
                     android:layout_width="wrap_content"
