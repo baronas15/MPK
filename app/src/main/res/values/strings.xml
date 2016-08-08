@@ -3,6 +3,14 @@
     <string name="app_name">MPK</string>
     <string name="action_back">Atgal</string>
     <string name="action_next">Toliau</string>
+    <!-- Stickers -->
+    <string name="stickerName0">Dar neturite dovanų</string>
+    <string name="stickerName1">Puikus startas</string>
+    <string name="stickerName2">Dvi meditacijos</string>
+    <string name="stickerName3">10 meditacijų</string>
+    <string name="stickerName4">25 meditacijos</string>
+    <string name="stickerName5">2 meditacijos iš eilės</string>
+    <string name="stickerName6">3 meditacijos iš eilės</string>
     <!-- Main -->
     <string name="main_button1">Pradėk</string>
     <string name="main_title1">KAIP ŠIANDIEN JAUTIESI?</string>
@@ -69,13 +77,4 @@
     <string name="activity4_title2">VISO DOVANŲ:</string>
 
     <string name="activity4_error1">Dar neturite dovanų</string>
-
-    <string name="stickerName0">Dar neturite dovanų</string>
-    <string name="stickerName1">Puikus startas</string>
-    <string name="stickerName2">Dvi meditacijos</string>
-    <string name="stickerName3">10 meditacijų</string>
-    <string name="stickerName4">25 meditacijos</string>
-    <string name="stickerName5">2 meditacijos iš eilės</string>
-    <string name="stickerName6">3 meditacijos iš eilės</string>
-
 </resources>
