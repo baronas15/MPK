@@ -1,10 +1,14 @@
 package lt.mpk.mpk.activities;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Handler;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
@@ -73,6 +77,47 @@ public class activity1_5 extends AppCompatActivity {
                     play_button.setBackgroundResource(R.drawable.pause_button);
                     updateProgressBar();
                 }
+            }
+        });
+
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mHandler.removeCallbacksAndMessages(null);
+                play_button.setBackgroundResource(R.drawable.play_button);
+
+                SharedPreferences settings = getSharedPreferences("Stickers", 0);
+                SharedPreferences.Editor editor = settings.edit();
+
+                editor.putInt("meditationCount", settings.getInt("meditationCount",0) + 1);
+                editor.putInt("meditationsInOneGo", settings.getInt("meditationsInOneGo",0) + 1);
+
+                if(settings.getInt("meditationCount",0) == 1){
+                    editor.putBoolean("sticker1",true);
+                    editor.putInt("lastSticker",1);
+                }
+                if(settings.getInt("meditationCount",0) == 2){
+                    editor.putBoolean("sticker2",true);
+                    editor.putInt("lastSticker",2);
+                }
+                if(settings.getInt("meditationCount",0) == 10){
+                    editor.putBoolean("sticker3",true);
+                    editor.putInt("lastSticker",3);
+                }
+                if(settings.getInt("meditationCount",0) == 25){
+                    editor.putBoolean("sticker4",true);
+                    editor.putInt("lastSticker",4);
+                }
+                if(settings.getInt("meditationsInOneGo",0) == 2){
+                    editor.putBoolean("sticker5",true);
+                    editor.putInt("lastSticker",5);
+                }
+                if(settings.getInt("meditationsInOneGo",0) == 3){
+                    editor.putBoolean("sticker6",true);
+                    editor.putInt("lastSticker",6);
+                }
+
+                editor.apply();
             }
         });
     }
