@@ -65,6 +65,8 @@
     <!-- Activity1_5 -->
     <string name="activity1_5_title">Pasirinkite meditaciją</string>
     <!-- Activity4 -->
-    <string name="activity4_title1">PASKUTINė DOVANA</string>
-    <string name="activity4_title2">VISO DOVANų:</string>
+    <string name="activity4_title1">PASKUTINĖ DOVANA</string>
+    <string name="activity4_title2">VISO DOVANŲ:</string>
+
+    <string name="activity4_error1">Dar neturite dovanų</string>
 </resources>
