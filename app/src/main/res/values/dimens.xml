@@ -28,4 +28,5 @@
     <dimen name="shadow1_radius">7dp</dimen>
     <dimen name="radio_vertical_padding">10dp</dimen>
     <dimen name="header3">16sp</dimen>
+    <dimen name="check_vertical_padding">35dp</dimen>
 </resources>

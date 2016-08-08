@@ -28,7 +28,7 @@
                 android:id="@+id/checkBox10"
                 android:textColor="#000000"
                 android:textSize="@dimen/header1"
-                android:padding="@dimen/Start_screen_padding"
+                android:padding="@dimen/check_vertical_padding"
                 android:button="@android:color/transparent"
                 android:layout_gravity="center"
                 android:gravity="center" />
@@ -44,7 +44,7 @@
                 android:id="@+id/checkBox11"
                 android:textColor="#000000"
                 android:textSize="@dimen/header1"
-                android:padding="@dimen/Start_screen_padding"
+                android:padding="@dimen/check_vertical_padding"
                 android:button="@android:color/transparent"
                 android:layout_gravity="center"
                 android:gravity="center" />
@@ -60,7 +60,7 @@
                 android:id="@+id/checkBox12"
                 android:textColor="#000000"
                 android:textSize="@dimen/header1"
-                android:padding="@dimen/Start_screen_padding"
+                android:padding="@dimen/check_vertical_padding"
                 android:button="@android:color/transparent"
                 android:layout_gravity="center"
                 android:gravity="center" />
