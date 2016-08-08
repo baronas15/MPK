@@ -38,7 +38,6 @@
                     android:layout_gravity="center"
                     android:textColor="@color/primaryTextInverted"
                     android:textSize="@dimen/header1"
-                    android:singleLine="false"
                     android:typeface="serif" />
             </FrameLayout>
 

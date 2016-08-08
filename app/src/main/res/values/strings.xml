@@ -35,7 +35,7 @@
     <string name="activity1_1_img_description">A picture that describes your mind state</string>
     <string name="activity1_1_button1">Toliau</string>
     <!-- Activity1_2 -->
-    <string name="activity1_2_title">Mano fizinė būsena yra:</string>
+    <string name="activity1_2_title">Mano fizinė būsena :</string>
     <string name="activity1_2_emo1">PUIKI</string>
     <string name="activity1_2_emo2">GERA</string>
     <string name="activity1_2_emo3">NORMALI</string>

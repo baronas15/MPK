@@ -113,10 +113,10 @@
                     android:background="@drawable/roundedbutton"
                     android:textColor="@drawable/roundedbuttontext"
                     android:layout_weight="8"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/item_horizontal_padding"
+                    android:layout_marginRight="@dimen/item_horizontal_padding"
+                    android:layout_marginBottom="@dimen/little_separator"
+                    android:layout_marginTop="@dimen/little_separator"
                     android:typeface="sans" />
 
             </LinearLayout>

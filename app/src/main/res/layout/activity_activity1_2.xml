@@ -18,16 +18,16 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="12"
-            android:weightSum="12">
+            android:layout_weight="12">
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="8"
-                android:paddingLeft="@dimen/Start_screen_padding"
-                android:paddingRight="@dimen/Start_screen_padding"
-                android:background="@color/colorPrimary">
+                android:paddingLeft="@dimen/side_padding_portrait"
+                android:paddingRight="@dimen/side_padding_portrait"
+                android:background="@color/colorPrimary"
+                android:paddingTop="@dimen/item_vertical_padding_big"
+                android:paddingBottom="@dimen/item_vertical_padding">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -37,31 +37,30 @@
                     android:id="@+id/activity1_2_title"
                     android:layout_gravity="center"
                     android:textColor="@color/primaryTextInverted"
-                    android:textSize="26sp" />
+                    android:textSize="@dimen/header1"
+                    android:typeface="serif" />
             </FrameLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
+                android:layout_height="fill_parent"
                 android:weightSum="12"
-                android:baselineAligned="false"
-                android:background="@color/colorPrimaryLight">
+                android:baselineAligned="false">
 
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="6"
-                    android:paddingLeft="@dimen/Start_screen_padding"
-                    android:paddingBottom="@dimen/Start_screen_padding"
-                    android:paddingTop="@dimen/Start_screen_padding">
+                    android:paddingLeft="@dimen/side_padding_portrait"
+                    android:paddingBottom="@dimen/item_vertical_padding"
+                    android:paddingTop="@dimen/item_vertical_padding">
 
                     <RadioGroup
                         android:layout_width="match_parent"
                         android:layout_height="fill_parent"
                         android:layout_gravity="left|top"
-                        android:weightSum="10"
+                        android:weightSum="104"
                         android:id="@+id/physicalgroup">
 
                         <RadioButton
@@ -73,10 +72,11 @@
                             android:textColor="@color/primaryText"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
-                            android:textSize="22sp"
-                            android:layout_weight="2"
+                            android:textSize="@dimen/header2"
+                            android:layout_weight="20"
                             android:paddingLeft="15dp"
-                            android:paddingRight="15dp" />
+                            android:paddingRight="15dp"
+                            android:gravity="center"/>
 
                         <View
                             android:layout_width="fill_parent"
@@ -84,7 +84,7 @@
                             android:layout_weight="1"
                             android:clickable="false"
                             android:background="@color/blue_A100"
-                            android:minHeight="1dp" />
+                            android:id="@+id/pSpace1" />
 
                         <RadioButton
                             android:layout_width="fill_parent"
@@ -95,10 +95,11 @@
                             android:textColor="@color/primaryText"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
-                            android:textSize="22sp"
-                            android:layout_weight="2"
+                            android:textSize="@dimen/header2"
+                            android:layout_weight="20"
                             android:paddingLeft="15dp"
-                            android:paddingRight="15dp" />
+                            android:paddingRight="15dp"
+                            android:gravity="center"/>
 
                         <View
                             android:layout_width="fill_parent"
@@ -106,7 +107,7 @@
                             android:layout_weight="1"
                             android:clickable="false"
                             android:background="@color/blue_A100"
-                            android:minHeight="1dp" />
+                            android:id="@+id/pSpace2" />
 
                         <RadioButton
                             android:layout_width="fill_parent"
@@ -117,11 +118,12 @@
                             android:textColor="@color/primaryText"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
-                            android:textSize="22sp"
-                            android:layout_weight="2"
+                            android:textSize="@dimen/header2"
+                            android:layout_weight="20"
                             android:checked="true"
                             android:paddingLeft="15dp"
-                            android:paddingRight="15dp" />
+                            android:paddingRight="15dp"
+                            android:gravity="center" />
 
                         <View
                             android:layout_width="fill_parent"
@@ -129,7 +131,7 @@
                             android:layout_weight="1"
                             android:clickable="false"
                             android:background="@color/blue_A100"
-                            android:minHeight="1dp" />
+                            android:id="@+id/pSpace3" />
 
                         <RadioButton
                             android:layout_width="fill_parent"
@@ -140,10 +142,11 @@
                             android:textColor="@color/primaryText"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
-                            android:textSize="22sp"
-                            android:layout_weight="2"
+                            android:textSize="@dimen/header2"
+                            android:layout_weight="20"
                             android:paddingLeft="15dp"
-                            android:paddingRight="15dp" />
+                            android:paddingRight="15dp"
+                            android:gravity="center"/>
 
                         <View
                             android:layout_width="fill_parent"
@@ -151,7 +154,7 @@
                             android:layout_weight="1"
                             android:clickable="false"
                             android:background="@color/blue_A100"
-                            android:minHeight="1dp" />
+                            android:id="@+id/pSpace4" />
 
                         <RadioButton
                             android:layout_width="fill_parent"
@@ -162,10 +165,11 @@
                             android:textColor="@color/primaryText"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
-                            android:textSize="22sp"
-                            android:layout_weight="2"
+                            android:textSize="@dimen/header2"
+                            android:layout_weight="20"
                             android:paddingRight="15dp"
-                            android:paddingLeft="15dp" />
+                            android:paddingLeft="15dp"
+                            android:gravity="center"/>
 
                     </RadioGroup>
                 </FrameLayout>
