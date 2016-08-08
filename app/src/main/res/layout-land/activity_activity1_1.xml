@@ -85,7 +85,8 @@
                     android:paddingLeft="@dimen/side_padding_landscape"
                     android:paddingBottom="@dimen/item_vertical_padding"
                     android:paddingRight="@dimen/side_padding_landscape"
-                    android:background="@color/blue_100">
+                    android:background="@color/blue_100"
+                    android:paddingTop="@dimen/item_vertical_padding">
 
                     <RadioGroup
                         android:layout_width="match_parent"

@@ -174,7 +174,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="6"
-                    android:paddingRight="@dimen/Start_screen_padding">
+                    android:paddingRight="@dimen/side_padding_portrait"
+                    android:paddingLeft="@dimen/side_padding_portrait">
 
                     <ImageView
                         android:layout_width="wrap_content"
