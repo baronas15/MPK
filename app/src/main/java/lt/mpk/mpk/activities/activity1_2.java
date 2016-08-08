@@ -116,26 +116,44 @@ public class activity1_2 extends AppCompatActivity {
         rB4.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
         rB5.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
 
+        View s1 = (View) findViewById(R.id.pSpace1);
+        View s2 = (View) findViewById(R.id.pSpace2);
+        View s3 = (View) findViewById(R.id.pSpace3);
+        View s4 = (View) findViewById(R.id.pSpace4);
+
+        s1.setVisibility(View.VISIBLE);
+        s2.setVisibility(View.VISIBLE);
+        s3.setVisibility(View.VISIBLE);
+        s4.setVisibility(View.VISIBLE);
+
         switch (selected) {
             case R.id.physicalgroup_1:
                 rB1.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.radioButtonBackgroundSelect));
                 rB1.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryTextInverted));
+                s1.setVisibility(View.INVISIBLE);
                 break;
             case R.id.physicalgroup_2:
                 rB2.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.radioButtonBackgroundSelect));
                 rB2.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryTextInverted));
+                s1.setVisibility(View.INVISIBLE);
+                s2.setVisibility(View.INVISIBLE);
                 break;
             case R.id.physicalgroup_3:
                 rB3.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.radioButtonBackgroundSelect));
                 rB3.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryTextInverted));
+                s2.setVisibility(View.INVISIBLE);
+                s3.setVisibility(View.INVISIBLE);
                 break;
             case R.id.physicalgroup_4:
                 rB4.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.radioButtonBackgroundSelect));
                 rB4.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryTextInverted));
+                s3.setVisibility(View.INVISIBLE);
+                s4.setVisibility(View.INVISIBLE);
                 break;
             case R.id.physicalgroup_5:
                 rB5.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.radioButtonBackgroundSelect));
                 rB5.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryTextInverted));
+                s4.setVisibility(View.INVISIBLE);
                 break;
         }
     }
