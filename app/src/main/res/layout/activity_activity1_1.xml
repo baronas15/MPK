@@ -37,7 +37,8 @@
                     android:id="@+id/activity1_1_title"
                     android:layout_gravity="center"
                     android:textColor="@color/primaryTextInverted"
-                    android:textSize="26sp" />
+                    android:textSize="@dimen/header1"
+                    android:singleLine="false" />
             </FrameLayout>
 
             <LinearLayout

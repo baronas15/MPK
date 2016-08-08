@@ -12,9 +12,8 @@
     <dimen name="side_padding_portrait">50dp</dimen>
     <dimen name="side_padding_landscape">50dp</dimen>
     <dimen name="item_vertical_padding">30dp</dimen>
-    <dimen name="little_separator">5dp</dimen>
     <dimen name="arrowSize">60dp</dimen>
-    
+
     <dimen name="main_title_size_1">75sp</dimen>
     <dimen name="Start_screen_padding">40dp</dimen>
 </resources>
