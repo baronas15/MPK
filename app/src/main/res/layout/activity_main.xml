@@ -24,25 +24,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/main_title1"
+                    android:textSize="@dimen/header1"
+                    android:gravity="top|center_horizontal"
+                    android:textColor="@color/primaryTextInverted"
+                    android:id="@+id/activity_main_title"
+                    android:paddingLeft="@dimen/side_padding_portrait"
+                    android:paddingRight="@dimen/side_padding_portrait"
+                    android:paddingTop="@dimen/item_vertical_padding"
+                    android:paddingBottom="@dimen/item_vertical_padding" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/side_padding_portrait"
                     android:paddingRight="@dimen/side_padding_portrait"
-                    android:paddingTop="@dimen/item_vertical_padding"
                     android:background="@color/colorPrimary"
-                    android:layout_weight="3"
+                    android:layout_weight="6"
                     android:orientation="vertical"
-                    android:paddingBottom="@dimen/item_vertical_padding">
-
-                    <TextView
-                        android:layout_height="wrap_content"
-                        android:layout_width="match_parent"
-                        android:text="@string/main_title1"
-                        android:textSize="@dimen/header1"
-                        android:gravity="center"
-                        android:textColor="@color/primaryTextInverted"
-                        android:id="@+id/activity_main_title" />
+                    android:gravity="center">
 
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -111,7 +114,7 @@
                     android:paddingLeft="@dimen/side_padding_portrait"
                     android:paddingRight="@dimen/side_padding_portrait"
                     android:background="@drawable/shadow"
-                    android:layout_weight="3"
+                    android:layout_weight="2"
                     android:clickable="true"
                     android:id="@+id/activity_main_item1"
                     android:onClick="PanelClick1"
@@ -149,7 +152,7 @@
                     android:paddingLeft="@dimen/side_padding_portrait"
                     android:paddingRight="@dimen/side_padding_portrait"
                     android:background="@drawable/shadow"
-                    android:layout_weight="3"
+                    android:layout_weight="2"
                     android:clickable="true"
                     android:id="@+id/activity_main_item2"
                     android:onClick="PanelClick2"
@@ -185,7 +188,7 @@
                     android:paddingLeft="@dimen/side_padding_portrait"
                     android:paddingRight="@dimen/side_padding_portrait"
                     android:background="@drawable/shadow"
-                    android:layout_weight="3"
+                    android:layout_weight="2"
                     android:clickable="true"
                     android:id="@+id/activity_main_item3"
                     android:onClick="PanelClick3"
@@ -215,6 +218,7 @@
                             android:id="@+id/activity_main_image3" />
                     </FrameLayout>
                 </LinearLayout>
+
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
