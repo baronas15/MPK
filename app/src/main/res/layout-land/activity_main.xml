@@ -61,7 +61,7 @@
                             android:layout_width="fill_parent"
                             android:text="@string/main_text1"
                             android:textColor="@color/primaryTextInverted"
-                            android:textSize="@dimen/main_text_size_1_landscape"
+                            android:textSize="@dimen/text_size_1_landscape"
                             android:id="@+id/activity_main_titleText"
                             android:layout_marginBottom="@dimen/little_separator"
                             android:typeface="sans" />
@@ -78,7 +78,8 @@
                             android:layout_gravity="bottom"
                             android:onClick="ButtonClick1"
                             android:layout_marginTop="@dimen/little_separator"
-                            android:typeface="sans" />
+                            android:typeface="sans"
+                            android:minHeight="@dimen/minButtonHeight" />
 
                     </LinearLayout>
 
@@ -108,8 +109,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/side_padding_landscape"
-                    android:paddingRight="@dimen/side_padding_landscape"
+                    android:paddingLeft="@dimen/item_horizontal_padding"
+                    android:paddingRight="@dimen/item_horizontal_padding"
                     android:background="@drawable/shadow"
                     android:layout_weight="3"
                     android:clickable="true"
@@ -149,8 +150,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/side_padding_landscape"
-                    android:paddingRight="@dimen/side_padding_landscape"
+                    android:paddingLeft="@dimen/item_horizontal_padding"
+                    android:paddingRight="@dimen/item_horizontal_padding"
                     android:background="@drawable/shadow"
                     android:layout_weight="3"
                     android:clickable="true"
@@ -187,8 +188,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/side_padding_landscape"
-                    android:paddingRight="@dimen/side_padding_landscape"
+                    android:paddingLeft="@dimen/item_horizontal_padding"
+                    android:paddingRight="@dimen/item_horizontal_padding"
                     android:background="@drawable/shadow"
                     android:layout_weight="3"
                     android:clickable="true"

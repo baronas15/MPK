@@ -15,7 +15,7 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="12">
 
@@ -40,44 +40,55 @@
                     android:typeface="serif" />
             </FrameLayout>
 
-            <FrameLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryLight"
-                android:paddingLeft="@dimen/side_padding_portrait"
-                android:paddingTop="@dimen/item_vertical_padding"
-                android:paddingBottom="@dimen/item_vertical_padding"
-                android:paddingRight="@dimen/side_padding_portrait">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:baselineAligned="false">
 
-                <TextView
+                <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/activity1_text1"
-                    android:id="@+id/activity1_text"
-                    android:layout_gravity="center"
-                    android:textColor="@color/primaryText"
-                    android:textSize="@dimen/text_size_2"
-                    android:typeface="sans" />
-            </FrameLayout>
-
-            <FrameLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/item_vertical_padding"
-                android:paddingBottom="@dimen/item_vertical_padding"
-                android:background="@color/colorPrimaryLight"
-                android:paddingLeft="@dimen/side_padding_portrait"
-                android:paddingRight="@dimen/side_padding_portrait">
-
-                <ImageView
-                    android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:id="@+id/activity1_image"
-                    android:src="@drawable/image1"
-                    android:contentDescription="@string/activity1_img_description" />
+                    android:background="@color/colorPrimaryLight"
+                    android:paddingLeft="@dimen/side_padding_portrait"
+                    android:paddingTop="@dimen/item_vertical_padding"
+                    android:paddingBottom="@dimen/item_vertical_padding"
+                    android:paddingRight="@dimen/side_padding_portrait"
+                    android:layout_weight="1">
 
-            </FrameLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/activity1_text1"
+                        android:id="@+id/activity1_text"
+                        android:layout_gravity="center"
+                        android:textColor="@color/primaryText"
+                        android:textSize="@dimen/text_size_2_landscape"
+                        android:typeface="sans" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="@dimen/item_vertical_padding"
+                    android:paddingBottom="@dimen/item_vertical_padding"
+                    android:background="@color/colorPrimaryLight"
+                    android:paddingLeft="@dimen/side_padding_portrait"
+                    android:paddingRight="@dimen/side_padding_portrait"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity1_image"
+                        android:src="@drawable/image1"
+                        android:contentDescription="@string/activity1_img_description" />
+
+                </FrameLayout>
+            </LinearLayout>
+
         </LinearLayout>
 
         <FrameLayout

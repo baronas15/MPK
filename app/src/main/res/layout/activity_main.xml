@@ -70,7 +70,7 @@
                                 android:layout_width="match_parent"
                                 android:text="@string/main_text1"
                                 android:textColor="@color/primaryTextInverted"
-                                android:textSize="@dimen/main_text_size_1"
+                                android:textSize="@dimen/text_size_1"
                                 android:layout_weight="10"
                                 android:id="@+id/activity_main_titleText"
                                 android:typeface="sans" />
