@@ -29,7 +29,7 @@ public class main extends AppCompatActivity {
         setSupportActionBar(myToolbar);
 
         //region ChangeFonts
-        TextView tv = (TextView) findViewById(R.id.activity_main_title);
+        /*TextView tv = (TextView) findViewById(R.id.activity_main_title);
         TextView tv1 = (TextView) findViewById(R.id.activity_main_titleText);
         TextView tv2 = (TextView) findViewById(R.id.activity_main_button1);
         TextView tv3 = (TextView) findViewById(R.id.activity_main_text1);
@@ -43,7 +43,7 @@ public class main extends AppCompatActivity {
         tv2.setTypeface(tf);
         tv3.setTypeface(tf);
         tv4.setTypeface(tf);
-        tv5.setTypeface(tf);
+        tv5.setTypeface(tf);*/
         //endregion
 
         //region Stickers

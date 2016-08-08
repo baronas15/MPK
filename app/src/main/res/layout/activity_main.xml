@@ -35,7 +35,8 @@
                     android:paddingLeft="@dimen/side_padding_portrait"
                     android:paddingRight="@dimen/side_padding_portrait"
                     android:paddingTop="@dimen/item_vertical_padding"
-                    android:paddingBottom="@dimen/item_vertical_padding" />
+                    android:paddingBottom="@dimen/item_vertical_padding"
+                    android:typeface="serif" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -71,7 +72,8 @@
                                 android:textColor="@color/primaryTextInverted"
                                 android:textSize="@dimen/main_text_size_1"
                                 android:layout_weight="10"
-                                android:id="@+id/activity_main_titleText" />
+                                android:id="@+id/activity_main_titleText"
+                                android:typeface="sans" />
                             <FrameLayout
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
@@ -86,7 +88,8 @@
                                     android:enabled="true"
                                     android:textColor="@drawable/roundedbuttontext"
                                     android:layout_gravity="bottom"
-                                    android:onClick="ButtonClick1" />
+                                    android:onClick="ButtonClick1"
+                                    android:typeface="sans" />
                             </FrameLayout>
                         </LinearLayout>
 
@@ -134,7 +137,8 @@
                             android:textColor="@color/primaryText"
                             android:textSize="@dimen/header2"
                             android:id="@+id/activity_main_text1"
-                            android:onClick="PanelClick1" />
+                            android:onClick="PanelClick1"
+                            android:typeface="serif" />
                         <ImageView
                             android:src="@drawable/arrow"
                             android:layout_width="@dimen/arrowSize"
@@ -171,7 +175,8 @@
                             android:clickable="true"
                             android:textColor="@color/primaryText"
                             android:textSize="@dimen/header2"
-                            android:id="@+id/activity_main_text2" />
+                            android:id="@+id/activity_main_text2"
+                            android:typeface="serif" />
                         <ImageView
                             android:src="@drawable/arrow"
                             android:layout_width="@dimen/arrowSize"
@@ -208,7 +213,8 @@
                             android:textColor="@color/primaryText"
                             android:textIsSelectable="false"
                             android:textSize="@dimen/header2"
-                            android:id="@+id/activity_main_text3" />
+                            android:id="@+id/activity_main_text3"
+                            android:typeface="serif" />
                         <ImageView
                             android:src="@drawable/arrow"
                             android:layout_width="@dimen/arrowSize"
