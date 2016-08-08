@@ -19,4 +19,5 @@
     <dimen name="main_title_size_1">50sp</dimen>
     <dimen name="Start_screen_padding">40dp</dimen>
     <dimen name="radio_vertical_padding">5dp</dimen>
+    <dimen name="header3">16sp</dimen>
 </resources>
