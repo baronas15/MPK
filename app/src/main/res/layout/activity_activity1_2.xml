@@ -15,52 +15,83 @@
         <include layout="@layout/toolbar" />
 
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="12">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/side_padding_portrait"
-                android:paddingRight="@dimen/side_padding_portrait"
-                android:background="@color/colorPrimary"
-                android:paddingTop="@dimen/item_vertical_padding_big"
-                android:paddingBottom="@dimen/item_vertical_padding">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/activity1_2_title"
-                    android:id="@+id/activity1_2_title"
-                    android:layout_gravity="center"
-                    android:textColor="@color/primaryTextInverted"
-                    android:textSize="@dimen/header1"
-                    android:typeface="serif" />
-            </FrameLayout>
+            android:layout_weight="12"
+            android:weightSum="12"
+            android:baselineAligned="false">
 
             <LinearLayout
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:weightSum="12"
-                android:baselineAligned="false">
+                android:layout_height="match_parent"
+                android:layout_weight="4">
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/side_padding_portrait"
-                    android:paddingBottom="@dimen/item_vertical_padding"
-                    android:paddingTop="@dimen/item_vertical_padding">
+                    android:paddingRight="@dimen/side_padding_portrait"
+                    android:background="@color/colorPrimary"
+                    android:paddingTop="@dimen/item_vertical_padding_big"
+                    android:paddingBottom="@dimen/item_vertical_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/activity1_2_title"
+                        android:id="@+id/activity1_2_title"
+                        android:textColor="@color/primaryTextInverted"
+                        android:textSize="@dimen/header1"
+                        android:typeface="serif"
+                        android:gravity="center"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:paddingRight="@dimen/side_padding_landscape"
+                    android:paddingLeft="@dimen/side_padding_landscape"
+                    android:paddingTop="@dimen/item_vertical_padding"
+                    android:paddingBottom="@dimen/item_vertical_padding">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/physicalimage"
+                        android:src="@drawable/emo3"
+                        android:contentDescription="@string/activity1_2_img_description"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:weightSum="12"
+                android:baselineAligned="false"
+                android:layout_weight="8">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@color/blue_100"
+                    android:paddingLeft="@dimen/side_padding_landscape"
+                    android:paddingRight="@dimen/side_padding_landscape"
+                    android:paddingTop="@dimen/item_vertical_padding"
+                    android:paddingBottom="@dimen/item_vertical_padding">
 
                     <RadioGroup
                         android:layout_width="match_parent"
                         android:layout_height="fill_parent"
                         android:layout_gravity="left|top"
-                        android:weightSum="104"
+                        android:weightSum="10"
                         android:id="@+id/physicalgroup">
 
                         <RadioButton
@@ -73,7 +104,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:textSize="@dimen/header2"
-                            android:layout_weight="20"
+                            android:layout_weight="2"
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
                             android:gravity="center"/>
@@ -81,7 +112,6 @@
                         <View
                             android:layout_width="fill_parent"
                             android:layout_height="1dp"
-                            android:layout_weight="1"
                             android:clickable="false"
                             android:background="@color/blue_A100"
                             android:id="@+id/pSpace1" />
@@ -96,7 +126,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:textSize="@dimen/header2"
-                            android:layout_weight="20"
+                            android:layout_weight="2"
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
                             android:gravity="center"/>
@@ -104,7 +134,6 @@
                         <View
                             android:layout_width="fill_parent"
                             android:layout_height="1dp"
-                            android:layout_weight="1"
                             android:clickable="false"
                             android:background="@color/blue_A100"
                             android:id="@+id/pSpace2" />
@@ -119,7 +148,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:textSize="@dimen/header2"
-                            android:layout_weight="20"
+                            android:layout_weight="2"
                             android:checked="true"
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
@@ -128,7 +157,6 @@
                         <View
                             android:layout_width="fill_parent"
                             android:layout_height="1dp"
-                            android:layout_weight="1"
                             android:clickable="false"
                             android:background="@color/blue_A100"
                             android:id="@+id/pSpace3" />
@@ -143,7 +171,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:textSize="@dimen/header2"
-                            android:layout_weight="20"
+                            android:layout_weight="2"
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
                             android:gravity="center"/>
@@ -151,7 +179,6 @@
                         <View
                             android:layout_width="fill_parent"
                             android:layout_height="1dp"
-                            android:layout_weight="1"
                             android:clickable="false"
                             android:background="@color/blue_A100"
                             android:id="@+id/pSpace4" />
@@ -166,7 +193,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:textSize="@dimen/header2"
-                            android:layout_weight="20"
+                            android:layout_weight="2"
                             android:paddingRight="15dp"
                             android:paddingLeft="15dp"
                             android:gravity="center"/>
@@ -174,21 +201,6 @@
                     </RadioGroup>
                 </FrameLayout>
 
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="6"
-                    android:paddingRight="@dimen/Start_screen_padding">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/physicalimage"
-                        android:src="@drawable/emo3"
-                        android:contentDescription="@string/activity1_2_img_description"
-                        android:adjustViewBounds="true"
-                        android:layout_gravity="center" />
-                </FrameLayout>
             </LinearLayout>
         </LinearLayout>
 
@@ -216,8 +228,8 @@
                     android:onClick="activity12button1_Click"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="@dimen/little_separator"
+                    android:layout_marginTop="@dimen/little_separator"
                     android:layout_weight="8"/>
 
             </LinearLayout>

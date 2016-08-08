@@ -17,7 +17,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="11"
             android:weightSum="12"
             android:baselineAligned="false">
@@ -43,7 +43,6 @@
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="@string/activity1_1_title"
                         android:id="@+id/activity1_1_title"
-                        android:layout_gravity="center"
                         android:textColor="@color/primaryTextInverted"
                         android:textSize="@dimen/header1"
                         android:singleLine="false"
@@ -56,9 +55,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="6"
                     android:paddingRight="@dimen/side_padding_landscape"
+                    android:paddingBottom="@dimen/item_vertical_padding"
                     android:paddingLeft="@dimen/side_padding_landscape"
-                    android:paddingTop="@dimen/item_vertical_padding"
-                    android:paddingBottom="@dimen/item_vertical_padding">
+                    android:paddingTop="@dimen/item_vertical_padding">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -85,7 +84,6 @@
                     android:layout_height="fill_parent"
                     android:paddingLeft="@dimen/side_padding_landscape"
                     android:paddingBottom="@dimen/item_vertical_padding"
-                    android:paddingTop="@dimen/item_vertical_padding"
                     android:paddingRight="@dimen/side_padding_landscape"
                     android:background="@color/blue_100">
 
@@ -239,7 +237,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="@dimen/little_separator"
-                    android:layout_marginTop="@dimen/little_separator"
+                    android:layout_marginTop="5dp"
                     android:textSize="@dimen/text_size_2_landscape"
                     android:paddingTop="@dimen/little_separator"
                     android:paddingBottom="@dimen/little_separator" />
