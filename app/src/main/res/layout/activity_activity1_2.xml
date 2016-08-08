@@ -60,7 +60,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="fill_parent"
                         android:layout_gravity="left|top"
-                        android:weightSum="104"
+                        android:weightSum="10"
                         android:id="@+id/physicalgroup">
 
                         <RadioButton
@@ -73,7 +73,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:textSize="@dimen/header2"
-                            android:layout_weight="20"
+                            android:layout_weight="2"
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
                             android:gravity="center"/>
@@ -81,7 +81,6 @@
                         <View
                             android:layout_width="fill_parent"
                             android:layout_height="1dp"
-                            android:layout_weight="1"
                             android:clickable="false"
                             android:background="@color/blue_A100"
                             android:id="@+id/pSpace1" />
@@ -96,7 +95,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:textSize="@dimen/header2"
-                            android:layout_weight="20"
+                            android:layout_weight="2"
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
                             android:gravity="center"/>
@@ -104,7 +103,6 @@
                         <View
                             android:layout_width="fill_parent"
                             android:layout_height="1dp"
-                            android:layout_weight="1"
                             android:clickable="false"
                             android:background="@color/blue_A100"
                             android:id="@+id/pSpace2" />
@@ -119,7 +117,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:textSize="@dimen/header2"
-                            android:layout_weight="20"
+                            android:layout_weight="2"
                             android:checked="true"
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
@@ -128,7 +126,6 @@
                         <View
                             android:layout_width="fill_parent"
                             android:layout_height="1dp"
-                            android:layout_weight="1"
                             android:clickable="false"
                             android:background="@color/blue_A100"
                             android:id="@+id/pSpace3" />
@@ -143,7 +140,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:textSize="@dimen/header2"
-                            android:layout_weight="20"
+                            android:layout_weight="2"
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
                             android:gravity="center"/>
@@ -151,7 +148,6 @@
                         <View
                             android:layout_width="fill_parent"
                             android:layout_height="1dp"
-                            android:layout_weight="1"
                             android:clickable="false"
                             android:background="@color/blue_A100"
                             android:id="@+id/pSpace4" />
@@ -166,7 +162,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:textSize="@dimen/header2"
-                            android:layout_weight="20"
+                            android:layout_weight="2"
                             android:paddingRight="15dp"
                             android:paddingLeft="15dp"
                             android:gravity="center"/>
