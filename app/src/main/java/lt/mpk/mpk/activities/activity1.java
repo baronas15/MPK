@@ -17,14 +17,6 @@ public class activity1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity1);
 
-        //region ChangeFont
-        Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/goodfish.ttf");
-        TextView tv = (TextView) findViewById(R.id.activity1_title);
-        if (tv != null) {
-            tv.setTypeface(tf);
-        }
-        //endregion
-
         app a = ((app)getApplicationContext());
         a.setEmotional1(-1);
         a.setEmotional2(-1);
