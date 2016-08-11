@@ -92,29 +92,57 @@ public class activity1_5 extends AppCompatActivity {
                 editor.putInt("meditationCount", settings.getInt("meditationCount",0) + 1);
                 editor.putInt("meditationsInOneGo", settings.getInt("meditationsInOneGo",0) + 1);
 
+                editor.apply();
+
+
+                Log.d("s",settings.getInt("meditationCount",0)+"");
                 if(settings.getInt("meditationCount",0) == 1){
                     editor.putBoolean("sticker1",true);
                     editor.putInt("lastSticker",1);
+
+                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
+                    i.putExtra("sticker", "1");
+                    startActivity(i);
                 }
                 if(settings.getInt("meditationCount",0) == 2){
                     editor.putBoolean("sticker2",true);
                     editor.putInt("lastSticker",2);
+
+                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
+                    i.putExtra("sticker", "2");
+                    startActivity(i);
                 }
                 if(settings.getInt("meditationCount",0) == 10){
                     editor.putBoolean("sticker3",true);
                     editor.putInt("lastSticker",3);
+
+                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
+                    i.putExtra("sticker", "3");
+                    startActivity(i);
                 }
                 if(settings.getInt("meditationCount",0) == 25){
                     editor.putBoolean("sticker4",true);
                     editor.putInt("lastSticker",4);
+
+                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
+                    i.putExtra("sticker", "4");
+                    startActivity(i);
                 }
                 if(settings.getInt("meditationsInOneGo",0) == 2){
                     editor.putBoolean("sticker5",true);
                     editor.putInt("lastSticker",5);
+
+                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
+                    i.putExtra("sticker", "5");
+                    startActivity(i);
                 }
                 if(settings.getInt("meditationsInOneGo",0) == 3){
                     editor.putBoolean("sticker6",true);
                     editor.putInt("lastSticker",6);
+
+                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
+                    i.putExtra("sticker", "6");
+                    startActivity(i);
                 }
 
                 editor.apply();

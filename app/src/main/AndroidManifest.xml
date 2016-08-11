@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="lt.mpk.mpk">
+
     <application
         android:name=".app"
         android:allowBackup="true"
@@ -29,6 +29,7 @@
         <activity android:name=".activities.activity1_3" />
         <activity android:name=".activities.activity1_4" />
         <activity android:name=".activities.activity1_5" />
+        <activity android:name=".activities.activity_sticker"></activity>
     </application>
 
 </manifest>
