@@ -12,7 +12,7 @@
     <string name="stickerName5">2 meditacijos iš eilės</string>
     <string name="stickerName6">3 meditacijos iš eilės</string>
     <!-- Main -->
-    <string name="main_button1">Pradėk</string>
+    <string name="main_button1">Tikrinti</string>
     <string name="main_title1">KAIP ŠIANDIEN JAUTIESI?</string>
     <string name="main_text1">Pasitikrink savo savijautą, išklausyk meditaciją ir pasigerink sau dieną!</string>
     <string name="main_button2">IŠMOK MEDITUOTI</string>
@@ -23,7 +23,7 @@
     <!-- Activity1 -->
     <string name="activity1_title1">SUSTOK, KVĖPUOK IR GALVOK</string>
     <string name="activity1_text1">Užmerkite akis, giliai įkvėpkite ir galvokite kokios Jūsų mintys ir kaip jaučiasi Jūsų kūnas</string>
-    <string name="activity1_button1">Tikrinti</string>
+    <string name="activity1_button1">Pradėk</string>
     <string name="activity1_img_description">image1</string>
     <!-- Activity1_1 -->
     <string name="activity1_1_title">Mano protinė būsena :</string>
@@ -37,10 +37,10 @@
     <!-- Activity1_2 -->
     <string name="activity1_2_title">Mano fizinė būsena :</string>
     <string name="activity1_2_emo1">PUIKI</string>
-    <string name="activity1_2_emo2">GERA</string>
-    <string name="activity1_2_emo3">NORMALI</string>
+    <string name="activity1_2_emo2">NORMALI</string>
+    <string name="activity1_2_emo3">ĮTEMPTA</string>
     <string name="activity1_2_emo4">PRASTA</string>
-    <string name="activity1_2_emo5">BLOGA</string>
+    <string name="activity1_2_emo5">IŠSEKUSI</string>
     <string name="activity1_2_img_description">A picture that describes your physical state</string>
     <string name="activity1_2_button1">Toliau</string>
     <!-- Activity1_3 -->

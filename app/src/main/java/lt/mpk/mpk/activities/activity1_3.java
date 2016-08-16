@@ -60,15 +60,9 @@ public class activity1_3 extends AppCompatActivity {
             b.setEnabled(true);
     }
     /*
-    Log.d("m",a.getMental()+"");
     Log.d("p",a.getPhysical()+"");
     Log.d("e1",a.getEmotional1()+"");
     Log.d("e2",a.getEmotional2()+"");
     Log.d("e3",a.getEmotional3()+"");
     */
-
-    /*
-
-    */
-
 }

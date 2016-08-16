@@ -2,7 +2,6 @@ package lt.mpk.mpk.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -10,10 +9,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
-import android.widget.TextView;
 
 import lt.mpk.mpk.R;
-import lt.mpk.mpk.app;
 
 public class main extends AppCompatActivity {
     private int enterAnim = R.anim.slide_in_right;
@@ -27,24 +24,6 @@ public class main extends AppCompatActivity {
         /* Create toolbar */
         Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(myToolbar);
-
-        //region ChangeFonts
-        /*TextView tv = (TextView) findViewById(R.id.activity_main_title);
-        TextView tv1 = (TextView) findViewById(R.id.activity_main_titleText);
-        TextView tv2 = (TextView) findViewById(R.id.activity_main_button1);
-        TextView tv3 = (TextView) findViewById(R.id.activity_main_text1);
-        TextView tv4 = (TextView) findViewById(R.id.activity_main_text2);
-        TextView tv5 = (TextView) findViewById(R.id.activity_main_text3);
-
-        Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/goodfish.ttf");
-        tv.setTypeface(tf);
-        tf = Typeface.createFromAsset(getAssets(), "fonts/express.ttf");
-        tv1.setTypeface(tf);
-        tv2.setTypeface(tf);
-        tv3.setTypeface(tf);
-        tv4.setTypeface(tf);
-        tv5.setTypeface(tf);*/
-        //endregion
 
         //region Stickers
         SharedPreferences settings = getSharedPreferences("Stickers", 0);

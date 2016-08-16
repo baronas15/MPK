@@ -1,9 +1,6 @@
 package lt.mpk.mpk;
 
 import android.app.Application;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 
 /* Example usage:
 *
@@ -12,9 +9,6 @@ import android.view.MenuItem;
 * a.setMental(1);
 * */
 public class app extends Application {
-    public int getMental() {
-        return mental;
-    }
     public int getPhysical() {
         return physical;
     }
@@ -29,9 +23,6 @@ public class app extends Application {
     }
     public int getCurrentTab() { return currentTab; }
 
-    public void setMental(int mental) {
-        this.mental = mental;
-    }
     public void setPhysical(int physical) {
         this.physical = physical;
     }
@@ -46,7 +37,6 @@ public class app extends Application {
     }
     public void setCurrentTab(int currentTab) { this.currentTab = currentTab; }
 
-    private int mental;
     private int physical;
     private int emotional1;
     private int emotional2;

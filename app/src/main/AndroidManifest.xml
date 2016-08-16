@@ -24,7 +24,6 @@
         <activity android:name=".activities.activity2" />
         <activity android:name=".activities.activity3" />
         <activity android:name=".activities.activity4" />
-        <activity android:name=".activities.activity1_1" />
         <activity android:name=".activities.activity1_2" />
         <activity android:name=".activities.activity1_3" />
         <activity android:name=".activities.activity1_4" />
