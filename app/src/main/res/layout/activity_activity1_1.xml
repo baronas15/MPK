@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryLight"
-    tools:context=".activities.activity1_2">
+    tools:context=".activities.activity1_1">
 
     <LinearLayout
         android:orientation="vertical"
@@ -15,77 +15,46 @@
         <include layout="@layout/toolbar" />
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="12"
-            android:weightSum="12"
-            android:baselineAligned="false">
+            android:layout_weight="12">
 
-            <LinearLayout
-                android:orientation="vertical"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="4">
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/side_padding_portrait"
+                android:paddingRight="@dimen/side_padding_portrait"
+                android:background="@color/colorPrimary"
+                android:paddingTop="@dimen/item_vertical_padding_big"
+                android:paddingBottom="@dimen/item_vertical_padding">
 
-                <FrameLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/side_padding_portrait"
-                    android:paddingRight="@dimen/side_padding_portrait"
-                    android:background="@color/colorPrimary"
-                    android:paddingTop="@dimen/item_vertical_padding_big"
-                    android:paddingBottom="@dimen/item_vertical_padding">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/activity1_2_title"
-                        android:id="@+id/activity1_2_title"
-                        android:textColor="@color/primaryTextInverted"
-                        android:textSize="@dimen/header1"
-                        android:typeface="serif"
-                        android:gravity="center"
-                        android:layout_gravity="center" />
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="6"
-                    android:paddingRight="@dimen/side_padding_landscape"
-                    android:paddingLeft="@dimen/side_padding_landscape"
-                    android:paddingTop="@dimen/item_vertical_padding"
-                    android:paddingBottom="@dimen/item_vertical_padding">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/physicalimage"
-                        android:src="@drawable/emo3"
-                        android:contentDescription="@string/activity1_2_img_description"
-                        android:adjustViewBounds="true"
-                        android:layout_gravity="center" />
-                </FrameLayout>
-            </LinearLayout>
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/activity1_2_title"
+                    android:id="@+id/activity1_2_title"
+                    android:layout_gravity="center"
+                    android:textColor="@color/primaryTextInverted"
+                    android:textSize="@dimen/header1"
+                    android:typeface="serif" />
+            </FrameLayout>
 
             <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
                 android:layout_height="fill_parent"
                 android:weightSum="12"
-                android:baselineAligned="false"
-                android:layout_weight="8">
+                android:baselineAligned="false">
 
                 <FrameLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="fill_parent"
-                    android:background="@color/blue_100"
-                    android:paddingLeft="@dimen/side_padding_landscape"
-                    android:paddingRight="@dimen/side_padding_landscape"
-                    android:paddingTop="@dimen/item_vertical_padding"
-                    android:paddingBottom="@dimen/item_vertical_padding">
+                    android:layout_weight="6"
+                    android:paddingLeft="@dimen/side_padding_portrait"
+                    android:paddingBottom="@dimen/item_vertical_padding"
+                    android:paddingTop="@dimen/item_vertical_padding">
 
                     <RadioGroup
                         android:layout_width="match_parent"
@@ -101,8 +70,8 @@
                             android:id="@+id/physicalgroup_1"
                             android:button="@null"
                             android:textColor="@color/primaryText"
-                            android:paddingTop="@dimen/radio_vertical_padding"
-                            android:paddingBottom="@dimen/radio_vertical_padding"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
                             android:textSize="@dimen/header2"
                             android:layout_weight="2"
                             android:paddingLeft="15dp"
@@ -123,8 +92,8 @@
                             android:id="@+id/physicalgroup_2"
                             android:button="@null"
                             android:textColor="@color/primaryText"
-                            android:paddingTop="@dimen/radio_vertical_padding"
-                            android:paddingBottom="@dimen/radio_vertical_padding"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
                             android:textSize="@dimen/header2"
                             android:layout_weight="2"
                             android:paddingLeft="15dp"
@@ -145,8 +114,8 @@
                             android:id="@+id/physicalgroup_3"
                             android:button="@null"
                             android:textColor="@color/primaryText"
-                            android:paddingTop="@dimen/radio_vertical_padding"
-                            android:paddingBottom="@dimen/radio_vertical_padding"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
                             android:textSize="@dimen/header2"
                             android:layout_weight="2"
                             android:checked="true"
@@ -168,8 +137,8 @@
                             android:id="@+id/physicalgroup_4"
                             android:button="@null"
                             android:textColor="@color/primaryText"
-                            android:paddingTop="@dimen/radio_vertical_padding"
-                            android:paddingBottom="@dimen/radio_vertical_padding"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
                             android:textSize="@dimen/header2"
                             android:layout_weight="2"
                             android:paddingLeft="15dp"
@@ -190,8 +159,8 @@
                             android:id="@+id/physicalgroup_5"
                             android:button="@null"
                             android:textColor="@color/primaryText"
-                            android:paddingTop="@dimen/radio_vertical_padding"
-                            android:paddingBottom="@dimen/radio_vertical_padding"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
                             android:textSize="@dimen/header2"
                             android:layout_weight="2"
                             android:paddingRight="15dp"
@@ -201,6 +170,22 @@
                     </RadioGroup>
                 </FrameLayout>
 
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:paddingRight="@dimen/side_padding_portrait"
+                    android:paddingLeft="@dimen/side_padding_portrait">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/physicalimage"
+                        android:src="@drawable/emo3"
+                        android:contentDescription="@string/activity1_2_img_description"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center" />
+                </FrameLayout>
             </LinearLayout>
         </LinearLayout>
 
@@ -228,8 +213,8 @@
                     android:onClick="activity12button1_Click"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:layout_marginBottom="@dimen/little_separator"
-                    android:layout_marginTop="@dimen/little_separator"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
                     android:layout_weight="8"/>
 
             </LinearLayout>

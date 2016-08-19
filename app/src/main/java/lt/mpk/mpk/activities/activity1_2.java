@@ -1,91 +1,45 @@
 package lt.mpk.mpk.activities;
 
 import android.content.Intent;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
+import android.widget.Button;
 
 import lt.mpk.mpk.R;
 import lt.mpk.mpk.app;
 
 public class activity1_2 extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity1_2);
 
-        RadioGroup radGrp = (RadioGroup) findViewById(R.id.physicalgroup);
-        final ImageView img = (ImageView) findViewById(R.id.physicalimage);
-
-        //region SetDefaultRadioButton
-        /* Set starting value */
-        RadioButton rB3 = (RadioButton) findViewById(R.id.physicalgroup_3);
-        rB3.setSelected(true);
-        int checkedRadioButtonID = radGrp.getCheckedRadioButtonId();
-        changeBackgrounds(checkedRadioButtonID);
-        //endregion
-
-        //region MindGroup_ChangeListener
-        radGrp.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            public void onCheckedChanged(RadioGroup arg0, int id) {
-            switch (id) {
-                case R.id.physicalgroup_1:
-                    img.setImageResource(R.drawable.emo1);
-                    changeBackgrounds(id);
-                    break;
-                case R.id.physicalgroup_2:
-                    img.setImageResource(R.drawable.emo2);
-                    changeBackgrounds(id);
-                    break;
-                case R.id.physicalgroup_3:
-                    img.setImageResource(R.drawable.emo3);
-                    changeBackgrounds(id);
-                    break;
-                case R.id.physicalgroup_4:
-                    img.setImageResource(R.drawable.emo4);
-                    changeBackgrounds(id);
-                    break;
-                case R.id.physicalgroup_5:
-                    img.setImageResource(R.drawable.emo5);
-                    changeBackgrounds(id);
-                    break;
-            }
-            }
-        });
-        //endregion
+        disableButton();
     }
 
-    public void activity12button1_Click(View v){
-        RadioGroup radGrp = (RadioGroup) findViewById(R.id.physicalgroup);
-        int checkedRadioButtonID = radGrp.getCheckedRadioButtonId();
+    protected void onResume()
+    {
+        super.onResume();
+        disableButton();
+    }
 
-        app a = ((app)getApplicationContext());
-        switch (checkedRadioButtonID) {
-            case R.id.physicalgroup_1:
-                a.setPhysical(1);
-                break;
-            case R.id.physicalgroup_2:
-                a.setPhysical(2);
-                break;
-            case R.id.physicalgroup_3:
-                a.setPhysical(3);
-                break;
-            case R.id.physicalgroup_4:
-                a.setPhysical(4);
-                break;
-            case R.id.physicalgroup_5:
-                a.setPhysical(5);
-                break;
-        }
-
+    public void activity13button1_Click(View v){
         startActivity(new Intent(activity1_2.this, activity1_3.class));
-        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
+        overridePendingTransition(R.anim.slide_in_down,R.anim.slide_out_down);
+    }
+
+    public void activity13button2_Click(View v){
+        app a = ((app)getApplicationContext());
+
+        if(a.getEmotional1() == -1 && a.getEmotional2() == -1 && a.getEmotional3() == -1){
+
+        }else{
+            startActivity(new Intent(activity1_2.this, activity1_4.class));
+            overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
+        }
     }
 
     @Override
@@ -94,93 +48,21 @@ public class activity1_2 extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
     }
 
-    //region ChangeColors
-    private void changeBackgrounds(int selected)
+    private void disableButton()
     {
-        RadioButton rB1 = (RadioButton) findViewById(R.id.physicalgroup_1);
-        RadioButton rB2 = (RadioButton) findViewById(R.id.physicalgroup_2);
-        RadioButton rB3 = (RadioButton) findViewById(R.id.physicalgroup_3);
-        RadioButton rB4 = (RadioButton) findViewById(R.id.physicalgroup_4);
-        RadioButton rB5 = (RadioButton) findViewById(R.id.physicalgroup_5);
+        app a = ((app)getApplicationContext());
+        Button b = (Button) findViewById(R.id.activity1_3_button2);
 
-
-        rB1.setBackgroundResource(R.color.radioButtonBackgroundDefault);
-        rB2.setBackgroundResource(R.color.radioButtonBackgroundDefault);
-        rB3.setBackgroundResource(R.color.radioButtonBackgroundDefault);
-        rB4.setBackgroundResource(R.color.radioButtonBackgroundDefault);
-        rB5.setBackgroundResource(R.color.radioButtonBackgroundDefault);
-
-        rB1.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
-        rB2.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
-        rB3.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
-        rB4.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
-        rB5.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
-
-        View s1 = (View) findViewById(R.id.pSpace1);
-        View s2 = (View) findViewById(R.id.pSpace2);
-        View s3 = (View) findViewById(R.id.pSpace3);
-        View s4 = (View) findViewById(R.id.pSpace4);
-
-        s1.setVisibility(View.VISIBLE);
-        s2.setVisibility(View.VISIBLE);
-        s3.setVisibility(View.VISIBLE);
-        s4.setVisibility(View.VISIBLE);
-
-        switch (selected) {
-            case R.id.physicalgroup_1:
-                rB1.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.radioButtonBackgroundSelect));
-                rB1.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryTextInverted));
-                s1.setVisibility(View.INVISIBLE);
-                break;
-            case R.id.physicalgroup_2:
-                rB2.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.radioButtonBackgroundSelect));
-                rB2.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryTextInverted));
-                s1.setVisibility(View.INVISIBLE);
-                s2.setVisibility(View.INVISIBLE);
-                break;
-            case R.id.physicalgroup_3:
-                rB3.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.radioButtonBackgroundSelect));
-                rB3.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryTextInverted));
-                s2.setVisibility(View.INVISIBLE);
-                s3.setVisibility(View.INVISIBLE);
-                break;
-            case R.id.physicalgroup_4:
-                rB4.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.radioButtonBackgroundSelect));
-                rB4.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryTextInverted));
-                s3.setVisibility(View.INVISIBLE);
-                s4.setVisibility(View.INVISIBLE);
-                break;
-            case R.id.physicalgroup_5:
-                rB5.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.radioButtonBackgroundSelect));
-                rB5.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryTextInverted));
-                s4.setVisibility(View.INVISIBLE);
-                break;
-        }
+        Log.d("d",a.getEmotional1()+"|"+a.getEmotional2()+"|"+a.getEmotional3());
+        if(a.getEmotional1() == -1 && a.getEmotional2() == -1 && a.getEmotional3() == -1)
+            b.setEnabled(false);
+        else
+            b.setEnabled(true);
     }
-    //endregion
+    /*
+    Log.d("p",a.getPhysical()+"");
+    Log.d("e1",a.getEmotional1()+"");
+    Log.d("e2",a.getEmotional2()+"");
+    Log.d("e3",a.getEmotional3()+"");
+    */
 }
-
-
-/*
-
-        SharedPreferences settings = getSharedPreferences("Preferences", 0);
-
-        switch (settings.getInt("mental",3)) {
-            case R.id.mindgroup_1:
-                //Mind was selected 1
-                break;
-            case R.id.mindgroup_2:
-                //Mind was selected 2
-                break;
-            case R.id.mindgroup_3:
-                //Mind was selected 3
-                break;
-            case R.id.mindgroup_4:
-                //Mind was selected 4
-                break;
-            case R.id.mindgroup_5:
-                //Mind was selected 5
-                break;
-        }
-
-*/

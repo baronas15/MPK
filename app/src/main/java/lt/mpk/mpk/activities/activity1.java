@@ -1,11 +1,9 @@
 package lt.mpk.mpk.activities;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 import lt.mpk.mpk.R;
 import lt.mpk.mpk.app;
@@ -25,7 +23,7 @@ public class activity1 extends AppCompatActivity {
     }
 
     public void activity1button1_Click(View v){
-        startActivity(new Intent(activity1.this, activity1_2.class));
+        startActivity(new Intent(activity1.this, activity1_1.class));
         overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
     }
 

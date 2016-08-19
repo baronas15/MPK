@@ -1,118 +1,161 @@
 package lt.mpk.mpk.activities;
 
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.view.View;
+import android.os.Environment;
+import android.os.PowerManager;
+import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.io.BufferedInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLConnection;
 
 import lt.mpk.mpk.R;
-import lt.mpk.mpk.tabs.TabFragment1;
-import lt.mpk.mpk.tabs.TabFragment2;
-import lt.mpk.mpk.tabs.TabFragment3;
-import lt.mpk.mpk.tabs.TabFragment4;
-import lt.mpk.mpk.tabs.TabFragment5;
-import lt.mpk.mpk.app;
 
-public class activity1_4 extends AppCompatActivity {
-    private int[] tabIcons = {
-            R.drawable.ic_mood_white_36dp,
-            R.drawable.ic_sentiment_satisfied_white_36dp,
-            R.drawable.ic_sentiment_neutral_white_36dp,
-            R.drawable.ic_sentiment_dissatisfied_white_36dp,
-            R.drawable.ic_mood_bad_white_36dp
-    };
+public class activity1_4 extends Activity {
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity1_4);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-        setupViewPager(viewPager);
+        //startActivity(new Intent(activity1_4.this, activity1_5.class));
+        //overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+    }
+}
+/*
+ProgressDialog mProgressDialog;
+String fileName = "";
+        // instantiate it within the onCreate method
+        mProgressDialog = new ProgressDialog(activity1_4.this);
+        mProgressDialog.setMessage("Download");
+        mProgressDialog.setIndeterminate(true);
+        mProgressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        mProgressDialog.setCancelable(true);
 
-        tabLayout.setupWithViewPager(viewPager);
-        tabLayout.setTabMode(TabLayout.MODE_FIXED);
-        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
-        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
-        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
-        tabLayout.getTabAt(3).setIcon(tabIcons[3]);
-        tabLayout.getTabAt(4).setIcon(tabIcons[4]);
+        // execute this when the downloader must be fired
+        final DownloadTask downloadTask = new DownloadTask(activity1_4.this);
 
-        app a = ((app)getApplicationContext());
+        fileName = "pirmas";
+        downloadTask.execute("http://moderntalking.lt/MPK/pirmas.mp3");
 
-        if(a.getCurrentTab() != -1)
-            viewPager.setCurrentItem(a.getCurrentTab());
-        else
-            viewPager.setCurrentItem(2);
+        mProgressDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+            @Override
+            public void onCancel(DialogInterface dialog) {
+                downloadTask.cancel(true);
+            }
+        });
+
+        //df.doInBackground("http://moderntalking.lt/MPK/pirmas.mp3", "pirmas");
+
     }
 
-    public void activity14button1_Click(View v){
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-        int i = 0;
-        if (tabLayout != null) {
-            i = tabLayout.getSelectedTabPosition();
-        }
+    private class DownloadTask extends AsyncTask<String, Integer, String> {
 
-        app a = ((app)getApplicationContext());
+        private Context context;
+        private PowerManager.WakeLock mWakeLock;
 
-        if(a.getEmotional1() != 3*i + 1)
-            a.setEmotional1(-1);
-        if(a.getEmotional2() != 3*i + 2)
-            a.setEmotional2(-1);
-        if(a.getEmotional3() != 3*i + 3)
-            a.setEmotional3(-1);
-
-        a.setCurrentTab(tabLayout.getSelectedTabPosition());
-        finish();
-        overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
-    }
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-        app a = ((app)getApplicationContext());
-        a.setCurrentTab(tabLayout.getSelectedTabPosition());
-
-        overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
-    }
-
-    private void setupViewPager(ViewPager viewPager) {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new TabFragment1());
-        adapter.addFrag(new TabFragment2());
-        adapter.addFrag(new TabFragment3());
-        adapter.addFrag(new TabFragment4());
-        adapter.addFrag(new TabFragment5());
-        viewPager.setAdapter(adapter);
-    }
-
-    class ViewPagerAdapter extends FragmentPagerAdapter {
-        private final List<Fragment> mFragmentList = new ArrayList<>();
-
-        public ViewPagerAdapter(FragmentManager manager) {
-            super(manager);
+        public DownloadTask(Context context) {
+            this.context = context;
         }
 
         @Override
-        public Fragment getItem(int position) {
-            return mFragmentList.get(position);
+        protected String doInBackground(String... sUrl) {
+            InputStream input = null;
+            OutputStream output = null;
+            HttpURLConnection connection = null;
+            try {
+                URL url = new URL(sUrl[0]);
+                connection = (HttpURLConnection) url.openConnection();
+                connection.connect();
+
+                // expect HTTP 200 OK, so we don't mistakenly save error report
+                // instead of the file
+                if (connection.getResponseCode() != HttpURLConnection.HTTP_OK) {
+                    return "Server returned HTTP " + connection.getResponseCode()
+                            + " " + connection.getResponseMessage();
+                }
+
+                // this will be useful to display download percentage
+                // might be -1: server did not report the length
+                int fileLength = connection.getContentLength();
+
+                // download the file
+                input = connection.getInputStream();
+                output = new FileOutputStream("/sdcard/"+fileName+".mp3");
+
+                byte data[] = new byte[4096];
+                long total = 0;
+                int count;
+                while ((count = input.read(data)) != -1) {
+                    // allow canceling with back button
+                    if (isCancelled()) {
+                        input.close();
+                        return null;
+                    }
+                    total += count;
+                    // publishing the progress....
+                    if (fileLength > 0) // only if total length is known
+                        publishProgress((int) (total * 100 / fileLength));
+                    output.write(data, 0, count);
+                }
+            } catch (Exception e) {
+                return e.toString();
+            } finally {
+                try {
+                    if (output != null)
+                        output.close();
+                    if (input != null)
+                        input.close();
+                } catch (IOException ignored) {
+                }
+
+                if (connection != null)
+                    connection.disconnect();
+            }
+            return null;
+        }
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            // take CPU lock to prevent CPU from going off if the user
+            // presses the power button during download
+            PowerManager pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
+            mWakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
+                    getClass().getName());
+            mWakeLock.acquire();
+            mProgressDialog.show();
         }
 
         @Override
-        public int getCount() {
-            return mFragmentList.size();
+        protected void onProgressUpdate(Integer... progress) {
+            super.onProgressUpdate(progress);
+            // if we get here, length is known, now set indeterminate to false
+            mProgressDialog.setIndeterminate(false);
+            mProgressDialog.setMax(100);
+            mProgressDialog.setProgress(progress[0]);
         }
 
-        public void addFrag(Fragment fragment) {
-            mFragmentList.add(fragment);
+        @Override
+        protected void onPostExecute(String result) {
+            mWakeLock.release();
+            mProgressDialog.dismiss();
+            if (result != null)
+                Toast.makeText(context,"Download error: "+result, Toast.LENGTH_LONG).show();
+            else
+                Toast.makeText(context,"File downloaded", Toast.LENGTH_SHORT).show();
         }
     }
 }
+*/
