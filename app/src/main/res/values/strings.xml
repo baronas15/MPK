@@ -77,4 +77,34 @@
     <string name="activity4_title2">VISO DOVANŲ:</string>
 
     <string name="activity4_error1">Dar neturite dovanų</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Į pradžią</item>
+        <item>Išmok medituoti</item>
+        <item>Meditacijos</item>
+        <item>Pažanga</item>
+        <item> </item>
+        <item> </item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home_black_18dp</item>
+        <item>@drawable/ic_school_black_18dp</item>
+        <item>@drawable/ic_list_black_18dp</item>
+        <item>@drawable/ic_cake_black_18dp</item>
+        <item>@drawable/kaunas</item>
+        <item>@drawable/KMVSB</item>
+        <item>@drawable/MPK</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
 </resources>
