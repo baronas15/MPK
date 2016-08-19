@@ -101,10 +101,20 @@
         <item>@drawable/ic_list_black_18dp</item>
         <item>@drawable/ic_cake_black_18dp</item>
         <item>@drawable/kaunas</item>
-        <item>@drawable/KMVSB</item>
-        <item>@drawable/MPK</item>
+        <item>@drawable/kmvsb</item>
+        <item>@drawable/mpk</item>
     </array>
 
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_activity1_1">activity1_1</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
 </resources>
