@@ -46,4 +46,6 @@
     <color name="transparent">#00ffffff</color>
     <color name="white">#ffffff</color>
     <color name="indicator">#ecd95a</color>
+
+    <color name="custom1">#BAE8FF</color>
 </resources>
