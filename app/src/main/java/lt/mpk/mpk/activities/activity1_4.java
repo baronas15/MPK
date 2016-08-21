@@ -1,26 +1,17 @@
 package lt.mpk.mpk.activities;
 
 import android.app.Activity;
-import android.app.ProgressDialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.os.AsyncTask;
+import android.content.res.Configuration;
 import android.os.Bundle;
-import android.os.Environment;
-import android.os.PowerManager;
-import android.widget.Toast;
-
-import java.io.BufferedInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLConnection;
+import android.support.v4.content.ContextCompat;
+import android.view.View;
+import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import lt.mpk.mpk.R;
+import lt.mpk.mpk.app;
 
 public class activity1_4 extends Activity {
 
@@ -30,132 +21,56 @@ public class activity1_4 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity1_4);
 
+        app a = ((app)getApplicationContext());
+
+        int emo1 = a.getEmotional1();
+        int emo2 = a.getEmotional2();
+        int emo3 = a.getEmotional3();
+        int phys = a.getPhysical();
+
+        LinearLayout lay = (LinearLayout) findViewById(R.id.selectspace);
+
+
+
+
+
+        if(emo1 == 1 || emo1 == 7 || emo2 == 2 || emo2 == 8 || emo3 == 3 || emo3 == 9 || phys == 4){
+            createView(lay,R.string.meditation_title1,R.string.meditation_description1);
+        }
+        if(emo1 == 1 || emo1 == 4 || emo2 == 2 || emo2 == 5 || emo3 == 3 || emo3 == 6){
+            createView(lay,R.string.meditation_title2,R.string.meditation_description2);
+        }
+        if(emo1 == 4 || emo1 == 7 || emo2 == 5 || emo2 == 8 || emo3 == 6 || emo3 == 9 || phys == 3){
+            createView(lay,R.string.meditation_title3,R.string.meditation_description3);
+        }
+        if(emo1 == 10 || emo1 == 13 || emo2 == 11 || emo2 == 14 || emo3 == 12 || emo3 == 15 || phys == 4 || phys == 5){
+            createView(lay,R.string.meditation_title4,R.string.meditation_description4);
+        }
+        if(emo1 == 10 || emo2 == 11 || emo3 == 12 || phys == 2){
+            createView(lay,R.string.meditation_title5,R.string.meditation_description5);
+        }
+        if(emo1 == 13 || emo2 == 14 || emo3 == 15 || phys == 1){
+            createView(lay,R.string.meditation_title6,R.string.meditation_description6);
+        }
+
+        createView(lay,R.string.meditation_title7,R.string.meditation_description7);
+
         //startActivity(new Intent(activity1_4.this, activity1_5.class));
         //overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
     }
-}
-/*
-ProgressDialog mProgressDialog;
-String fileName = "";
-        // instantiate it within the onCreate method
-        mProgressDialog = new ProgressDialog(activity1_4.this);
-        mProgressDialog.setMessage("Download");
-        mProgressDialog.setIndeterminate(true);
-        mProgressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-        mProgressDialog.setCancelable(true);
 
-        // execute this when the downloader must be fired
-        final DownloadTask downloadTask = new DownloadTask(activity1_4.this);
+    private void createView(LinearLayout main, int titleRes, int descRes){
+        View debugLayout = getLayoutInflater().inflate(R.layout.item, main, false);
+        TextView t1 = (TextView) debugLayout.findViewById(R.id.itemTitle);
+        t1.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
+        t1.setText(titleRes);
+        TextView t2 = (TextView) debugLayout.findViewById(R.id.itemDescription);
+        t2.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
+        t2.setText(descRes);
 
-        fileName = "pirmas";
-        downloadTask.execute("http://moderntalking.lt/MPK/pirmas.mp3");
-
-        mProgressDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
-            @Override
-            public void onCancel(DialogInterface dialog) {
-                downloadTask.cancel(true);
-            }
-        });
-
-        //df.doInBackground("http://moderntalking.lt/MPK/pirmas.mp3", "pirmas");
-
-    }
-
-    private class DownloadTask extends AsyncTask<String, Integer, String> {
-
-        private Context context;
-        private PowerManager.WakeLock mWakeLock;
-
-        public DownloadTask(Context context) {
-            this.context = context;
-        }
-
-        @Override
-        protected String doInBackground(String... sUrl) {
-            InputStream input = null;
-            OutputStream output = null;
-            HttpURLConnection connection = null;
-            try {
-                URL url = new URL(sUrl[0]);
-                connection = (HttpURLConnection) url.openConnection();
-                connection.connect();
-
-                // expect HTTP 200 OK, so we don't mistakenly save error report
-                // instead of the file
-                if (connection.getResponseCode() != HttpURLConnection.HTTP_OK) {
-                    return "Server returned HTTP " + connection.getResponseCode()
-                            + " " + connection.getResponseMessage();
-                }
-
-                // this will be useful to display download percentage
-                // might be -1: server did not report the length
-                int fileLength = connection.getContentLength();
-
-                // download the file
-                input = connection.getInputStream();
-                output = new FileOutputStream("/sdcard/"+fileName+".mp3");
-
-                byte data[] = new byte[4096];
-                long total = 0;
-                int count;
-                while ((count = input.read(data)) != -1) {
-                    // allow canceling with back button
-                    if (isCancelled()) {
-                        input.close();
-                        return null;
-                    }
-                    total += count;
-                    // publishing the progress....
-                    if (fileLength > 0) // only if total length is known
-                        publishProgress((int) (total * 100 / fileLength));
-                    output.write(data, 0, count);
-                }
-            } catch (Exception e) {
-                return e.toString();
-            } finally {
-                try {
-                    if (output != null)
-                        output.close();
-                    if (input != null)
-                        input.close();
-                } catch (IOException ignored) {
-                }
-
-                if (connection != null)
-                    connection.disconnect();
-            }
-            return null;
-        }
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            // take CPU lock to prevent CPU from going off if the user
-            // presses the power button during download
-            PowerManager pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
-            mWakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
-                    getClass().getName());
-            mWakeLock.acquire();
-            mProgressDialog.show();
-        }
-
-        @Override
-        protected void onProgressUpdate(Integer... progress) {
-            super.onProgressUpdate(progress);
-            // if we get here, length is known, now set indeterminate to false
-            mProgressDialog.setIndeterminate(false);
-            mProgressDialog.setMax(100);
-            mProgressDialog.setProgress(progress[0]);
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-            mWakeLock.release();
-            mProgressDialog.dismiss();
-            if (result != null)
-                Toast.makeText(context,"Download error: "+result, Toast.LENGTH_LONG).show();
-            else
-                Toast.makeText(context,"File downloaded", Toast.LENGTH_SHORT).show();
-        }
+        Button b = (Button) debugLayout.findViewById(R.id.itemButton1);
+        //b.setBackgroundColor(ContextCompat.getDrawable(getApplicationContext(),R.drawable.roundedbutton));
+        b.setBackgroundDrawable( getResources().getDrawable(R.drawable.roundedbutton) );
+        main.addView(debugLayout);
     }
 }
-*/

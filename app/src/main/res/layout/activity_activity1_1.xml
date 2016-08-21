@@ -33,7 +33,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/activity1_2_title"
+                    android:text="@string/activity1_1_title"
                     android:id="@+id/activity1_2_title"
                     android:layout_gravity="center"
                     android:textColor="@color/primaryTextInverted"
@@ -66,7 +66,7 @@
                         <RadioButton
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/activity1_2_emo1"
+                            android:text="@string/activity1_1_emo1"
                             android:id="@+id/physicalgroup_1"
                             android:button="@null"
                             android:textColor="@color/primaryText"
@@ -88,7 +88,7 @@
                         <RadioButton
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/activity1_2_emo2"
+                            android:text="@string/activity1_1_emo2"
                             android:id="@+id/physicalgroup_2"
                             android:button="@null"
                             android:textColor="@color/primaryText"
@@ -110,7 +110,7 @@
                         <RadioButton
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/activity1_2_emo3"
+                            android:text="@string/activity1_1_emo3"
                             android:id="@+id/physicalgroup_3"
                             android:button="@null"
                             android:textColor="@color/primaryText"
@@ -133,7 +133,7 @@
                         <RadioButton
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/activity1_2_emo4"
+                            android:text="@string/activity1_1_emo4"
                             android:id="@+id/physicalgroup_4"
                             android:button="@null"
                             android:textColor="@color/primaryText"
@@ -155,7 +155,7 @@
                         <RadioButton
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/activity1_2_emo5"
+                            android:text="@string/activity1_1_emo5"
                             android:id="@+id/physicalgroup_5"
                             android:button="@null"
                             android:textColor="@color/primaryText"
@@ -182,7 +182,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/physicalimage"
                         android:src="@drawable/emo3"
-                        android:contentDescription="@string/activity1_2_img_description"
+                        android:contentDescription="@string/activity1_1_img_description"
                         android:adjustViewBounds="true"
                         android:layout_gravity="center" />
                 </FrameLayout>
@@ -206,7 +206,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/activity1_2_button1"
+                    android:text="@string/activity1_1_button1"
                     android:id="@+id/activity1_2_button1"
                     android:background="@drawable/roundedbutton"
                     android:textColor="@drawable/roundedbuttontext"

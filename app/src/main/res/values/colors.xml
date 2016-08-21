@@ -23,6 +23,9 @@
     <color name="button">#eee0f2f1</color>
     <color name="buttonPressed">#ee4bb4af</color>
     <color name="buttonDisabled">#999999</color>
+    <color name="buttonDark">#ee5890f0</color>
+    <color name="buttonPressedDark">#ee3d64a8</color>
+    <color name="buttonDisabledDark">#999999</color>
 
     <color name="primaryText">#424242</color>
     <color name="primaryTextInverted">#fafafa</color>
