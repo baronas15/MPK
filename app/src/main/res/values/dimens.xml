@@ -3,6 +3,10 @@
     <dimen name="header1_landscape">23sp</dimen>
     <dimen name="header2">20sp</dimen>
     <dimen name="header2_landscape">16sp</dimen>
+    <dimen name="header3">18sp</dimen>
+    <dimen name="header3_landscape">16sp</dimen>
+
+    <dimen name="text_1">16sp</dimen>
 
     <dimen name="text_size_1">30sp</dimen>
     <dimen name="text_size_1_landscape">16sp</dimen>
@@ -27,7 +31,7 @@
     <dimen name="little_separator">4dp</dimen>
     <dimen name="shadow1_radius">7dp</dimen>
     <dimen name="radio_vertical_padding">10dp</dimen>
-    <dimen name="header3">16sp</dimen>
+    <dimen name="button_text">16sp</dimen>
     <dimen name="check_vertical_padding">35dp</dimen>
     <dimen name="check_vertical_padding_landscape">15dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->

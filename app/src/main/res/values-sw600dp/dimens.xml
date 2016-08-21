@@ -3,6 +3,10 @@
     <dimen name="header1_landscape">40sp</dimen>
     <dimen name="header2">30sp</dimen>
     <dimen name="header2_landscape">25sp</dimen>
+    <dimen name="header3">23sp</dimen>
+    <dimen name="header3_landscape">20sp</dimen>
+
+    <dimen name="text_1">20sp</dimen>
 
     <dimen name="text_size_1">40sp</dimen>
     <dimen name="text_size_1_landscape">30sp</dimen>
@@ -18,6 +22,6 @@
     <dimen name="main_title_size_1">50sp</dimen>
     <dimen name="Start_screen_padding">40dp</dimen>
     <dimen name="radio_vertical_padding">10dp</dimen>
-    <dimen name="header3">23sp</dimen>
+    <dimen name="button_text">23sp</dimen>
 
 </resources>

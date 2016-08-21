@@ -62,7 +62,7 @@
                         android:onClick="activity13button1_Click"
                         android:paddingLeft="@dimen/item_horizontal_padding"
                         android:paddingRight="@dimen/item_horizontal_padding"
-                        android:textSize="@dimen/header3"
+                        android:textSize="@dimen/button_text"
                         android:paddingTop="@dimen/item_vertical_padding"
                         android:paddingBottom="@dimen/item_vertical_padding" />
                 </FrameLayout>

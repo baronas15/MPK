@@ -3,15 +3,15 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingLeft="@dimen/side_padding_portrait"
-    android:paddingRight="@dimen/side_padding_portrait"
+    android:paddingLeft="@dimen/side_padding_landscape"
+    android:paddingRight="@dimen/side_padding_landscape"
     android:paddingTop="@dimen/item_vertical_padding"
     android:paddingBottom="@dimen/item_vertical_padding">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/itemTitle"
-        android:textSize="@dimen/header3"
+        android:textSize="@dimen/header3_landscape"
         android:textStyle="bold"
         android:paddingBottom="@dimen/item_vertical_padding"/>
     <TextView
