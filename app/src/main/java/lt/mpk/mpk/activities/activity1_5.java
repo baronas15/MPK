@@ -29,7 +29,22 @@ public class activity1_5 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity1_5);
 
-        mediaPlayer = create(this, R.raw.antras);
+        int audioToPlay = R.raw.septintas;
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            int value = extras.getInt("playAudioNumber");
+            switch (value){
+                case 1:audioToPlay = R.raw.pirmas;break;
+                case 2:audioToPlay = R.raw.antras;break;
+                case 3:audioToPlay = R.raw.trecias;break;
+                case 4:audioToPlay = R.raw.ketvirtas;break;
+                case 5:audioToPlay = R.raw.penktas;break;
+                case 6:audioToPlay = R.raw.sestas;break;
+                case 7:audioToPlay = R.raw.septintas;break;
+            }
+        }
+
+        mediaPlayer = create(this, audioToPlay);
         seekbar = (SeekBar)this.findViewById(R.id.seekBar);
         tx1 = (TextView)this.findViewById(R.id.activity1_5_text1);
         tx2 = (TextView)this.findViewById(R.id.activity1_5_text2);
