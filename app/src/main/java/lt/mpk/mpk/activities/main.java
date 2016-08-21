@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import lt.mpk.mpk.R;
 
@@ -53,6 +55,31 @@ public class main extends AppCompatActivity {
 
         editor.apply();
         //endregion
+
+        LinearLayout l1 = (LinearLayout) findViewById(R.id.activity_main_item1);
+        l1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(main.this, activity2.class));
+                overridePendingTransition(enterAnim,exitAnim);
+            }
+        });
+        LinearLayout l2 = (LinearLayout) findViewById(R.id.activity_main_item2);
+        l2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(main.this, activity3.class));
+                overridePendingTransition(enterAnim,exitAnim);
+            }
+        });
+        LinearLayout l3 = (LinearLayout) findViewById(R.id.activity_main_item3);
+        l3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(main.this, activity4.class));
+                overridePendingTransition(enterAnim,exitAnim);
+            }
+        });
     }
 
     /*@Override
@@ -83,18 +110,6 @@ public class main extends AppCompatActivity {
     //region Redirecting
     public void ButtonClick1(View v){
         startActivity(new Intent(main.this, activity1.class));
-        overridePendingTransition(enterAnim,exitAnim);
-    }
-    public void PanelClick1(View v){
-        startActivity(new Intent(main.this, activity2.class));
-        overridePendingTransition(enterAnim,exitAnim);
-    }
-    public void PanelClick2(View v){
-        startActivity(new Intent(main.this, activity3.class));
-        overridePendingTransition(enterAnim,exitAnim);
-    }
-    public void PanelClick3(View v){
-        startActivity(new Intent(main.this, activity4.class));
         overridePendingTransition(enterAnim,exitAnim);
     }
     //endregion
