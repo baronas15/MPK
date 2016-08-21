@@ -88,7 +88,6 @@
                                     android:enabled="true"
                                     android:textColor="@drawable/roundedbuttontext"
                                     android:layout_gravity="bottom"
-                                    android:onClick="ButtonClick1"
                                     android:typeface="sans" />
                             </FrameLayout>
                         </LinearLayout>

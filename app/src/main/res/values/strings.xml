@@ -81,6 +81,7 @@
     <string name="meditation_description5">Praktikuojant šį pratimą, keičiasi santykis su maistu: labiau suvokiama kiek suvalgome, ar ištiesų valgome tai, kas mūsų organizmui naudinga ir sveika. Ilgainiui keičiasi mityba, renkamasi būtent tuos produktus, kurie yra tinkami būtent jūsų kūnui.</string>
     <string name="meditation_description6">Toliau lavina gebėjimą būti su kūne patiriamais pojūčiai.  Labiau pastebėdami savo mintis, jausmus ir pojūčius kiekvieną akimirką, mes suteikiame sau daugiau pasirinkimo laisvės ir galime išvengti senų mąstymo „bėgių“, kurie praeityje jau kėlė problemų.  Šis pratimas - meditacija lavina dėmesingumą, sugebėjimą nukreipti dėmesį į pasirinktą objektą.</string>
     <string name="meditation_description7">Padeda atsipalaiduoti, panirti į ramybės, pasitikėjimo ir saugumo būseną.</string>
+    <string name="item_button_text">Klausyti</string>
     <!-- Activity1_5 -->
     <string name="activity1_5_title">Pasirinkite meditaciją</string>
     <!-- Activity4 -->
@@ -128,5 +129,4 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_example">Example action</string>
-    <string name="item_button_text">Klausyti</string>
 </resources>

@@ -76,7 +76,6 @@
                             android:enabled="true"
                             android:textColor="@drawable/roundedbuttontext"
                             android:layout_gravity="bottom"
-                            android:onClick="ButtonClick1"
                             android:layout_marginTop="@dimen/little_separator"
                             android:typeface="sans"
                             android:minHeight="@dimen/minButtonHeight" />

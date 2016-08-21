@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -56,6 +57,15 @@ public class main extends AppCompatActivity {
         editor.apply();
         //endregion
 
+        //region Buttons
+        Button b = (Button) findViewById(R.id.activity_main_button1);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(main.this, activity1.class));
+                overridePendingTransition(enterAnim,exitAnim);
+            }
+        });
         LinearLayout l1 = (LinearLayout) findViewById(R.id.activity_main_item1);
         l1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +90,7 @@ public class main extends AppCompatActivity {
                 overridePendingTransition(enterAnim,exitAnim);
             }
         });
+        //endregion
     }
 
     /*@Override
@@ -106,11 +117,4 @@ public class main extends AppCompatActivity {
         inflater.inflate(R.menu.main, menu);
         return true;
     }
-
-    //region Redirecting
-    public void ButtonClick1(View v){
-        startActivity(new Intent(main.this, activity1.class));
-        overridePendingTransition(enterAnim,exitAnim);
-    }
-    //endregion
 }
