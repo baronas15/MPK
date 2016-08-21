@@ -69,8 +69,6 @@ public class activity1_4 extends Activity {
         t2.setText(descRes);
 
         Button b = (Button) debugLayout.findViewById(R.id.itemButton1);
-        //b.setBackgroundColor(ContextCompat.getDrawable(getApplicationContext(),R.drawable.roundedbutton));
-        b.setBackgroundDrawable( getResources().getDrawable(R.drawable.roundedbutton) );
         main.addView(debugLayout);
     }
 }

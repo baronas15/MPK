@@ -21,7 +21,7 @@
     <color name="colorPrimaryLight">#e3f2fd</color>
 
     <color name="button">#eee0f2f1</color>
-    <color name="buttonPressed">#ee4bb4af</color>
+    <color name="buttonPressed">#ee15A95F</color>
     <color name="buttonDisabled">#999999</color>
     <color name="buttonDark">#ee5890f0</color>
     <color name="buttonPressedDark">#ee3d64a8</color>
@@ -31,14 +31,14 @@
     <color name="primaryTextInverted">#fafafa</color>
 
     <color name="checkboxBackgroundDefault">#00ffffff</color>
-    <color name="checkboxBackgroundSelected">#00bfa5</color>
+    <color name="checkboxBackgroundSelected">#ee15A95F</color>
     <color name="checkboxTextDefault">#000000</color>
     <color name="checkboxTextSelected">#ffffff</color>
 
     <color name="playButtonDefault">#00bfa5</color>
     <color name="playButtonPressed">#2196f3</color>
 
-    <color name="radioButtonBackgroundSelect">#00bfa5</color>
+    <color name="radioButtonBackgroundSelect">#ee15A95F</color>
     <color name="radioButtonBackgroundDefault">#00ffffff</color>
 
     <color name="recyclerViewItem">#bbdefb</color>
