@@ -10,7 +10,7 @@
 
     <dimen name="text_size_1">30sp</dimen>
     <dimen name="text_size_1_landscape">16sp</dimen>
-    <dimen name="text_size_2">23sp</dimen>
+    <dimen name="text_size_2">20sp</dimen>
     <dimen name="text_size_2_landscape">16sp</dimen>
 
     <dimen name="side_padding_portrait">25dp</dimen>

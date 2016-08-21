@@ -10,7 +10,7 @@
 
     <dimen name="text_size_1">45sp</dimen>
     <dimen name="text_size_1_landscape">33sp</dimen>
-    <dimen name="text_size_2">35sp</dimen>
+    <dimen name="text_size_2">30sp</dimen>
     <dimen name="text_size_2_landscape">28sp</dimen>
 
     <dimen name="side_padding_portrait">50dp</dimen>
