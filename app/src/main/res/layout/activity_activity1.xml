@@ -68,14 +68,34 @@
                 android:paddingBottom="@dimen/item_vertical_padding"
                 android:background="@color/colorPrimaryLight"
                 android:paddingLeft="@dimen/side_padding_portrait"
-                android:paddingRight="@dimen/side_padding_portrait">
+                android:paddingRight="@dimen/side_padding_portrait"
+                android:layout_gravity="center">
 
                 <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity1_image_background"
+                    android:src="@drawable/animation_bg"
+                    android:contentDescription="@string/activity1_img_description"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:id="@+id/activity1_image"
-                    android:src="@drawable/image1"
-                    android:contentDescription="@string/activity1_img_description" />
+                    android:src="@drawable/animation"
+                    android:contentDescription="@string/activity1_img_description"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Įkvėpk"
+                    android:id="@+id/activity1_switchText"
+                    android:layout_gravity="center"
+                    android:textColor="@color/primaryTextInverted"
+                    android:gravity="center_vertical|center|center_horizontal" />
 
             </FrameLayout>
         </LinearLayout>
