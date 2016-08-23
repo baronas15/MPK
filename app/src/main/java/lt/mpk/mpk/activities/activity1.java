@@ -46,9 +46,12 @@ public class activity1 extends AppCompatActivity {
         final Animation downSmall = AnimationUtils.loadAnimation(this, R.anim.scale_down_small);
         final Animation upSmall = AnimationUtils.loadAnimation(this, R.anim.scale_up_small);
 
+        final Animation textDown = AnimationUtils.loadAnimation(this, R.anim.alpha_down);
+        final Animation textUp = AnimationUtils.loadAnimation(this, R.anim.alpha_up);
+
         i.startAnimation(down);
         bg.startAnimation(downSmall);
-        txt.startAnimation(downSmall);
+        txt.startAnimation(textDown);
         down.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
@@ -59,7 +62,7 @@ public class activity1 extends AppCompatActivity {
             public void onAnimationEnd(Animation animation) {
                 i.startAnimation(up);
                 bg.startAnimation(upSmall);
-                txt.startAnimation(upSmall);
+                txt.startAnimation(textUp);
             }
 
             @Override
@@ -78,7 +81,7 @@ public class activity1 extends AppCompatActivity {
             public void onAnimationEnd(Animation animation) {
                 i.startAnimation(down);
                 bg.startAnimation(downSmall);
-                txt.startAnimation(downSmall);
+                txt.startAnimation(textDown);
             }
 
             @Override
