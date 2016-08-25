@@ -34,7 +34,10 @@
         <activity android:name=".activities.activity1_3" />
         <activity android:name=".activities.activity1_5" />
         <activity android:name=".activities.activity_sticker" />
-        <activity android:name=".activities.activity1_4"></activity>
+        <activity android:name=".activities.activity1_4" />
+        <activity
+            android:name=".activities.activity4_1_2"
+            android:label="@string/title_activity_activity4_1_2"></activity>
     </application>
 
 </manifest>

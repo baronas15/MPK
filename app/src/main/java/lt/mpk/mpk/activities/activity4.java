@@ -1,14 +1,19 @@
 package lt.mpk.mpk.activities;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import lt.mpk.mpk.R;
 
 public class activity4 extends AppCompatActivity {
+    private int enterAnim = R.anim.slide_in_down;
+    private int exitAnim = R.anim.slide_out_down;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +48,15 @@ public class activity4 extends AppCompatActivity {
                 Log.d("sticker"+i,"true");
         }
         text2.setText(stickerCount+"/23");
+
+        LinearLayout l2 = (LinearLayout) findViewById(R.id.activity4_layout2);
+        l2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(activity4.this, activity4_1_2.class));
+                overridePendingTransition(enterAnim,exitAnim);
+            }
+        });
         //endregion
     }
 

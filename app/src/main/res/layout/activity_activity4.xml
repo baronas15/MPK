@@ -78,7 +78,9 @@
                         android:paddingRight="@dimen/side_padding_portrait"
                         android:paddingLeft="@dimen/side_padding_portrait"
                         android:paddingTop="@dimen/item_vertical_padding"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:id="@+id/activity4_layout2">
 
                         <TextView
                             android:layout_width="wrap_content"
