@@ -77,7 +77,7 @@ public class main extends AppCompatActivity {
         l2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(main.this, activity3.class));
+                startActivity(new Intent(main.this, activity3_1.class));
                 overridePendingTransition(enterAnim,exitAnim);
             }
         });
