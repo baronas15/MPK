@@ -26,6 +26,9 @@ public class main extends AppCompatActivity {
         /* Create toolbar */
         Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(myToolbar);
+        android.support.v7.app.ActionBar ab = getSupportActionBar();
+        ab.setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
+        ab.setDisplayHomeAsUpEnabled(true);
 
         //region Stickers
         SharedPreferences settings = getSharedPreferences("Stickers", 0);

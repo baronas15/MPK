@@ -19,6 +19,7 @@
     <color name="colorPrimary">#2196f3</color>
     <color name="colorPrimaryDark">#1976d2</color>
     <color name="colorPrimaryLight">#e3f2fd</color>
+    <color name="accent">#ee15A95F</color>
 
     <color name="button">#eee0f2f1</color>
     <color name="buttonPressed">#ee15A95F</color>

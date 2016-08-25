@@ -2,43 +2,40 @@ package lt.mpk.mpk.activities;
 
 import android.app.ActionBar;
 import android.app.Activity;
-import android.app.FragmentManager;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.Toolbar;
 
 import lt.mpk.mpk.R;
 
-public class activity3_1 extends FragmentActivity
-        implements NavigationDrawerFragment.NavigationDrawerCallbacks {
-
-    /**
-     * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
-     */
-    private NavigationDrawerFragment mNavigationDrawerFragment;
-
-    /**
-     * Used to store the last screen title. For use in {@link #restoreActionBar()}.
-     */
-    private CharSequence mTitle;
+public class activity3_1 extends AppCompatActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+    private NavigationDrawerFragment mNavigationDrawerFragment;     // Fragment managing the behaviors, interactions and presentation of the navigation drawer.
+    private CharSequence mTitle;                                    // Used to store the last screen title. For use in {@link #restoreActionBar()}.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity3_1);
 
-        mNavigationDrawerFragment = (NavigationDrawerFragment)
-                getFragmentManager().findFragmentById(R.id.navigation_drawer);
+        mNavigationDrawerFragment = (NavigationDrawerFragment) getFragmentManager().findFragmentById(R.id.navigation_drawer);
         mTitle = getTitle();
 
         // Set up the drawer.
-        mNavigationDrawerFragment.setUp(
-                R.id.navigation_drawer,
-                (DrawerLayout) findViewById(R.id.drawer_layout));
+        mNavigationDrawerFragment.setUp( R.id.navigation_drawer, (DrawerLayout) findViewById(R.id.drawer_layout));
+
+
+        Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(tb);
+        android.support.v7.app.ActionBar ab = getSupportActionBar();
+        ab.setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
+        ab.setDisplayHomeAsUpEnabled(true);
+
+        getSupportActionBar().setTitle("MPK");
     }
 
     @Override
@@ -76,8 +73,7 @@ public class activity3_1 extends FragmentActivity
      */
     public static class PlaceholderFragment extends Fragment {
         /**
-         * The fragment argument representing the section number for this
-         * fragment.
+         * The fragment argument representing the section number for this fragment.
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
 
@@ -85,8 +81,7 @@ public class activity3_1 extends FragmentActivity
         }
 
         /**
-         * Returns a new instance of this fragment for the given section
-         * number.
+         * Returns a new instance of this fragment for the given section number.
          */
         public static PlaceholderFragment newInstance(int sectionNumber) {
             PlaceholderFragment fragment = new PlaceholderFragment();
@@ -97,8 +92,7 @@ public class activity3_1 extends FragmentActivity
         }
 
         @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
+        public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_activity3_1, container, false);
             return rootView;
         }
