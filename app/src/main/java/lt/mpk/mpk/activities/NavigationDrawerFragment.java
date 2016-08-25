@@ -16,6 +16,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 import lt.mpk.mpk.R;
 
 public class NavigationDrawerFragment extends Fragment {
@@ -57,6 +59,8 @@ public class NavigationDrawerFragment extends Fragment {
                 selectItem(position);
             }
         });
+
+
         /*mDrawerListView.setAdapter(new ArrayAdapter<String>(
                 getActivity().getActionBar().getThemedContext(),
                 android.R.layout.simple_list_item_activated_1,
@@ -78,11 +82,10 @@ public class NavigationDrawerFragment extends Fragment {
     /**
      * Users of this fragment must call this method to set up the navigation drawer interactions.
      *
-     * @param fragmentId   The android:id of this fragment in its activity's layout.
      * @param drawerLayout The DrawerLayout containing this fragment's UI.
      */
-    public void setUp(int fragmentId, DrawerLayout drawerLayout) {
-        mFragmentContainerView = getActivity().findViewById(fragmentId);
+    public void setUp(View container, DrawerLayout drawerLayout) {
+        mFragmentContainerView = container;
         mDrawerLayout = drawerLayout;
 
         // set a custom shadow that overlays the main content when the drawer opens

@@ -23,7 +23,7 @@ public class activity3_1 extends AppCompatActivity implements NavigationDrawerFr
 
         // Set up the drawer.
         mNavigationDrawerFragment = (NavigationDrawerFragment) getFragmentManager().findFragmentById(R.id.navigation_drawer);
-        mNavigationDrawerFragment.setUp( R.id.navigation_drawer, (DrawerLayout) findViewById(R.id.drawer_layout));
+        mNavigationDrawerFragment.setUp((View) findViewById(R.id.navigation_drawer), (DrawerLayout) findViewById(R.id.drawer_layout));
 
         // Set up the toolbar
         Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
