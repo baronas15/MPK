@@ -11,7 +11,7 @@
         android:orientation="vertical">
 
         <include layout="@layout/toolbar" />
-        <include layout="@layout/p_layout_main"/>
+        <include layout="@layout/layout_main"/>
     </LinearLayout>
 
     <!-- The navigation drawer that comes from the left -->
