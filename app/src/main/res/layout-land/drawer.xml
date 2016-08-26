@@ -16,6 +16,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
             android:src="@drawable/mpk"/>
     </FrameLayout>
     <FrameLayout
@@ -23,8 +25,8 @@
         android:layout_height="0dp"
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_2"
-        android:layout_weight="8"
-        android:padding="@dimen/item_vertical_padding">
+        android:layout_weight="9"
+        android:paddingLeft="@dimen/item_vertical_padding">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,6 +40,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="Grįžti"
                 android:textColor="@color/primaryText"
                 android:layout_weight="8"/>
@@ -48,8 +51,8 @@
         android:layout_height="0dp"
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_3"
-        android:layout_weight="8"
-        android:padding="@dimen/item_vertical_padding">
+        android:layout_weight="9"
+        android:paddingLeft="@dimen/item_vertical_padding">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,6 +66,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="Išmok medituoti"
                 android:textColor="@color/primaryText"
                 android:layout_weight="8"/>
@@ -73,8 +77,8 @@
         android:layout_height="0dp"
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_4"
-        android:layout_weight="8"
-        android:padding="@dimen/item_vertical_padding">
+        android:layout_weight="9"
+        android:paddingLeft="@dimen/item_vertical_padding">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -88,6 +92,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="Meditacijos"
                 android:textColor="@color/primaryText"
                 android:layout_weight="8"/>
@@ -98,8 +103,8 @@
         android:layout_height="0dp"
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_5"
-        android:layout_weight="8"
-        android:padding="@dimen/item_vertical_padding">
+        android:layout_weight="9"
+        android:paddingLeft="@dimen/item_vertical_padding">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -113,6 +118,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="Pažanga"
                 android:textColor="@color/primaryText"
                 android:layout_weight="8"/>
@@ -122,41 +128,47 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:id="@+id/drawer_item_6"
-        android:layout_weight="8"
-        android:padding="@dimen/item_vertical_padding">
+        android:layout_weight="9"
+        android:paddingLeft="@dimen/item_vertical_padding">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="Rėmėjai"
             android:textColor="@color/primaryText"/>
     </FrameLayout>
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/drawer_item_7"
-        android:layout_weight="17"
-        android:layout_gravity="left"
-        android:padding="@dimen/item_vertical_padding">
-        <ImageView
+        android:layout_weight="30">
+
+        <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/drawer_item_7"
             android:layout_gravity="left"
-            android:adjustViewBounds="true"
-            android:src="@drawable/kaunas"
-            android:paddingLeft="@dimen/item_vertical_padding"/>
-    </FrameLayout>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:id="@+id/drawer_item_8"
-        android:layout_weight="18"
-        android:padding="@dimen/item_vertical_padding">
-        <ImageView
+            android:padding="@dimen/item_vertical_padding">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:adjustViewBounds="true"
+                android:src="@drawable/kaunas"
+                android:paddingLeft="@dimen/item_vertical_padding"/>
+        </FrameLayout>
+        <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:adjustViewBounds="true"
-            android:src="@drawable/kmvsb"
-            android:paddingLeft="@dimen/item_vertical_padding"/>
-    </FrameLayout>
+            android:id="@+id/drawer_item_8"
+            android:padding="@dimen/item_vertical_padding">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:adjustViewBounds="true"
+                android:src="@drawable/kmvsb_land"
+                android:paddingLeft="@dimen/item_vertical_padding"/>
+        </FrameLayout>
+    </LinearLayout>
+
 </LinearLayout>
