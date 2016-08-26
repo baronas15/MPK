@@ -63,7 +63,7 @@ public class activity1_4 extends Activity {
     }
 
     private void createView(LinearLayout main, int titleRes, int descRes,final int num){
-        View debugLayout = getLayoutInflater().inflate(R.layout.item, main, false);
+        View debugLayout = getLayoutInflater().inflate(R.layout.meditation_item, main, false);
         TextView t1 = (TextView) debugLayout.findViewById(R.id.itemTitle);
         t1.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
         t1.setText(titleRes);

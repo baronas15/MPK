@@ -1,16 +1,124 @@
 package lt.mpk.mpk.activities;
 
+import android.content.Intent;
+import android.net.Uri;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.FrameLayout;
 
 import lt.mpk.mpk.R;
 
 public class activity3 extends AppCompatActivity {
+    private DrawerLayout mDrawer;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity3);
+
+        //region Toolbar_NavDrawer
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        android.support.v7.app.ActionBar ab = getSupportActionBar();
+        ab.setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
+        ab.setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("MPK");
+
+        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+        FrameLayout f1 = (FrameLayout) findViewById(R.id.drawer_item_1);
+        f1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mpk.lt"));
+                startActivity(browserIntent);
+                mDrawer.closeDrawers();
+            }
+        });
+        FrameLayout f2 = (FrameLayout) findViewById(R.id.drawer_item_2);
+        f2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), main.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("EXIT", true);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+                mDrawer.closeDrawers();
+            }
+        });
+        FrameLayout f3 = (FrameLayout) findViewById(R.id.drawer_item_3);
+        f3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), activity2.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("EXIT", true);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+                mDrawer.closeDrawers();
+            }
+        });
+        FrameLayout f4 = (FrameLayout) findViewById(R.id.drawer_item_4);
+        f4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), activity3.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("EXIT", true);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+                mDrawer.closeDrawers();
+            }
+        });
+        FrameLayout f5 = (FrameLayout) findViewById(R.id.drawer_item_5);
+        f5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), activity4.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("EXIT", true);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+                mDrawer.closeDrawers();
+            }
+        });
+        FrameLayout f7 = (FrameLayout) findViewById(R.id.drawer_item_7);
+        f7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kaunas.lt/"));
+                startActivity(browserIntent);
+                mDrawer.closeDrawers();
+            }
+        });
+        FrameLayout f8 = (FrameLayout) findViewById(R.id.drawer_item_8);
+        f8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kaunovsb.lt/"));
+                startActivity(browserIntent);
+                mDrawer.closeDrawers();
+            }
+        });
+        //endregion
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                mDrawer.openDrawer(GravityCompat.START);
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -19,74 +127,3 @@ public class activity3 extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
     }
 }
-
-//private List<Card> cards;
-
-/*
-        RecyclerView rv = (RecyclerView)findViewById(R.id.rv);
-
-        LinearLayoutManager llm = new LinearLayoutManager(getApplicationContext());
-        rv.setLayoutManager(llm);
-
-        createData();
-        RVAdapter adapter = new RVAdapter(cards);
-        rv.setAdapter(adapter);
-    }
-
-    public static class RVAdapter extends RecyclerView.Adapter<RVAdapter.RecyclerViewHolder>{
-        List<Card> cards;
-
-        RVAdapter(List<Card> cards){
-            this.cards = cards;
-        }
-        public static class RecyclerViewHolder extends RecyclerView.ViewHolder{
-            RecyclerView rv;
-            TextView cardTitle;
-            TextView cardText;
-
-            public RecyclerViewHolder(View itemView) {
-                super(itemView);
-                rv = (RecyclerView)itemView.findViewById(R.id.rv);
-                cardTitle = (TextView)itemView.findViewById(R.id.cardTitle);
-                cardText = (TextView)itemView.findViewById(R.id.cardText);
-            }
-        }
-        @Override
-        public int getItemCount() {
-            return cards.size();
-        }
-        @Override
-        public RecyclerViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-            View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.recycler_item, viewGroup, false);
-            RecyclerViewHolder cvh = new RecyclerViewHolder(v);
-            return cvh;
-        }
-        @Override
-        public void onBindViewHolder(RecyclerViewHolder cardViewHolder, int i) {
-            cardViewHolder.cardTitle.setText(cards.get(i).title);
-            cardViewHolder.cardText.setText(cards.get(i).text);
-        }
-        @Override
-        public void onAttachedToRecyclerView(RecyclerView recyclerView) {
-            super.onAttachedToRecyclerView(recyclerView);
-        }
-    }
-
-    private void createData(){
-        cards = new ArrayList<>();
-
-        cards.add(new Card("Meditacija1","Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas",1));
-        cards.add(new Card("Meditacija2","Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas Meditacijos aprasymas",2));
-    }
-
-    class Card {
-        String title;
-        String text;
-        int id;
-
-        Card(String title, String text, int id){
-            this.title = title;
-            this.text = text;
-            this.id = id;
-        }
-    }*/
