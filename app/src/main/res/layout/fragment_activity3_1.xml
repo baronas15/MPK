@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/accent"
-    tools:context="lt.mpk.mpk.activities.activity3_1$PlaceholderFragment">
+    tools:context="lt.mpk.mpk.activities.activity3_1">
 
     <TextView
         android:id="@+id/section_label"

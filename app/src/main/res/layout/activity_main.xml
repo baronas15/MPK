@@ -1,18 +1,29 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".activities.main"
+android:id="@+id/drawer_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context=".activities.main">
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <!-- The ActionBar displayed at the top -->
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- The main content view where fragments are loaded -->
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:weightSum="12">
-
-        <include layout="@layout/toolbar" />
-
+        android:background="@color/colorPrimaryLight">
         <ScrollView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
@@ -31,6 +42,7 @@
                     android:textSize="@dimen/header1"
                     android:gravity="top|center_horizontal"
                     android:textColor="@color/primaryTextInverted"
+                    android:background="@color/colorPrimary"
                     android:id="@+id/activity_main_title"
                     android:paddingLeft="@dimen/side_padding_portrait"
                     android:paddingRight="@dimen/side_padding_portrait"
@@ -54,7 +66,6 @@
                         android:orientation="horizontal"
                         android:baselineAligned="false"
                         android:weightSum="2"
-                        android:paddingTop="@dimen/item_vertical_padding"
                         android:gravity="center_vertical">
                         <LinearLayout
                             android:layout_width="0dp"
@@ -226,6 +237,20 @@
 
             </LinearLayout>
         </ScrollView>
-    </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
 
-</RelativeLayout>
+<!-- The navigation drawer that comes from the left -->
+<android.support.design.widget.NavigationView
+    android:id="@+id/nvView"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/colorPrimaryLight">
+
+    <include
+        layout="@layout/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

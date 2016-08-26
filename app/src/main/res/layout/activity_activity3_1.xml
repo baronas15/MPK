@@ -21,13 +21,12 @@
             android:layout_height="match_parent" />
     </LinearLayout>
 
-    <fragment
+    <android.support.design.widget.NavigationView
         android:id="@+id/navigation_drawer"
         android:name="lt.mpk.mpk.activities.NavigationDrawerFragment"
         android:layout_width="@dimen/navigation_drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        tools:layout="@layout/drawer"
-        app:menu="@menu/activity3_1"/>
+        tools:layout="@layout/drawer" />
 
 </android.support.v4.widget.DrawerLayout>
