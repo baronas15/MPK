@@ -29,35 +29,6 @@ public class main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //region Stickers
-        SharedPreferences settings = getSharedPreferences("Stickers", 0);
-        SharedPreferences.Editor editor = settings.edit();
-
-        if(!settings.contains("meditationCount"))
-            editor.putInt("meditationCount",0);
-
-        if(!settings.contains("daysInARow"))
-            editor.putInt("daysInARow",0);
-
-        if(!settings.contains("meditationsInOneGo"))
-            editor.putInt("meditationsInOneGo",0);
-
-        if(!settings.contains("totalTime"))
-            editor.putInt("totalTime",0);
-
-        if(!settings.contains("lastSticker"))
-            editor.putInt("lastSticker",-1);
-
-        for (int i = 1; i <= 23; i++){
-            if(!settings.contains("sticker"+i))
-                editor.putBoolean("sticker"+i,false);
-            if (settings.getBoolean("sticker"+i,false))
-                Log.d("sticker"+i,"true");
-        }
-
-        editor.apply();
-        //endregion
-
         //region Buttons
         Button b = (Button) findViewById(R.id.activity_main_button1);
         b.setOnClickListener(new View.OnClickListener() {
