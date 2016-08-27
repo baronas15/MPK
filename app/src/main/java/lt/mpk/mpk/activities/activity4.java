@@ -3,15 +3,19 @@ package lt.mpk.mpk.activities;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
+import android.os.Build;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -31,20 +35,29 @@ public class activity4 extends AppCompatActivity {
         SharedPreferences settings = getSharedPreferences("Stickers", 0);
 
         //region Area 1
-        TextView text1 = (TextView) findViewById(R.id.lastSticker);
-        String lastSticker = "";
 
         switch (settings.getInt("lastSticker",-1)){
-            case -1: lastSticker = getString(R.string.stickerName0); break;
-            case 1: lastSticker = getString(R.string.stickerName1); break;
-            case 2: lastSticker = getString(R.string.stickerName2); break;
-            case 3: lastSticker = getString(R.string.stickerName3); break;
-            case 4: lastSticker = getString(R.string.stickerName4); break;
-            case 5: lastSticker = getString(R.string.stickerName5); break;
-            case 6: lastSticker = getString(R.string.stickerName6); break;
+            case -1:
+                TextView tx = new TextView(this);
+                tx.setText(getString(R.string.activity4_error1));
+                tx.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
+                FrameLayout.LayoutParams params = new FrameLayout.LayoutParams((int) FrameLayout.LayoutParams.WRAP_CONTENT,(int) FrameLayout.LayoutParams.WRAP_CONTENT);
+                params.gravity = Gravity.CENTER;
+                tx.setLayoutParams(params);
+                if (Build.VERSION.SDK_INT < 23) tx.setTextAppearance(getApplicationContext(), android.R.style.TextAppearance_Large);
+                else tx.setTextAppearance(android.R.style.TextAppearance_Large);
+
+                FrameLayout frame = (FrameLayout) findViewById(R.id.activity4_item1);
+                frame.addView(tx);
+                break;
+            case 1: addImageView(R.drawable.start); break;
+            case 2: addImageView(R.drawable.meditation_count2); break;
+            case 3: addImageView(R.drawable.meditation_count10); break;
+            case 4: addImageView(R.drawable.meditation_count25); break;
+            case 5: addImageView(R.drawable.in_a_row2); break;
+            case 6: addImageView(R.drawable.in_a_row3); break;
         }
 
-        text1.setText(lastSticker);
         //endregion
         //region Area 2
         TextView text2 = (TextView) findViewById(R.id.stickerCount);
@@ -156,6 +169,18 @@ public class activity4 extends AppCompatActivity {
         //endregion
     }
 
+    private void addImageView(int ResId) {
+        ImageView iv = new ImageView(this);
+
+        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams((int) FrameLayout.LayoutParams.WRAP_CONTENT,(int) FrameLayout.LayoutParams.WRAP_CONTENT);
+        params.gravity = Gravity.CENTER;
+        iv.setLayoutParams(params);
+
+        iv.setImageDrawable(getResources().getDrawable(ResId));
+
+        FrameLayout frame = (FrameLayout) findViewById(R.id.activity4_item1);
+        frame.addView(iv);
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {

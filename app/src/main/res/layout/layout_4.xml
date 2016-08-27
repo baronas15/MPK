@@ -45,18 +45,9 @@
 
                     <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="fill_parent">
+                        android:layout_height="fill_parent"
+                        android:id="@+id/activity4_item1">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:text="@string/activity4_error1"
-                            android:id="@+id/lastSticker"
-                            android:layout_marginTop="@dimen/item_vertical_padding"
-                            android:textColor="@color/primaryText"
-                            android:typeface="normal"
-                            android:layout_gravity="center" />
                     </FrameLayout>
                 </LinearLayout>
 
@@ -93,7 +84,6 @@
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:text="0/23"
                             android:id="@+id/stickerCount"
-                            android:layout_marginTop="@dimen/item_vertical_padding"
                             android:layout_gravity="center" />
                     </FrameLayout>
 
