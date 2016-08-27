@@ -1,6 +1,8 @@
 package lt.mpk.mpk;
 
 import android.app.Application;
+import android.content.SharedPreferences;
+import android.util.Log;
 
 /* Example usage:
 *
@@ -42,4 +44,38 @@ public class app extends Application {
     private int emotional2;
     private int emotional3;
     private int currentTab;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        //region Stickers
+        SharedPreferences settings = getSharedPreferences("Stickers", 0);
+        SharedPreferences.Editor editor = settings.edit();
+        editor.putInt("meditationsInOneGo", 0);
+
+        if(!settings.contains("meditationCount"))
+            editor.putInt("meditationCount",0);
+
+        if(!settings.contains("daysInARow"))
+            editor.putInt("daysInARow",0);
+
+        if(!settings.contains("meditationsInOneGo"))
+            editor.putInt("meditationsInOneGo",0);
+
+        if(!settings.contains("totalTime"))
+            editor.putInt("totalTime",0);
+
+        if(!settings.contains("lastSticker"))
+            editor.putInt("lastSticker",-1);
+
+        for (int i = 1; i <= 23; i++){
+            if(!settings.contains("sticker"+i))
+                editor.putBoolean("sticker"+i,false);
+            if (settings.getBoolean("sticker"+i,false))
+                Log.d("sticker"+i,"true");
+        }
+        editor.apply();
+        //endregion
+    }
 }

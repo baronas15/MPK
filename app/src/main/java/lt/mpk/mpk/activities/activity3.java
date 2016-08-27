@@ -9,11 +9,14 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 
 import lt.mpk.mpk.R;
 
 public class activity3 extends AppCompatActivity {
+    private String INTENT_EXTRAS = "playAudioNumber";
+
     private DrawerLayout mDrawer;
     private Toolbar toolbar;
 
@@ -21,6 +24,14 @@ public class activity3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity3);
+
+        CreateListener(1,R.id.itemButton1);
+        CreateListener(2,R.id.itemButton2);
+        CreateListener(3,R.id.itemButton3);
+        CreateListener(4,R.id.itemButton4);
+        CreateListener(5,R.id.itemButton5);
+        CreateListener(6,R.id.itemButton6);
+        CreateListener(7,R.id.itemButton7);
 
         //region Toolbar_NavDrawer
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -108,6 +119,19 @@ public class activity3 extends AppCompatActivity {
             }
         });
         //endregion
+    }
+
+    private void CreateListener(final int num, int ResId){
+        Button b = (Button) findViewById(ResId);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), activity1_5.class);
+                i.putExtra(INTENT_EXTRAS,num);
+                startActivity(i);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+            }
+        });
     }
 
     @Override

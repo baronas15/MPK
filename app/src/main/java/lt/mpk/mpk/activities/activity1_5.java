@@ -170,6 +170,7 @@ public class activity1_5 extends AppCompatActivity {
                 editor.apply();
             }
         });
+
         //region Toolbar_NavDrawer
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

@@ -36,7 +36,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/itemTitle1"
                 android:text="@string/meditation_title1"
                 android:textSize="@dimen/header3"
                 android:textStyle="bold"
@@ -45,7 +44,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/itemDescription1"
                 android:text="@string/meditation_description1"
                 android:textColor="@color/primaryText"
                 android:textSize="@dimen/text_1"/>
@@ -87,7 +85,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/itemTitle2"
                 android:text="@string/meditation_title2"
                 android:textSize="@dimen/header3"
                 android:textStyle="bold"
@@ -96,7 +93,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/itemDescription2"
                 android:text="@string/meditation_description2"
                 android:textColor="@color/primaryText"
                 android:textSize="@dimen/text_1"/>
@@ -138,7 +134,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/itemTitle3"
                 android:text="@string/meditation_title3"
                 android:textSize="@dimen/header3"
                 android:textStyle="bold"
@@ -147,7 +142,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/itemDescription3"
                 android:text="@string/meditation_description3"
                 android:textColor="@color/primaryText"
                 android:textSize="@dimen/text_1"/>
@@ -189,7 +183,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/itemTitle4"
                 android:text="@string/meditation_title4"
                 android:textSize="@dimen/header3"
                 android:textStyle="bold"
@@ -198,7 +191,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/itemDescription4"
                 android:text="@string/meditation_description4"
                 android:textColor="@color/primaryText"
                 android:textSize="@dimen/text_1"/>
@@ -240,7 +232,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/itemTitle5"
                 android:text="@string/meditation_title5"
                 android:textSize="@dimen/header3"
                 android:textStyle="bold"
@@ -249,7 +240,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/itemDescription5"
                 android:text="@string/meditation_description5"
                 android:textColor="@color/primaryText"
                 android:textSize="@dimen/text_1"/>
@@ -291,7 +281,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/itemTitle6"
                 android:text="@string/meditation_title6"
                 android:textSize="@dimen/header3"
                 android:textStyle="bold"
@@ -300,7 +289,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/itemDescription6"
                 android:text="@string/meditation_description6"
                 android:textColor="@color/primaryText"
                 android:textSize="@dimen/text_1"/>
@@ -342,7 +330,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/itemTitle7"
                 android:text="@string/meditation_title7"
                 android:textSize="@dimen/header3"
                 android:textStyle="bold"
@@ -351,7 +338,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/itemDescription7"
                 android:text="@string/meditation_description7"
                 android:textColor="@color/primaryText"
                 android:textSize="@dimen/text_1"/>
