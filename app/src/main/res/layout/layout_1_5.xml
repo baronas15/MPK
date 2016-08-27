@@ -10,7 +10,7 @@
         android:layout_gravity="center"
         android:gravity="center"
 
-        android:background="@drawable/shadow"
+        android:background="@drawable/layout_button_color_primary_light"
         android:orientation="vertical"
         android:weightSum="1">
 

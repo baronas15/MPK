@@ -105,12 +105,13 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/side_padding_portrait"
                 android:paddingRight="@dimen/side_padding_portrait"
-                android:background="@drawable/shadow"
+                android:background="@drawable/layout_button_color_primary_light"
                 android:layout_weight="2"
                 android:clickable="true"
                 android:id="@+id/activity_main_item1"
                 android:paddingBottom="@dimen/item_vertical_padding"
-                android:paddingTop="@dimen/item_vertical_padding">
+                android:paddingTop="@dimen/item_vertical_padding"
+                android:orientation="vertical">
 
                 <FrameLayout
                     android:layout_width="match_parent"
@@ -135,14 +136,19 @@
                         android:id="@+id/activity_main_image1"
                         android:duplicateParentState="true"/>
                 </FrameLayout>
-            </LinearLayout>
 
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:clickable="false"
+                android:background="@color/blue_A100" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/side_padding_portrait"
                 android:paddingRight="@dimen/side_padding_portrait"
-                android:background="@drawable/shadow"
+                android:background="@drawable/layout_button_color_primary_light"
                 android:layout_weight="2"
                 android:clickable="true"
                 android:id="@+id/activity_main_item2"
@@ -174,13 +180,17 @@
                         android:duplicateParentState="true"/>
                 </FrameLayout>
             </LinearLayout>
-
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:clickable="false"
+                android:background="@color/blue_A100" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/side_padding_portrait"
                 android:paddingRight="@dimen/side_padding_portrait"
-                android:background="@drawable/shadow"
+                android:background="@drawable/layout_button_color_primary_light"
                 android:layout_weight="2"
                 android:clickable="true"
                 android:id="@+id/activity_main_item3"
