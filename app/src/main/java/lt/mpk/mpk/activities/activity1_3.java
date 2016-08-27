@@ -42,11 +42,11 @@ public class activity1_3 extends AppCompatActivity {
 
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.setTabMode(TabLayout.MODE_FIXED);
-        tabLayout.getTabAt(0).setIcon(R.drawable.ic_mood_white_36dp);
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_sentiment_satisfied_white_36dp);
-        tabLayout.getTabAt(2).setIcon(R.drawable.ic_sentiment_neutral_white_36dp);
-        tabLayout.getTabAt(3).setIcon(R.drawable.ic_sentiment_dissatisfied_white_36dp);
-        tabLayout.getTabAt(4).setIcon(R.drawable.ic_mood_bad_white_36dp);
+        tabLayout.getTabAt(0).setIcon(R.drawable.emo1);
+        tabLayout.getTabAt(1).setIcon(R.drawable.emo2);
+        tabLayout.getTabAt(2).setIcon(R.drawable.emo3);
+        tabLayout.getTabAt(3).setIcon(R.drawable.emo4);
+        tabLayout.getTabAt(4).setIcon(R.drawable.emo5);
 
         app a = ((app)getApplicationContext());
 
