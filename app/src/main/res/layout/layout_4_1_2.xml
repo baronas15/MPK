@@ -35,6 +35,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/start"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image1"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -59,6 +60,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/meditation_count2"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image2"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -91,6 +93,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/meditation_count10"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image3"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -115,6 +118,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/meditation_count25"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image4"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -147,6 +151,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/in_a_row2"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image5"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -171,6 +176,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/in_a_row3"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image6"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -203,6 +209,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/days_in_a_row5"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image7"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -227,6 +234,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/days_in_a_row10"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image8"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -259,6 +267,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/days_in_a_row20"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image9"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -283,6 +292,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/days_in_a_row31"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image10"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -315,6 +325,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/days_in_a_row50"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image11"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -339,6 +350,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/days_in_a_row70"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image12"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -371,6 +383,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/days_in_a_row100"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image13"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -395,6 +408,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/days_in_a_row150"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image14"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -427,6 +441,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/days_in_a_row365"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image15"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -451,6 +466,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/sun"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image16"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -483,6 +499,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/night"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image17"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -507,6 +524,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/total_count1h"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image18"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -539,6 +557,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/total_count5h"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image19"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -563,6 +582,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/total_count10h"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image20"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -595,6 +615,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/total_count25h"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image21"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -619,6 +640,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/total_count50h"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image22"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -651,6 +673,7 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/total_count100h"
                         android:adjustViewBounds="true"
+                        android:layout_gravity="center"
                         android:id="@+id/activity4_1_2_image23"/>
                     <TextView
                         android:layout_width="wrap_content"
