@@ -92,7 +92,7 @@
     <string name="activity1_5_title">Pasirinkite meditaciją</string>
     <string name="activity1_5_button2">Grįžti į pradžią</string>
     <!-- Activity3 -->
-    <string name="activity3_title">Pasirinkite meditaciją</string>
+    <string name="activity3_title">Meditacijų sąrašas</string>
     <string name="activity3_button_text">Klausyti</string>
     <!-- Activity4 -->
     <string name="activity4_title1">PASKUTINĖ DOVANA</string>
