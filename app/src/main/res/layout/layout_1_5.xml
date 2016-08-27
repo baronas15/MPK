@@ -71,7 +71,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Grizti i pradzia"
+                android:text="@string/activity1_5_button2"
                 android:id="@+id/activity1_5_button2"
                 android:background="@drawable/roundedbutton"
                 android:textColor="@drawable/roundedbuttontext"

@@ -13,11 +13,13 @@
         android:id="@+id/itemTitle"
         android:textSize="@dimen/header3"
         android:textStyle="bold"
+        android:textColor="@color/primaryText"
         android:paddingBottom="@dimen/item_vertical_padding"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/itemDescription"
+        android:textColor="@color/primaryText"
         android:textSize="@dimen/text_1"/>
     <LinearLayout
         android:layout_width="fill_parent"
