@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/side_padding_portrait"
+                    android:paddingRight="@dimen/side_padding_portrait"
+                    android:paddingTop="@dimen/item_vertical_padding"
+                    android:paddingBottom="@dimen/item_vertical_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/activity4_title1"
+                        android:id="@+id/activity4_title1"
+                        android:textColor="@color/primaryText"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="@string/activity4_error1"
+                            android:id="@+id/lastSticker"
+                            android:layout_marginTop="@dimen/item_vertical_padding"
+                            android:textColor="@color/primaryText"
+                            android:typeface="normal"
+                            android:layout_gravity="center" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue_500"
+                    android:paddingBottom="@dimen/item_vertical_padding"
+                    android:paddingRight="@dimen/side_padding_portrait"
+                    android:paddingLeft="@dimen/side_padding_portrait"
+                    android:paddingTop="@dimen/item_vertical_padding"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:id="@+id/activity4_layout2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/activity4_title2"
+                        android:id="@+id/activity4_title2"
+                        android:textColor="@color/primaryTextInverted"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="0/23"
+                            android:id="@+id/stickerCount"
+                            android:layout_marginTop="@dimen/item_vertical_padding"
+                            android:layout_gravity="center" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue_200"
+                    android:paddingTop="@dimen/item_vertical_padding"
+                    android:paddingBottom="@dimen/item_vertical_padding"
+                    android:paddingLeft="@dimen/side_padding_portrait"
+                    android:paddingRight="@dimen/side_padding_portrait" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/textView3"
+                        android:textColor="@color/primaryTextInverted" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:paddingTop="@dimen/item_vertical_padding"
+                    android:paddingBottom="@dimen/item_vertical_padding"
+                    android:paddingLeft="@dimen/side_padding_portrait"
+                    android:paddingRight="@dimen/side_padding_portrait">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/textView"
+                        android:textColor="@color/primaryText" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue_500"
+                    android:paddingTop="@dimen/item_vertical_padding"
+                    android:paddingBottom="@dimen/item_vertical_padding"
+                    android:paddingRight="@dimen/side_padding_portrait"
+                    android:paddingLeft="@dimen/side_padding_portrait">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/textView2"
+                        android:textColor="@color/primaryTextInverted" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
