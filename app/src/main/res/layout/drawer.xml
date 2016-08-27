@@ -24,7 +24,7 @@
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_2"
         android:layout_weight="8"
-        android:padding="@dimen/item_vertical_padding">
+        android:padding="@dimen/drawer_item_padding">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_3"
         android:layout_weight="8"
-        android:padding="@dimen/item_vertical_padding">
+        android:padding="@dimen/drawer_item_padding">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_4"
         android:layout_weight="8"
-        android:padding="@dimen/item_vertical_padding">
+        android:padding="@dimen/drawer_item_padding">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_5"
         android:layout_weight="8"
-        android:padding="@dimen/item_vertical_padding">
+        android:padding="@dimen/drawer_item_padding">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -123,7 +123,7 @@
         android:layout_height="0dp"
         android:id="@+id/drawer_item_6"
         android:layout_weight="8"
-        android:padding="@dimen/item_vertical_padding">
+        android:padding="@dimen/drawer_item_padding">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

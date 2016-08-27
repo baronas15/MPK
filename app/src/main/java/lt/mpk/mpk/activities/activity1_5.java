@@ -60,9 +60,7 @@ public class activity1_5 extends AppCompatActivity {
 
         seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-
-            }
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {}
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
@@ -188,6 +186,7 @@ public class activity1_5 extends AppCompatActivity {
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mpk.lt"));
                 startActivity(browserIntent);
                 mDrawer.closeDrawers();
+                Exit();
             }
         });
         FrameLayout f2 = (FrameLayout) findViewById(R.id.drawer_item_2);
@@ -200,6 +199,7 @@ public class activity1_5 extends AppCompatActivity {
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
                 mDrawer.closeDrawers();
+                Exit();
             }
         });
         FrameLayout f3 = (FrameLayout) findViewById(R.id.drawer_item_3);
@@ -212,6 +212,7 @@ public class activity1_5 extends AppCompatActivity {
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
                 mDrawer.closeDrawers();
+                Exit();
             }
         });
         FrameLayout f4 = (FrameLayout) findViewById(R.id.drawer_item_4);
@@ -224,6 +225,7 @@ public class activity1_5 extends AppCompatActivity {
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
                 mDrawer.closeDrawers();
+                Exit();
             }
         });
         FrameLayout f5 = (FrameLayout) findViewById(R.id.drawer_item_5);
@@ -236,6 +238,7 @@ public class activity1_5 extends AppCompatActivity {
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
                 mDrawer.closeDrawers();
+                Exit();
             }
         });
         FrameLayout f7 = (FrameLayout) findViewById(R.id.drawer_item_7);
@@ -245,6 +248,7 @@ public class activity1_5 extends AppCompatActivity {
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kaunas.lt/"));
                 startActivity(browserIntent);
                 mDrawer.closeDrawers();
+                Exit();
             }
         });
         FrameLayout f8 = (FrameLayout) findViewById(R.id.drawer_item_8);
@@ -254,6 +258,7 @@ public class activity1_5 extends AppCompatActivity {
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kaunovsb.lt/"));
                 startActivity(browserIntent);
                 mDrawer.closeDrawers();
+                Exit();
             }
         });
         //endregion
@@ -315,10 +320,8 @@ public class activity1_5 extends AppCompatActivity {
         }
 
         // Prepending 0 to seconds if it is one digit
-        if(seconds < 10){
-            secondsString = "0" + seconds;
-        }else{
-            secondsString = "" + seconds;}
+        if(seconds < 10) secondsString = "0" + seconds;
+        else secondsString = "" + seconds;
 
         finalTimerString = finalTimerString + minutes + ":" + secondsString;
 
@@ -354,10 +357,12 @@ public class activity1_5 extends AppCompatActivity {
         return currentDuration * 1000;
     }
 
+    //region Exit
     @Override
     public void onBackPressed()
     {
         super.onBackPressed();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
         Exit();
     }
 
@@ -367,6 +372,7 @@ public class activity1_5 extends AppCompatActivity {
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.putExtra("EXIT", true);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
         Exit();
     }
 
@@ -375,6 +381,6 @@ public class activity1_5 extends AppCompatActivity {
         mediaPlayer.stop();
         mediaPlayer.release();
         mHandler.removeCallbacksAndMessages(null);
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
     }
+    //endregion
 }
