@@ -136,13 +136,14 @@
                         android:id="@+id/activity_main_image1"
                         android:duplicateParentState="true"/>
                 </FrameLayout>
-
             </LinearLayout>
+
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:clickable="false"
                 android:background="@color/blue_A100" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
