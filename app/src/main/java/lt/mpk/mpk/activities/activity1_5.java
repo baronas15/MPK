@@ -17,7 +17,6 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
-
 import java.util.Calendar;
 
 import lt.mpk.mpk.R;
@@ -114,10 +113,35 @@ public class activity1_5 extends AppCompatActivity {
                 mHandler.removeCallbacksAndMessages(null);
                 play_button.setBackgroundResource(R.drawable.play_button);
 
+                //region Stickers
                 Calendar c = Calendar.getInstance();
                 int hour = c.get(Calendar.HOUR_OF_DAY);
                 int minute = c.get(Calendar.MINUTE);
                 int time = hour * 60 + minute;
+
+                Calendar last = Calendar.getInstance();
+                Calendar today = Calendar.getInstance();
+
+                int y = settings.getInt("lastMeditationYear",1970);
+                int m = settings.getInt("lastMeditationMonth",0);
+                int d = settings.getInt("lastMeditationDay",1);
+
+                // Set the date for both of the calendar instance
+                last.set(y, m, d);
+                today.set(today.get(Calendar.YEAR), today.get(Calendar.MONTH), today.get(Calendar.DAY_OF_MONTH));
+
+                // Calculate difference in milliseconds
+                long diff = today.getTimeInMillis() - last.getTimeInMillis();
+                long diffDays = diff / (24 * 60 * 60 * 1000);
+
+                editor.putInt("lastMeditationYear", today.get(Calendar.YEAR));
+                editor.putInt("lastMeditationMonth", today.get(Calendar.MONTH));
+                editor.putInt("lastMeditationDay", today.get(Calendar.DAY_OF_MONTH));
+                Log.d("diffdays",diffDays+"");
+
+                if(diffDays > 1) editor.putInt("daysInARow", 1);
+                else if(diffDays == 1) editor.putInt("daysInARow", settings.getInt("daysInARow",0) + 1);
+                else if(diffDays < 0) editor.putInt("daysInARow", 1);
 
                 editor.putInt("meditationCount", settings.getInt("meditationCount",0) + 1);
                 editor.putInt("meditationsInOneGo", settings.getInt("meditationsInOneGo",0) + 1);
@@ -135,6 +159,25 @@ public class activity1_5 extends AppCompatActivity {
                     createSticker(5);
                 if(settings.getInt("meditationsInOneGo",0) == 3 && !settings.getBoolean("sticker6", false))
                     createSticker(6);
+
+                if(settings.getInt("daysInARow",0) == 5 && !settings.getBoolean("sticker7", false))
+                    createSticker(7);
+                if(settings.getInt("daysInARow",0) == 10 && !settings.getBoolean("sticker8", false))
+                    createSticker(8);
+                if(settings.getInt("daysInARow",0) == 20 && !settings.getBoolean("sticker9", false))
+                    createSticker(9);
+                if(settings.getInt("daysInARow",0) == 31 && !settings.getBoolean("sticker10", false))
+                    createSticker(10);
+                if(settings.getInt("daysInARow",0) == 50 && !settings.getBoolean("sticker11", false))
+                    createSticker(11);
+                if(settings.getInt("daysInARow",0) == 70 && !settings.getBoolean("sticker12", false))
+                    createSticker(12);
+                if(settings.getInt("daysInARow",0) == 100 && !settings.getBoolean("sticker13", false))
+                    createSticker(13);
+                if(settings.getInt("daysInARow",0) == 150 && !settings.getBoolean("sticker14", false))
+                    createSticker(14);
+                if(settings.getInt("daysInARow",0) == 365 && !settings.getBoolean("sticker15", false))
+                    createSticker(15);
 
                 if(time >= 240 && time <= 450 && !settings.getBoolean("sticker16", false))
                     createSticker(16);
@@ -154,6 +197,7 @@ public class activity1_5 extends AppCompatActivity {
                     createSticker(23);
 
                 editor.apply();
+                //endregion
             }
         });
 

@@ -54,6 +54,13 @@ public class app extends Application {
         SharedPreferences.Editor editor = settings.edit();
         editor.putInt("meditationsInOneGo", 0);
 
+        if(!settings.contains("lastMeditationYear"))
+            editor.putInt("lastMeditationYear",1970);
+        if(!settings.contains("lastMeditationMonth"))
+            editor.putInt("lastMeditationMonth",0);
+        if(!settings.contains("lastMeditationDay"))
+            editor.putInt("lastMeditationDay",1);
+
         if(!settings.contains("meditationCount"))
             editor.putInt("meditationCount",0);
 
