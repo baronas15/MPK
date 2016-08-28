@@ -136,7 +136,7 @@ public class activity1_5 extends AppCompatActivity {
                 if(settings.getInt("meditationsInOneGo",0) == 3 && !settings.getBoolean("sticker6", false))
                     createSticker(6);
 
-                if(time >= 720 && time <= 840 && !settings.getBoolean("sticker16", false))
+                if(time >= 240 && time <= 450 && !settings.getBoolean("sticker16", false))
                     createSticker(16);
                 if(time >= 720 && time <= 840 && !settings.getBoolean("sticker17", false))
                     createSticker(17);
