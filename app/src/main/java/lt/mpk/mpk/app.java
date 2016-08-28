@@ -82,6 +82,14 @@ public class app extends Application {
             if (settings.getBoolean("sticker"+i,false))
                 Log.d("sticker"+i,"true");
         }
+
+        for (int i = 1; i <= 7; i++){
+            if(!settings.contains("playTime"+i))
+                editor.putInt("playTime"+i,0);
+
+            Log.d("playTime"+i,settings.getInt("playTime"+i,0)+"");
+        }
+
         editor.apply();
         //endregion
     }

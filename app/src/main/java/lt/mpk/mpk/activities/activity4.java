@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
@@ -40,12 +41,12 @@ public class activity4 extends AppCompatActivity {
             case -1:
                 TextView tx = new TextView(this);
                 tx.setText(getString(R.string.activity4_error1));
+                tx.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.text_1));
                 tx.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
+
                 FrameLayout.LayoutParams params = new FrameLayout.LayoutParams((int) FrameLayout.LayoutParams.WRAP_CONTENT,(int) FrameLayout.LayoutParams.WRAP_CONTENT);
                 params.gravity = Gravity.CENTER;
                 tx.setLayoutParams(params);
-                if (Build.VERSION.SDK_INT < 23) tx.setTextAppearance(getApplicationContext(), android.R.style.TextAppearance_Large);
-                else tx.setTextAppearance(android.R.style.TextAppearance_Large);
 
                 FrameLayout frame = (FrameLayout) findViewById(R.id.activity4_item1);
                 frame.addView(tx);

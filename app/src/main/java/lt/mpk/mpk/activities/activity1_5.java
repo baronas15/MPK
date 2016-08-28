@@ -37,6 +37,8 @@ public class activity1_5 extends AppCompatActivity {
 
     private Handler mHandler = new Handler();
 
+    int meditationNumber = -1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,13 +52,13 @@ public class activity1_5 extends AppCompatActivity {
         if (extras != null) {
             int value = extras.getInt("playAudioNumber");
             switch (value){
-                case 1:audioToPlay = R.raw.pirmas;break;
-                case 2:audioToPlay = R.raw.antras;break;
-                case 3:audioToPlay = R.raw.trecias;break;
-                case 4:audioToPlay = R.raw.ketvirtas;break;
-                case 5:audioToPlay = R.raw.penktas;break;
-                case 6:audioToPlay = R.raw.sestas;break;
-                case 7:audioToPlay = R.raw.septintas;break;
+                case 1:meditationNumber = 1; audioToPlay = R.raw.pirmas;break;
+                case 2:meditationNumber = 2; audioToPlay = R.raw.antras;break;
+                case 3:meditationNumber = 3; audioToPlay = R.raw.trecias;break;
+                case 4:meditationNumber = 4; audioToPlay = R.raw.ketvirtas;break;
+                case 5:meditationNumber = 5; audioToPlay = R.raw.penktas;break;
+                case 6:meditationNumber = 6; audioToPlay = R.raw.sestas;break;
+                case 7:meditationNumber = 7; audioToPlay = R.raw.septintas;break;
             }
         }
 
@@ -113,7 +115,7 @@ public class activity1_5 extends AppCompatActivity {
                 mHandler.removeCallbacksAndMessages(null);
                 play_button.setBackgroundResource(R.drawable.play_button);
 
-                //region Stickers
+                //region Activity4_update
                 Calendar c = Calendar.getInstance();
                 int hour = c.get(Calendar.HOUR_OF_DAY);
                 int minute = c.get(Calendar.MINUTE);
@@ -195,6 +197,9 @@ public class activity1_5 extends AppCompatActivity {
                     createSticker(22);
                 if(settings.getInt("totalTime",0) >= 3600000 && !settings.getBoolean("sticker23", false))
                     createSticker(23);
+
+                editor.putInt("playTime" + meditationNumber, settings.getInt("playTime" + meditationNumber,0) + 1);
+
 
                 editor.apply();
                 //endregion
