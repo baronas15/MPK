@@ -172,8 +172,10 @@ public class activity1_4 extends AppCompatActivity {
     private void createView(LinearLayout main, int titleRes, int descRes,final int num){
         View debugLayout = getLayoutInflater().inflate(R.layout.meditation_item, main, false);
         TextView t1 = (TextView) debugLayout.findViewById(R.id.itemTitle);
+        t1.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
         t1.setText(titleRes);
         TextView t2 = (TextView) debugLayout.findViewById(R.id.itemDescription);
+        t2.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
         t2.setText(descRes);
 
         Button b = (Button) debugLayout.findViewById(R.id.itemButton1);
