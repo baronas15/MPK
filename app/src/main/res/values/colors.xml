@@ -15,9 +15,9 @@
     <color name="blue_A400">#2979ff</color>
     <color name="blue_A700">#2962ff</color>
 
-    <color name="toolBar">#0d47a1</color>
+    <color name="toolBar">#1565c0</color>
     <color name="colorPrimary">#2196f3</color>
-    <color name="colorPrimaryDark">#1976d2</color>
+    <color name="colorPrimaryDark">#0d47a1</color>
     <color name="colorPrimaryLight">#e3f2fd</color>
     <color name="accent">#ee15A95F</color>
 
