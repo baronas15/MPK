@@ -56,6 +56,13 @@ public class activity4 extends AppCompatActivity {
             case 4: addImageView(R.drawable.meditation_count25); break;
             case 5: addImageView(R.drawable.in_a_row2); break;
             case 6: addImageView(R.drawable.in_a_row3); break;
+
+            case 18: addImageView(R.drawable.total_count1h); break;
+            case 19: addImageView(R.drawable.total_count5h); break;
+            case 20: addImageView(R.drawable.total_count10h); break;
+            case 21: addImageView(R.drawable.total_count25h); break;
+            case 22: addImageView(R.drawable.total_count50h); break;
+            case 23: addImageView(R.drawable.total_count100h); break;
         }
 
         //endregion

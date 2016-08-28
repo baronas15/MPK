@@ -54,7 +54,7 @@ public class activity1 extends AppCompatActivity {
         down.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
-                txt.setText("Iškvėpk");
+                txt.setText(R.string.animation_out);
             }
 
             @Override
@@ -71,7 +71,7 @@ public class activity1 extends AppCompatActivity {
         up.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
-                txt.setText("Įkvėpk");
+                txt.setText(R.string.animation_in);
             }
 
             @Override

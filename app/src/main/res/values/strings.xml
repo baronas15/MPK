@@ -17,6 +17,23 @@
     <string name="stickerName4">25 meditacijos</string>
     <string name="stickerName5">2 meditacijos iš eilės</string>
     <string name="stickerName6">3 meditacijos iš eilės</string>
+    <string name="stickerName7">5 dienos iš eilės</string>
+    <string name="stickerName8">10 dienos iš eilės</string>
+    <string name="stickerName9">20 dienos iš eilės</string>
+    <string name="stickerName10">31 dienos iš eilės</string>
+    <string name="stickerName11">50 dienos iš eilės</string>
+    <string name="stickerName12">70 dienos iš eilės</string>
+    <string name="stickerName13">100 dienos iš eilės</string>
+    <string name="stickerName14">150 dienos iš eilės</string>
+    <string name="stickerName15">365 dienos iš eilės</string>
+    <string name="stickerName16">Rytinė meditacija</string>
+    <string name="stickerName17">Pietų meditacija</string>
+    <string name="stickerName18">Bendras meditacijos laikas 1h</string>
+    <string name="stickerName19">Bendras meditacijos laikas 5h</string>
+    <string name="stickerName20">Bendras meditacijos laikas 10h</string>
+    <string name="stickerName21">Bendras meditacijos laikas 25h</string>
+    <string name="stickerName22">Bendras meditacijos laikas 50h</string>
+    <string name="stickerName23">Bendras meditacijos laikas 100h</string>
     <!-- Meditations -->
     <string name="meditation_title1">Kūno skenavimo pratimas</string>
     <string name="meditation_title2">Trijų minučių kvėpavimo/pauzės pratimas</string>
@@ -49,6 +66,8 @@
     <string name="activity1_text1">Užmerkite akis, giliai įkvėpkite ir galvokite kokios Jūsų mintys ir kaip jaučiasi Jūsų kūnas</string>
     <string name="activity1_button1">Pradėk</string>
     <string name="activity1_img_description">image1</string>
+    <string name="animation_out">Iškvėpk</string>
+    <string name="animation_in">Įkvėpk</string>
     <!-- Activity1_1 -->
     <string name="activity1_1_title">Mano fizinė būsena :</string>
     <string name="activity1_1_emo1">PUIKI</string>

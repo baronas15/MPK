@@ -214,7 +214,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName5"
+                        android:text="@string/stickerName7"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text7"
                         android:textSize="@dimen/text_size_2"
@@ -239,7 +239,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName6"
+                        android:text="@string/stickerName8"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text8"
                         android:textSize="@dimen/text_size_2"
@@ -272,7 +272,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName5"
+                        android:text="@string/stickerName9"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text9"
                         android:textSize="@dimen/text_size_2"
@@ -297,7 +297,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName6"
+                        android:text="@string/stickerName10"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text10"
                         android:textSize="@dimen/text_size_2"
@@ -330,7 +330,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName5"
+                        android:text="@string/stickerName11"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text11"
                         android:textSize="@dimen/text_size_2"
@@ -355,7 +355,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName6"
+                        android:text="@string/stickerName12"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text12"
                         android:textSize="@dimen/text_size_2"
@@ -388,7 +388,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName5"
+                        android:text="@string/stickerName13"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text13"
                         android:textSize="@dimen/text_size_2"
@@ -413,7 +413,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName6"
+                        android:text="@string/stickerName14"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text14"
                         android:textSize="@dimen/text_size_2"
@@ -446,7 +446,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName5"
+                        android:text="@string/stickerName15"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text15"
                         android:textSize="@dimen/text_size_2"
@@ -471,7 +471,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName6"
+                        android:text="@string/stickerName16"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text16"
                         android:textSize="@dimen/text_size_2"
@@ -504,7 +504,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName5"
+                        android:text="@string/stickerName17"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text17"
                         android:textSize="@dimen/text_size_2"
@@ -529,7 +529,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName6"
+                        android:text="@string/stickerName18"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text18"
                         android:textSize="@dimen/text_size_2"
@@ -562,7 +562,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName5"
+                        android:text="@string/stickerName19"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text19"
                         android:textSize="@dimen/text_size_2"
@@ -587,7 +587,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName6"
+                        android:text="@string/stickerName20"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text20"
                         android:textSize="@dimen/text_size_2"
@@ -620,7 +620,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName5"
+                        android:text="@string/stickerName21"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text21"
                         android:textSize="@dimen/text_size_2"
@@ -645,7 +645,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName6"
+                        android:text="@string/stickerName22"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text22"
                         android:textSize="@dimen/text_size_2"
@@ -678,7 +678,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/stickerName5"
+                        android:text="@string/stickerName23"
                         android:textColor="@color/primaryText"
                         android:id="@+id/activity4_1_2_text23"
                         android:textSize="@dimen/text_size_2"
@@ -693,10 +693,8 @@
                     android:paddingLeft="@dimen/side_padding_portrait"
                     android:paddingRight="@dimen/side_padding_portrait"
                     android:orientation="vertical">
-
                 </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

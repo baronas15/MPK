@@ -26,6 +26,12 @@ public class activity_sticker extends Activity {
                 case "4": tx.setText(R.string.stickerName4);break;
                 case "5": tx.setText(R.string.stickerName5);break;
                 case "6": tx.setText(R.string.stickerName6);break;
+                case "18": tx.setText(R.string.stickerName18);break;
+                case "19": tx.setText(R.string.stickerName19);break;
+                case "20": tx.setText(R.string.stickerName20);break;
+                case "21": tx.setText(R.string.stickerName21);break;
+                case "22": tx.setText(R.string.stickerName22);break;
+                case "23": tx.setText(R.string.stickerName23);break;
             }
         }
     }

@@ -165,6 +165,55 @@ public class activity1_5 extends AppCompatActivity {
                     startActivity(i);
                 }
 
+                if(settings.getInt("totalTime",0) >= 36000 && !settings.getBoolean("sticker18", false)){
+                    editor.putBoolean("sticker18",true);
+                    editor.putInt("lastSticker",18);
+
+                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
+                    i.putExtra("sticker", "18");
+                    startActivity(i);
+                }
+                if(settings.getInt("totalTime",0) >= 180000 && !settings.getBoolean("sticker19", false)){
+                    editor.putBoolean("sticker19",true);
+                    editor.putInt("lastSticker",19);
+
+                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
+                    i.putExtra("sticker", "19");
+                    startActivity(i);
+                }
+                if(settings.getInt("totalTime",0) >= 360000 && !settings.getBoolean("sticker20", false)){
+                    editor.putBoolean("sticker20",true);
+                    editor.putInt("lastSticker",20);
+
+                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
+                    i.putExtra("sticker", "20");
+                    startActivity(i);
+                }
+                if(settings.getInt("totalTime",0) >= 900000 && !settings.getBoolean("sticker21", false)){
+                    editor.putBoolean("sticker21",true);
+                    editor.putInt("lastSticker",21);
+
+                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
+                    i.putExtra("sticker", "21");
+                    startActivity(i);
+                }
+                if(settings.getInt("totalTime",0) >= 1800000 && !settings.getBoolean("sticker22", false)){
+                    editor.putBoolean("sticker22",true);
+                    editor.putInt("lastSticker",22);
+
+                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
+                    i.putExtra("sticker", "22");
+                    startActivity(i);
+                }
+                if(settings.getInt("totalTime",0) >= 3600000 && !settings.getBoolean("sticker23", false)){
+                    editor.putBoolean("sticker23",true);
+                    editor.putInt("lastSticker",23);
+
+                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
+                    i.putExtra("sticker", "23");
+                    startActivity(i);
+                }
+
                 editor.apply();
             }
         });
@@ -296,6 +345,14 @@ public class activity1_5 extends AppCompatActivity {
             //Log.d("Progress", ""+progress);
             seekbar.setProgress(progress);
 
+            if(mediaPlayer.isPlaying()) {
+                SharedPreferences settings = getSharedPreferences("Stickers", 0);
+                SharedPreferences.Editor editor = settings.edit();
+                editor.putInt("totalTime", settings.getInt("totalTime", 0) + 1);
+                editor.apply();
+
+                Log.d("totTime", settings.getInt("totalTime", 0) + "");
+            }
             // Running this thread after 100 milliseconds
             mHandler.postDelayed(this, 100);
         }
