@@ -16,6 +16,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:src="@drawable/mpk"/>
     </FrameLayout>
     <FrameLayout
@@ -23,16 +24,16 @@
         android:layout_height="0dp"
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_2"
-        android:layout_weight="8"
-        android:padding="@dimen/drawer_item_padding">
+        android:layout_weight="8">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
             android:weightSum="10">
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:src="@drawable/ic_home_black_36dp"
                 android:layout_weight="2"/>
             <TextView
@@ -40,6 +41,7 @@
                 android:layout_height="wrap_content"
                 android:text="Grįžti"
                 android:textColor="@color/primaryText"
+                android:layout_gravity="center"
                 android:layout_weight="8"/>
         </LinearLayout>
     </FrameLayout>
@@ -48,22 +50,23 @@
         android:layout_height="0dp"
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_3"
-        android:layout_weight="8"
-        android:padding="@dimen/drawer_item_padding">
+        android:layout_weight="8">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
             android:weightSum="10">
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:src="@drawable/ic_school_black_36dp"
                 android:layout_weight="2"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Išmok medituoti"
+                android:layout_gravity="center"
                 android:textColor="@color/primaryText"
                 android:layout_weight="8"/>
         </LinearLayout>
@@ -73,22 +76,23 @@
         android:layout_height="0dp"
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_4"
-        android:layout_weight="8"
-        android:padding="@dimen/drawer_item_padding">
+        android:layout_weight="8">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
             android:weightSum="10">
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:src="@drawable/ic_list_black_36dp"
                 android:layout_weight="2"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Meditacijos"
+                android:layout_gravity="center"
                 android:textColor="@color/primaryText"
                 android:layout_weight="8"/>
         </LinearLayout>
@@ -98,22 +102,23 @@
         android:layout_height="0dp"
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_5"
-        android:layout_weight="8"
-        android:padding="@dimen/drawer_item_padding">
+        android:layout_weight="8">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
             android:weightSum="10">
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:src="@drawable/ic_cake_black_36dp"
                 android:layout_weight="2"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Pažanga"
+                android:layout_gravity="center"
                 android:textColor="@color/primaryText"
                 android:layout_weight="8"/>
         </LinearLayout>
@@ -123,11 +128,12 @@
         android:layout_height="0dp"
         android:id="@+id/drawer_item_6"
         android:layout_weight="8"
-        android:padding="@dimen/drawer_item_padding">
+        android:paddingLeft="@dimen/drawer_item_padding">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rėmėjai"
+            android:layout_gravity="center_vertical"
             android:textColor="@color/primaryText"/>
     </FrameLayout>
     <FrameLayout
