@@ -18,11 +18,16 @@ import android.widget.FrameLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import java.util.Calendar;
+
 import lt.mpk.mpk.R;
 
 import static android.media.MediaPlayer.create;
 
 public class activity1_5 extends AppCompatActivity {
+    private SharedPreferences settings;
+    private SharedPreferences.Editor editor;
+
     private DrawerLayout mDrawer;
     private Toolbar toolbar;
 
@@ -37,6 +42,9 @@ public class activity1_5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity1_5);
+
+        settings = getSharedPreferences("Stickers", 0);
+        editor = settings.edit();
 
         int audioToPlay = R.raw.septintas;
         Bundle extras = getIntent().getExtras();
@@ -106,113 +114,44 @@ public class activity1_5 extends AppCompatActivity {
                 mHandler.removeCallbacksAndMessages(null);
                 play_button.setBackgroundResource(R.drawable.play_button);
 
-                SharedPreferences settings = getSharedPreferences("Stickers", 0);
-                SharedPreferences.Editor editor = settings.edit();
+                Calendar c = Calendar.getInstance();
+                int hour = c.get(Calendar.HOUR_OF_DAY);
+                int minute = c.get(Calendar.MINUTE);
+                int time = hour * 60 + minute;
 
                 editor.putInt("meditationCount", settings.getInt("meditationCount",0) + 1);
                 editor.putInt("meditationsInOneGo", settings.getInt("meditationsInOneGo",0) + 1);
-
                 editor.apply();
 
+                if(settings.getInt("meditationCount",0) == 1 && !settings.getBoolean("sticker1", false))
+                    createSticker(1);
+                if(settings.getInt("meditationCount",0) == 2 && !settings.getBoolean("sticker2", false))
+                    createSticker(2);
+                if(settings.getInt("meditationCount",0) == 10 && !settings.getBoolean("sticker3", false))
+                    createSticker(3);
+                if(settings.getInt("meditationCount",0) == 25 && !settings.getBoolean("sticker4", false))
+                    createSticker(4);
+                if(settings.getInt("meditationsInOneGo",0) == 2 && !settings.getBoolean("sticker5", false))
+                    createSticker(5);
+                if(settings.getInt("meditationsInOneGo",0) == 3 && !settings.getBoolean("sticker6", false))
+                    createSticker(6);
 
-                Log.d("s",settings.getInt("meditationCount",0)+"");
-                if(settings.getInt("meditationCount",0) == 1){
-                    editor.putBoolean("sticker1",true);
-                    editor.putInt("lastSticker",1);
-
-                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
-                    i.putExtra("sticker", "1");
-                    startActivity(i);
-                }
-                if(settings.getInt("meditationCount",0) == 2){
-                    editor.putBoolean("sticker2",true);
-                    editor.putInt("lastSticker",2);
-
-                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
-                    i.putExtra("sticker", "2");
-                    startActivity(i);
-                }
-                if(settings.getInt("meditationCount",0) == 10){
-                    editor.putBoolean("sticker3",true);
-                    editor.putInt("lastSticker",3);
-
-                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
-                    i.putExtra("sticker", "3");
-                    startActivity(i);
-                }
-                if(settings.getInt("meditationCount",0) == 25){
-                    editor.putBoolean("sticker4",true);
-                    editor.putInt("lastSticker",4);
-
-                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
-                    i.putExtra("sticker", "4");
-                    startActivity(i);
-                }
-                if(settings.getInt("meditationsInOneGo",0) == 2){
-                    editor.putBoolean("sticker5",true);
-                    editor.putInt("lastSticker",5);
-
-                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
-                    i.putExtra("sticker", "5");
-                    startActivity(i);
-                }
-                if(settings.getInt("meditationsInOneGo",0) == 3){
-                    editor.putBoolean("sticker6",true);
-                    editor.putInt("lastSticker",6);
-
-                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
-                    i.putExtra("sticker", "6");
-                    startActivity(i);
-                }
-
-                if(settings.getInt("totalTime",0) >= 36000 && !settings.getBoolean("sticker18", false)){
-                    editor.putBoolean("sticker18",true);
-                    editor.putInt("lastSticker",18);
-
-                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
-                    i.putExtra("sticker", "18");
-                    startActivity(i);
-                }
-                if(settings.getInt("totalTime",0) >= 180000 && !settings.getBoolean("sticker19", false)){
-                    editor.putBoolean("sticker19",true);
-                    editor.putInt("lastSticker",19);
-
-                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
-                    i.putExtra("sticker", "19");
-                    startActivity(i);
-                }
-                if(settings.getInt("totalTime",0) >= 360000 && !settings.getBoolean("sticker20", false)){
-                    editor.putBoolean("sticker20",true);
-                    editor.putInt("lastSticker",20);
-
-                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
-                    i.putExtra("sticker", "20");
-                    startActivity(i);
-                }
-                if(settings.getInt("totalTime",0) >= 900000 && !settings.getBoolean("sticker21", false)){
-                    editor.putBoolean("sticker21",true);
-                    editor.putInt("lastSticker",21);
-
-                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
-                    i.putExtra("sticker", "21");
-                    startActivity(i);
-                }
-                if(settings.getInt("totalTime",0) >= 1800000 && !settings.getBoolean("sticker22", false)){
-                    editor.putBoolean("sticker22",true);
-                    editor.putInt("lastSticker",22);
-
-                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
-                    i.putExtra("sticker", "22");
-                    startActivity(i);
-                }
-                if(settings.getInt("totalTime",0) >= 3600000 && !settings.getBoolean("sticker23", false)){
-                    editor.putBoolean("sticker23",true);
-                    editor.putInt("lastSticker",23);
-
-                    Intent i = new Intent(getApplicationContext(), activity_sticker.class);
-                    i.putExtra("sticker", "23");
-                    startActivity(i);
-                }
+                if(time >= 720 && time <= 840 && !settings.getBoolean("sticker16", false))
+                    createSticker(16);
+                if(time >= 720 && time <= 840 && !settings.getBoolean("sticker17", false))
+                    createSticker(17);
+                if(settings.getInt("totalTime",0) >= 36000 && !settings.getBoolean("sticker18", false))
+                    createSticker(18);
+                if(settings.getInt("totalTime",0) >= 180000 && !settings.getBoolean("sticker19", false))
+                    createSticker(19);
+                if(settings.getInt("totalTime",0) >= 360000 && !settings.getBoolean("sticker20", false))
+                    createSticker(20);
+                if(settings.getInt("totalTime",0) >= 900000 && !settings.getBoolean("sticker21", false))
+                    createSticker(21);
+                if(settings.getInt("totalTime",0) >= 1800000 && !settings.getBoolean("sticker22", false))
+                    createSticker(22);
+                if(settings.getInt("totalTime",0) >= 3600000 && !settings.getBoolean("sticker23", false))
+                    createSticker(23);
 
                 editor.apply();
             }
@@ -313,6 +252,16 @@ public class activity1_5 extends AppCompatActivity {
         //endregion
     }
 
+    private void createSticker(int num){
+        editor.putBoolean("sticker"+num,true);
+        editor.putInt("lastSticker",num);
+
+        Intent i = new Intent(getApplicationContext(), activity_sticker.class);
+        i.putExtra("sticker", num+"");
+        startActivity(i);
+        editor.apply();
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -351,7 +300,7 @@ public class activity1_5 extends AppCompatActivity {
                 editor.putInt("totalTime", settings.getInt("totalTime", 0) + 1);
                 editor.apply();
 
-                Log.d("totTime", settings.getInt("totalTime", 0) + "");
+                //Log.d("totTime", settings.getInt("totalTime", 0) + "");
             }
             // Running this thread after 100 milliseconds
             mHandler.postDelayed(this, 100);

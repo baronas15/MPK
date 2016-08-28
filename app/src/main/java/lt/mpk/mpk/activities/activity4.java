@@ -56,7 +56,17 @@ public class activity4 extends AppCompatActivity {
             case 4: addImageView(R.drawable.meditation_count25); break;
             case 5: addImageView(R.drawable.in_a_row2); break;
             case 6: addImageView(R.drawable.in_a_row3); break;
-
+            case 7: addImageView(R.drawable.days_in_a_row5); break;
+            case 8: addImageView(R.drawable.days_in_a_row10); break;
+            case 9: addImageView(R.drawable.days_in_a_row20); break;
+            case 10: addImageView(R.drawable.days_in_a_row31); break;
+            case 11: addImageView(R.drawable.days_in_a_row50); break;
+            case 12: addImageView(R.drawable.days_in_a_row70); break;
+            case 13: addImageView(R.drawable.days_in_a_row100); break;
+            case 14: addImageView(R.drawable.days_in_a_row150); break;
+            case 15: addImageView(R.drawable.days_in_a_row365); break;
+            case 16: addImageView(R.drawable.night); break;
+            case 17: addImageView(R.drawable.sun); break;
             case 18: addImageView(R.drawable.total_count1h); break;
             case 19: addImageView(R.drawable.total_count5h); break;
             case 20: addImageView(R.drawable.total_count10h); break;
