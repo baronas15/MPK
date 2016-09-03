@@ -99,6 +99,17 @@ public class activity4 extends AppCompatActivity {
         });
         //endregion
 
+        //region Area3
+        //endregion
+
+        //region Area4
+
+
+        //endregion
+
+        //region Area5
+        //endregion
+
         //region Toolbar_NavDrawer
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

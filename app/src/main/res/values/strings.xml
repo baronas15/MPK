@@ -83,7 +83,7 @@
     <string name="activity1_2_button1">Pridėti emocijas</string>
     <string name="activity1_2_button2">Toliau</string>
     <!-- Activity1_3 -->
-    <string name="activity1_3_button1">Pridėti</string>
+    <string name="activity1_3_button1">Tęsti</string>
     <string name="activity1_3_img_description1">A picture of happy state</string>
     <string name="activity1_3_img_description2">A picture of hopeful state</string>
     <string name="activity1_3_img_description3">A picture of sad state</string>
