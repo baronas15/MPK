@@ -13,6 +13,13 @@
             android:layout_height="wrap_content">
 
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryText"
+                android:text=""
+
+                android:padding="@dimen/item_vertical_padding"/>
 
         </LinearLayout>
     </ScrollView>
