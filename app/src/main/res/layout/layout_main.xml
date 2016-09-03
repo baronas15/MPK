@@ -26,16 +26,17 @@
                 android:paddingLeft="@dimen/side_padding_portrait"
                 android:paddingRight="@dimen/side_padding_portrait"
                 android:paddingTop="@dimen/item_vertical_padding"
-                android:paddingBottom="@dimen/item_vertical_padding"
                 android:typeface="serif" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="6"
                 android:paddingLeft="@dimen/side_padding_portrait"
                 android:paddingRight="@dimen/side_padding_portrait"
+                android:paddingTop="@dimen/item_vertical_padding"
+                android:paddingBottom="@dimen/item_vertical_padding"
                 android:background="@color/colorPrimary"
-                android:layout_weight="6"
                 android:orientation="vertical"
                 android:gravity="center">
 
@@ -48,26 +49,26 @@
                     android:gravity="center_vertical">
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="fill_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="1"
                         android:baselineAligned="false"
                         android:weightSum="12"
                         android:layout_marginRight="@dimen/little_separator"
                         android:gravity="center_vertical">
-                        <lt.mpk.mpk.FontFitTextView
+                        <TextView
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"
                             android:text="@string/main_text1"
                             android:textColor="@color/primaryTextInverted"
-                            android:textSize="@dimen/text_size_1"
+                            android:textSize="@dimen/text_1"
                             android:layout_weight="10"
                             android:id="@+id/activity_main_titleText"
-                            android:typeface="sans" />
+                            android:typeface="sans"
+                            android:paddingBottom="@dimen/item_vertical_padding"/>
                         <FrameLayout
                             android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2">
+                            android:layout_height="wrap_content">
                             <Button
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
