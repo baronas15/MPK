@@ -33,8 +33,11 @@
         <activity android:name=".activities.activity1_5" />
         <activity android:name=".activities.activity_sticker" />
         <activity android:name=".activities.activity1_4" />
-        <activity
-            android:name=".activities.activity4_1_2" />
+        <activity android:name=".activities.activity4_1_2" />
+        <activity android:name=".activities.activity2_1" />
+        <activity android:name=".activities.activity2_2" />
+        <activity android:name=".activities.activity2_3" />
+        <activity android:name=".activities.activity2_4"></activity>
     </application>
 
 </manifest>

@@ -1,7 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryLight">
 
-</FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/side_padding_portrait"
+                android:paddingRight="@dimen/side_padding_portrait"
+                android:background="@drawable/layout_button_color_primary_light"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:id="@+id/activity2_item1"
+                android:paddingBottom="@dimen/item_vertical_padding"
+                android:paddingTop="@dimen/item_vertical_padding"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pagrindai"
+                        android:layout_gravity="start|center"
+                        android:clickable="false"
+                        android:textColor="@color/primaryText"
+                        android:textSize="@dimen/header2"
+                        android:typeface="serif" />
+                    <ImageView
+                        android:src="@drawable/arrow"
+                        android:layout_width="@dimen/arrowSize"
+                        android:layout_height="@dimen/arrowSize"
+                        android:contentDescription="@string/img_description2"
+                        android:layout_gravity="center_vertical|end"
+                        android:duplicateParentState="true"/>
+                </FrameLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:clickable="false"
+                android:background="@color/blue_A100" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/side_padding_portrait"
+                android:paddingRight="@dimen/side_padding_portrait"
+                android:background="@drawable/layout_button_color_primary_light"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:id="@+id/activity2_item2"
+                android:paddingTop="@dimen/item_vertical_padding"
+                android:paddingBottom="@dimen/item_vertical_padding">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kaip tai veikia?"
+                        android:layout_gravity="start|center"
+                        android:clickable="false"
+                        android:textColor="@color/primaryText"
+                        android:textSize="@dimen/header2"
+                        android:typeface="serif"
+                        android:duplicateParentState="true"/>
+                    <ImageView
+                        android:src="@drawable/arrow"
+                        android:layout_width="@dimen/arrowSize"
+                        android:layout_height="@dimen/arrowSize"
+                        android:contentDescription="@string/img_description2"
+                        android:layout_gravity="center_vertical|end"
+                        android:duplicateParentState="true"/>
+                </FrameLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:clickable="false"
+                android:background="@color/blue_A100" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/side_padding_portrait"
+                android:paddingRight="@dimen/side_padding_portrait"
+                android:background="@drawable/layout_button_color_primary_light"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:id="@+id/activity2_item3"
+                android:paddingTop="@dimen/item_vertical_padding"
+                android:paddingBottom="@dimen/item_vertical_padding">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Praktikos"
+                        android:layout_gravity="start|center"
+                        android:clickable="false"
+                        android:textColor="@color/primaryText"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/header2"
+                        android:typeface="serif"
+                        android:duplicateParentState="true"/>
+                    <ImageView
+                        android:src="@drawable/arrow"
+                        android:layout_width="@dimen/arrowSize"
+                        android:layout_height="@dimen/arrowSize"
+                        android:contentDescription="@string/img_description2"
+                        android:layout_gravity="center_vertical|end"
+                        android:duplicateParentState="true"/>
+                </FrameLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:clickable="false"
+                android:background="@color/blue_A100" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/side_padding_portrait"
+                android:paddingRight="@dimen/side_padding_portrait"
+                android:background="@drawable/layout_button_color_primary_light"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:id="@+id/activity2_item4"
+                android:paddingTop="@dimen/item_vertical_padding"
+                android:paddingBottom="@dimen/item_vertical_padding">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apie meditacijas"
+                        android:layout_gravity="start|center"
+                        android:clickable="false"
+                        android:textColor="@color/primaryText"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/header2"
+                        android:typeface="serif"
+                        android:duplicateParentState="true"/>
+                    <ImageView
+                        android:src="@drawable/arrow"
+                        android:layout_width="@dimen/arrowSize"
+                        android:layout_height="@dimen/arrowSize"
+                        android:contentDescription="@string/img_description2"
+                        android:layout_gravity="center_vertical|end"
+                        android:duplicateParentState="true"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
