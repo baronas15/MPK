@@ -2,13 +2,12 @@ package lt.mpk.mpk;
 
 import android.app.Application;
 import android.content.SharedPreferences;
-import android.util.Log;
 
 /* Example usage:
 *
 * app a = ((app)getApplicationContext());
-* int mental = a.getMental();
-* a.setMental(1);
+* int physical = a.getPhysical();
+* a.setPhysical(1);
 * */
 public class app extends Application {
     public int getPhysical() {
@@ -76,19 +75,13 @@ public class app extends Application {
         if(!settings.contains("lastSticker"))
             editor.putInt("lastSticker",-1);
 
-        for (int i = 1; i <= 23; i++){
+        for (int i = 1; i <= 23; i++)
             if(!settings.contains("sticker"+i))
                 editor.putBoolean("sticker"+i,false);
-            if (settings.getBoolean("sticker"+i,false))
-                Log.d("sticker"+i,"true");
-        }
 
-        for (int i = 1; i <= 7; i++){
+        for (int i = 1; i <= 7; i++)
             if(!settings.contains("playTime"+i))
                 editor.putInt("playTime"+i,0);
-
-            Log.d("playTime"+i,settings.getInt("playTime"+i,0)+"");
-        }
 
         editor.apply();
         //endregion

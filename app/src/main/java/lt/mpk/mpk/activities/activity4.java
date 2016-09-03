@@ -3,14 +3,12 @@ package lt.mpk.mpk.activities;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
-import android.os.Build;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.MenuItem;
@@ -19,10 +17,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 import lt.mpk.mpk.R;
 
@@ -244,9 +238,6 @@ public class activity4 extends AppCompatActivity {
 
         finalTimerString = finalTimerString + minutes + ":" + secondsString;
 
-        Log.d("hours",hours+"");
-        Log.d("minutes",minutes+"");
-        Log.d("seconds",seconds+"");
         // return timer string
         return finalTimerString;
     }

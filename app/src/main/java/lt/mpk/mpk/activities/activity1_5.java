@@ -139,7 +139,6 @@ public class activity1_5 extends AppCompatActivity {
                 editor.putInt("lastMeditationYear", today.get(Calendar.YEAR));
                 editor.putInt("lastMeditationMonth", today.get(Calendar.MONTH));
                 editor.putInt("lastMeditationDay", today.get(Calendar.DAY_OF_MONTH));
-                Log.d("diffdays",diffDays+"");
 
                 if(diffDays > 1) editor.putInt("daysInARow", 1);
                 else if(diffDays == 1) editor.putInt("daysInARow", settings.getInt("daysInARow",0) + 1);
@@ -199,7 +198,6 @@ public class activity1_5 extends AppCompatActivity {
                     createSticker(23);
 
                 editor.putInt("playTime" + meditationNumber, settings.getInt("playTime" + meditationNumber,0) + 1);
-
 
                 editor.apply();
                 //endregion
@@ -348,8 +346,6 @@ public class activity1_5 extends AppCompatActivity {
                 SharedPreferences.Editor editor = settings.edit();
                 editor.putInt("totalTime", settings.getInt("totalTime", 0) + 1);
                 editor.apply();
-
-                //Log.d("totTime", settings.getInt("totalTime", 0) + "");
             }
             // Running this thread after 100 milliseconds
             mHandler.postDelayed(this, 100);

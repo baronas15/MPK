@@ -7,7 +7,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -157,7 +156,6 @@ public class activity1_2 extends AppCompatActivity {
         app a = ((app)getApplicationContext());
         Button b = (Button) findViewById(R.id.activity1_3_button2);
 
-        Log.d("d",a.getEmotional1()+"|"+a.getEmotional2()+"|"+a.getEmotional3());
         if(a.getEmotional1() == -1 && a.getEmotional2() == -1 && a.getEmotional3() == -1)
             b.setEnabled(false);
         else
