@@ -116,5 +116,9 @@
     <!-- Activity4 -->
     <string name="activity4_title1">PASKUTINIS APDOVANOJIMAS</string>
     <string name="activity4_title2">VISO APDOVANOJIMŲ:</string>
+    <string name="activity4_title4">DAŽNIAUSIA MEDITACIJA</string>
     <string name="activity4_error1">Dar neturite dovanų</string>
+    <string name="activity4_error4">Dar neklausėte nei vieno įrašo!</string>
+    <string name="activity4_title5">VISO MEDITUOTA</string>
+
 </resources>

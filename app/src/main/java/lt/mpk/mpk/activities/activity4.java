@@ -20,6 +20,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 import lt.mpk.mpk.R;
 
 public class activity4 extends AppCompatActivity {
@@ -84,8 +88,6 @@ public class activity4 extends AppCompatActivity {
         for (int i = 1; i <= 23; i++){
             if(settings.getBoolean("sticker"+i,true))
                 stickerCount++;
-            if(settings.getBoolean("sticker"+i,false))
-                Log.d("sticker"+i,"true");
         }
         text2.setText(stickerCount+"/23");
 
@@ -103,11 +105,36 @@ public class activity4 extends AppCompatActivity {
         //endregion
 
         //region Area4
+        int[] playTime = new int[7];
+        for (int i = 1; i <= 7; i++){
+            playTime[i-1] = settings.getInt("playTime"+i,0);
+        }
 
+        int max=-1;
+        int maxIndex = -1;
 
+        for (int i = 0; i < playTime.length; i++) {
+            if (playTime[i] > max && playTime[i] != 0) {
+                max = playTime[i];
+                maxIndex = i;
+            }
+        }
+
+        TextView textItem4 = (TextView) findViewById(R.id.activity4_item4);
+        switch (maxIndex){
+            case 0: textItem4.setText(R.string.meditation_title1); break;
+            case 1: textItem4.setText(R.string.meditation_title2); break;
+            case 2: textItem4.setText(R.string.meditation_title3); break;
+            case 3: textItem4.setText(R.string.meditation_title4); break;
+            case 4: textItem4.setText(R.string.meditation_title5); break;
+            case 5: textItem4.setText(R.string.meditation_title6); break;
+            case 6: textItem4.setText(R.string.meditation_title7); break;
+        }
         //endregion
-
         //region Area5
+        TextView textItem5 = (TextView) findViewById(R.id.activity4_item5);
+        long time = settings.getInt("totalTime",0) * 100;
+        textItem5.setText(milliSecondsToTimer(time));
         //endregion
 
         //region Toolbar_NavDrawer
@@ -198,10 +225,36 @@ public class activity4 extends AppCompatActivity {
         //endregion
     }
 
+    public String milliSecondsToTimer(long milliseconds){
+        String finalTimerString = "";
+        String secondsString;
+
+        // Convert total duration into time
+        int hours = (int)( milliseconds / (1000*60*60));
+        int minutes = (int)(milliseconds % (1000*60*60)) / (1000*60);
+        int seconds = (int) ((milliseconds % (1000*60*60)) % (1000*60) / 1000);
+        // Add hours if there
+        if(hours > 0){
+            finalTimerString = hours + ":";
+        }
+
+        // Prepending 0 to seconds if it is one digit
+        if(seconds < 10) secondsString = "0" + seconds;
+        else secondsString = "" + seconds;
+
+        finalTimerString = finalTimerString + minutes + ":" + secondsString;
+
+        Log.d("hours",hours+"");
+        Log.d("minutes",minutes+"");
+        Log.d("seconds",seconds+"");
+        // return timer string
+        return finalTimerString;
+    }
+
     private void addImageView(int ResId) {
         ImageView iv = new ImageView(this);
 
-        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams((int) FrameLayout.LayoutParams.WRAP_CONTENT,(int) FrameLayout.LayoutParams.WRAP_CONTENT);
+        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
         params.gravity = Gravity.CENTER;
         iv.setLayoutParams(params);
 
