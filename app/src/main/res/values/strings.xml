@@ -78,7 +78,7 @@
     <string name="activity1_1_img_description">A picture that describes your physical state</string>
     <string name="activity1_1_button1">Toliau</string>
     <!-- Activity1_2 -->
-    <string name="activity1_2_title">EMOCIŠKAI AŠ…</string>
+    <string name="activity1_2_title">AŠ JAUČIUOSI…</string>
     <string name="activity1_2_img_description">A picture that shows different emotional states</string>
     <string name="activity1_2_button1">Pridėti emocijas</string>
     <string name="activity1_2_button2">Toliau</string>
@@ -99,13 +99,13 @@
     <string name="activity1_3_emot8">Susitelkusi (-ęs)</string>
     <string name="activity1_3_emot9">Nervinga (-as)</string>
     <string name="activity1_3_emot10">Liūdna (-as)</string>
-    <string name="activity1_3_emot11">Isižeidusi (-ęs)</string>
+    <string name="activity1_3_emot11">Įsižeidusi (-ęs)</string>
     <string name="activity1_3_emot12">Nusivylusi (-ęs)</string>
     <string name="activity1_3_emot13">Pikta (-as)</string>
     <string name="activity1_3_emot14">Pesimištiska (-as)</string>
     <string name="activity1_3_emot15">Užsisklendusi (-ęs)</string>
     <!-- Activity1_4 -->
-    <string name="activity1_4_title">Pasirinkite meditaciją</string>
+    <string name="activity1_4_title">Daryti siūloma</string>
     <string name="item_button_text">Klausyti</string>
     <!-- Activity1_5 -->
     <string name="activity1_5_title">Pasirinkite meditaciją</string>
