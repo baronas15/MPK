@@ -10,7 +10,6 @@
         android:layout_width="0dp"
         android:layout_height="fill_parent"
         android:paddingLeft="@dimen/side_padding_landscape"
-        android:paddingRight="@dimen/side_padding_landscape"
         android:paddingTop="@dimen/item_vertical_padding"
         android:background="@color/colorPrimary"
         android:layout_weight="60"
@@ -25,15 +24,15 @@
             android:gravity="center"
             android:textColor="@color/primaryTextInverted"
             android:id="@+id/activity_main_title"
-            android:typeface="serif" />
+            android:typeface="serif"
+            android:paddingRight="@dimen/side_padding_landscape" />
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="horizontal"
             android:baselineAligned="false"
-            android:weightSum="2"
-            android:paddingTop="@dimen/item_vertical_padding">
+            android:weightSum="2">
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
@@ -120,7 +119,9 @@
                     android:textColor="@color/primaryText"
                     android:textSize="@dimen/header2_landscape"
                     android:id="@+id/activity_main_text1"
-                    android:typeface="serif" />
+                    android:typeface="serif"
+                    android:minLines="2"
+                    android:layout_weight="1" />
                 <ImageView
                     android:src="@drawable/arrow"
                     android:layout_width="@dimen/arrowSize"
@@ -161,7 +162,8 @@
                     android:textColor="@color/primaryText"
                     android:textSize="@dimen/header2_landscape"
                     android:id="@+id/activity_main_text2"
-                    android:typeface="serif" />
+                    android:typeface="serif"
+                    android:layout_weight="1" />
                 <ImageView
                     android:src="@drawable/arrow"
                     android:layout_width="@dimen/arrowSize"
@@ -190,20 +192,22 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="right">
+                android:layout_height="match_parent">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/main_button4"
-                    android:layout_gravity="center|start"
+                    android:layout_gravity="left|center"
                     android:clickable="false"
                     android:textColor="@color/primaryText"
                     android:textIsSelectable="false"
                     android:textSize="@dimen/header2_landscape"
                     android:id="@+id/activity_main_text3"
-                    android:typeface="serif" />
+                    android:typeface="serif"
+                    android:minLines="2"
+                    android:gravity="left"
+                    android:layout_weight="1" />
                 <ImageView
                     android:src="@drawable/arrow"
                     android:layout_width="@dimen/arrowSize"

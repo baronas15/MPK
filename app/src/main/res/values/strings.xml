@@ -56,9 +56,9 @@
     <string name="main_button1">Tikrinti</string>
     <string name="main_title1">KAIP ŠIANDIEN JAUTIESI?</string>
     <string name="main_text1">Pasitikrink savo savijautą, išklausyk meditaciją ir pasigerink sau dieną!</string>
-    <string name="main_button2">IŠMOK MEDITUOTI</string>
+    <string name="main_button2">IŠMOK\nMEDITUOTI</string>
     <string name="main_button3">MEDITACIJOS</string>
-    <string name="main_button4">MANO PAŽANGA</string>
+    <string name="main_button4">MANO\nPAŽANGA</string>
     <string name="img_description1">Lotus posture</string>
     <string name="img_description2">Arrow</string>
     <!-- Activity1 -->
