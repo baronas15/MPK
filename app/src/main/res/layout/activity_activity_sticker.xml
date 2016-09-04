@@ -12,10 +12,12 @@
         android:layout_height="match_parent"
         android:weightSum="12">
 
-        <FrameLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center">
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="@dimen/item_vertical_padding">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -23,8 +25,28 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Large Text"
                 android:id="@+id/activity_sticker_text1"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/item_vertical_padding_big"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_sticker_image1"
+                android:layout_weight="1"
+                android:src="@drawable/days_in_a_row10"
                 android:layout_gravity="center" />
-        </FrameLayout>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Gerai"
+                android:id="@+id/activity_sticker_button_1"
+                android:background="@drawable/roundedbutton"
+                android:textColor="@color/primaryText"
+                android:layout_margin="@dimen/item_vertical_padding" />
+        </LinearLayout>
 
     </LinearLayout>
 

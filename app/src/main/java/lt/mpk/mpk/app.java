@@ -84,7 +84,7 @@ public class app extends Application {
                 editor.putInt("playTime"+i,0);
 
         //FOR DEVELOPEMENT PURPOSES
-        if(false){
+        /*if(false){
             for (int i = 1; i <= 19; i++)
                 editor.putBoolean("sticker"+i,true);
             editor.putInt("lastSticker",19);
@@ -99,7 +99,7 @@ public class app extends Application {
             editor.putInt("totalTime",0);
             for (int i = 1; i <= 7; i++)
                 editor.putInt("playTime"+i,0);
-        }
+        }*/
 
 
         editor.apply();
