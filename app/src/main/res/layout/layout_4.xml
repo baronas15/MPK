@@ -83,7 +83,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="@dimen/header1"
-                            android:text="0/23"
+                            android:text="0/19"
                             android:id="@+id/stickerCount"
                             android:layout_gravity="center" />
                     </FrameLayout>
