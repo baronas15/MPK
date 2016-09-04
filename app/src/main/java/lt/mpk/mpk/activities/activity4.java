@@ -50,28 +50,24 @@ public class activity4 extends AppCompatActivity {
                 frame.addView(tx);
                 break;
             case 1: addImageView(R.drawable.start); break;
-            case 2: addImageView(R.drawable.meditation_count2); break;
-            case 3: addImageView(R.drawable.meditation_count10); break;
-            case 4: addImageView(R.drawable.meditation_count25); break;
-            case 5: addImageView(R.drawable.in_a_row2); break;
-            case 6: addImageView(R.drawable.in_a_row3); break;
-            case 7: addImageView(R.drawable.days_in_a_row5); break;
-            case 8: addImageView(R.drawable.days_in_a_row10); break;
-            case 9: addImageView(R.drawable.days_in_a_row20); break;
-            case 10: addImageView(R.drawable.days_in_a_row31); break;
-            case 11: addImageView(R.drawable.days_in_a_row50); break;
-            case 12: addImageView(R.drawable.days_in_a_row70); break;
-            case 13: addImageView(R.drawable.days_in_a_row100); break;
-            case 14: addImageView(R.drawable.days_in_a_row150); break;
-            case 15: addImageView(R.drawable.days_in_a_row365); break;
-            case 16: addImageView(R.drawable.night); break;
-            case 17: addImageView(R.drawable.sun); break;
-            case 18: addImageView(R.drawable.total_count1h); break;
-            case 19: addImageView(R.drawable.total_count5h); break;
-            case 20: addImageView(R.drawable.total_count10h); break;
-            case 21: addImageView(R.drawable.total_count25h); break;
-            case 22: addImageView(R.drawable.total_count50h); break;
-            case 23: addImageView(R.drawable.total_count100h); break;
+            case 2: addImageView(R.drawable.meditation_count10); break;
+            case 3: addImageView(R.drawable.meditation_count25); break;
+            case 4: addImageView(R.drawable.in_a_row2); break;
+            case 5: addImageView(R.drawable.in_a_row3); break;
+            case 6: addImageView(R.drawable.days_in_a_row5); break;
+            case 7: addImageView(R.drawable.days_in_a_row10); break;
+            case 8: addImageView(R.drawable.days_in_a_row20); break;
+            case 9: addImageView(R.drawable.days_in_a_row31); break;
+            case 10: addImageView(R.drawable.days_in_a_row50); break;
+            case 11: addImageView(R.drawable.days_in_a_row70); break;
+            case 12: addImageView(R.drawable.days_in_a_row100); break;
+            case 13: addImageView(R.drawable.days_in_a_row150); break;
+            case 14: addImageView(R.drawable.days_in_a_row365); break;
+            case 15: addImageView(R.drawable.night); break;
+            case 16: addImageView(R.drawable.sun); break;
+            case 17: addImageView(R.drawable.total_count5h); break;
+            case 18: addImageView(R.drawable.total_count50h); break;
+            case 19: addImageView(R.drawable.total_count100h); break;
         }
 
         //endregion
@@ -79,11 +75,11 @@ public class activity4 extends AppCompatActivity {
         TextView text2 = (TextView) findViewById(R.id.stickerCount);
         int stickerCount = 0;
 
-        for (int i = 1; i <= 23; i++){
+        for (int i = 1; i <= 19; i++){
             if(settings.getBoolean("sticker"+i,true))
                 stickerCount++;
         }
-        text2.setText(stickerCount+"/23");
+        text2.setText(stickerCount+"/19");
 
         LinearLayout l2 = (LinearLayout) findViewById(R.id.activity4_layout2);
         l2.setOnClickListener(new View.OnClickListener() {

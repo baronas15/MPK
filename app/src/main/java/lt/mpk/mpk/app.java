@@ -75,7 +75,7 @@ public class app extends Application {
         if(!settings.contains("lastSticker"))
             editor.putInt("lastSticker",-1);
 
-        for (int i = 1; i <= 23; i++)
+        for (int i = 1; i <= 19; i++)
             if(!settings.contains("sticker"+i))
                 editor.putBoolean("sticker"+i,false);
 

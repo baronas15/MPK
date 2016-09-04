@@ -25,9 +25,7 @@ public class activity4_1_2 extends AppCompatActivity {
             R.id.activity4_1_2_image13, R.id.activity4_1_2_image14,
             R.id.activity4_1_2_image15, R.id.activity4_1_2_image16,
             R.id.activity4_1_2_image17, R.id.activity4_1_2_image18,
-            R.id.activity4_1_2_image19, R.id.activity4_1_2_image20,
-            R.id.activity4_1_2_image21, R.id.activity4_1_2_image22,
-            R.id.activity4_1_2_image23};
+            R.id.activity4_1_2_image19};
 
     private DrawerLayout mDrawer;
     private Toolbar toolbar;
@@ -39,7 +37,7 @@ public class activity4_1_2 extends AppCompatActivity {
 
         SharedPreferences settings = getSharedPreferences("Stickers", 0);
 
-        for (int i = 1; i <= 23; i++){
+        for (int i = 1; i <= 19; i++){
             if (!settings.getBoolean("sticker" + i, false)){
                 ImageView im = (ImageView) findViewById(imageFields[i-1]);
 

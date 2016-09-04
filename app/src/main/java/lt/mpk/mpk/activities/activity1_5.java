@@ -150,52 +150,45 @@ public class activity1_5 extends AppCompatActivity {
 
                 if(settings.getInt("meditationCount",0) == 1 && !settings.getBoolean("sticker1", false))
                     createSticker(1);
-                if(settings.getInt("meditationCount",0) == 2 && !settings.getBoolean("sticker2", false))
+                if(settings.getInt("meditationCount",0) == 10 && !settings.getBoolean("sticker2", false))
                     createSticker(2);
-                if(settings.getInt("meditationCount",0) == 10 && !settings.getBoolean("sticker3", false))
+                if(settings.getInt("meditationCount",0) == 25 && !settings.getBoolean("sticker3", false))
                     createSticker(3);
-                if(settings.getInt("meditationCount",0) == 25 && !settings.getBoolean("sticker4", false))
+                if(settings.getInt("meditationsInOneGo",0) == 2 && !settings.getBoolean("sticker4", false))
                     createSticker(4);
-                if(settings.getInt("meditationsInOneGo",0) == 2 && !settings.getBoolean("sticker5", false))
+                if(settings.getInt("meditationsInOneGo",0) == 3 && !settings.getBoolean("sticker5", false))
                     createSticker(5);
-                if(settings.getInt("meditationsInOneGo",0) == 3 && !settings.getBoolean("sticker6", false))
+
+                if(settings.getInt("daysInARow",0) == 5 && !settings.getBoolean("sticker6", false))
                     createSticker(6);
-
-                if(settings.getInt("daysInARow",0) == 5 && !settings.getBoolean("sticker7", false))
+                if(settings.getInt("daysInARow",0) == 10 && !settings.getBoolean("sticker7", false))
                     createSticker(7);
-                if(settings.getInt("daysInARow",0) == 10 && !settings.getBoolean("sticker8", false))
+                if(settings.getInt("daysInARow",0) == 20 && !settings.getBoolean("sticker8", false))
                     createSticker(8);
-                if(settings.getInt("daysInARow",0) == 20 && !settings.getBoolean("sticker9", false))
+                if(settings.getInt("daysInARow",0) == 31 && !settings.getBoolean("sticker9", false))
                     createSticker(9);
-                if(settings.getInt("daysInARow",0) == 31 && !settings.getBoolean("sticker10", false))
+                if(settings.getInt("daysInARow",0) == 50 && !settings.getBoolean("sticker10", false))
                     createSticker(10);
-                if(settings.getInt("daysInARow",0) == 50 && !settings.getBoolean("sticker11", false))
+                if(settings.getInt("daysInARow",0) == 70 && !settings.getBoolean("sticker11", false))
                     createSticker(11);
-                if(settings.getInt("daysInARow",0) == 70 && !settings.getBoolean("sticker12", false))
+                if(settings.getInt("daysInARow",0) == 100 && !settings.getBoolean("sticker12", false))
                     createSticker(12);
-                if(settings.getInt("daysInARow",0) == 100 && !settings.getBoolean("sticker13", false))
+                if(settings.getInt("daysInARow",0) == 150 && !settings.getBoolean("sticker13", false))
                     createSticker(13);
-                if(settings.getInt("daysInARow",0) == 150 && !settings.getBoolean("sticker14", false))
+                if(settings.getInt("daysInARow",0) == 365 && !settings.getBoolean("sticker14", false))
                     createSticker(14);
-                if(settings.getInt("daysInARow",0) == 365 && !settings.getBoolean("sticker15", false))
-                    createSticker(15);
 
-                if(time >= 240 && time <= 450 && !settings.getBoolean("sticker16", false))
+                if(time >= 240 && time <= 450 && !settings.getBoolean("sticker15", false))
+                    createSticker(15);
+                if(time >= 720 && time <= 840 && !settings.getBoolean("sticker16", false))
                     createSticker(16);
-                if(time >= 720 && time <= 840 && !settings.getBoolean("sticker17", false))
+
+                if(settings.getInt("totalTime",0) >= 180000 && !settings.getBoolean("sticker17", false))
                     createSticker(17);
-                if(settings.getInt("totalTime",0) >= 36000 && !settings.getBoolean("sticker18", false))
+                if(settings.getInt("totalTime",0) >= 1800000 && !settings.getBoolean("sticker18", false))
                     createSticker(18);
-                if(settings.getInt("totalTime",0) >= 180000 && !settings.getBoolean("sticker19", false))
+                if(settings.getInt("totalTime",0) >= 3600000 && !settings.getBoolean("sticker19", false))
                     createSticker(19);
-                if(settings.getInt("totalTime",0) >= 360000 && !settings.getBoolean("sticker20", false))
-                    createSticker(20);
-                if(settings.getInt("totalTime",0) >= 900000 && !settings.getBoolean("sticker21", false))
-                    createSticker(21);
-                if(settings.getInt("totalTime",0) >= 1800000 && !settings.getBoolean("sticker22", false))
-                    createSticker(22);
-                if(settings.getInt("totalTime",0) >= 3600000 && !settings.getBoolean("sticker23", false))
-                    createSticker(23);
 
                 editor.putInt("playTime" + meditationNumber, settings.getInt("playTime" + meditationNumber,0) + 1);
 
@@ -326,8 +319,10 @@ public class activity1_5 extends AppCompatActivity {
     /**
      * Background Runnable thread
      * */
-    private Runnable mUpdateTimeTask = new Runnable() {
-        public void run() {
+    private Runnable mUpdateTimeTask = new Runnable()
+    {
+        public void run()
+        {
             long totalDuration = mediaPlayer.getDuration();
             long currentDuration = mediaPlayer.getCurrentPosition();
 
