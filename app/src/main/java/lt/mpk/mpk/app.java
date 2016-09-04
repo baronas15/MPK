@@ -83,6 +83,25 @@ public class app extends Application {
             if(!settings.contains("playTime"+i))
                 editor.putInt("playTime"+i,0);
 
+        //FOR DEVELOPEMENT PURPOSES
+        if(false){
+            for (int i = 1; i <= 19; i++)
+                editor.putBoolean("sticker"+i,true);
+            editor.putInt("lastSticker",19);
+            editor.putInt("totalTime",3600000);
+            for (int i = 1; i <= 7; i++)
+                editor.putInt("playTime"+i,10);
+        }
+        else if(false){
+            for (int i = 1; i <= 19; i++)
+                editor.putBoolean("sticker"+i,false);
+            editor.putInt("lastSticker",-1);
+            editor.putInt("totalTime",0);
+            for (int i = 1; i <= 7; i++)
+                editor.putInt("playTime"+i,0);
+        }
+
+
         editor.apply();
         //endregion
     }
