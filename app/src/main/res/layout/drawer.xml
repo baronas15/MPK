@@ -147,6 +147,7 @@
                 android:weightSum="2"
                 android:layout_marginTop="@dimen/nav_drawer_content_divider"
                 android:layout_marginLeft="@dimen/nav_drawer_edge_margin"
+                android:layout_marginBottom="@dimen/nav_drawer_content_divider"
                 android:baselineAligned="false">
 
                 <FrameLayout
