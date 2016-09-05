@@ -26,17 +26,17 @@
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_2"
         android:layout_weight="9"
-        android:paddingLeft="@dimen/item_vertical_padding">
+        android:layout_marginLeft="@dimen/nav_drawer_edge_margin">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="10">
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="@dimen/nav_drawer_icon_width"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_home_black_36dp"
-                android:layout_weight="2"/>
+                android:src="@drawable/house"
+                android:layout_marginRight="@dimen/nav_drawer_edge_margin"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -52,17 +52,17 @@
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_3"
         android:layout_weight="9"
-        android:paddingLeft="@dimen/item_vertical_padding">
+        android:layout_marginLeft="@dimen/nav_drawer_edge_margin">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="10">
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="@dimen/nav_drawer_icon_width"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_school_black_36dp"
-                android:layout_weight="2"/>
+                android:layout_marginRight="@dimen/nav_drawer_edge_margin"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -78,17 +78,17 @@
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_4"
         android:layout_weight="9"
-        android:paddingLeft="@dimen/item_vertical_padding">
+        android:layout_marginLeft="@dimen/nav_drawer_edge_margin">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="10">
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="@dimen/nav_drawer_icon_width"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_list_black_36dp"
-                android:layout_weight="2"/>
+                android:src="@drawable/pinklotus"
+                android:layout_marginRight="@dimen/nav_drawer_edge_margin"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -104,17 +104,17 @@
         android:background="@drawable/drawer_item"
         android:id="@+id/drawer_item_5"
         android:layout_weight="9"
-        android:paddingLeft="@dimen/item_vertical_padding">
+        android:layout_marginLeft="@dimen/nav_drawer_edge_margin">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="10">
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="@dimen/nav_drawer_icon_width"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_cake_black_36dp"
-                android:layout_weight="2"/>
+                android:src="@drawable/pergament"
+                android:layout_marginRight="@dimen/nav_drawer_edge_margin"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

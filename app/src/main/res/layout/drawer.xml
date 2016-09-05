@@ -12,13 +12,15 @@
         android:layout_height="0dp"
         android:id="@+id/drawer_item_1"
         android:layout_weight="25"
-        android:background="@color/blue_200">
+        android:background="@color/blue_200"
+        android:padding="@dimen/item_vertical_padding">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:src="@drawable/mpk"/>
     </FrameLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -29,20 +31,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:weightSum="10">
+            android:layout_marginLeft="@dimen/nav_drawer_edge_margin">
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="@dimen/nav_drawer_icon_width"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_home_black_36dp"
-                android:layout_weight="2"/>
+                android:src="@drawable/house"
+                android:layout_marginRight="@dimen/nav_drawer_edge_margin"/>
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Grįžti"
                 android:textColor="@color/primaryText"
-                android:layout_gravity="center"
-                android:layout_weight="8"/>
+                android:layout_gravity="center"/>
         </LinearLayout>
     </FrameLayout>
     <FrameLayout
@@ -55,20 +56,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:weightSum="10">
+            android:layout_marginLeft="@dimen/nav_drawer_edge_margin">
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="@dimen/nav_drawer_icon_width"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_school_black_36dp"
-                android:layout_weight="2"/>
+                android:layout_marginRight="@dimen/nav_drawer_edge_margin"/>
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Išmok medituoti"
                 android:layout_gravity="center"
-                android:textColor="@color/primaryText"
-                android:layout_weight="8"/>
+                android:textColor="@color/primaryText"/>
         </LinearLayout>
     </FrameLayout>
     <FrameLayout
@@ -81,20 +81,20 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:weightSum="10">
+            android:layout_marginLeft="@dimen/nav_drawer_edge_margin">
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="@dimen/nav_drawer_icon_width"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:src="@drawable/pinklotus"
-                android:layout_weight="2"/>
+                android:adjustViewBounds="true"
+                android:layout_marginRight="@dimen/nav_drawer_edge_margin"/>
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Meditacijos"
                 android:layout_gravity="center"
-                android:textColor="@color/primaryText"
-                android:layout_weight="8"/>
+                android:textColor="@color/primaryText"/>
         </LinearLayout>
     </FrameLayout>
     <FrameLayout
@@ -107,28 +107,28 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:weightSum="10">
+            android:layout_marginLeft="@dimen/nav_drawer_edge_margin">
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="@dimen/nav_drawer_icon_width"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:src="@drawable/pergament"
-                android:layout_weight="2"/>
+                android:adjustViewBounds="true"
+                android:layout_marginRight="@dimen/nav_drawer_edge_margin"/>
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pažanga"
                 android:layout_gravity="center"
-                android:textColor="@color/primaryText"
-                android:layout_weight="8"/>
+                android:textColor="@color/primaryText"/>
         </LinearLayout>
     </FrameLayout>
     <FrameLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:id="@+id/drawer_item_6"
         android:layout_weight="8"
-        android:paddingLeft="@dimen/drawer_item_padding">
+        android:layout_marginLeft="@dimen/nav_drawer_edge_margin">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -148,8 +148,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:adjustViewBounds="true"
-            android:src="@drawable/kaunas"
-            android:paddingLeft="@dimen/item_vertical_padding"/>
+            android:src="@drawable/kaunas"/>
     </FrameLayout>
     <FrameLayout
         android:layout_width="match_parent"
@@ -162,7 +161,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:adjustViewBounds="true"
-            android:src="@drawable/kmvsb"
-            android:paddingLeft="@dimen/item_vertical_padding"/>
+            android:src="@drawable/kmvsb"/>
     </FrameLayout>
 </LinearLayout>
