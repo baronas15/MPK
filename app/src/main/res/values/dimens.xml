@@ -1,7 +1,9 @@
 <resources>
     <!-- Material Design -->
     <dimen name="nav_drawer_edge_margin">16dp</dimen>
-    <dimen name="nav_drawer_icon_width">40dp</dimen>
+    <dimen name="nav_drawer_icon_size">40dp</dimen>
+    <dimen name="nav_drawer_item_height">48dp</dimen>
+    <dimen name="nav_drawer_content_divider">8dp</dimen>
     <!-- Material Design -->
 
     <dimen name="header1">25sp</dimen>

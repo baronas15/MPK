@@ -33,7 +33,7 @@
             android:orientation="horizontal"
             android:weightSum="10">
             <ImageView
-                android:layout_width="@dimen/nav_drawer_icon_width"
+                android:layout_width="@dimen/nav_drawer_icon_size"
                 android:layout_height="wrap_content"
                 android:src="@drawable/house"
                 android:layout_marginRight="@dimen/nav_drawer_edge_margin"/>
@@ -59,7 +59,7 @@
             android:orientation="horizontal"
             android:weightSum="10">
             <ImageView
-                android:layout_width="@dimen/nav_drawer_icon_width"
+                android:layout_width="@dimen/nav_drawer_icon_size"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_school_black_36dp"
                 android:layout_marginRight="@dimen/nav_drawer_edge_margin"/>
@@ -85,7 +85,7 @@
             android:orientation="horizontal"
             android:weightSum="10">
             <ImageView
-                android:layout_width="@dimen/nav_drawer_icon_width"
+                android:layout_width="@dimen/nav_drawer_icon_size"
                 android:layout_height="wrap_content"
                 android:src="@drawable/pinklotus"
                 android:layout_marginRight="@dimen/nav_drawer_edge_margin"/>
@@ -111,7 +111,7 @@
             android:orientation="horizontal"
             android:weightSum="10">
             <ImageView
-                android:layout_width="@dimen/nav_drawer_icon_width"
+                android:layout_width="@dimen/nav_drawer_icon_size"
                 android:layout_height="wrap_content"
                 android:src="@drawable/pergament"
                 android:layout_marginRight="@dimen/nav_drawer_edge_margin"/>
