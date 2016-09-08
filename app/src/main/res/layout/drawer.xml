@@ -46,7 +46,8 @@
                         android:layout_height="@dimen/nav_drawer_icon_size"
                         android:layout_gravity="center"
                         android:src="@drawable/house"
-                        android:layout_marginRight="@dimen/nav_drawer_edge_margin"/>
+                        android:layout_marginRight="@dimen/nav_drawer_edge_margin"
+                        android:padding="1dp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -69,7 +70,7 @@
                         android:layout_width="@dimen/nav_drawer_icon_size"
                         android:layout_height="@dimen/nav_drawer_icon_size"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_school_black_36dp"
+                        android:src="@drawable/books"
                         android:layout_marginRight="@dimen/nav_drawer_edge_margin"/>
                     <TextView
                         android:layout_width="wrap_content"
