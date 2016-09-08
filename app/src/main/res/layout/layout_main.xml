@@ -69,24 +69,9 @@
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content">
                             <Button
-                                android:layout_width="match_parent"
-                                android:minWidth="@dimen/material_text_button_min_width"
-                                android:layout_height="@dimen/material_text_button_height"
-                                android:id="@+id/activity_main_button1"
-                                android:text="@string/main_button1"
-                                android:background = "@drawable/roundedbutton"
-                                android:clickable="true"
-                                android:enabled="true"
-                                android:textColor="@drawable/roundedbuttontext"
-                                android:layout_gravity="bottom"
-                                android:typeface="sans"
-                                android:textSize="@dimen/material_text_button"
-                                android:paddingLeft="@dimen/material_text_button_padding"
-                                android:paddingRight="@dimen/material_text_button_padding"
-                                android:layout_marginLeft="@dimen/material_text_button_margin_horizontal"
-                                android:layout_marginRight="@dimen/material_text_button_margin_horizontal"
-                                android:layout_marginBottom="@dimen/material_text_button_margin_vertical"
-                                android:layout_marginTop="@dimen/material_text_button_margin_vertical"/>
+                                style="@style/btnlook"
+                                android:id="@+id/activity1_button1"
+                                android:text="@string/main_button1"/>
                         </FrameLayout>
                     </LinearLayout>
 

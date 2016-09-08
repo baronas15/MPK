@@ -11,4 +11,35 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+    <style name="btnlook" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/material_text_button_min_width</item>
+        <item name="android:layout_height">@dimen/material_text_button_height</item>
+        <item name="android:background">@drawable/roundedbutton</item>
+        <item name="android:textColor">@drawable/roundedbuttontext</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">@dimen/material_text_button</item>
+        <item name="android:paddingLeft">@dimen/material_text_button_padding</item>
+        <item name="android:paddingRight">@dimen/material_text_button_padding</item>
+        <item name="android:layout_marginLeft">@dimen/material_text_button_margin_horizontal</item>
+        <item name="android:layout_marginRight">@dimen/material_text_button_margin_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/material_text_button_margin_vertical</item>
+        <item name="android:layout_marginTop">@dimen/material_text_button_margin_vertical</item>
+    </style>
+    <style name="btnlookdark" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/material_text_button_min_width</item>
+        <item name="android:layout_height">@dimen/material_text_button_height</item>
+        <item name="android:background">@drawable/roundedbuttondark</item>
+        <item name="android:textColor">@drawable/roundedbuttontextdark</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">@dimen/material_text_button</item>
+        <item name="android:paddingLeft">@dimen/material_text_button_padding</item>
+        <item name="android:paddingRight">@dimen/material_text_button_padding</item>
+        <item name="android:layout_marginLeft">@dimen/material_text_button_margin_horizontal</item>
+        <item name="android:layout_marginRight">@dimen/material_text_button_margin_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/material_text_button_margin_vertical</item>
+        <item name="android:layout_marginTop">@dimen/material_text_button_margin_vertical</item>
+    </style>
 </resources>

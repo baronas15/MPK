@@ -42,19 +42,11 @@
                 android:layout_weight="5">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/btnlookdark"
+                    android:id="@+id/activity1_3_button1"
                     android:layout_gravity="center"
                     android:text="@string/activity1_2_button1"
-                    android:background="@drawable/roundedbuttondark"
-                    android:textColor="@drawable/roundedbuttontextdark"
-                    android:id="@+id/activity1_3_button1"
-                    android:onClick="activity13button1_Click"
-                    android:paddingLeft="@dimen/item_horizontal_padding"
-                    android:paddingRight="@dimen/item_horizontal_padding"
-                    android:textSize="@dimen/button_text"
-                    android:paddingTop="@dimen/item_vertical_padding"
-                    android:paddingBottom="@dimen/item_vertical_padding" />
+                    android:onClick="activity13button1_Click" />
             </FrameLayout>
         </LinearLayout>
         <FrameLayout
@@ -78,11 +70,13 @@
 
     </LinearLayout>
 
-    <FrameLayout
+    <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:background="@color/colorPrimary">
 
         <LinearLayout
@@ -93,18 +87,11 @@
             android:weightSum="12">
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/activity1_2_button2"
+                style="@style/btnlook"
                 android:id="@+id/activity1_3_button2"
-                android:background="@drawable/roundedbutton"
-                android:textColor="@drawable/roundedbuttontext"
                 android:layout_weight="8"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:onClick="activity13button2_Click"/>
+                android:text="@string/activity1_2_button2"
+                android:onClick="activity13button2_Click" />
         </LinearLayout>
-    </FrameLayout>
+    </LinearLayout>
 </LinearLayout>

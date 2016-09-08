@@ -97,34 +97,23 @@
 
     </LinearLayout>
 
-    <FrameLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:weightSum="12">
-
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:weightSum="12"
+        android:baselineAligned="true">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8">
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/activity1_button1"
+                style="@style/btnlook"
                 android:id="@+id/activity1_button1"
                 android:onClick="activity1button1_Click"
-                android:background="@drawable/roundedbutton"
-                android:textColor="@drawable/roundedbuttontext"
-                android:layout_weight="8"
-                android:layout_marginLeft="@dimen/item_horizontal_padding"
-                android:layout_marginRight="@dimen/item_horizontal_padding"
-                android:layout_marginBottom="@dimen/little_separator"
-                android:layout_marginTop="@dimen/little_separator"
-                android:typeface="sans" />
-
-        </LinearLayout>
-    </FrameLayout>
+                android:text="@string/activity1_button1" />
+        </FrameLayout>
+    </LinearLayout>
 </LinearLayout>
