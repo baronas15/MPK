@@ -10,7 +10,7 @@
         android:layout_gravity="center"
         android:gravity="center"
 
-        android:background="@drawable/layout_button_color_primary_light"
+        android:background="#125aac"
         android:orientation="vertical"
         android:weightSum="1">
 
@@ -21,36 +21,54 @@
             <Button
                 android:gravity="center"
                 android:layout_gravity="center"
-                android:layout_width="@dimen/play_button_w"
-                android:layout_height="@dimen/play_button_w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/activity1_5_button1"
                 android:background="@drawable/play_button"/>
         </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dummy"
+                android:textColor="@color/primaryTextInverted"
+                android:textSize="@dimen/material_text_title"
+                android:id="@+id/activity1_5_text1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:textSize="@dimen/material_text_title"
+                android:textColor="@color/primaryTextInverted"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryTextInverted"
+                android:textSize="@dimen/material_text_title"
+                android:text="dummy"
+                android:id="@+id/activity1_5_text2"/>
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:gravity="center"
             android:layout_gravity="center"
             android:layout_weight="0.2"
-            android:weightSum="12">
+            android:weightSum="12"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="dummy"
-                android:textColor="@color/primaryText"
-                android:id="@+id/activity1_5_text1"/>
             <SeekBar
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/seekBar"
-                android:layout_weight="8" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/primaryText"
-                android:text="dummy"
-                android:id="@+id/activity1_5_text2"/>
+                android:layout_weight="12"
+                android:progressDrawable="@drawable/seekbar"
+                android:thumb="@drawable/seekbar_thumb" />
         </LinearLayout>
     </LinearLayout>
 
@@ -59,7 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@color/colorPrimary">
+        android:background="#0e4686">
 
         <LinearLayout
             android:orientation="horizontal"

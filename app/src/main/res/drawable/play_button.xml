@@ -4,27 +4,7 @@
         android:state_pressed="true">
         <layer-list>
             <item
-                android:width="@dimen/play_button_w"
-                android:height="@dimen/play_button_w"
-                android:right="7dp" android:top="7dp">
-                <shape>
-                    <corners android:radius="@dimen/play_button_w" />
-                    <solid android:color="#77000000" />
-                </shape>
-            </item>
-            <item
-                android:width="@dimen/play_button_w"
-                android:height="@dimen/play_button_w"
-                android:bottom="2dp" android:left="2dp">
-                <shape android:shape="rectangle">
-                    <solid android:color="@color/playButtonPressed" />
-                    <corners android:radius="@dimen/play_button_w"/>
-                </shape>
-            </item>
-            <item
                 android:drawable="@drawable/ic_play_arrow_black_36dp"
-                android:width="@dimen/play_button_icon_w"
-                android:height="@dimen/play_button_icon_w"
                 android:gravity="center">
             </item>
         </layer-list>
@@ -32,26 +12,7 @@
     <item>
         <layer-list>
             <item
-                android:width="@dimen/play_button_w"
-                android:height="@dimen/play_button_w"
-                android:right="7dp" android:top="7dp">
-                <shape>
-                    <corners android:radius="@dimen/play_button_w" />
-                    <solid android:color="#77000000" />
-                </shape>
-            </item>
-            <item
-                android:width="@dimen/play_button_w"
-                android:height="@dimen/play_button_w"
-                android:bottom="2dp" android:left="2dp">
-                <shape android:shape="rectangle">
-                    <solid android:color="@color/playButtonDefault" />
-                    <corners android:radius="@dimen/play_button_w"/>
-                </shape>
-            </item>
-            <item android:drawable="@drawable/ic_play_arrow_white_36dp"
-                android:width="@dimen/play_button_icon_w"
-                android:height="@dimen/play_button_icon_w"
+                android:drawable="@drawable/ic_play_arrow_white_36dp"
                 android:gravity="center">
             </item>
         </layer-list>
