@@ -52,21 +52,29 @@
                     android:layout_marginBottom="@dimen/little_separator"
                     android:typeface="sans" />
 
-                <Button
+                <FrameLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/activity_main_button1"
-                    android:text="@string/main_button1"
-                    android:background = "@drawable/roundedbutton"
-                    android:clickable="true"
-                    android:enabled="true"
-                    android:textColor="@drawable/roundedbuttontext"
-                    android:layout_gravity="bottom"
-                    android:layout_marginTop="@dimen/little_separator"
-                    android:typeface="normal"
-                    android:minHeight="@dimen/minButtonHeight"
-                    android:textSize="@dimen/material_text_button" />
-
+                    android:layout_height="@dimen/material_text_button_touch_target">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:minWidth="@dimen/material_text_button_min_width"
+                        android:layout_height="@dimen/material_text_button_height"
+                        android:id="@+id/activity_main_button1"
+                        android:text="@string/main_button1"
+                        android:background = "@drawable/roundedbutton"
+                        android:clickable="true"
+                        android:enabled="true"
+                        android:textColor="@drawable/roundedbuttontext"
+                        android:layout_gravity="bottom"
+                        android:typeface="sans"
+                        android:textSize="@dimen/material_text_button"
+                        android:paddingLeft="@dimen/material_text_button_padding"
+                        android:paddingRight="@dimen/material_text_button_padding"
+                        android:layout_marginLeft="@dimen/material_text_button_margin_horizontal"
+                        android:layout_marginRight="@dimen/material_text_button_margin_horizontal"
+                        android:layout_marginBottom="@dimen/material_text_button_margin_vertical"
+                        android:layout_marginTop="@dimen/material_text_button_margin_vertical"/>
+                </FrameLayout>
             </LinearLayout>
 
             <FrameLayout
