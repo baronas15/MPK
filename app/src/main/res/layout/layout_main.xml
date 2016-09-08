@@ -71,7 +71,8 @@
                             <Button
                                 style="@style/btnlook"
                                 android:id="@+id/activity_main_button1"
-                                android:text="@string/main_button1"/>
+                                android:text="@string/main_button1"
+                                android:layout_gravity="center"/>
                         </FrameLayout>
                     </LinearLayout>
 

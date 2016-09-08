@@ -69,17 +69,10 @@
             android:weightSum="12">
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/activity1_5_button2"
+                style="@style/btnlook"
                 android:id="@+id/activity1_5_button2"
-                android:background="@drawable/roundedbutton"
-                android:textColor="@drawable/roundedbuttontext"
+                android:text="@string/activity1_5_button2"
                 android:layout_weight="8"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
                 android:onClick="activity15button2_Click"/>
         </LinearLayout>
     </FrameLayout>
