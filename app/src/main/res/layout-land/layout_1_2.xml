@@ -11,10 +11,10 @@
         android:background="@color/colorPrimaryLight">
 
         <LinearLayout
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:orientation="vertical"
-            android:layout_weight="8"
+            android:layout_weight="2"
             android:paddingLeft="@dimen/side_padding_portrait"
             android:paddingRight="@dimen/side_padding_portrait"
             android:background="@color/colorPrimaryLight">
@@ -58,7 +58,7 @@
             </FrameLayout>
         </LinearLayout>
         <FrameLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:padding="20dp"
             android:layout_weight="2"

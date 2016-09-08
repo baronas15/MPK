@@ -30,7 +30,11 @@
         <activity android:name=".activities.activity1_1" />
         <activity android:name=".activities.activity1_2" />
         <activity android:name=".activities.activity1_3" />
-        <activity android:name=".activities.activity1_5" />
+        <activity
+            android:name=".activities.activity1_5"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
         <activity android:name=".activities.activity_sticker" />
         <activity android:name=".activities.activity1_4" />
         <activity android:name=".activities.activity4_1_2" />
