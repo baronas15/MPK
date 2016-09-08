@@ -42,4 +42,31 @@
         <item name="android:layout_marginBottom">@dimen/material_text_button_margin_vertical</item>
         <item name="android:layout_marginTop">@dimen/material_text_button_margin_vertical</item>
     </style>
+
+    <style name="checkbox">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/material_text_headline</item>
+        <item name="android:paddingLeft">@dimen/check_vertical_padding</item>
+        <item name="android:paddingRight">@dimen/check_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/material_text_button_padding</item>
+        <item name="android:paddingTop">@dimen/material_text_button_padding</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="checkbox_landscape">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/material_text_headline</item>
+        <item name="android:paddingLeft">@dimen/check_vertical_padding_landscape</item>
+        <item name="android:paddingRight">@dimen/check_vertical_padding_landscape</item>
+        <item name="android:paddingBottom">@dimen/check_vertical_padding_landscape</item>
+        <item name="android:paddingTop">@dimen/check_vertical_padding_landscape</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
 </resources>

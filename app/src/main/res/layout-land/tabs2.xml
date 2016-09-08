@@ -22,48 +22,27 @@
             android:layout_height="wrap_content"
             android:layout_weight="1">
             <CheckBox
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                style="@style/checkbox_landscape"
                 android:text="@string/activity1_3_emot4"
-                android:id="@+id/checkBox4"
-                android:textColor="#000000"
-                android:textSize="@dimen/header1"
-                android:padding="@dimen/check_vertical_padding_landscape"
-                android:button="@android:color/transparent"
-                android:layout_gravity="center"
-                android:gravity="center" />
+                android:id="@+id/checkBox4"/>
         </FrameLayout>
         <FrameLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1">
             <CheckBox
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                style="@style/checkbox_landscape"
                 android:text="@string/activity1_3_emot5"
-                android:id="@+id/checkBox5"
-                android:textColor="#000000"
-                android:textSize="@dimen/header1"
-                android:padding="@dimen/check_vertical_padding_landscape"
-                android:button="@android:color/transparent"
-                android:layout_gravity="center"
-                android:gravity="center" />
+                android:id="@+id/checkBox5"/>
         </FrameLayout>
         <FrameLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1">
             <CheckBox
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                style="@style/checkbox_landscape"
                 android:text="@string/activity1_3_emot6"
-                android:id="@+id/checkBox6"
-                android:textColor="#000000"
-                android:textSize="@dimen/header1"
-                android:padding="@dimen/check_vertical_padding_landscape"
-                android:button="@android:color/transparent"
-                android:layout_gravity="center"
-                android:gravity="center" />
+                android:id="@+id/checkBox6"/>
         </FrameLayout>
     </LinearLayout>
 
@@ -71,5 +50,4 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="4" />
-
 </LinearLayout>
