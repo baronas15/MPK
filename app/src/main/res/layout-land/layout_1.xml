@@ -1,104 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="12">
+        android:layout_weight="1"
+        android:baselineAligned="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/side_padding_portrait"
+                android:paddingRight="@dimen/side_padding_portrait"
+                android:background="@color/colorPrimary"
+                android:paddingTop="@dimen/item_vertical_padding"
+                android:paddingBottom="@dimen/item_vertical_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity1_title1"
+                    android:id="@+id/activity1_title"
+                    android:textSize="@dimen/material_text_subhead"
+                    android:layout_gravity="center"
+                    android:textColor="@color/primaryTextInverted"
+                    android:typeface="serif" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@color/blue_300"
+                android:paddingLeft="@dimen/side_padding_portrait"
+                android:paddingTop="@dimen/item_vertical_padding"
+                android:paddingBottom="@dimen/item_vertical_padding"
+                android:paddingRight="@dimen/side_padding_portrait">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity1_text1"
+                    android:id="@+id/activity1_text"
+                    android:layout_gravity="center"
+                    android:textColor="@color/primaryTextInverted"
+                    android:textSize="@dimen/material_text_body1"
+                    android:typeface="sans"/>
+            </FrameLayout>
+        </LinearLayout>
 
         <FrameLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/colorPrimaryLight"
             android:paddingLeft="@dimen/side_padding_portrait"
             android:paddingRight="@dimen/side_padding_portrait"
-            android:background="@color/colorPrimary"
-            android:paddingTop="@dimen/item_vertical_padding"
-            android:paddingBottom="@dimen/item_vertical_padding">
+            android:layout_weight="3">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity1_image_background"
+                android:src="@drawable/animation_bg"
+                android:contentDescription="@string/activity1_img_description"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity1_image"
+                android:src="@drawable/animation"
+                android:contentDescription="@string/activity1_img_description"
+                android:layout_gravity="center" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/activity1_title1"
-                android:id="@+id/activity1_title"
-                android:textSize="@dimen/header1"
+                android:text="Įkvėpk"
+                android:id="@+id/activity1_switchText"
                 android:layout_gravity="center"
-                android:gravity="center"
-                android:typeface="serif" />
+                android:textColor="@color/primaryTextInverted"
+                android:gravity="center_vertical|center|center_horizontal" />
         </FrameLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:weightSum="2"
-            android:baselineAligned="false">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:background="@color/colorPrimaryLight"
-                android:paddingLeft="@dimen/side_padding_portrait"
-                android:paddingTop="@dimen/item_vertical_padding"
-                android:paddingBottom="@dimen/item_vertical_padding"
-                android:paddingRight="@dimen/side_padding_portrait"
-                android:layout_weight="1">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/activity1_text1"
-                    android:id="@+id/activity1_text"
-                    android:layout_gravity="center"
-                    android:textColor="@color/primaryText"
-                    android:textSize="@dimen/text_size_2_landscape"
-                    android:typeface="sans" />
-            </FrameLayout>
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:paddingTop="@dimen/item_vertical_padding"
-                android:paddingBottom="@dimen/item_vertical_padding"
-                android:background="@color/colorPrimaryLight"
-                android:paddingLeft="@dimen/side_padding_portrait"
-                android:paddingRight="@dimen/side_padding_portrait"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/activity1_image_background"
-                    android:src="@drawable/animation_bg"
-                    android:contentDescription="@string/activity1_img_description"
-                    android:layout_gravity="center" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/activity1_image"
-                    android:src="@drawable/animation"
-                    android:contentDescription="@string/activity1_img_description"
-                    android:layout_gravity="center" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Įkvėpk"
-                    android:id="@+id/activity1_switchText"
-                    android:layout_gravity="center"
-                    android:textColor="@color/primaryTextInverted"
-                    android:gravity="center_vertical|center|center_horizontal" />
-
-            </FrameLayout>
-        </LinearLayout>
-
     </LinearLayout>
 
     <FrameLayout
@@ -114,20 +105,31 @@
             android:gravity="center"
             android:weightSum="12">
 
-            <Button
+            <FrameLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/activity1_button1"
-                android:id="@+id/activity1_button1"
-                android:onClick="activity1button1_Click"
-                android:background="@drawable/roundedbutton"
-                android:textColor="@drawable/roundedbuttontext"
-                android:layout_weight="8"
-                android:layout_marginLeft="@dimen/item_horizontal_padding"
-                android:layout_marginRight="@dimen/item_horizontal_padding"
-                android:layout_marginBottom="@dimen/little_separator"
-                android:layout_marginTop="@dimen/little_separator"
-                android:typeface="sans" />
+                android:layout_height="@dimen/material_text_button_touch_target"
+                android:layout_weight="8">
+                <Button
+                    android:layout_width="match_parent"
+                    android:minWidth="@dimen/material_text_button_min_width"
+                    android:layout_height="@dimen/material_text_button_height"
+                    android:id="@+id/activity1_button1"
+                    android:onClick="activity1button1_Click"
+                    android:text="@string/activity1_button1"
+                    android:background = "@drawable/roundedbutton"
+                    android:clickable="true"
+                    android:enabled="true"
+                    android:textColor="@drawable/roundedbuttontext"
+                    android:layout_gravity="bottom"
+                    android:typeface="sans"
+                    android:textSize="@dimen/material_text_button"
+                    android:paddingLeft="@dimen/material_text_button_padding"
+                    android:paddingRight="@dimen/material_text_button_padding"
+                    android:layout_marginLeft="@dimen/material_text_button_margin_horizontal"
+                    android:layout_marginRight="@dimen/material_text_button_margin_horizontal"
+                    android:layout_marginBottom="@dimen/material_text_button_margin_vertical"
+                    android:layout_marginTop="@dimen/material_text_button_margin_vertical"/>
+            </FrameLayout>
 
         </LinearLayout>
     </FrameLayout>
