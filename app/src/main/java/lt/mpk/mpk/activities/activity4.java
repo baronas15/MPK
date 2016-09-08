@@ -95,6 +95,12 @@ public class activity4 extends AppCompatActivity {
         //endregion
 
         //region Area4
+        TextView textItem5 = (TextView) findViewById(R.id.activity4_item5);
+        long time = settings.getInt("totalTime",0) * 100;
+        textItem5.setText(milliSecondsToTimer(time));
+        //endregion
+
+        //region Area5
         int[] playTime = new int[7];
         for (int i = 1; i <= 7; i++){
             playTime[i-1] = settings.getInt("playTime"+i,0);
@@ -120,11 +126,6 @@ public class activity4 extends AppCompatActivity {
             case 5: textItem4.setText(R.string.meditation_title6); break;
             case 6: textItem4.setText(R.string.meditation_title7); break;
         }
-        //endregion
-        //region Area5
-        TextView textItem5 = (TextView) findViewById(R.id.activity4_item5);
-        long time = settings.getInt("totalTime",0) * 100;
-        textItem5.setText(milliSecondsToTimer(time));
         //endregion
 
         //region Toolbar_NavDrawer
@@ -223,9 +224,12 @@ public class activity4 extends AppCompatActivity {
         int hours = (int)( milliseconds / (1000*60*60));
         int minutes = (int)(milliseconds % (1000*60*60)) / (1000*60);
         int seconds = (int) ((milliseconds % (1000*60*60)) % (1000*60) / 1000);
+
         // Add hours if there
-        if(hours > 0){
+        if(hours > 0 && minutes >= 10){
             finalTimerString = hours + ":";
+        }else if(hours > 0 && minutes >= 0 && minutes < 10){
+            finalTimerString = hours + ":0";
         }
 
         // Prepending 0 to seconds if it is one digit

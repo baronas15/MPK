@@ -28,7 +28,10 @@
                 android:id="@+id/checkBox1"
                 android:textColor="#000000"
                 android:textSize="@dimen/header1"
-                android:padding="@dimen/check_vertical_padding"
+                android:paddingLeft="@dimen/check_vertical_padding"
+                android:paddingRight="@dimen/check_vertical_padding"
+                android:paddingBottom="@dimen/material_text_button_padding"
+                android:paddingTop="@dimen/material_text_button_padding"
                 android:button="@android:color/transparent"
                 android:layout_gravity="center"
                 android:gravity="center" />
@@ -44,7 +47,10 @@
                 android:id="@+id/checkBox2"
                 android:textColor="#000000"
                 android:textSize="@dimen/header1"
-                android:padding="@dimen/check_vertical_padding"
+                android:paddingLeft="@dimen/check_vertical_padding"
+                android:paddingRight="@dimen/check_vertical_padding"
+                android:paddingBottom="@dimen/material_text_button_padding"
+                android:paddingTop="@dimen/material_text_button_padding"
                 android:button="@android:color/transparent"
                 android:layout_gravity="center"
                 android:gravity="center" />
@@ -60,8 +66,10 @@
                 android:id="@+id/checkBox3"
                 android:textColor="#000000"
                 android:textSize="@dimen/header1"
-                android:padding="@dimen/check_vertical_padding"
-                android:button="@android:color/transparent"
+                android:paddingLeft="@dimen/check_vertical_padding"
+                android:paddingRight="@dimen/check_vertical_padding"
+                android:paddingBottom="@dimen/material_text_button_padding"
+                android:paddingTop="@dimen/material_text_button_padding"             android:button="@android:color/transparent"
                 android:layout_gravity="center"
                 android:gravity="center" />
         </FrameLayout>

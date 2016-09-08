@@ -28,8 +28,10 @@
                 android:id="@+id/checkBox4"
                 android:textColor="#000000"
                 android:textSize="@dimen/header1"
-                android:padding="@dimen/check_vertical_padding"
-                android:button="@android:color/transparent"
+                android:paddingLeft="@dimen/check_vertical_padding"
+                android:paddingRight="@dimen/check_vertical_padding"
+                android:paddingBottom="@dimen/material_text_button_padding"
+                android:paddingTop="@dimen/material_text_button_padding"                android:button="@android:color/transparent"
                 android:layout_gravity="center"
                 android:gravity="center" />
         </FrameLayout>
@@ -44,8 +46,10 @@
                 android:id="@+id/checkBox5"
                 android:textColor="#000000"
                 android:textSize="@dimen/header1"
-                android:padding="@dimen/check_vertical_padding"
-                android:button="@android:color/transparent"
+                android:paddingLeft="@dimen/check_vertical_padding"
+                android:paddingRight="@dimen/check_vertical_padding"
+                android:paddingBottom="@dimen/material_text_button_padding"
+                android:paddingTop="@dimen/material_text_button_padding"                android:button="@android:color/transparent"
                 android:layout_gravity="center"
                 android:gravity="center" />
         </FrameLayout>
@@ -60,8 +64,10 @@
                 android:id="@+id/checkBox6"
                 android:textColor="#000000"
                 android:textSize="@dimen/header1"
-                android:padding="@dimen/check_vertical_padding"
-                android:button="@android:color/transparent"
+                android:paddingLeft="@dimen/check_vertical_padding"
+                android:paddingRight="@dimen/check_vertical_padding"
+                android:paddingBottom="@dimen/material_text_button_padding"
+                android:paddingTop="@dimen/material_text_button_padding"                android:button="@android:color/transparent"
                 android:layout_gravity="center"
                 android:gravity="center" />
         </FrameLayout>
