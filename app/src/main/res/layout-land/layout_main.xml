@@ -57,7 +57,7 @@
                     android:layout_height="@dimen/material_text_button_touch_target">
                     <Button
                         style="@style/btnlook"
-                        android:id="@+id/activity1_button1"
+                        android:id="@+id/activity_main_button1"
                         android:text="@string/main_button1"/>
                 </FrameLayout>
             </LinearLayout>
