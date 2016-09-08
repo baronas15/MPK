@@ -18,7 +18,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:text="@string/main_title1"
-                android:textSize="@dimen/header1"
+                android:textSize="@dimen/material_text_headline"
                 android:gravity="top|center_horizontal"
                 android:textColor="@color/primaryTextInverted"
                 android:background="@color/colorPrimary"
@@ -61,7 +61,7 @@
                             android:layout_width="match_parent"
                             android:text="@string/main_text1"
                             android:textColor="@color/primaryTextInverted"
-                            android:textSize="@dimen/text_1"
+                            android:textSize="@dimen/material_text_body1"
                             android:layout_weight="10"
                             android:id="@+id/activity_main_titleText"
                             android:typeface="sans"
@@ -79,7 +79,8 @@
                                 android:enabled="true"
                                 android:textColor="@drawable/roundedbuttontext"
                                 android:layout_gravity="bottom"
-                                android:typeface="sans" />
+                                android:typeface="sans"
+                                android:textSize="@dimen/material_text_button" />
                         </FrameLayout>
                     </LinearLayout>
 
@@ -120,12 +121,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="@string/main_button2"
                         android:layout_gravity="start|center"
                         android:clickable="false"
                         android:textColor="@color/primaryText"
-                        android:textSize="@dimen/header2"
+                        android:textSize="@dimen/material_text_subhead"
                         android:id="@+id/activity_main_text1"
                         android:typeface="serif" />
                     <ImageView
@@ -161,12 +161,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="@string/main_button3"
                         android:layout_gravity="start|center"
                         android:clickable="false"
                         android:textColor="@color/primaryText"
-                        android:textSize="@dimen/header2"
+                        android:textSize="@dimen/material_text_subhead"
                         android:id="@+id/activity_main_text2"
                         android:typeface="serif"
                         android:duplicateParentState="true"/>
@@ -203,13 +202,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="@string/main_button4"
                         android:layout_gravity="start|center"
                         android:clickable="false"
                         android:textColor="@color/primaryText"
                         android:textIsSelectable="false"
-                        android:textSize="@dimen/header2"
+                        android:textSize="@dimen/material_text_title"
                         android:id="@+id/activity_main_text3"
                         android:typeface="serif"
                         android:duplicateParentState="true"/>

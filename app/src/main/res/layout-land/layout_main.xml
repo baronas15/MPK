@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:text="@string/main_title1"
-            android:textSize="@dimen/header1_landscape"
+            android:textSize="@dimen/material_text_headline"
             android:gravity="center"
             android:textColor="@color/primaryTextInverted"
             android:id="@+id/activity_main_title"
@@ -47,7 +47,7 @@
                     android:layout_width="fill_parent"
                     android:text="@string/main_text1"
                     android:textColor="@color/primaryTextInverted"
-                    android:textSize="@dimen/text_size_1_landscape"
+                    android:textSize="@dimen/material_text_body1"
                     android:id="@+id/activity_main_titleText"
                     android:layout_marginBottom="@dimen/little_separator"
                     android:typeface="sans" />
@@ -63,8 +63,9 @@
                     android:textColor="@drawable/roundedbuttontext"
                     android:layout_gravity="bottom"
                     android:layout_marginTop="@dimen/little_separator"
-                    android:typeface="sans"
-                    android:minHeight="@dimen/minButtonHeight" />
+                    android:typeface="normal"
+                    android:minHeight="@dimen/minButtonHeight"
+                    android:textSize="@dimen/material_text_button" />
 
             </LinearLayout>
 
@@ -112,12 +113,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/main_button2landscape"
                     android:layout_gravity="start|center"
                     android:clickable="false"
                     android:textColor="@color/primaryText"
-                    android:textSize="@dimen/header2_landscape"
+                    android:textSize="@dimen/material_text_subhead"
                     android:id="@+id/activity_main_text1"
                     android:typeface="serif"
                     android:minLines="2"
@@ -155,12 +155,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/main_button3landscape"
                     android:layout_gravity="center|start"
                     android:clickable="false"
                     android:textColor="@color/primaryText"
-                    android:textSize="@dimen/header2_landscape"
+                    android:textSize="@dimen/material_text_subhead"
                     android:id="@+id/activity_main_text2"
                     android:typeface="serif"
                     android:layout_weight="1" />
@@ -196,13 +195,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/main_button4landscape"
                     android:layout_gravity="left|center"
                     android:clickable="false"
                     android:textColor="@color/primaryText"
                     android:textIsSelectable="false"
-                    android:textSize="@dimen/header2_landscape"
+                    android:textSize="@dimen/material_text_subhead"
                     android:id="@+id/activity_main_text3"
                     android:typeface="serif"
                     android:minLines="2"
