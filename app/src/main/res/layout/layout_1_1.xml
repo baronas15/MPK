@@ -21,12 +21,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/activity1_1_title"
                 android:id="@+id/activity1_2_title"
                 android:layout_gravity="center"
                 android:textColor="@color/primaryTextInverted"
-                android:textSize="@dimen/header1"
+                android:textSize="@dimen/material_text_headline"
                 android:typeface="serif" />
         </FrameLayout>
 

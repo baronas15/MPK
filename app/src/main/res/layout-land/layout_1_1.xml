@@ -33,7 +33,7 @@
                     android:text="@string/activity1_1_title"
                     android:id="@+id/activity1_2_title"
                     android:textColor="@color/primaryTextInverted"
-                    android:textSize="@dimen/header1"
+                    android:textSize="@dimen/material_text_headline"
                     android:typeface="serif"
                     android:gravity="center"
                     android:layout_gravity="center" />

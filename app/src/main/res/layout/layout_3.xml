@@ -16,7 +16,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/header1"
+                android:textSize="@dimen/material_text_headline"
                 android:text="@string/activity3_title"
                 android:paddingBottom="@dimen/item_vertical_padding"
                 android:paddingTop="@dimen/item_vertical_padding"
