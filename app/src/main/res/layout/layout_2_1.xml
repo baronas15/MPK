@@ -21,15 +21,17 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/primaryTextInverted"
-            android:background="#591f0a"            android:text="Dėmesingas įsisąmoninimas – tai būdas sutelkti dėmesį į tai, kas vyksta dabar, stebint tai, kas vyksta viduje (jūsų mintys, jausmai ir fiziniai pojūčiai) ir išorėje (jūsų bendravimas ir aplinka), be išankstinio nusistatymo ir neteisiant."
+            android:textColor="@color/primaryText"
+            android:background="#00bfb2"
+            android:text="Dėmesingas įsisąmoninimas – tai būdas sutelkti dėmesį į tai, kas vyksta dabar, stebint tai, kas vyksta viduje (jūsų mintys, jausmai ir fiziniai pojūčiai) ir išorėje (jūsų bendravimas ir aplinka), be išankstinio nusistatymo ir neteisiant."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/primaryTextInverted"
-            android:background="#591f0a"            android:text="Dėmesingas įsisąmoninimas padeda mums susikaupti ir išlikti šioje akimirkoje, kai praktikuojame abi meditacijos rūšis: „aktyvus mąstymas“, kai mes apgalvotai nukreipiame savo mintis ir vaizduotę, kad mąstytume ir jaustumės pozityviai, ir „proto ilsinimas“, kai mes viską atpalaiduojame."
+            android:textColor="@color/primaryText"
+            android:background="#00bfb2"
+            android:text="Dėmesingas įsisąmoninimas padeda mums susikaupti ir išlikti šioje akimirkoje, kai praktikuojame abi meditacijos rūšis: „aktyvus mąstymas“, kai mes apgalvotai nukreipiame savo mintis ir vaizduotę, kad mąstytume ir jaustumės pozityviai, ir „proto ilsinimas“, kai mes viską atpalaiduojame."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
         <TextView
@@ -75,7 +77,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/motherdaughet"
+            android:src="@drawable/motherdaughter"
             android:paddingTop="@dimen/item_vertical_padding"
             android:adjustViewBounds="true"/>
         <TextView
@@ -139,14 +141,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/primaryTextInverted"
-            android:background="#d65108"            android:text="Kartais galite jaustis nepatogiai, kitais kartais viskas praeina labai lengvai ir puikiai jaučiatės."
+            android:background="#d65108"
+            android:text="Kartais galite jaustis nepatogiai, kitais kartais viskas praeina labai lengvai ir puikiai jaučiatės."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/primaryTextInverted"
-            android:background="#d65108"            android:text="Nesirūpinkite – viskas yra šios patirties dalis. Svarbiausia atkreipti dėmesį ir stebėti, kas vyksta atvėrus protą, ir išmokti be reikalo nesijaudinti dėl kažko konkretaus. Jei įstringate, tiesiog sutelkite dėmesį į ką nors neutralaus, kaip, pavyzdžiui, savo kvėpavimą."
+            android:background="#d65108"
+            android:text="Nesirūpinkite – viskas yra šios patirties dalis. Svarbiausia atkreipti dėmesį ir stebėti, kas vyksta atvėrus protą, ir išmokti be reikalo nesijaudinti dėl kažko konkretaus. Jei įstringate, tiesiog sutelkite dėmesį į ką nors neutralaus, kaip, pavyzdžiui, savo kvėpavimą."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
     </LinearLayout>
