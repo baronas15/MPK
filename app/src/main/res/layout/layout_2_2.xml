@@ -15,28 +15,28 @@
             android:text="MINTYS IR SMEGENYS"/>
 
         <TextView
-            style="@style/paragraph_firstLineInverted"
+            style="@style/paragraph_firstLine"
             android:text="Galite perprogramuoti savo smegenis medituodami, kadangi mūsų smegenys keičiasi priklausomai nuo to, kaip jomis naudojamės. Kiekvieną kartą, kai jums kyla mintis, neuronai jungiasi kaip maži impulsai per visa jūsų smegenų žemėlapį. Kai šie neuronai susijungia, jūsų smegenys sustorėja ir sustiprėja tam tikrose vietose, priklausomai nuo to, ką mąstote. Iš tiesų mes galime pakeisti smegenų schemas, kad jos padėtų mums būti taikesniems ir gailestingesniems, tiesiog nukreipdami savo mintis ir vaizduotę. Visai kaip kultūristai kilnoja svarmenis, kad augintų raumenis – kuo daugiau teigiamų minčių galvojate, tuo stipresnė tampa jūsų smegenų dalis, leidžianti jums patirti teigiamus jausmus!"
-            android:background="#ff595e"/>
+            android:background="#ead2ac"/>
 
         <TextView
             style="@style/paragraph_headingPrimary"
             android:text="STRESAS IR KŪNAS"/>
 
         <TextView
-            style="@style/paragraph_firstLine"
+            style="@style/paragraph_firstLineInverted"
             android:text="Daugelis kūno funkcijų dirba automatiška, pavyzdžiui, kvėpavimas, kraujo spaudimas ir virškinimas. Šios funkcijos yra valdomos Autonominės Nervų Sistemos (ANS). ANS yra suskirstyta į dvi dalis: Simpatinė Nervų Sistema (SNS) –„kovok arba bėk“ reakcija patiriant stresą, įtemptos veiklos ir nenumatytų atvejų metu, ir Parasimpatinė Nervų Sistema (PNS) – „ilsėkis ir virškink“ arba raminanti reakcija."
-            android:background="#ffca3a"/>
+            android:background="#25a18e"/>
 
         <TextView
             style="@style/paragraph_firstLine"
             android:text="SNS, arba „kovok arba bėk“, yra atsakinga už tai, kas nutinka jūsų kūnui reaguojant į didelį stresą sukeliančias situacijas. Adrenalinas teka kraujyje, paveikdamas kiekvieną organą. Jūsų širdis plaka greičiau, kraujo spaudimaspadidėja, kvėpavimas pagreitėja ir padažnėja, akies vyzdžiai išsiplečia, o raumenys įsitempia. SNS yra natūrali jūsų kūno reakcija nenumatytų atvejų metu, tačiau dažnai ji pradeda veikti dėl kasdienio streso, o kai tai nutinka, galime pasijusti ligoti."
-            android:background="#8ac926"/>
+            android:background="#ead2ac"/>
 
         <TextView
             style="@style/paragraph_firstLineInverted"
             android:text="Kai praktikuojame dėmesingą įsisąmoninimą ir meditaciją ir kvėpuojame giliai ir atsipalaidavę, galime išjungti SNS ir įjungti savo Parasimpatinę Nervų Sistemą (PNS), taip pat vadinamą „ilsėkis ir virškink“, kuri mus nuramina ir padeda atsipalaiduoti. Kai aktyvuojama PNS, širdies pulsas sulėtėja, kraujo spaudimas nukrenta, kvėpavimas sulėtėja ir pagilėja, vyzdžiai susitraukia, o raumenys atsipalaiduoja. Tai pagerina virškinimą, palaiko imuninę sistemą ir tiesiog visas jautiesi gerai."
-            android:background="#6a4c93"/>
+            android:background="#0081af"/>
 
     </LinearLayout>
 </ScrollView>
