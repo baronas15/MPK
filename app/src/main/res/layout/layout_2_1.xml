@@ -21,15 +21,15 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/primaryText"
-            android:text="Dėmesingas įsisąmoninimas – tai būdas sutelkti dėmesį į tai, kas vyksta dabar, stebint tai, kas vyksta viduje (jūsų mintys, jausmai ir fiziniai pojūčiai) ir išorėje (jūsų bendravimas ir aplinka), be išankstinio nusistatymo ir neteisiant."
+            android:textColor="@color/primaryTextInverted"
+            android:background="#591f0a"            android:text="Dėmesingas įsisąmoninimas – tai būdas sutelkti dėmesį į tai, kas vyksta dabar, stebint tai, kas vyksta viduje (jūsų mintys, jausmai ir fiziniai pojūčiai) ir išorėje (jūsų bendravimas ir aplinka), be išankstinio nusistatymo ir neteisiant."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/primaryText"
-            android:text="Dėmesingas įsisąmoninimas padeda mums susikaupti ir išlikti šioje akimirkoje, kai praktikuojame abi meditacijos rūšis: „aktyvus mąstymas“, kai mes apgalvotai nukreipiame savo mintis ir vaizduotę, kad mąstytume ir jaustumės pozityviai, ir „proto ilsinimas“, kai mes viską atpalaiduojame."
+            android:textColor="@color/primaryTextInverted"
+            android:background="#591f0a"            android:text="Dėmesingas įsisąmoninimas padeda mums susikaupti ir išlikti šioje akimirkoje, kai praktikuojame abi meditacijos rūšis: „aktyvus mąstymas“, kai mes apgalvotai nukreipiame savo mintis ir vaizduotę, kad mąstytume ir jaustumės pozityviai, ir „proto ilsinimas“, kai mes viską atpalaiduojame."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
         <TextView
@@ -43,21 +43,24 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/primaryText"
+            android:textColor="@color/primaryTextInverted"
+            android:background="#0267c1"
             android:text="1. PAUZĖ: susitelkite ties tuo, ką šiuo metu darai. Stebėk, ką galvoji ir kaip jautiesi."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/primaryText"
+            android:textColor="@color/primaryTextInverted"
+            android:background="#0267c1"
             android:text="2. KVĖPAVIMAS: stebėkite savo natūralų kvėpavimą  - taip lavinate savo dėmesingumą."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/primaryText"
+            android:textColor="@color/primaryTextInverted"
+            android:background="#0267c1"
             android:text="3. PAGALVOKITE: kokios mano mintys dabar?"
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
@@ -69,10 +72,17 @@
             android:text="KUO DĖMESINGAS ĮSISĄMONINIMAS GALI JUMS PADĖTI:"
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/motherdaughet"
+            android:paddingTop="@dimen/item_vertical_padding"
+            android:adjustViewBounds="true"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/primaryText"
+            android:background="#efa00b"
             android:text="Ar esate kada nors buvę blogos nuotaikos ir nesupratę, kodėl? Jūs galite praktikuoti dėmesingą įsisąmoninimą, kad ištirtumėte/išsiaiškintumėte, kas vyksta jūsų galvoje, ir kad pamatytumėte, kaip tai paveikia jūsų jausmus ir veiksmus."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
@@ -80,6 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/primaryText"
+            android:background="#efa00b"
             android:text="Galite atpažinti ir paveikti neduodančias ramybės, pasikartojančias mintis, kurios prisideda prie streso."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
@@ -87,6 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/primaryText"
+            android:background="#efa00b"
             android:text="Galite pakeisti įkyrius įpročius."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
@@ -94,6 +106,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/primaryText"
+            android:background="#efa00b"
             android:text="Galite sukurti erdvę tarp savo minčių ir reakcijų, kad liautumėtės darę neproduktyvius dalykus."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
@@ -101,6 +114,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/primaryText"
+            android:background="#efa00b"
             android:text="Galite sukurti ramybės ir geros savijautos jausmą stiprindami savo gerumą ir gailestingumą."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
@@ -112,25 +126,27 @@
             android:text="KO TIKĖTIS:"
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/primaryText"
+            android:textColor="@color/primaryTextInverted"
+            android:background="#d65108"
             android:text="Praktikuojant dėmesingą įsisąmoninimą, į paviršių iškyla įvairūs dalykai: mintys, jausmai, garsai ir fiziniai pojūčiai."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/primaryText"
-            android:text="Kartais galite jaustis nepatogiai, kitais kartais viskas praeina labai lengvai ir puikiai jaučiatės."
+            android:textColor="@color/primaryTextInverted"
+            android:background="#d65108"            android:text="Kartais galite jaustis nepatogiai, kitais kartais viskas praeina labai lengvai ir puikiai jaučiatės."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/primaryText"
-            android:text="Nesirūpinkite – viskas yra šios patirties dalis. Svarbiausia atkreipti dėmesį ir stebėti, kas vyksta atvėrus protą, ir išmokti be reikalo nesijaudinti dėl kažko konkretaus. Jei įstringate, tiesiog sutelkite dėmesį į ką nors neutralaus, kaip, pavyzdžiui, savo kvėpavimą."
+            android:textColor="@color/primaryTextInverted"
+            android:background="#d65108"            android:text="Nesirūpinkite – viskas yra šios patirties dalis. Svarbiausia atkreipti dėmesį ir stebėti, kas vyksta atvėrus protą, ir išmokti be reikalo nesijaudinti dėl kažko konkretaus. Jei įstringate, tiesiog sutelkite dėmesį į ką nors neutralaus, kaip, pavyzdžiui, savo kvėpavimą."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
     </LinearLayout>
