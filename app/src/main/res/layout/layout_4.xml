@@ -98,7 +98,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:baselineAligned="false"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:visibility="gone">
 
                 <FrameLayout
                     android:layout_width="fill_parent"
@@ -109,12 +110,9 @@
                     android:paddingLeft="@dimen/side_padding_portrait"
                     android:paddingRight="@dimen/side_padding_portrait" >
 
-
                 </FrameLayout>
 
             </LinearLayout>
-
-
 
             <LinearLayout
                 android:orientation="horizontal"

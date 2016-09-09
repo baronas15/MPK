@@ -11,12 +11,9 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/paragraph"
             android:textColor="@color/primaryText"
-            android:text=""
-
-            android:padding="@dimen/item_vertical_padding"/>
+            android:text=""/>
 
     </LinearLayout>
 </ScrollView>

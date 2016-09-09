@@ -7,16 +7,177 @@
     android:background="@color/colorPrimaryLight">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/primaryText"
-            android:text=""
-
+            android:textColor="@color/primaryTextInverted"
+            android:text="Dažniausi sunkumai ir kaip su jais tvarkytis"
+            android:textSize="@dimen/material_text_title"
+            android:background="@color/colorPrimary"
             android:padding="@dimen/item_vertical_padding"/>
+        <TextView
+            style="@style/paragraph_heading"
+            android:textColor="@color/primaryText"
+            android:text="„Neradau laiko namų darbams“"
+            android:background="#f6f7eb"
+            android:textSize="@dimen/material_text_subhead"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text="Paklauskime savęs: kas sutrukdė rasti laiko namų darbams? Kokių minčių, emocijų iškilo apie tai mąstant? Ateinančią savaitę, bandydami rasti laiko užduotims atlikti, patyrinėkime iškylančias kliūtis ir dėmesingai jas apsvarstykime. Galbūt verta pamėginti skirti laiko?"
+            android:background="#f6f7eb"/>
+        <TextView
+            style="@style/paragraph_heading"
+            android:textSize="@dimen/material_text_subhead"
+            android:textColor="@color/primaryTextInverted"
+            android:text="„Man labai nusibodo“, „Įrašas mane erzino“"
+            android:background="#e94f37"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryTextInverted"
+            android:text="Šios reakcijos labai svarbios, nes stipriai slopina motyvaciją tęsti pratybas. Vis dėlto, jeigu norime įsitikinti, ar pratybos gali duoti naudos, turime jas tęsti nepriklausomai nuo kylančių reakcijų, tarsi nuo to priklausytų mūsų gyvybė. Ši patirtis gali būti labai vertinga mokantis dirbti su neigiamomis emocijomis kitose situacijose."
+            android:background="#e94f37"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryTextInverted"
+            android:text="Čia gauname progą kiek kitaip nei įprasta reaguoti į neigiamas emocijas – pripažindami jas, tačiau nepereidami į veikimo režimą, kad jas sušvelnintume arba pašalintume. Toks automatinio reagavimo į emocijas atsisakymas - vienas iš šios programos leitmotyvų."
+            android:background="#e94f37"/>
+        <TextView
+            style="@style/paragraph_heading"
+            android:textColor="@color/primaryText"
+            android:textSize="@dimen/material_text_subhead"
+            android:text="„Buvo puiku, aš užmigau“, „Man patiko, nes pagaliau atsipalaidavau“, Man tai nepadarė jokio poveikio, tiesiog užmigau, ir tiek“"
+            android:background="#cfebed"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sleepy"
+            android:adjustViewBounds="true"
+            android:paddingBottom="10dp"
+            android:background="#cfebed"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text="Labai įprasta manyti, kad jeigu pratimai/meditacijos - „suveikė“, tai sukėlė teigiamas emocijas, ir „nesuveikė“, jeigu jo metu patyrėme nemalonių išgyvenimų. Ypač teigiami išgyvenimai labai lengvai gali sukelti minčių, kad toks ir yra pratybų tikslas."
+            android:background="#cfebed" />
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text="Tačiau iš tiesų tikslas yra ne pasiekti atsipalaidavimo ar kitą malonią būklę, o tik būti dėmesingam ir pastebėti tai, kas yra."
+            android:background="#cfebed"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text="Nesvarbu, kad viso pratimo metu jutome įtampą. Jeigu dėmesingai ją stebėjome, tai atlikome užduotį."
+            android:background="#cfebed"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text="Jeigu pernelyg susitelkiame į teigiamų potyrių paieškas, prarandame galimybę geriau pažinti įvairias savo kūno reakcijas."
+            android:background="#cfebed"/>
+        <TextView
+            style="@style/paragraph_heading"
+            android:textSize="@dimen/material_text_subhead"
+            android:textColor="@color/primaryTextInverted"
+            android:text="„Labai stengiuosi, bet vis tiek nemanau, kad man išeina“, „Turbūt turėčiau labiau stengtis“"
+            android:background="#393e41"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryTextInverted"
+            android:text=" Nors dauguma žmonių pradeda praktikuoti šiuos pratimus/ meditacijas, nes stipriai kenčia ir nori pagerinti savo būklę, praktikuojantis viena iš svarbių efektyvumo prielaidų yra siekimo atsisakymas. (Ir tai tikrai paradoksalu). Čia kaip pasodinus gėlę – negalima kasdien jos išrauti ir pažiūrėti, kiek sustiprėjo šaknys, kurį laiką tenka tiesiog pasitikėti, kad jos stiprėja."
+            android:background="#393e41"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryTextInverted"
+            android:text="Mes tarsi vis iš naujo „apsistojame“ kiekvienoje akimirkoje"
+            android:background="#393e41"/>
+        <TextView
+            style="@style/paragraph_heading"
+            android:textSize="@dimen/material_text_subhead"
+            android:textColor="@color/primaryTextInverted"
+            android:text="„Mane apėmė labai stiprios nemalonios emocijos“"
+            android:background="#44bba4"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryTextInverted"
+            android:text="Daugeliui žmonių būdingas įsitikinimas, kad galvoti apie emociją ar kitus potyrius yra saugiau, negu juos tiesiogiai patirti – tai ypač būdinga psichologinių sunkumų turintiems žmonėms. Vieniems ši strategija susiformavo palaipsniui mėginant rasti būdų tvarkytis su emocijomis, kitiems – patyrus emocinę ar fizinę traumą."
+            android:background="#44bba4"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryTextInverted"
+            android:text="Suprantama, kodėl žmonės taip elgiasi, tačiau kartu tai trukdo iš tiesų perdirbti emocijas."
+            android:background="#44bba4"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryTextInverted"
+            android:text="Jeigu tokia emocijų valdymo strategija buvo taikoma ilgą laiką, žmogui kūno skenavimo metu gali atrodyti, kad emocijos tiesiog užplūsta."
+            android:background="#44bba4"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryTextInverted"
+            android:text="Šiuo atveju praktikuojantis svarbu nuolat ieškoti tarpinės pozicijos tarp pasitraukimo iš emocijų ir pasinėrimo į jas. Nuolatinis dėmesio sugrąžinimas prie kūno skenavimo instrukcijų gali būti tas saugus pagrindas, į kurį galima nuolat atsiremti."
+            android:background="#44bba4"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryTextInverted"
+            android:text="Neretai pasitaiko, kad nors žmonės kūno skenavimo metu gali patirti stiprių neigiamų išgyvenimų, jis gali turėti ir stiprų gydomąjį poveikį. Tereikia tęsti pratybas."
+            android:background="#44bba4"/>
+        <TextView
+            style="@style/paragraph_heading"
+            android:textSize="@dimen/material_text_subhead"
+            android:textColor="@color/primaryText"
+            android:text="„Mano dėmesys niekaip nenustigo vietoje“"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text="Žmonės dažnai pastebi, kad pradėjus praktikuotis kyla įvairių minčių. Pavyzdžiui, dažnai vidiniam monologui būdingos tokios mintys: „Koks tikslas tuo užsiimti? Vakar atlikusi pratybas nepasijutau nė kiek geriau. Man tai per sunku. Nesuprantu, kaip tai susiję su mano problemomis. Man ir taip trūksta laiko, o čia aš jį tik švaistau.“" />
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text="Vėlgi turime progą priminti sau – tiesiog praktikuokimės ir truputį palaukime, prieš spręsdami apie rezultatus." />
+        <TextView
+            style="@style/paragraph_heading"
+            android:textColor="@color/primaryTextInverted"
+            android:text="PRAKTIKUOKITE DĖMESINGĄ ĮSISAMONINIMĄ BET KADA!"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            style="@style/paragraph_heading"
+            android:textSize="@dimen/material_text_subhead"
+            android:textColor="@color/primaryTextInverted"
+            android:text="Meditacija gali būti praktikuojama bet kada, bet kur, o žmonės net nesužinos, kad tai atlieki."
+            android:background="#e94f37"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryTextInverted"
+            android:background="#e94f37"
+            android:text="* Vaikščiojant\n* Važiuojant autobusu\n* Važiuojant dviračiu\n* Sportuojant\n* Skaitant\n* Atsiliepiant telefonu\n* Stojantis iš kėdės"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryTextInverted"
+            android:background="#e94f37"
+            android:text="Galite užsiimti bet kuria šių veiklų sąmoningai tiesiog stebėdami savo kvėpavimą, kaip jaučiasi jūsų kūnas, ką galvojate ir ką jaučiate."/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryTextInverted"
+            android:background="#e94f37"
+            android:text="Jei turite galimybę, galite susikurti tylią vietą be pašalinių išblaškymų, kur galite atsisėsti patogiai ir atpalaiduojančioje pozoje, ant pagalvėlės ar kėdės. Jei sėdite ant kėdės, padėkite pėdas ant žemės. Kai pradedate praktikuoti dėmesingą įsisąmoninimą, nepamirškite stebėti savo laikysenos. Ar jūsų nugara tiesi? Ar galite laisvai kvėpuoti? Ar jūsų laikysena išreiškia pasitikėjimą ir orumą?"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryTextInverted"
+            android:background="#e94f37"
+            android:text="Jei jaučiatės pavargę ar mieguisti, jums padės sėdėjimas tiesiai!"/>
+        <TextView
+            style="@style/paragraph_heading"
+            android:textColor="@color/primaryText"
+            android:text="PRAKTIKA PADEDA SIEKTI  TOBULYBĖS!"/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text="Jūs netapsite Dėmesingo Įsisąmoninimo meistru iškart. Kuo daugiau tuo užsiimsite, tuo labiau tobulėsite. Visai kaip kilnojate svarmenis, kad sustiprintumėte savo kūną, jūs naudojate dėmesingą įsisąmoninimą, kad sustiprintumėte savo
+smegenis."/>
 
     </LinearLayout>
 </ScrollView>
