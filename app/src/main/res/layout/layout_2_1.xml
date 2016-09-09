@@ -27,13 +27,11 @@
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/paragraph"
             android:textColor="@color/primaryText"
             android:background="#f08700"
             android:text="Dėmesingas įsisąmoninimas padeda mums susikaupti ir išlikti šioje akimirkoje, kai praktikuojame abi meditacijos rūšis: „aktyvus mąstymas“, kai mes apgalvotai nukreipiame savo mintis ir vaizduotę, kad mąstytume ir jaustumės pozityviai, ir „proto ilsinimas“, kai mes viską atpalaiduojame."
-            android:textSize="@dimen/material_text_body1"
-            android:padding="@dimen/item_vertical_padding"/>
+            android:textSize="@dimen/material_text_body1"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,21 +49,17 @@
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/paragraph"
             android:textColor="@color/primaryTextInverted"
             android:background="#0267c1"
             android:text="2. KVĖPAVIMAS: stebėkite savo natūralų kvėpavimą  - taip lavinate savo dėmesingumą."
-            android:textSize="@dimen/material_text_body1"
-            android:padding="@dimen/item_vertical_padding"/>
+            android:textSize="@dimen/material_text_body1"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/paragraph"
             android:textColor="@color/primaryTextInverted"
             android:background="#0267c1"
             android:text="3. PAGALVOKITE: kokios mano mintys dabar?"
-            android:textSize="@dimen/material_text_body1"
-            android:padding="@dimen/item_vertical_padding"/>
+            android:textSize="@dimen/material_text_body1"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -97,29 +91,23 @@
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/paragraph"
             android:textColor="@color/primaryText"
             android:background="#efa00b"
             android:text="Galite pakeisti įkyrius įpročius."
-            android:textSize="@dimen/material_text_body1"
-            android:padding="@dimen/item_vertical_padding"/>
+            android:textSize="@dimen/material_text_body1"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/paragraph"
             android:textColor="@color/primaryText"
             android:background="#efa00b"
             android:text="Galite sukurti erdvę tarp savo minčių ir reakcijų, kad liautumėtės darę neproduktyvius dalykus."
-            android:textSize="@dimen/material_text_body1"
-            android:padding="@dimen/item_vertical_padding"/>
+            android:textSize="@dimen/material_text_body1"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/paragraph"
             android:textColor="@color/primaryText"
             android:background="#efa00b"
             android:text="Galite sukurti ramybės ir geros savijautos jausmą stiprindami savo gerumą ir gailestingumą."
-            android:textSize="@dimen/material_text_body1"
-            android:padding="@dimen/item_vertical_padding"/>
+            android:textSize="@dimen/material_text_body1"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -138,20 +126,16 @@
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/paragraph"
             android:textColor="@color/primaryTextInverted"
             android:background="#d65108"
             android:text="Kartais galite jaustis nepatogiai, kitais kartais viskas praeina labai lengvai ir puikiai jaučiatės."
-            android:textSize="@dimen/material_text_body1"
-            android:padding="@dimen/item_vertical_padding"/>
+            android:textSize="@dimen/material_text_body1"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/paragraph"
             android:textColor="@color/primaryTextInverted"
             android:background="#d65108"
             android:text="Nesirūpinkite – viskas yra šios patirties dalis. Svarbiausia atkreipti dėmesį ir stebėti, kas vyksta atvėrus protą, ir išmokti be reikalo nesijaudinti dėl kažko konkretaus. Jei įstringate, tiesiog sutelkite dėmesį į ką nors neutralaus, kaip, pavyzdžiui, savo kvėpavimą."
-            android:textSize="@dimen/material_text_body1"
-            android:padding="@dimen/item_vertical_padding"/>
+            android:textSize="@dimen/material_text_body1"/>
     </LinearLayout>
 </ScrollView>
