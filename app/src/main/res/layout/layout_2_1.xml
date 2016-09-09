@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#f08700">
+            android:background="#f6f7eb">
             <TextView
                 style="@style/paragraph_firstLine"
                 android:text="Dėmesingas įsisąmoninimas – tai būdas sutelkti dėmesį į tai, kas vyksta dabar, stebint tai, kas vyksta viduje (jūsų mintys, jausmai ir fiziniai pojūčiai) ir išorėje (jūsų bendravimas ir aplinka), be išankstinio nusistatymo ir neteisiant."/>
