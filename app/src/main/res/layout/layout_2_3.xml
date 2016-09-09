@@ -129,14 +129,17 @@
             style="@style/paragraph_heading"
             android:textSize="@dimen/material_text_subhead"
             android:textColor="@color/primaryText"
+            android:background="#cfebed"
             android:text="„Mano dėmesys niekaip nenustigo vietoje“"/>
         <TextView
             style="@style/paragraph"
             android:textColor="@color/primaryText"
+            android:background="#cfebed"
             android:text="Žmonės dažnai pastebi, kad pradėjus praktikuotis kyla įvairių minčių. Pavyzdžiui, dažnai vidiniam monologui būdingos tokios mintys: „Koks tikslas tuo užsiimti? Vakar atlikusi pratybas nepasijutau nė kiek geriau. Man tai per sunku. Nesuprantu, kaip tai susiję su mano problemomis. Man ir taip trūksta laiko, o čia aš jį tik švaistau.“" />
         <TextView
             style="@style/paragraph"
             android:textColor="@color/primaryText"
+            android:background="#cfebed"
             android:text="Vėlgi turime progą priminti sau – tiesiog praktikuokimės ir truputį palaukime, prieš spręsdami apie rezultatus." />
         <TextView
             style="@style/paragraph_heading"
@@ -172,10 +175,12 @@
         <TextView
             style="@style/paragraph_heading"
             android:textColor="@color/primaryText"
+            android:background="#f6f7eb"
             android:text="PRAKTIKA PADEDA SIEKTI  TOBULYBĖS!"/>
         <TextView
             style="@style/paragraph"
             android:textColor="@color/primaryText"
+            android:background="#f6f7eb"
             android:text="Jūs netapsite Dėmesingo Įsisąmoninimo meistru iškart. Kuo daugiau tuo užsiimsite, tuo labiau tobulėsite. Visai kaip kilnojate svarmenis, kad sustiprintumėte savo kūną, jūs naudojate dėmesingą įsisąmoninimą, kad sustiprintumėte savo
 smegenis."/>
 
