@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/sleepy"
             android:adjustViewBounds="true"
-            android:paddingBottom="10dp"
+            android:paddingBottom="15dp"
             android:background="#cfebed"/>
         <TextView
             style="@style/paragraph"
