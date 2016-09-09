@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/primaryText"
-            android:background="#00bfb2"
+            android:background="#f08700"
             android:text="Dėmesingas įsisąmoninimas – tai būdas sutelkti dėmesį į tai, kas vyksta dabar, stebint tai, kas vyksta viduje (jūsų mintys, jausmai ir fiziniai pojūčiai) ir išorėje (jūsų bendravimas ir aplinka), be išankstinio nusistatymo ir neteisiant."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/primaryText"
-            android:background="#00bfb2"
+            android:background="#f08700"
             android:text="Dėmesingas įsisąmoninimas padeda mums susikaupti ir išlikti šioje akimirkoje, kai praktikuojame abi meditacijos rūšis: „aktyvus mąstymas“, kai mes apgalvotai nukreipiame savo mintis ir vaizduotę, kad mąstytume ir jaustumės pozityviai, ir „proto ilsinimas“, kai mes viską atpalaiduojame."
             android:textSize="@dimen/material_text_body1"
             android:padding="@dimen/item_vertical_padding"/>
