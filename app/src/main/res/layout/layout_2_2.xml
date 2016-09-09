@@ -17,7 +17,7 @@
         <TextView
             style="@style/paragraph_firstLine"
             android:text="Galite perprogramuoti savo smegenis medituodami, kadangi mūsų smegenys keičiasi priklausomai nuo to, kaip jomis naudojamės. Kiekvieną kartą, kai jums kyla mintis, neuronai jungiasi kaip maži impulsai per visa jūsų smegenų žemėlapį. Kai šie neuronai susijungia, jūsų smegenys sustorėja ir sustiprėja tam tikrose vietose, priklausomai nuo to, ką mąstote. Iš tiesų mes galime pakeisti smegenų schemas, kad jos padėtų mums būti taikesniems ir gailestingesniems, tiesiog nukreipdami savo mintis ir vaizduotę. Visai kaip kultūristai kilnoja svarmenis, kad augintų raumenis – kuo daugiau teigiamų minčių galvojate, tuo stipresnė tampa jūsų smegenų dalis, leidžianti jums patirti teigiamus jausmus!"
-            android:background="#ead2ac"/>
+            android:background="#f6f7eb"/>
 
         <TextView
             style="@style/paragraph_headingPrimary"
@@ -31,7 +31,7 @@
         <TextView
             style="@style/paragraph_firstLine"
             android:text="SNS, arba „kovok arba bėk“, yra atsakinga už tai, kas nutinka jūsų kūnui reaguojant į didelį stresą sukeliančias situacijas. Adrenalinas teka kraujyje, paveikdamas kiekvieną organą. Jūsų širdis plaka greičiau, kraujo spaudimaspadidėja, kvėpavimas pagreitėja ir padažnėja, akies vyzdžiai išsiplečia, o raumenys įsitempia. SNS yra natūrali jūsų kūno reakcija nenumatytų atvejų metu, tačiau dažnai ji pradeda veikti dėl kasdienio streso, o kai tai nutinka, galime pasijusti ligoti."
-            android:background="#ead2ac"/>
+            android:background="#f6f7eb"/>
 
         <TextView
             style="@style/paragraph_firstLineInverted"

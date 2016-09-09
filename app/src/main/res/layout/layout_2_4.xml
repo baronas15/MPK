@@ -12,34 +12,34 @@
 
 
         <TextView
-            style="@style/paragraph_headingPrimary"
+            style="@style/layout_header"
             android:text="Kaip atlikti kūno skenavimą ir kitas meditacijas"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#20bf55">
+            android:background="#ece2d0">
             <TextView
-                style="@style/paragraph_headingInverted"
+                style="@style/paragraph_heading"
                 android:text="Kas benutiktų (pvz. užmigote, nukrypo dėmesys, nuolat galvojate apie kitus dalykus ar apie kitą kūno vietą, arba nieko nejaučiate), tiesiog tęskite pratimą. Tai, ką patiriate, yra jūsų šios akimirkos išgyvenimai, todėl būkite jiems atviri."/>
             <TextView
-                style="@style/paragraph_firstLineInverted"
-                android:background="#4ccb76"
+                style="@style/paragraph_firstLine"
+                android:background="#d4cbbb"
                 android:text="Jeigu dėmesys nuolat nukrypsta, užfiksuokite jį atitraukiančias mintis kaip praeinančius įvykius ir švelniai grąžinkite dėmesį prie kūno skenavimo ar pasirinkto kito dėmesio objekto."/>
             <TextView
-                style="@style/paragraph_primaryTextInverted"
+                style="@style/paragraph_firstLine"
                 android:text="Negalvokite apie tokius dalykus kaip „sėkmė“, „nesėkmė“, „geras pratimo atlikimas“ ar „pastangos apvalyti kūną“. Čia ne varžybos, kuriose žūtbūt siekiama tikslo. Tereikia dažnai ir reguliariai treniruotis, būti atviram patyrimui ir žvelgti į jį smalsiai."/>
             <TextView
-                style="@style/paragraph_primaryTextInverted"
-                android:background="#4ccb76"
+                style="@style/paragraph_firstLine"
+                android:background="#d4cbbb"
                 android:text="Atsisakykite visų lūkesčių, susijusių su tuo, kaip kūno skenavimas ir kitos praktokos turėtų jums padėti. Įsivaizduokite, kad pasėjote sėklą. Kuo dažniau aplink ją krapštinėsitės ir jai trukdysite, tuo sunkiau jai bus išdygti ir augti. Tad tiesiog sukurkite kūno „skenavimui“ ir kitoms meditacijoms/praktikoms tinkamas sąlygas – ramybę, taiką ir nuolatines pratybas. Daugiau niekuo nereikia rūpintis, nes kuo labiau stengsitės sustiprinti meditacijų poveikį jums, tuo silpnesnis jis bus."/>
             <TextView
-                style="@style/paragraph_primaryTextInverted"
+                style="@style/paragraph_firstLine"
                 android:text="Pamėginkite kas akimirką žvelgti į patiriamus išgyvenimus sakydami sau: „Šiuo metu tiesiog taip yra“. Jei stengsitės kovoti su nemaloniomis mintimis, jausmais ar kūno pojūčiais, tai tik atitrauks jūsų dėmesį ir neleis užsiimti niekuo kitu. Būkite atviri, nekovokite, susitelkite į dabartį ir priimkite viską taip, kaip yra. Tiesiog praktikuokitės."/>
         </LinearLayout>
 
         <TextView
-            style="@style/paragraph_headingPrimary"
+            style="@style/layout_header"
             android:text="Atlikus pratimus, siūlome apmąstyti:"/>
 
         <LinearLayout
@@ -92,154 +92,219 @@
         </LinearLayout>
 
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_firstLine"
+            android:background="#ece2d0"
             android:text="Kartais pagelbsti nusistatyti reguliarų laiką ir vietą, kad praktikuotumėtės. Kartais jums gali būti sunku tiesiogiai jausti kai kuriuos teigiamus jausmus, paminėtus kiekvienoje meditacijos rūšyje. Nieko tokio! Tiesiog medituojant ir suteikiant sau progą jausti šiuos teigiamus jausmus yra didžiulis žingsnis. Prisiminkite: geriau daryti 1 minutę nei nedaryti išviso. Sąmoningas buvimas kiekvieną akimirką leidžia žmogui laisvai kontroliuoti savo emocijas, suprasti savo mintis, pasirinkti tai, ko reikia būtent jam."/>
         <TextView
-            style="@style/paragraph"
+            style="@style/layout_header"
             android:text="APIE KIEKVIENĄ MEDITACIJĄ"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_firstLine"
+            android:background="#fbfbff"
             android:text="Šios meditacijos yra skirtos paskatinti ir įkvėpti jus mąstyti ir veikti pozityviai. Jos suteikia jums šansą praplėsti savo perspektyvą, kas gali padėti jums nusiraminti, kai esate nusiminęs ar įsitempęs. Iškart gali ir nepavykti, tačiau patikėkite, kad su praktika tai pasikeis!"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_headingInverted"
+            android:background="#f87060"
             android:text="PRADEDANT DIENĄ"/>
         <TextView
             style="@style/paragraph"
+            android:background="#f87060"
             android:text="Meditacija gali būti ypač produktyvi, kai pereiname iš miego į nubudimo stadiją. Pradėkite dieną sąmoningai naudodami šią švelnią meditaciją prabudimui, susitelkdami į savo kūno natūralius šilumos ir ramybės jausmus. Pasodinkite taikos sėklą, kai jūsų protas prabunda taip pat, kaip ir nauja diena."/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_headingInverted"
+            android:background="#bfb5af"
             android:text="UŽMIEGANT"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#bfb5af"
             android:text="Meditacija gali būti ypač produktyvi, kai pereiname išbudrumo į miego stadiją. Atsikratykite dienos streso ir pasiruoškite miegoti naudodamiesi šios meditacijos vedliu. Leiskite sau atsipalaiduoti ir pasiekti atvirą įsisąmoninimą ir džiaukitės savo kūno natūralia šiluma ir ramybe, kol užmigsite."/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_headingInverted"
+            android:background="#20bf55"
             android:text="SĄMONINGAS KVĖPAVIMAS"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#20bf55"
             android:text="Išmokite stebėti, kas vyksta viduje (jūsų mintys, jausmai ir fiziniai pojūčiai) ir išorėje (jūsų bendravimas ir aplinka) atviru protu ir neteisdami, sąmoningai kreipdami dėmesį į savo kvėpavimo pojūtį."/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_headingInverted"
+            android:background="#0b4f6c"
             android:text="KŪNO TYRINĖJIMAS"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#0b4f6c"
             android:text="Įsisąmoninkite į kiekvieną savo kūno dalį, atkreipdami dėmesį į savo patyrimą su smalsumu ir neteisdami. Mes dažnai nešiojame stresą ir emocijas kūne. Įsisąmoninimas į savo kūno pojūčius gali mums padėti atpažinti emocijas ir impulsus, kai tik jie atsiranda. Mes galime pakeisti reagavimo įpročius, apsispręsdami nusiraminti ir kitaip reaguoti."/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_heading"
+            android:background="#fbfbff"
             android:text="ĮJUNGTI SAVO POJŪČIUS"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryText"
+            android:background="#fbfbff"
             android:text="Stebėkite, ką patiriate savo pojūčiais, be tokių etikečių kaip „geras“ ar „blogas“ arba „malonus“ ar „nemalonus“. Išmokite pastebėti ir patirti dalykus tokius, kokie jie yra, nereaguojant ir neteisiant jų."/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_headingInverted"
+            android:background="#757575"
             android:text="SĄMONINGAS PASIVAIKŠČIOJIMAS"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#757575"
             android:text="Praktikuojant dėmesingą įsisąmoninimą kasdienės veiklos metu, kaip pvz. vaikščiojant, galite labiau atkreipti dėmesį į tai, kas vyksta viduje (jūsų mintys, jausmai ir fiziniai pojūčiai) ir išorėje (jūsų bendravimas ir aplinka) neskubant teisti ar vertinti. Gyvenimas – tai kelionė. Mėgaukitės dvasios ramybe keliaudami savo tikslo link"/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_headingInverted"
+            android:background="#f87060"
             android:text="DĖKINGUMAS"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#f87060"
             android:text="Branginkite teigiamus aspektus savo gyvenime, sutelkdami dėmesį į meilę, gerumą ir paramą, kuriuos patyrėte. Šios praktikos metu jūs padidinsite dėkingumo jausmą, net kai jūsų gyvenimo aspektams reikės patobulinimo."/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_heading"
+            android:background="#ece2d0"
             android:text="POKYČIAI"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryText"
+            android:background="#ece2d0"
             android:text="Viskas nuolat keičiasi, visą laiką. Tai reiškia, kad galite remtis bet kuo, kas vyksta jūsų gyvenime, kad augtumėte ir tobulėtumėte. Kai pagalvojate apie pokyčius, galite:"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryText"
+            android:background="#ece2d0"
             android:text="Išmokti būti atviresniais, atsipalaidavusiais, tolerantiškais ir lankstesniais...kad galėtumėte plaukti pagal gyvenimo tėkmę!"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryText"
+            android:background="#ece2d0"
             android:text="Patirti daugiau laimės ir pasitenkinimo, pakęsdami stiprius jausmus, tokius kaip liūdesys ir netektis."/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryText"
+            android:background="#ece2d0"
             android:text="Jaustis labiau harmoningi ir žemiški, nesvarbu, ar sekasi puikiai, ar prastai."/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_heading"
+            android:background="#fbfbff"
             android:text="ATJAUTA"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryText"
+            android:background="#fbfbff"
             android:text="Kadangi mes visi vienaip ar kitaip kenčiame, atjautos ugdymas  gali jums padėti tapti:"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryText"
+            android:background="#fbfbff"
             android:text="Kantriems ir supratingiems."/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryText"
+            android:background="#fbfbff"
             android:text="Įsijaučiantiems."/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryText"
+            android:background="#fbfbff"
             android:text="Užjaučiantiems –suvokimas, kad mes visi esame vienodoje padėtyje, leidžia jums vystyti užuojautą sau ir kitiems žmonėms, nesvarbu, ar juos pažįstate, ar ne."/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryText"
+            android:background="#fbfbff"
             android:text="Dėkingiems už tai, ką turite."/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_headingInverted"
+            android:background="#bfb5af"
             android:text="PRIEŽASTIS IR PASEKMĖ"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#bfb5af"
             android:text="Kiekvienas veiksmas turi rezultatą. Kai atliekate teigiamus veiksmus, jūs padidinate galimybę patirti teigiamus dalykus, ir atvirkščiai. Reikia nepamiršti, jog kad ir ką darytumėte, tai priklauso nuo jūsų – jūs esate savo pasirinkimų ir ateities režisierius."/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_headingInverted"
+            android:background="#0b4f6c"
             android:text="GERUMAS"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#0b4f6c"
             android:text="Gerumas – tai linkėti kitiems patirti laimę. Susitelkimas į laimę padeda jums palaikyti platesnį požiūrį ir žvelgti į situacijas už savo požiūrio ribų."/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#0b4f6c"
             android:text="Platesnė perspektyva gali padėti jums būti mažiau paveiktiems gyvenimo turbulencijų ir išlikti ramiais ir išlaikančiais pusiausvyrą."/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#0b4f6c"
             android:text="Jei jums sunku linkėti laimės kažkam, ko nemėgstate, stenkitės praktikuoti „Kančios bendrumo“ bei „Priežasties ir pasekmės“ meditacijas."/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_headingInverted"
+            android:background="#20bf55"
             android:text="DVASINĖ PUSIAUSVYRA"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#20bf55"
             android:text="Dvasinė pusiausvyra yra dvasinė ramybė ir tolygybė, net susidūrus su sunkumais. Dvasinė pusiausvyra padeda jums išlaikyti atvirą protą ir plėsti savo gerumą, gailestingumą ir džiaugsmą visiems – net žmonėms, kurie jums nepatinka."/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#20bf55"
             android:text="Dvasinė pusiausvyra gali padėti jums rasti bendrą pagrindą."/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#20bf55"
             android:text="Dvasinė pusiausvyra taip pat padeda jums pastebėti galimybę teigiamai pasikeisti visose situacijose – gerose, blogose ir bjauriose."/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#20bf55"
             android:text="Išbandykite dvasinės pusiausvyros meditaciją, kad nugalėtumėte įprotį visada kritikuoti žmones ar situacijas."/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_headingInverted"
+            android:background="#757575"
             android:text="GAILESTINGUMAS"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#757575"
             android:text="Gailestingumas, atjauta – tai suvokimas, kad kiti kenčia, kartu su nuoširdžiu noru, kad jiems tai baigtųsi."/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#757575"
             android:text="Nukreipiant dėmesį nuo savęs yra dar vienas būdas stiprinti savo gerumą ir taikos bei ramybės jėgos lauką."/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_heading"
+            android:background="#fbfbff"
             android:text="NUSIRAMINKITE, TAPKITE ŽEMIŠKI IR LAISVI"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryText"
+            android:background="#fbfbff"
             android:text="Naudodami šią meditaciją, pasitelkite savo vaizduotę, kad nusiramintumėte, jaustumėtės stabilesni ir žemiškesni bei apvalytumėte protą."/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_headingInverted"
+            android:background="#f87060"
             android:text="TOKS KAIP IR AŠ"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#f87060"
             android:text="Sustiprinkite savo dvasinę pusiausvyrą ir gailestingumą sutelkdami dėmesį į idėją, kad visi nori būti laimingi ir išvengti kančios. Tada, pradėdami nuo savęs ir pereidami prie visų žmonių, įsivaizduokite, kad įkvepiate kančią ir skausmą, ir persiunčiate meilę bei laimę."/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_heading"
+            android:background="#ece2d0"
             android:text="LIŪDESIO GYDYMAS"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryText"
+            android:background="#ece2d0"
             android:text="Dėmesingo įsisąmoninimo ir vaizduotės dėka, priartėkitė prie savo liūdesio švelnumu ir atvira širdimi, leisdami jausmo intensyvumui išnykti ir sukurdami taikos bei geros savijautos jausmą vietoj jo."/>
+
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_headingInverted"
+            android:background="#0b4f6c"
             android:text="PRAKTIKŲ NAUDA"/>
         <TextView
-            style="@style/paragraph"
+            style="@style/paragraph_primaryTextInverted"
+            android:background="#0b4f6c"
             android:text="Praktikuodami pratimus, meditacijas jūs galite sureguliuoti svorį, sustiprinti imunitetą ligoms, sustiprinti pasitikėjimą savimi, savikontrolę ir tuo pačiu išsilaisvinti nuo žalingų įpročių, tapti pakantesniais savo artimiesiems, galite išmokti suvaldyti stresą ir konfliktus."/>
     </LinearLayout>
 </ScrollView>
