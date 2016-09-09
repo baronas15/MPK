@@ -7,9 +7,66 @@
     android:background="@color/colorPrimaryLight">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
 
+        <TextView
+            style="@style/paragraph_heading"
+            android:textColor="@color/primaryText"
+            android:text="Kaip atlikti kūno skenavimą ir kitas meditacijas"/>
+        <TextView
+            style="@style/paragraph_heading"
+            android:textColor="@color/primaryText"
+            android:text="Kas benutiktų (pvz. užmigote, nukrypo dėmesys, nuolat galvojate apie kitus dalykus ar apie kitą kūno vietą, arba nieko nejaučiate), tiesiog tęskite pratimą. Tai, ką patiriate, yra jūsų šios akimirkos išgyvenimai, todėl būkite jiems atviri."/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text="Jeigu dėmesys nuolat nukrypsta, užfiksuokite jį atitraukiančias mintis kaip praeinančius įvykius ir švelniai grąžinkite dėmesį prie kūno skenavimo ar pasirinkto kito dėmesio objekto."/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text="Negalvokite apie tokius dalykus kaip „sėkmė“, „nesėkmė“, „geras pratimo atlikimas“ ar „pastangos apvalyti kūną“. Čia ne varžybos, kuriose žūtbūt siekiama tikslo. Tereikia dažnai ir reguliariai treniruotis, būti atviram patyrimui ir žvelgti į jį smalsiai."/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text="Atsisakykite visų lūkesčių, susijusių su tuo, kaip kūno skenavimas ir kitos praktokos turėtų jums padėti. Įsivaizduokite, kad pasėjote sėklą. Kuo dažniau aplink ją krapštinėsitės ir jai trukdysite, tuo sunkiau jai bus išdygti ir augti. Tad tiesiog sukurkite kūno „skenavimui“ ir kitoms meditacijoms/praktikoms tinkamas sąlygas – ramybę, taiką ir nuolatines pratybas. Daugiau niekuo nereikia rūpintis, nes kuo labiau stengsitės sustiprinti meditacijų poveikį jums, tuo silpnesnis jis bus."/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text="Pamėginkite kas akimirką žvelgti į patiriamus išgyvenimus sakydami sau: „Šiuo metu tiesiog taip yra“. Jei stengsitės kovoti su nemaloniomis mintimis, jausmais ar kūno pojūčiais, tai tik atitrauks jūsų dėmesį ir neleis užsiimti niekuo kitu. Būkite atviri, nekovokite, susitelkite į dabartį ir priimkite viską taip, kaip yra. Tiesiog praktikuokitės."/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text=""/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text=""/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text=""/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text=""/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text=""/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text=""/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text=""/>
+        <TextView
+            style="@style/paragraph"
+            android:textColor="@color/primaryText"
+            android:text=""/>
         <TextView
             style="@style/paragraph"
             android:textColor="@color/primaryText"

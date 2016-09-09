@@ -69,19 +69,40 @@
         <item name="android:layout_gravity">center</item>
         <item name="android:gravity">center</item>
     </style>
+
+    <style name="layout_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/primaryTextInverted</item>
+        <item name="android:textSize">@dimen/material_text_title</item>
+        <item name="android:paddingLeft">@dimen/item_vertical_padding</item>
+        <item name="android:paddingRight">@dimen/item_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/item_vertical_padding</item>
+        <item name="android:paddingTop">@dimen/item_vertical_padding</item>
+    </style>
     <style name="paragraph">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingLeft">@dimen/item_vertical_padding</item>
         <item name="android:paddingRight">@dimen/item_vertical_padding</item>
         <item name="android:paddingBottom">@dimen/item_vertical_padding</item>
+        <item name="android:textSize">@dimen/material_text_body1</item>
     </style>
-    <style name="paragraph_heading">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingLeft">@dimen/item_vertical_padding</item>
-        <item name="android:paddingRight">@dimen/item_vertical_padding</item>
-        <item name="android:paddingBottom">@dimen/item_vertical_padding</item>
+    <style name="paragraph_heading" parent="paragraph">
+        <item name="android:paddingTop">@dimen/item_vertical_padding</item>
+        <item name="android:textSize">@dimen/material_text_subhead</item>
+    </style>
+    <style name="paragraph_primaryText" parent="paragraph">
+        <item name="android:textColor">@color/primaryText</item>
+    </style>
+    <style name="paragraph_primaryTextInverted" parent="paragraph">
+        <item name="android:textColor">@color/primaryTextInverted</item>
+    </style>
+    <style name="paragraph_firstLine" parent="paragraph_primaryText">
+        <item name="android:paddingTop">@dimen/item_vertical_padding</item>
+    </style>
+    <style name="paragraph_firstLineInverted" parent="paragraph_primaryTextInverted">
         <item name="android:paddingTop">@dimen/item_vertical_padding</item>
     </style>
 </resources>
