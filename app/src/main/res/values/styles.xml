@@ -93,6 +93,11 @@
         <item name="android:paddingTop">@dimen/item_vertical_padding</item>
         <item name="android:textSize">@dimen/material_text_subhead</item>
     </style>
+    <style name="paragraph_headingPrimary" parent="paragraph_heading">
+        <item name="android:paddingTop">@dimen/item_vertical_padding</item>
+        <item name="android:textSize">@dimen/material_text_subhead</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
     <style name="paragraph_primaryText" parent="paragraph">
         <item name="android:textColor">@color/primaryText</item>
     </style>
