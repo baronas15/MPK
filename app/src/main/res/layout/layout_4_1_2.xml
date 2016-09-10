@@ -40,7 +40,7 @@
                     android:textColor="@color/primaryText"
                     android:layout_gravity="center"
                     android:id="@+id/activity4_1_2_text1"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
             <LinearLayout
@@ -66,7 +66,7 @@
                     android:textColor="@color/primaryText"
                     android:layout_gravity="center"
                     android:id="@+id/activity4_1_2_text2"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
         </LinearLayout>
@@ -100,7 +100,7 @@
                     android:textColor="@color/primaryText"
                     android:layout_gravity="center"
                     android:id="@+id/activity4_1_2_text3"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
             <LinearLayout
@@ -126,7 +126,7 @@
                     android:textColor="@color/primaryText"
                     android:layout_gravity="center"
                     android:id="@+id/activity4_1_2_text4"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
         </LinearLayout>
@@ -160,7 +160,7 @@
                     android:textColor="@color/primaryText"
                     android:id="@+id/activity4_1_2_text5"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
             <LinearLayout
@@ -186,7 +186,7 @@
                     android:textColor="@color/primaryText"
                     android:id="@+id/activity4_1_2_text6"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
         </LinearLayout>
@@ -220,7 +220,7 @@
                     android:textColor="@color/primaryText"
                     android:id="@+id/activity4_1_2_text7"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
             <LinearLayout
@@ -246,7 +246,7 @@
                     android:textColor="@color/primaryText"
                     android:id="@+id/activity4_1_2_text8"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
         </LinearLayout>
@@ -280,7 +280,7 @@
                     android:textColor="@color/primaryText"
                     android:id="@+id/activity4_1_2_text9"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
             <LinearLayout
@@ -306,7 +306,7 @@
                     android:textColor="@color/primaryText"
                     android:id="@+id/activity4_1_2_text10"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
         </LinearLayout>
@@ -340,7 +340,7 @@
                     android:textColor="@color/primaryText"
                     android:id="@+id/activity4_1_2_text11"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
             <LinearLayout
@@ -366,7 +366,7 @@
                     android:textColor="@color/primaryText"
                     android:id="@+id/activity4_1_2_text12"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
         </LinearLayout>
@@ -400,7 +400,7 @@
                     android:textColor="@color/primaryText"
                     android:id="@+id/activity4_1_2_text13"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
             <LinearLayout
@@ -426,7 +426,7 @@
                     android:textColor="@color/primaryText"
                     android:id="@+id/activity4_1_2_text14"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
         </LinearLayout>
@@ -460,7 +460,7 @@
                     android:textColor="@color/primaryText"
                     android:id="@+id/activity4_1_2_text15"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
             <LinearLayout
@@ -486,7 +486,7 @@
                     android:textColor="@color/primaryText"
                     android:id="@+id/activity4_1_2_text16"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
         </LinearLayout>
@@ -520,7 +520,7 @@
                     android:textColor="@color/primaryText"
                     android:id="@+id/activity4_1_2_text17"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
             <LinearLayout
@@ -546,7 +546,7 @@
                     android:textColor="@color/primaryText"
                     android:id="@+id/activity4_1_2_text18"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
         </LinearLayout>
@@ -580,7 +580,7 @@
                     android:textColor="@color/primaryText"
                     android:id="@+id/activity4_1_2_text19"
                     android:layout_gravity="center"
-                    android:textSize="@dimen/text_size_2"
+                    android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
             <LinearLayout

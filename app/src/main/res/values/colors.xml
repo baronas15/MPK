@@ -37,19 +37,12 @@
     <color name="checkboxTextDefault">#000000</color>
     <color name="checkboxTextSelected">#ffffff</color>
 
-    <color name="playButtonDefault">#00bfa5</color>
-    <color name="playButtonPressed">#2196f3</color>
-
     <color name="radioButtonBackgroundSelect">#ee15A95F</color>
     <color name="radioButtonBackgroundDefault">#00ffffff</color>
 
-    <color name="recyclerViewItem">#bbdefb</color>
-    <color name="background_default">#e9f2f9</color>
     <color name="transparent">#00ffffff</color>
     <color name="white">#ffffff</color>
-    <color name="indicator">#ecd95a</color>
     <color name="textColorSecondary">#000000</color>
 
     <color name="custom1">#BAE8FF</color>
-    <color name="custom2">#9adddd</color>
 </resources>

@@ -1,10 +1,8 @@
 <resources>
     <!-- General -->
     <string name="app_name">MPK</string>
-    <string name="action_back">Atgal</string>
-    <string name="action_next">Toliau</string>
     <!-- Drawer -->
-    <string name="drawer_item1">Į pradžią</string>
+    <string name="drawer_item1">Grįžti į pradžią</string>
     <string name="drawer_item2">Išmok medituoti</string>
     <string name="drawer_item3">Meditacijos</string>
     <string name="drawer_item4">Pažanga</string>
@@ -105,11 +103,6 @@
     <string name="activity1_2_button2">Toliau</string>
     <!-- Activity1_3 -->
     <string name="activity1_3_button1">Tęsti</string>
-    <string name="activity1_3_img_description1">A picture of happy state</string>
-    <string name="activity1_3_img_description2">A picture of hopeful state</string>
-    <string name="activity1_3_img_description3">A picture of sad state</string>
-    <string name="activity1_3_img_description4">A picture of worried state</string>
-    <string name="activity1_3_img_description5">A picture of angry state</string>
     <string name="activity1_3_emot1">Laiminga (-as)</string>
     <string name="activity1_3_emot2">Entuziastinga (-as)</string>
     <string name="activity1_3_emot3">Patenkinta (-as)</string>
@@ -129,7 +122,6 @@
     <string name="activity1_4_title">Daryti siūloma</string>
     <string name="item_button_text">Klausyti</string>
     <!-- Activity1_5 -->
-    <string name="activity1_5_title">Pasirinkite meditaciją</string>
     <string name="activity1_5_button2">Grįžti į pradžią</string>
     <!-- Activity3 -->
     <string name="activity3_title">Meditacijų sąrašas</string>
@@ -141,5 +133,4 @@
     <string name="activity4_error1">Dar neturite dovanų</string>
     <string name="activity4_error4">Dar neklausėte nei vieno įrašo!</string>
     <string name="activity4_title5">VISO MEDITUOTA</string>
-
 </resources>

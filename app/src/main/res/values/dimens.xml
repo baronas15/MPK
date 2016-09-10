@@ -27,11 +27,6 @@
     <dimen name="nav_drawer_content_divider">8dp</dimen>
     <!-- Material Design -->
 
-    <dimen name="text_size_1">30sp</dimen>
-    <dimen name="text_size_1_landscape">16sp</dimen>
-    <dimen name="text_size_2">16sp</dimen>
-    <dimen name="text_size_2_landscape">16sp</dimen>
-
     <dimen name="arrowSize">30dp</dimen>
     <dimen name="side_padding_portrait">20dp</dimen>
     <dimen name="side_padding_landscape">20dp</dimen>
@@ -39,26 +34,15 @@
     <dimen name="item_horizontal_padding">16dp</dimen>
     <dimen name="item_vertical_padding_big">15dp</dimen>
 
-    <dimen name="minButtonHeight">40dp</dimen>
-    <dimen name="main_title_size_1">30sp</dimen>
-    <dimen name="Start_screen_padding">40dp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
     <dimen name="play_button_w">100dp</dimen>
-    <dimen name="play_button_icon_w">50dp</dimen>
 
     <!-- General -->
     <dimen name="little_separator">4dp</dimen>
     <dimen name="shadow1_radius">5dp</dimen>
     <dimen name="radio_vertical_padding">10dp</dimen>
-    <dimen name="button_text">16sp</dimen>
     <dimen name="check_vertical_padding">35dp</dimen>
     <dimen name="check_vertical_padding_landscape">15dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
-         https://developer.android.com/design/patterns/navigation-drawer.html -->
-    <dimen name="navigation_drawer_width">240dp</dimen>
-    <dimen name="drawer_item_padding">8dp</dimen>
 </resources>
