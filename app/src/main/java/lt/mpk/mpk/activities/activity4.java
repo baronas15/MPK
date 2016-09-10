@@ -39,7 +39,7 @@ public class activity4 extends AppCompatActivity {
             case -1:
                 TextView tx = new TextView(this);
                 tx.setText(getString(R.string.activity4_error1));
-                tx.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.text_1));
+                tx.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.material_text_subhead));
                 tx.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
 
                 FrameLayout.LayoutParams params = new FrameLayout.LayoutParams((int) FrameLayout.LayoutParams.WRAP_CONTENT,(int) FrameLayout.LayoutParams.WRAP_CONTENT);

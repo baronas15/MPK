@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/itemTitle"
-        android:textSize="@dimen/header3_landscape"
+        android:textSize="@dimen/material_text_subhead"
         android:textStyle="bold"
         android:textColor="@color/primaryText"
         android:paddingBottom="@dimen/item_vertical_padding"/>
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/primaryText"
         android:id="@+id/itemDescription"
-        android:textSize="@dimen/text_1"/>
+        android:textSize="@dimen/material_text_body1"/>
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

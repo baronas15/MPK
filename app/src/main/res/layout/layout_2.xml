@@ -32,7 +32,7 @@
                     android:layout_gravity="start|center"
                     android:clickable="false"
                     android:textColor="@color/primaryText"
-                    android:textSize="@dimen/header2"
+                    android:textSize="@dimen/material_text_title"
                     android:typeface="serif" />
                 <ImageView
                     android:src="@drawable/arrow"
@@ -65,7 +65,7 @@
                     android:layout_gravity="start|center"
                     android:clickable="false"
                     android:textColor="@color/primaryText"
-                    android:textSize="@dimen/header2"
+                    android:textSize="@dimen/material_text_title"
                     android:typeface="serif"
                     android:duplicateParentState="true"/>
                 <ImageView
@@ -100,7 +100,7 @@
                     android:clickable="false"
                     android:textColor="@color/primaryText"
                     android:textIsSelectable="false"
-                    android:textSize="@dimen/header2"
+                    android:textSize="@dimen/material_text_title"
                     android:typeface="serif"
                     android:duplicateParentState="true"/>
                 <ImageView
@@ -135,7 +135,7 @@
                     android:clickable="false"
                     android:textColor="@color/primaryTextInverted"
                     android:textIsSelectable="false"
-                    android:textSize="@dimen/header2"
+                    android:textSize="@dimen/material_text_title"
                     android:typeface="serif"
                     android:duplicateParentState="true"/>
                 <ImageView

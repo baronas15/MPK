@@ -26,14 +26,6 @@
     <dimen name="nav_drawer_item_height">48dp</dimen>
     <dimen name="nav_drawer_content_divider">8dp</dimen>
     <!-- Material Design -->
-    
-    <dimen name="header1_landscape">23sp</dimen>
-    <dimen name="header2">20sp</dimen>
-    <dimen name="header2_landscape">16sp</dimen>
-    <dimen name="header3">18sp</dimen>
-    <dimen name="header3_landscape">16sp</dimen>
-
-    <dimen name="text_1">16sp</dimen>
 
     <dimen name="text_size_1">30sp</dimen>
     <dimen name="text_size_1_landscape">16sp</dimen>

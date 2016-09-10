@@ -37,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/meditation_title1"
-                android:textSize="@dimen/header3"
+                android:textSize="@dimen/material_text_subhead"
                 android:textStyle="bold"
                 android:textColor="@color/primaryText"
                 android:paddingBottom="@dimen/item_vertical_padding"/>
@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/meditation_description1"
                 android:textColor="@color/primaryText"
-                android:textSize="@dimen/text_1"/>
+                android:textSize="@dimen/material_text_body1"/>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/meditation_title2"
-                android:textSize="@dimen/header3"
+                android:textSize="@dimen/material_text_subhead"
                 android:textStyle="bold"
                 android:textColor="@color/primaryText"
                 android:paddingBottom="@dimen/item_vertical_padding"/>
@@ -95,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/meditation_description2"
                 android:textColor="@color/primaryText"
-                android:textSize="@dimen/text_1"/>
+                android:textSize="@dimen/material_text_body1"/>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -135,7 +135,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/meditation_title3"
-                android:textSize="@dimen/header3"
+                android:textSize="@dimen/material_text_subhead"
                 android:textStyle="bold"
                 android:textColor="@color/primaryText"
                 android:paddingBottom="@dimen/item_vertical_padding"/>
@@ -144,7 +144,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/meditation_description3"
                 android:textColor="@color/primaryText"
-                android:textSize="@dimen/text_1"/>
+                android:textSize="@dimen/material_text_body1"/>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -184,7 +184,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/meditation_title4"
-                android:textSize="@dimen/header3"
+                android:textSize="@dimen/material_text_subhead"
                 android:textStyle="bold"
                 android:textColor="@color/primaryText"
                 android:paddingBottom="@dimen/item_vertical_padding"/>
@@ -193,7 +193,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/meditation_description4"
                 android:textColor="@color/primaryText"
-                android:textSize="@dimen/text_1"/>
+                android:textSize="@dimen/material_text_body1"/>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -233,7 +233,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/meditation_title5"
-                android:textSize="@dimen/header3"
+                android:textSize="@dimen/material_text_subhead"
                 android:textStyle="bold"
                 android:textColor="@color/primaryText"
                 android:paddingBottom="@dimen/item_vertical_padding"/>
@@ -242,7 +242,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/meditation_description5"
                 android:textColor="@color/primaryText"
-                android:textSize="@dimen/text_1"/>
+                android:textSize="@dimen/material_text_body1"/>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -282,7 +282,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/meditation_title6"
-                android:textSize="@dimen/header3"
+                android:textSize="@dimen/material_text_subhead"
                 android:textStyle="bold"
                 android:textColor="@color/primaryText"
                 android:paddingBottom="@dimen/item_vertical_padding"/>
@@ -291,7 +291,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/meditation_description6"
                 android:textColor="@color/primaryText"
-                android:textSize="@dimen/text_1"/>
+                android:textSize="@dimen/material_text_body1"/>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -331,7 +331,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/meditation_title7"
-                android:textSize="@dimen/header3"
+                android:textSize="@dimen/material_text_subhead"
                 android:textStyle="bold"
                 android:textColor="@color/primaryText"
                 android:paddingBottom="@dimen/item_vertical_padding"/>
@@ -340,7 +340,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/meditation_description7"
                 android:textColor="@color/primaryText"
-                android:textSize="@dimen/text_1"/>
+                android:textSize="@dimen/material_text_body1"/>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
