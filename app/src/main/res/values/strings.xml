@@ -8,7 +8,6 @@
     <string name="drawer_item4">Pažanga</string>
     <string name="drawer_item5">Rėmėjai</string>
     <!-- Stickers -->
-    <string name="stickerName0">Dar neturite dovanų</string>
     <string name="stickerName1">Puikus startas</string>
     <string name="stickerName2">10 meditacijų</string>
     <string name="stickerName3">25 meditacijos</string>
@@ -57,9 +56,6 @@
     <string name="meditation_title6">Sėdimoji praktika</string>
     <string name="meditation_title7">Gamtos garsai</string>
     <string name="meditation_description1">Padeda tiesiogiai pajusti kūno pojūčius. Moko švelniai, tačiau valingai spręsti, kur nukreipiame dėmesį. Moko geranoriškai ir veiksmingai tvarkytis su dėmesio nukrypimais. Moko leisti viskam būti taip, kaip yra.  <b>15min</b></string>
-    <string name="meditation_description1_1">Jeigu veikiame automatinio piloto režimu, daug labiau tikėtina, kad kažkas „paspaus mūsų mygtukus“. Įvykiai, vykstantys aplink mus, arba mūsų pačių mintys, jausmai bei pojūčiai (kuriuos mes tik miglotai suvokiame) gali pažadinti senus mąstymo įpročius, kurie dažnai būna neveiksmingi ir blogina nuotaiką.  </string>
-    <string name="meditation_description1_2">Šios programos tikslas yra didinti sąmoningumą, kad mes galėtume kuo dažniau pasirinkti, kaip reaguosime į įvairias situacijas, užuot darę tai automatiškai. Tuo tikslu mes praktikuojamės pastebėti, kur nukrypsta mūsų dėmesys ir grąžinti jį prie pasirinkto objekto vis iš naujo.  </string>
-    <string name="meditation_description1_3">Iš pradžių mes nukreipiame dėmesį į skirtingas kūno dalis, taip pratindami savo dėmesį fiksuoti į tai, kas vyksta esamuoju momentu. Kartu mes praktikuojamės valingai pasirinkti, kas bus mūsų dėmesio lauke. Toks ir yra svarbiausias kūno skenavimo, tikslas.  <b>11min</b></string>
     <string name="meditation_description2">Lavina gebėjimą  įsisąmoninti mintis, jausmus ir kūno pojūčius dabartyje, esamame momente. Šis pratimas tinkamas kaip greitosios pagalbos įrankis po patirtos stresinės situacijos. Praktikuojant šį pratimą, išmokstame neįsitraukti į neigiamas, sunkias emocijas, t.y. jos neužvaldo mūsų.  <b>5min</b></string>
     <string name="meditation_description3">Lavina dėmesingumą, sugebėjimą nukreipti dėmesį į pasirinktą objektą. Ilgainiui, praktikuojant šį pratimą , stiprėja savikontrolė, sugebėjimas suvaldyti savo impulsyvius veiksmus, mintis.  <b>9min</b></string>
     <string name="meditation_description4">Šis pratimas stiprina pasitikėjimą savimi, padeda sugrįžti į pusiausvyrą po patirto streso ar išbūti patiriamo ilgalaikio streso situacijoje.  <b>15min</b></string>

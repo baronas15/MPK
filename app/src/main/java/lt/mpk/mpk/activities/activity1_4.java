@@ -1,6 +1,7 @@
 package lt.mpk.mpk.activities;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -68,6 +69,54 @@ public class activity1_4 extends AppCompatActivity {
             lay.addView(div);
         }
         createView(lay,R.string.meditation_title7,R.string.meditation_description7, 7);
+        //endregion
+
+        //region RememberState
+        SharedPreferences settings = getSharedPreferences("Stickers", 0);
+        SharedPreferences.Editor editor = settings.edit();
+        if (emo1 == 1)
+            editor.putInt("emotion1", settings.getInt("emotion1",0) + 1);
+        else if (emo2 == 2)
+            editor.putInt("emotion2", settings.getInt("emotion2",0) + 1);
+        else if (emo3 == 3)
+            editor.putInt("emotion3", settings.getInt("emotion3",0) + 1);
+        else if (emo1 == 4)
+            editor.putInt("emotion4", settings.getInt("emotion4",0) + 1);
+        else if (emo2 == 5)
+            editor.putInt("emotion5", settings.getInt("emotion5",0) + 1);
+        else if (emo2 == 6)
+            editor.putInt("emotion6", settings.getInt("emotion6",0) + 1);
+        else if (emo1 == 7)
+            editor.putInt("emotion7", settings.getInt("emotion7",0) + 1);
+        else if (emo2 == 8)
+            editor.putInt("emotion8", settings.getInt("emotion8",0) + 1);
+        else if (emo3 == 9)
+            editor.putInt("emotion9", settings.getInt("emotion9",0) + 1);
+        else if (emo1 == 10)
+            editor.putInt("emotion10", settings.getInt("emotion10",0) + 1);
+        else if (emo2 == 11)
+            editor.putInt("emotion11", settings.getInt("emotion11",0) + 1);
+        else if (emo3 == 12)
+            editor.putInt("emotion12", settings.getInt("emotion12",0) + 1);
+        else if (emo1 == 13)
+            editor.putInt("emotion13", settings.getInt("emotion13",0) + 1);
+        else if (emo2 == 14)
+            editor.putInt("emotion14", settings.getInt("emotion14",0) + 1);
+        else if (emo3 == 15)
+            editor.putInt("emotion15", settings.getInt("emotion15",0) + 1);
+
+        if(phys == 1)
+            editor.putInt("phys1", settings.getInt("phys1",0) + 1);
+        else if(phys == 2)
+            editor.putInt("phys2", settings.getInt("phys2",0) + 1);
+        else if(phys == 3)
+            editor.putInt("phys3", settings.getInt("phys3",0) + 1);
+        else if(phys == 4)
+            editor.putInt("phys4", settings.getInt("phys4",0) + 1);
+        else if(phys == 5)
+            editor.putInt("phys5", settings.getInt("phys5",0) + 1);
+
+        editor.apply();
         //endregion
 
         //region Toolbar_NavDrawer

@@ -34,7 +34,6 @@ public class activity4 extends AppCompatActivity {
         SharedPreferences settings = getSharedPreferences("Stickers", 0);
 
         //region Area 1
-
         switch (settings.getInt("lastSticker",-1)){
             case -1:
                 TextView tx = new TextView(this);
