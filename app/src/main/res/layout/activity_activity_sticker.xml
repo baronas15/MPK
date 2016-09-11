@@ -19,26 +19,36 @@
             android:layout_gravity="center"
             android:padding="@dimen/item_vertical_padding">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <FrameLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Large Text"
-                android:id="@+id/activity_sticker_text1"
-                android:textSize="@dimen/material_text_subhead"
-                android:layout_gravity="center"
-                android:layout_weight="2"
-                android:layout_marginTop="@dimen/item_vertical_padding_big"
-                android:gravity="center" />
-
-            <ImageView
-                android:layout_width="wrap_content"
+                android:layout_weight="2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:id="@+id/activity_sticker_text1"
+                    android:textSize="@dimen/material_text_headline"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/item_vertical_padding_big"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxHeight="256dp"
-                android:id="@+id/activity_sticker_image1"
                 android:layout_weight="1"
-                android:src="@drawable/days_in_a_row10"
-                android:adjustViewBounds="true"
-                android:layout_gravity="center" />
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:maxHeight="256dp"
+                    android:id="@+id/activity_sticker_image1"
+                    android:src="@drawable/start"
+                    android:adjustViewBounds="true" />
+            </FrameLayout>
 
             <FrameLayout
                 android:layout_width="fill_parent"
