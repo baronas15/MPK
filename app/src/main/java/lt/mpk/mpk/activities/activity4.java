@@ -94,7 +94,6 @@ public class activity4 extends AppCompatActivity {
         long time = settings.getInt("totalTime",0) * 100;
         textItem5.setText(milliSecondsToTimer(time));
         //endregion
-
         //region Area 4
         TextView topEmo = (TextView)findViewById(R.id.activity4_topEmotion);
         int[] emoCount = new int[15];
@@ -131,7 +130,6 @@ public class activity4 extends AppCompatActivity {
         }
 
         //endregion
-
         //region Area 5
         int[] playTime = new int[7];
         for (int i = 1; i <= 7; i++){
