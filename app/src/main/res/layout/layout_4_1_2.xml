@@ -449,7 +449,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/sun"
+                    android:src="@drawable/night"
                     android:adjustViewBounds="true"
                     android:layout_gravity="center"
                     android:id="@+id/activity4_1_2_image15"/>
@@ -475,7 +475,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/night"
+                    android:src="@drawable/sun"
                     android:adjustViewBounds="true"
                     android:layout_gravity="center"
                     android:id="@+id/activity4_1_2_image16"/>
