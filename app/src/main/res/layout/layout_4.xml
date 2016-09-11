@@ -24,6 +24,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/activity4_title1"
                 android:textColor="@color/primaryText"
                 android:textSize="@dimen/material_text_title"
@@ -51,6 +52,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:textSize="@dimen/material_text_title"
                 android:text="@string/activity4_title2"
                 android:textColor="@color/primaryTextInverted"
@@ -92,6 +94,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/activity4_title3"
                 android:textSize="@dimen/material_text_title"
                 android:typeface="serif"
@@ -128,6 +131,7 @@
                 android:layout_height="wrap_content"
                 android:text="DAŽNIAUSIA EMOCIJA"
                 android:textColor="@color/primaryTextInverted"
+                android:gravity="center"
                 android:typeface="serif"
                 android:textSize="@dimen/material_text_title"/>
 
@@ -160,6 +164,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:textSize="@dimen/material_text_title"
                 android:text="@string/activity4_title5"
                 android:typeface="serif"
