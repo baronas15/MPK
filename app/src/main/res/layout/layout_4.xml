@@ -1,226 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 
-    <ScrollView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:layout_height="wrap_content">
+
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/side_padding_portrait"
+            android:paddingRight="@dimen/side_padding_portrait"
+            android:paddingTop="@dimen/item_vertical_padding"
+            android:paddingBottom="@dimen/item_vertical_padding">
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:baselineAligned="false"
-                android:layout_weight="1">
+                android:text="@string/activity4_title1"
+                android:textColor="@color/primaryText"
+                android:textSize="@dimen/material_text_title"
+                android:typeface="serif" />
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:paddingLeft="@dimen/side_padding_portrait"
-                    android:paddingRight="@dimen/side_padding_portrait"
-                    android:paddingTop="@dimen/item_vertical_padding"
-                    android:paddingBottom="@dimen/item_vertical_padding">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/activity4_title1"
-                        android:textColor="@color/primaryText"
-                        android:textSize="@dimen/material_text_title"
-                        android:typeface="serif" />
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="fill_parent"
-                        android:id="@+id/activity4_item1">
-                    </FrameLayout>
-
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:baselineAligned="false"
-                android:layout_weight="1">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/blue_500"
-                    android:paddingBottom="@dimen/item_vertical_padding"
-                    android:paddingRight="@dimen/side_padding_portrait"
-                    android:paddingLeft="@dimen/side_padding_portrait"
-                    android:paddingTop="@dimen/item_vertical_padding"
-                    android:clickable="true"
-                    android:id="@+id/activity4_layout2">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="@dimen/material_text_title"
-                        android:text="@string/activity4_title2"
-                        android:textColor="@color/primaryTextInverted"
-                        android:typeface="serif" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="fill_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="@dimen/material_text_display3"
-                            android:textColor="@color/primaryTextInverted"
-                            android:text="0/19"
-                            android:id="@+id/stickerCount"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:layout_weight="2"/>
-                        <ImageView
-                            android:layout_width="@dimen/arrowSize"
-                            android:layout_height="@dimen/arrowSize"
-                            android:layout_gravity="center"
-                            android:src="@drawable/arrow_white"/>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:baselineAligned="false"
-                android:layout_weight="1">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:background="@color/white"
-                    android:paddingTop="@dimen/item_vertical_padding"
-                    android:paddingBottom="@dimen/item_vertical_padding"
-                    android:paddingRight="@dimen/side_padding_portrait"
-                    android:paddingLeft="@dimen/side_padding_portrait">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/activity4_title5"
-                        android:textSize="@dimen/material_text_title"
-                        android:typeface="serif"
-                        android:textColor="@color/primaryText" />
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="fill_parent"
-                        android:paddingTop="@dimen/item_vertical_padding">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/primaryText"
-                            android:text="00:00:00"
-                            android:id="@+id/activity4_item5"
-                            android:textSize="@dimen/material_text_display2"
-                            android:layout_gravity="center" />
-                    </FrameLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
+            <FrameLayout
                 android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/activity4_lastSticker">
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_500"
+            android:paddingBottom="@dimen/item_vertical_padding"
+            android:paddingRight="@dimen/side_padding_portrait"
+            android:paddingLeft="@dimen/side_padding_portrait"
+            android:paddingTop="@dimen/item_vertical_padding"
+            android:clickable="true"
+            android:id="@+id/activity4_layout2">
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:baselineAligned="false"
-                android:background="@color/blue_500"
-                android:paddingTop="@dimen/item_vertical_padding"
-                android:paddingBottom="@dimen/item_vertical_padding"
-                android:paddingLeft="@dimen/side_padding_portrait"
-                android:paddingRight="@dimen/side_padding_portrait">
+                android:textSize="@dimen/material_text_title"
+                android:text="@string/activity4_title2"
+                android:textColor="@color/primaryTextInverted"
+                android:typeface="serif" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DAŽNIAUSIA EMOCIJA"
+                    android:textSize="@dimen/material_text_display3"
                     android:textColor="@color/primaryTextInverted"
-                    android:typeface="serif"
-                    android:textSize="@dimen/material_text_title"/>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="@dimen/item_vertical_padding">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/primaryTextInverted"
-                        android:text="@string/activity4_error4"
-                        android:id="@+id/activity4_item3"
-                        android:textSize="@dimen/material_text_headline"
-                        android:layout_gravity="center" />
-                </FrameLayout>
-            </LinearLayout>
-
-
-
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:baselineAligned="false"
-                android:layout_weight="1">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:background="@color/white"
-                    android:paddingTop="@dimen/item_vertical_padding"
-                    android:paddingBottom="@dimen/item_vertical_padding"
-                    android:paddingLeft="@dimen/side_padding_portrait"
-                    android:paddingRight="@dimen/side_padding_portrait">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="@dimen/material_text_title"
-                        android:text="@string/activity4_title4"
-                        android:typeface="serif"
-                        android:textColor="@color/primaryText"/>
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="fill_parent"
-                        android:paddingTop="@dimen/item_vertical_padding">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/primaryText"
-                            android:text="@string/activity4_error4"
-                            android:id="@+id/activity4_item4"
-                            android:textSize="@dimen/material_text_headline"
-                            android:layout_gravity="center" />
-                    </FrameLayout>
-                </LinearLayout>
+                    android:text="0/19"
+                    android:id="@+id/activity4_stickerCount"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="2"/>
+                <ImageView
+                    android:layout_width="@dimen/arrowSize"
+                    android:layout_height="@dimen/arrowSize"
+                    android:layout_gravity="center"
+                    android:src="@drawable/arrow_white"/>
             </LinearLayout>
         </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingTop="@dimen/item_vertical_padding"
+            android:paddingBottom="@dimen/item_vertical_padding"
+            android:paddingRight="@dimen/side_padding_portrait"
+            android:paddingLeft="@dimen/side_padding_portrait">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity4_title3"
+                android:textSize="@dimen/material_text_title"
+                android:typeface="serif"
+                android:textColor="@color/primaryText" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="@dimen/item_vertical_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryText"
+                    android:text="00:00:00"
+                    android:id="@+id/activity4_timer"
+                    android:textSize="@dimen/material_text_display2"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_500"
+            android:paddingTop="@dimen/item_vertical_padding"
+            android:paddingBottom="@dimen/item_vertical_padding"
+            android:paddingLeft="@dimen/side_padding_portrait"
+            android:paddingRight="@dimen/side_padding_portrait">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DAŽNIAUSIA EMOCIJA"
+                android:textColor="@color/primaryTextInverted"
+                android:typeface="serif"
+                android:textSize="@dimen/material_text_title"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/item_vertical_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryTextInverted"
+                    android:text="@string/activity4_error5"
+                    android:id="@+id/activity4_topEmotion"
+                    android:textSize="@dimen/material_text_headline"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingTop="@dimen/item_vertical_padding"
+            android:paddingBottom="@dimen/item_vertical_padding"
+            android:paddingLeft="@dimen/side_padding_portrait"
+            android:paddingRight="@dimen/side_padding_portrait">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/material_text_title"
+                android:text="@string/activity4_title5"
+                android:typeface="serif"
+                android:textColor="@color/primaryText"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="@dimen/item_vertical_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryText"
+                    android:text="@string/activity4_error5"
+                    android:id="@+id/activity4_topMeditation"
+                    android:textSize="@dimen/material_text_headline"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

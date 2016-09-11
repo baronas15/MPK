@@ -41,11 +41,11 @@ public class activity4 extends AppCompatActivity {
                 tx.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.material_text_subhead));
                 tx.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
 
-                FrameLayout.LayoutParams params = new FrameLayout.LayoutParams((int) FrameLayout.LayoutParams.WRAP_CONTENT,(int) FrameLayout.LayoutParams.WRAP_CONTENT);
+                FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
                 params.gravity = Gravity.CENTER;
                 tx.setLayoutParams(params);
 
-                FrameLayout frame = (FrameLayout) findViewById(R.id.activity4_item1);
+                FrameLayout frame = (FrameLayout) findViewById(R.id.activity4_lastSticker);
                 frame.addView(tx);
                 break;
             case 1: addImageView(R.drawable.start); break;
@@ -71,7 +71,7 @@ public class activity4 extends AppCompatActivity {
 
         //endregion
         //region Area 2
-        TextView text2 = (TextView) findViewById(R.id.stickerCount);
+        TextView text2 = (TextView) findViewById(R.id.activity4_stickerCount);
         int stickerCount = 0;
 
         for (int i = 1; i <= 19; i++){
@@ -89,24 +89,57 @@ public class activity4 extends AppCompatActivity {
             }
         });
         //endregion
-
-        //region Area3
-        //endregion
-
-        //region Area4
-        TextView textItem5 = (TextView) findViewById(R.id.activity4_item5);
+        //region Area 3
+        TextView textItem5 = (TextView) findViewById(R.id.activity4_timer);
         long time = settings.getInt("totalTime",0) * 100;
         textItem5.setText(milliSecondsToTimer(time));
         //endregion
 
-        //region Area5
+        //region Area 4
+        TextView topEmo = (TextView)findViewById(R.id.activity4_topEmotion);
+        int[] emoCount = new int[15];
+        for (int i = 1; i <= 15; i++){
+            emoCount[i-1] = settings.getInt("emotion"+i,0);
+        }
+
+        int max=-1;
+        int maxIndex = -1;
+        for (int i = 0; i < emoCount.length; i++) {
+            if (emoCount[i] > max && emoCount[i] != 0) {
+                max = emoCount[i];
+                maxIndex = i;
+            }
+        }
+
+        switch (maxIndex){
+            case 0:topEmo.setText(R.string.activity1_3_emot1);break;
+            case 1:topEmo.setText(R.string.activity1_3_emot2);break;
+            case 2:topEmo.setText(R.string.activity1_3_emot3);break;
+            case 3:topEmo.setText(R.string.activity1_3_emot4);break;
+            case 4:topEmo.setText(R.string.activity1_3_emot5);break;
+            case 5:topEmo.setText(R.string.activity1_3_emot6);break;
+            case 6:topEmo.setText(R.string.activity1_3_emot7);break;
+            case 7:topEmo.setText(R.string.activity1_3_emot8);break;
+            case 8:topEmo.setText(R.string.activity1_3_emot9);break;
+            case 9:topEmo.setText(R.string.activity1_3_emot10);break;
+            case 10:topEmo.setText(R.string.activity1_3_emot11);break;
+            case 11:topEmo.setText(R.string.activity1_3_emot12);break;
+            case 12:topEmo.setText(R.string.activity1_3_emot13);break;
+            case 13:topEmo.setText(R.string.activity1_3_emot14);break;
+            case 14:topEmo.setText(R.string.activity1_3_emot15);break;
+            case -1:topEmo.setText(R.string.activity4_error4);break;
+        }
+
+        //endregion
+
+        //region Area 5
         int[] playTime = new int[7];
         for (int i = 1; i <= 7; i++){
             playTime[i-1] = settings.getInt("playTime"+i,0);
         }
 
-        int max=-1;
-        int maxIndex = -1;
+        max=-1;
+        maxIndex = -1;
 
         for (int i = 0; i < playTime.length; i++) {
             if (playTime[i] > max && playTime[i] != 0) {
@@ -115,7 +148,7 @@ public class activity4 extends AppCompatActivity {
             }
         }
 
-        TextView textItem4 = (TextView) findViewById(R.id.activity4_item4);
+        TextView textItem4 = (TextView) findViewById(R.id.activity4_topMeditation);
         switch (maxIndex){
             case 0: textItem4.setText(R.string.meditation_title1); break;
             case 1: textItem4.setText(R.string.meditation_title2); break;
@@ -250,7 +283,7 @@ public class activity4 extends AppCompatActivity {
 
         iv.setImageDrawable(getResources().getDrawable(ResId));
 
-        FrameLayout frame = (FrameLayout) findViewById(R.id.activity4_item1);
+        FrameLayout frame = (FrameLayout) findViewById(R.id.activity4_lastSticker);
         frame.addView(iv);
     }
     @Override

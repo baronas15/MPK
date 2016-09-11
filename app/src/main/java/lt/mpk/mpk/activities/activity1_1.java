@@ -207,23 +207,22 @@ public class activity1_1 extends AppCompatActivity {
         RadioButton rB3 = (RadioButton) findViewById(R.id.physicalgroup_3);
         RadioButton rB4 = (RadioButton) findViewById(R.id.physicalgroup_4);
         RadioButton rB5 = (RadioButton) findViewById(R.id.physicalgroup_5);
+        View s1 = findViewById(R.id.pSpace1);
+        View s2 = findViewById(R.id.pSpace2);
+        View s3 = findViewById(R.id.pSpace3);
+        View s4 = findViewById(R.id.pSpace4);
 
-        rB1.setBackgroundResource(R.color.radioButtonBackgroundDefault);
-        rB2.setBackgroundResource(R.color.radioButtonBackgroundDefault);
-        rB3.setBackgroundResource(R.color.radioButtonBackgroundDefault);
-        rB4.setBackgroundResource(R.color.radioButtonBackgroundDefault);
-        rB5.setBackgroundResource(R.color.radioButtonBackgroundDefault);
+        rB1.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.radioButtonBackgroundDefault));
+        rB2.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.radioButtonBackgroundDefault));
+        rB3.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.radioButtonBackgroundDefault));
+        rB4.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.radioButtonBackgroundDefault));
+        rB5.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.radioButtonBackgroundDefault));
 
         rB1.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
         rB2.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
         rB3.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
         rB4.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
         rB5.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
-
-        View s1 = (View) findViewById(R.id.pSpace1);
-        View s2 = (View) findViewById(R.id.pSpace2);
-        View s3 = (View) findViewById(R.id.pSpace3);
-        View s4 = (View) findViewById(R.id.pSpace4);
 
         s1.setVisibility(View.VISIBLE);
         s2.setVisibility(View.VISIBLE);
