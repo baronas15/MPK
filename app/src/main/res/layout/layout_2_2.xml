@@ -25,17 +25,17 @@
 
         <TextView
             style="@style/paragraph_firstLineInverted"
-            android:text="Daugelis kūno funkcijų dirba automatiška, pavyzdžiui, kvėpavimas, kraujo spaudimas ir virškinimas. Šios funkcijos yra valdomos Autonominės Nervų Sistemos (ANS). ANS yra suskirstyta į dvi dalis: Simpatinė Nervų Sistema (SNS) –„kovok arba bėk“ reakcija patiriant stresą, įtemptos veiklos ir nenumatytų atvejų metu, ir Parasimpatinė Nervų Sistema (PNS) – „ilsėkis ir virškink“ arba raminanti reakcija."
+            android:text="Daugelis kūno funkcijų dirba automatiška, pavyzdžiui, kvėpavimas, kraujo spaudimas ir virškinimas. Šios funkcijos yra valdomos Autonominės Nervų Sistemos (ANS). ANS yra suskirstyta į dvi dalis: Centrinė Nervų Sistema (CNS) –„kovok arba bėk“ reakcija patiriant stresą, įtemptos veiklos ir nenumatytų atvejų metu, ir Parasimpatinė Nervų Sistema (PNS) – „ilsėkis ir virškink“ arba raminanti reakcija."
             android:background="#25a18e"/>
 
         <TextView
             style="@style/paragraph_firstLine"
-            android:text="SNS, arba „kovok arba bėk“, yra atsakinga už tai, kas nutinka jūsų kūnui reaguojant į didelį stresą sukeliančias situacijas. Adrenalinas teka kraujyje, paveikdamas kiekvieną organą. Jūsų širdis plaka greičiau, kraujo spaudimaspadidėja, kvėpavimas pagreitėja ir padažnėja, akies vyzdžiai išsiplečia, o raumenys įsitempia. SNS yra natūrali jūsų kūno reakcija nenumatytų atvejų metu, tačiau dažnai ji pradeda veikti dėl kasdienio streso, o kai tai nutinka, galime pasijusti ligoti."
+            android:text="CNS, arba „kovok arba bėk“, yra atsakinga už tai, kas nutinka jūsų kūnui reaguojant į didelį stresą sukeliančias situacijas. Adrenalinas teka kraujyje, paveikdamas kiekvieną organą. Jūsų širdis plaka greičiau, kraujo spaudimaspadidėja, kvėpavimas pagreitėja ir padažnėja, akies vyzdžiai išsiplečia, o raumenys įsitempia. CNS yra natūrali jūsų kūno reakcija nenumatytų atvejų metu, tačiau dažnai ji pradeda veikti dėl kasdienio streso, o kai tai nutinka, galime pasijusti ligoti."
             android:background="#f6f7eb"/>
 
         <TextView
             style="@style/paragraph_firstLineInverted"
-            android:text="Kai praktikuojame dėmesingą įsisąmoninimą ir meditaciją ir kvėpuojame giliai ir atsipalaidavę, galime išjungti SNS ir įjungti savo Parasimpatinę Nervų Sistemą (PNS), taip pat vadinamą „ilsėkis ir virškink“, kuri mus nuramina ir padeda atsipalaiduoti. Kai aktyvuojama PNS, širdies pulsas sulėtėja, kraujo spaudimas nukrenta, kvėpavimas sulėtėja ir pagilėja, vyzdžiai susitraukia, o raumenys atsipalaiduoja. Tai pagerina virškinimą, palaiko imuninę sistemą ir tiesiog visas jautiesi gerai."
+            android:text="Kai praktikuojame dėmesingą įsisąmoninimą ir meditaciją ir kvėpuojame giliai ir atsipalaidavę, galime išjungti CNS ir įjungti savo Parasimpatinę Nervų Sistemą (PNS), taip pat vadinamą „ilsėkis ir virškink“, kuri mus nuramina ir padeda atsipalaiduoti. Kai aktyvuojama PNS, širdies pulsas sulėtėja, kraujo spaudimas nukrenta, kvėpavimas sulėtėja ir pagilėja, vyzdžiai susitraukia, o raumenys atsipalaiduoja. Tai pagerina virškinimą, palaiko imuninę sistemą ir tiesiog visas jautiesi gerai."
             android:background="#0081af"/>
 
     </LinearLayout>

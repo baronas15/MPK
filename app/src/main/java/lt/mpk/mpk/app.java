@@ -92,14 +92,14 @@ public class app extends Application {
                 editor.putInt("phys"+i,0);
 
         //FOR DEVELOPEMENT PURPOSES
-        /*if(false){
+        if(true){
             for (int i = 1; i <= 19; i++)
                 editor.putBoolean("sticker"+i,true);
             editor.putInt("lastSticker",19);
             editor.putInt("totalTime",3600000);
             for (int i = 1; i <= 7; i++)
                 editor.putInt("playTime"+i,10);
-        }*/
+        }
         /*else if(true){
             for (int i = 1; i <= 19; i++)
                 editor.putBoolean("sticker"+i,false);
