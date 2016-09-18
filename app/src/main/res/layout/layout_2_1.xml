@@ -83,16 +83,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#d65108">
+            android:orientation="vertical">
             <TextView
-                style="@style/paragraph_firstLineInverted"
+                style="@style/paragraph_firstLine"
                 android:text="Praktikuojant dėmesingą įsisąmoninimą, į paviršių iškyla įvairūs dalykai: mintys, jausmai, garsai ir fiziniai pojūčiai." />
             <TextView
-                style="@style/paragraph_primaryTextInverted"
+                style="@style/paragraph_primaryText"
                 android:text="Kartais galite jaustis nepatogiai, kitais kartais viskas praeina labai lengvai ir puikiai jaučiatės." />
             <TextView
-                style="@style/paragraph_primaryTextInverted"
+                style="@style/paragraph_primaryText"
                 android:text="Nesirūpinkite – viskas yra šios patirties dalis. Svarbiausia atkreipti dėmesį ir stebėti, kas vyksta atvėrus protą, ir išmokti be reikalo nesijaudinti dėl kažko konkretaus. Jei įstringate, tiesiog sutelkite dėmesį į ką nors neutralaus, kaip, pavyzdžiui, savo kvėpavimą." />
         </LinearLayout>
     </LinearLayout>

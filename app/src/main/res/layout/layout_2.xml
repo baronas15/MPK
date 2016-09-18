@@ -95,7 +95,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Praktikos"
+                    android:text="Kaip atlikti praktikas?"
                     android:layout_gravity="start|center"
                     android:clickable="false"
                     android:textColor="@color/primaryTextInverted"

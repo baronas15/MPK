@@ -55,13 +55,13 @@
     <string name="meditation_title5">Dėmesingo valgymo pratimas</string>
     <string name="meditation_title6">Sėdimoji praktika</string>
     <string name="meditation_title7">Gamtos garsai</string>
-    <string name="meditation_description1">Padeda tiesiogiai pajusti kūno pojūčius. Moko švelniai, tačiau valingai spręsti, kur nukreipiame dėmesį. Moko geranoriškai ir veiksmingai tvarkytis su dėmesio nukrypimais. Moko leisti viskam būti taip, kaip yra.  <b>15min</b></string>
-    <string name="meditation_description2">Lavina gebėjimą  įsisąmoninti mintis, jausmus ir kūno pojūčius dabartyje, esamame momente. Šis pratimas tinkamas kaip greitosios pagalbos įrankis po patirtos stresinės situacijos. Praktikuojant šį pratimą, išmokstame neįsitraukti į neigiamas, sunkias emocijas, t.y. jos neužvaldo mūsų.  <b>5min</b></string>
-    <string name="meditation_description3">Lavina dėmesingumą, sugebėjimą nukreipti dėmesį į pasirinktą objektą. Ilgainiui, praktikuojant šį pratimą , stiprėja savikontrolė, sugebėjimas suvaldyti savo impulsyvius veiksmus, mintis.  <b>9min</b></string>
-    <string name="meditation_description4">Šis pratimas stiprina pasitikėjimą savimi, padeda sugrįžti į pusiausvyrą po patirto streso ar išbūti patiriamo ilgalaikio streso situacijoje.  <b>15min</b></string>
-    <string name="meditation_description5">Praktikuojant šį pratimą, keičiasi santykis su maistu: labiau suvokiama kiek suvalgome, ar ištiesų valgome tai, kas mūsų organizmui naudinga ir sveika. Ilgainiui keičiasi mityba, renkamasi būtent tuos produktus, kurie yra tinkami būtent jūsų kūnui.  <b>7min</b></string>
-    <string name="meditation_description6">Toliau lavina gebėjimą būti su kūne patiriamais pojūčiai.  Labiau pastebėdami savo mintis, jausmus ir pojūčius kiekvieną akimirką, mes suteikiame sau daugiau pasirinkimo laisvės ir galime išvengti senų mąstymo „bėgių“, kurie praeityje jau kėlė problemų.  Šis pratimas - meditacija lavina dėmesingumą, sugebėjimą nukreipti dėmesį į pasirinktą objektą.  <b>15min</b></string>
-    <string name="meditation_description7">Padeda atsipalaiduoti, panirti į ramybės, pasitikėjimo ir saugumo būseną. <b>3min</b></string>
+    <string name="meditation_description1">Padeda tiesiogiai pajusti kūno pojūčius. Moko švelniai, tačiau valingai spręsti, kur nukreipiame dėmesį. Moko geranoriškai ir veiksmingai tvarkytis su dėmesio nukrypimais. Moko leisti viskam būti taip, kaip yra.  <b>15 min</b></string>
+    <string name="meditation_description2">Lavina gebėjimą  įsisąmoninti mintis, jausmus ir kūno pojūčius dabartyje, esamame momente. Šis pratimas tinkamas kaip greitosios pagalbos įrankis po patirtos stresinės situacijos. Praktikuojant šį pratimą, išmokstame neįsitraukti į neigiamas, sunkias emocijas, t.y. jos neužvaldo mūsų.  <b>5 min</b></string>
+    <string name="meditation_description3">Lavina dėmesingumą, sugebėjimą nukreipti dėmesį į pasirinktą objektą. Ilgainiui, praktikuojant šį pratimą , stiprėja savikontrolė, sugebėjimas suvaldyti savo impulsyvius veiksmus, mintis.  <b>9 min</b></string>
+    <string name="meditation_description4">Šis pratimas stiprina pasitikėjimą savimi, padeda sugrįžti į pusiausvyrą po patirto streso ar išbūti patiriamo ilgalaikio streso situacijoje.  <b>15 min</b></string>
+    <string name="meditation_description5">Praktikuojant šį pratimą, keičiasi santykis su maistu: labiau suvokiama kiek suvalgome, ar ištiesų valgome tai, kas mūsų organizmui naudinga ir sveika. Ilgainiui keičiasi mityba, renkamasi būtent tuos produktus, kurie yra tinkami būtent jūsų kūnui.  <b>7 min</b></string>
+    <string name="meditation_description6">Toliau lavina gebėjimą būti su kūne patiriamais pojūčiai.  Labiau pastebėdami savo mintis, jausmus ir pojūčius kiekvieną akimirką, mes suteikiame sau daugiau pasirinkimo laisvės ir galime išvengti senų mąstymo „bėgių“, kurie praeityje jau kėlė problemų.  Šis pratimas - meditacija lavina dėmesingumą, sugebėjimą nukreipti dėmesį į pasirinktą objektą.  <b>15 min</b></string>
+    <string name="meditation_description7">Padeda atsipalaiduoti, panirti į ramybės, pasitikėjimo ir saugumo būseną. <b>3 min</b></string>
     <!-- Main -->
     <string name="main_button1">Tikrinti</string>
     <string name="main_title1">KAIP ŠIANDIEN JAUTIESI?</string>
@@ -115,7 +115,7 @@
     <string name="activity1_3_emot14">Pesimištiska (-as)</string>
     <string name="activity1_3_emot15">Užsisklendusi (-ęs)</string>
     <!-- Activity1_4 -->
-    <string name="activity1_4_title">Daryti siūloma</string>
+    <string name="activity1_4_title">Siūloma atlikti</string>
     <string name="item_button_text">Klausyti</string>
     <!-- Activity1_5 -->
     <string name="activity1_5_button2">Grįžti į pradžią</string>
