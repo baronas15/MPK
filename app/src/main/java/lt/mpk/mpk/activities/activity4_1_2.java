@@ -55,7 +55,7 @@ public class activity4_1_2 extends AppCompatActivity {
 
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
-        FrameLayout f1 = (FrameLayout) findViewById(R.id.drawer_item_1);
+        ImageView f1 = (ImageView) findViewById(R.id.drawer_item_1);
         f1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

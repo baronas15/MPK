@@ -15,18 +15,14 @@
             android:layout_height="0dp"
             android:orientation="vertical"
             >
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:id="@+id/drawer_item_1"
-                android:background="#7fa8ad"
-                android:padding="@dimen/item_vertical_padding">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#7fa8ad"
+                    android:id="@+id/drawer_item_1"
                     android:layout_gravity="center"
-                    android:src="@drawable/mpk"/>
-            </FrameLayout>
+                    android:src="@drawable/mpk"
+                    android:padding="@dimen/item_vertical_padding"/>
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/nav_drawer_item_height"
