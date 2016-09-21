@@ -5,31 +5,28 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="100"
-    android:id="@+id/drawer_layout_1"
     android:background="@color/colorPrimaryLight">
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:id="@+id/drawer_item_1"
-        android:layout_weight="25"
-        android:background="#7fa8ad"
-        android:padding="@dimen/item_vertical_padding">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/mpk"/>
-    </FrameLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="75">
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:orientation="vertical"
             >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/drawer_item_1"
+                android:background="#7fa8ad"
+                android:padding="@dimen/item_vertical_padding">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mpk"/>
+            </FrameLayout>
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/nav_drawer_item_height"
@@ -137,7 +134,6 @@
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/nav_drawer_item_height"
-                android:id="@+id/drawer_item_6"
                 android:layout_marginLeft="@dimen/nav_drawer_edge_margin">
                 <TextView
                     android:layout_width="wrap_content"
