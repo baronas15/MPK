@@ -23,6 +23,7 @@
                 android:text="Dėmesingas įsisąmoninimas – tai būdas sutelkti dėmesį į tai, kas vyksta dabar, stebint tai, kas vyksta viduje (jūsų mintys, jausmai ir fiziniai pojūčiai) ir išorėje (jūsų bendravimas ir aplinka), be išankstinio nusistatymo ir neteisiant."/>
             <TextView
                 style="@style/paragraph_primaryText"
+                android:visibility="gone"
                 android:text="Dėmesingas įsisąmoninimas padeda mums susikaupti ir išlikti šioje akimirkoje, kai praktikuojame abi meditacijos rūšis: „aktyvus mąstymas“, kai mes apgalvotai nukreipiame savo mintis ir vaizduotę, kad mąstytume ir jaustumės pozityviai, ir „proto ilsinimas“, kai mes viską atpalaiduojame." />
         </LinearLayout>
 
@@ -36,10 +37,10 @@
             android:background="#0267c1">
             <TextView
                 style="@style/paragraph_firstLineInverted"
-                android:text="1. PAUZĖ: susitelkite ties tuo, ką šiuo metu darai. Stebėk, ką galvoji ir kaip jautiesi." />
+                android:text="1. PAUZĖ: susitelkite ties tuo, ką šiuo metu darote. Stebėkite, ką galvojate ir kaip jaučiatės." />
             <TextView
                 style="@style/paragraph_primaryTextInverted"
-                android:text="2. KVĖPAVIMAS: stebėkite savo natūralų kvėpavimą  - taip lavinate savo dėmesingumą." />
+                android:text="2. KVĖPAVIMAS: stebėkite savo natūralų kvėpavimą – taip lavinate savo dėmesingumą." />
             <TextView
                 style="@style/paragraph_primaryTextInverted"
                 android:text="3. PAGALVOKITE: kokios mano mintys dabar?" />
@@ -83,15 +84,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#d65108">
             <TextView
-                style="@style/paragraph_firstLine"
+                style="@style/paragraph_firstLineInverted"
                 android:text="Praktikuojant dėmesingą įsisąmoninimą, į paviršių iškyla įvairūs dalykai: mintys, jausmai, garsai ir fiziniai pojūčiai." />
             <TextView
-                style="@style/paragraph_primaryText"
+                style="@style/paragraph_primaryTextInverted"
                 android:text="Kartais galite jaustis nepatogiai, kitais kartais viskas praeina labai lengvai ir puikiai jaučiatės." />
             <TextView
-                style="@style/paragraph_primaryText"
+                style="@style/paragraph_primaryTextInverted"
                 android:text="Nesirūpinkite – viskas yra šios patirties dalis. Svarbiausia atkreipti dėmesį ir stebėti, kas vyksta atvėrus protą, ir išmokti be reikalo nesijaudinti dėl kažko konkretaus. Jei įstringate, tiesiog sutelkite dėmesį į ką nors neutralaus, kaip, pavyzdžiui, savo kvėpavimą." />
         </LinearLayout>
     </LinearLayout>

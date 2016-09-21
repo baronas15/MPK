@@ -130,6 +130,131 @@
 
         <TextView
             style="@style/paragraph_headingPrimary"
+            android:text="5 DINGSTYS NEMEDITUOTI"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#f6f7eb">
+            <TextView
+                style="@style/paragraph_heading"
+                android:text="Norite tyliai praleisti laiką su savo mintimis, tačiau randate dingsčių to nedaryti. Trumpam apžvelkite jas. Jos gali būti ne tokios reikšmingos."
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#393e41">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:padding="15dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/boring"
+                        android:adjustViewBounds="true"
+                        />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/paragraph_headingInverted"
+                    android:layout_gravity="center"
+                    android:text="1. Skamba nuobodžiai! Žinoma, bet taip pat palengvėja, kai turi laiko ir nesi įsipareigojęs būti kažkuo ar ką nors daryti."
+                    />
+            </LinearLayout>
+
+            <TextView
+                style="@style/paragraph_headingInverted"
+                android:text="2. Negaliu ramiai išsėdėti. Nieko tokio, jei nenustygstate vietoje. Meditacija yra procesas, kuris vystosi laikui bėgant. Niekas nepradeda sėdėdamas kaip akmeninė statula."
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/paragraph_headingInverted"
+                    android:layout_weight="4"
+                    android:layout_width="1dp"
+                    android:layout_gravity="center"
+                    android:text="3. Neturiu laiko. Laiko trūkumas šiais laikais slegiamus visus. Tačiau pertraukėlė nuo „skubėk-skubėk-skubėk“ režimo gali padėti jums geriau išnaudoti laiką."
+                    />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:padding="15dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hourglass"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/paragraph_headingInverted"
+                android:text="4. Bijau būti vienas. Jūs nesate vienas. Mūsų kultūra nuvertino laiko skyrimą vienatvei. Taip buvo ne visada. Ir tai nėra taip baisu, kaip galvojate."
+                />
+            <TextView
+                style="@style/paragraph_headingInverted"
+                android:text="5. Mano mintys per greitos. Tai ir leiskite joms būti greitoms. Jei kurį laiką pasėdėsite, jos nurims... ir vėl pagreitės. Jums nereikia rasti idealaus ritmo savo protui."
+                />
+        </LinearLayout>
+
+        <TextView
+            style="@style/paragraph_headingPrimary"
+            android:text="5 PRIEŽASTYS VIS TIEK PABANDYTI"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#f6f7eb">
+            <TextView
+                style="@style/paragraph_heading"
+                android:text="Mes lengvai galime rasti dingsčių, kodėl negalime medituoti, tačiau taip pat lengva rasti daug priežasčių tai daryti. Štai keletas jų."
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#393e41">
+            <TextView
+                style="@style/paragraph_headingInverted"
+                android:text="1. Supraskite savo skausmą. Dvasinis skausmas ir nerimas yra užkulisiniai garsai, kurie gali būti daug ko, ką mes darome, priežastimi. Tai yra proga tiesiogiai pamatyti, kas tai sukelia."
+                />
+            <TextView
+                style="@style/paragraph_headingInverted"
+                android:text="2. Sumažinkite įtampą. Šiais laikais yra daug įrodymų, kad per didelis stresas sukelia daugelį ligų ir pablogina sveikatos būklę. Sąmoningas dėmesingumas sumažina stresą."
+                />
+            <TextView
+                style="@style/paragraph_headingInverted"
+                android:text="3. Lengviau susisiekite. Ar kada pastebėjote, kad tuščiai žvelgiate į draugą, mylimąjį, vaiką, ir visai nesuvokiate, ką jie sako? Sąmoningas dėmesingumas padeda sutelkti visą savo dėmesį į juos."
+                />
+            <TextView
+                style="@style/paragraph_headingInverted"
+                android:text="4. Pagerinkite dėmesio koncentravimą. Tikriausiai erzina, kai mūsų mintys nuklysta nuo to, ką veikiame, ir patraukia šešiomis kryptimis. Meditacija ištreniruoja mūsų įgimtą savybę sutelkti dėmesį."
+                />
+            <TextView
+                style="@style/paragraph_headingInverted"
+                android:text="5. Sumažinkite smegenų tauškėjimą. Tarškantis, plepantis balsas mūsų galvose, atrodo, niekada mūsų neapleidžia. Ar ne laikas padaryti pertrauką?"
+                />
+        </LinearLayout>
+
+        <TextView
+            style="@style/paragraph_headingPrimary"
             android:text="PRAKTIKUOKITE DĖMESINGĄ ĮSISAMONINIMĄ BET KADA!" />
 
         <LinearLayout
