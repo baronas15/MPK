@@ -23,7 +23,6 @@
             android:textSize="@dimen/material_text_headline"
             android:gravity="center"
             android:textColor="@color/primaryTextInverted"
-            android:id="@+id/activity_main_title"
             android:typeface="serif"
             android:paddingRight="@dimen/side_padding_landscape" />
 
@@ -48,7 +47,6 @@
                     android:text="@string/main_text1"
                     android:textColor="@color/primaryTextInverted"
                     android:textSize="@dimen/material_text_body1"
-                    android:id="@+id/activity_main_titleText"
                     android:layout_marginBottom="@dimen/little_separator"
                     android:typeface="sans" />
 
@@ -74,8 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/img_description1"
-                    android:adjustViewBounds="true"
-                    android:id="@+id/activity_main_titleImage" />
+                    android:adjustViewBounds="true" />
             </FrameLayout>
         </LinearLayout>
     </LinearLayout>
@@ -111,7 +108,6 @@
                     android:clickable="false"
                     android:textColor="@color/primaryText"
                     android:textSize="@dimen/material_text_subhead"
-                    android:id="@+id/activity_main_text1"
                     android:typeface="serif"
                     android:minLines="2"
                     android:layout_weight="1" />
@@ -120,8 +116,7 @@
                     android:layout_width="@dimen/arrowSize"
                     android:layout_height="@dimen/arrowSize"
                     android:contentDescription="@string/img_description2"
-                    android:layout_gravity="center_vertical"
-                    android:id="@+id/activity_main_image1" />
+                    android:layout_gravity="center_vertical" />
             </LinearLayout>
         </LinearLayout>
         <View
@@ -153,7 +148,6 @@
                     android:clickable="false"
                     android:textColor="@color/primaryText"
                     android:textSize="@dimen/material_text_subhead"
-                    android:id="@+id/activity_main_text2"
                     android:typeface="serif"
                     android:layout_weight="1" />
                 <ImageView
@@ -161,8 +155,7 @@
                     android:layout_width="@dimen/arrowSize"
                     android:layout_height="@dimen/arrowSize"
                     android:contentDescription="@string/img_description2"
-                    android:layout_gravity="center_vertical|end"
-                    android:id="@+id/activity_main_image2" />
+                    android:layout_gravity="center_vertical|end" />
             </LinearLayout>
         </LinearLayout>
         <View
@@ -194,7 +187,6 @@
                     android:textColor="@color/primaryText"
                     android:textIsSelectable="false"
                     android:textSize="@dimen/material_text_subhead"
-                    android:id="@+id/activity_main_text3"
                     android:typeface="serif"
                     android:minLines="2"
                     android:gravity="left"
@@ -204,8 +196,7 @@
                     android:layout_width="@dimen/arrowSize"
                     android:layout_height="@dimen/arrowSize"
                     android:contentDescription="@string/img_description2"
-                    android:layout_gravity="center_vertical|end"
-                    android:id="@+id/activity_main_image3" />
+                    android:layout_gravity="center_vertical|end" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

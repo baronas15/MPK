@@ -22,7 +22,6 @@
                 android:gravity="top|center_horizontal"
                 android:textColor="@color/primaryTextInverted"
                 android:background="@color/colorPrimary"
-                android:id="@+id/activity_main_title"
                 android:paddingLeft="@dimen/side_padding_portrait"
                 android:paddingRight="@dimen/side_padding_portrait"
                 android:paddingTop="@dimen/item_vertical_padding"
@@ -63,7 +62,6 @@
                             android:textColor="@color/primaryTextInverted"
                             android:textSize="@dimen/material_text_body1"
                             android:layout_weight="10"
-                            android:id="@+id/activity_main_titleText"
                             android:typeface="sans"/>
                         <FrameLayout
                             android:layout_width="fill_parent"
@@ -89,8 +87,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:contentDescription="@string/img_description1"
-                            android:adjustViewBounds="true"
-                            android:id="@+id/activity_main_titleImage" />
+                            android:adjustViewBounds="true" />
                     </FrameLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -119,7 +116,6 @@
                         android:clickable="false"
                         android:textColor="@color/primaryText"
                         android:textSize="@dimen/material_text_subhead"
-                        android:id="@+id/activity_main_text1"
                         android:typeface="serif" />
                     <ImageView
                         android:src="@drawable/arrow"
@@ -127,7 +123,6 @@
                         android:layout_height="@dimen/arrowSize"
                         android:contentDescription="@string/img_description2"
                         android:layout_gravity="center_vertical|end"
-                        android:id="@+id/activity_main_image1"
                         android:duplicateParentState="true"/>
                 </FrameLayout>
             </LinearLayout>
@@ -159,7 +154,6 @@
                         android:clickable="false"
                         android:textColor="@color/primaryText"
                         android:textSize="@dimen/material_text_subhead"
-                        android:id="@+id/activity_main_text2"
                         android:typeface="serif"
                         android:duplicateParentState="true"/>
                     <ImageView
@@ -168,7 +162,6 @@
                         android:layout_height="@dimen/arrowSize"
                         android:contentDescription="@string/img_description2"
                         android:layout_gravity="center_vertical|end"
-                        android:id="@+id/activity_main_image2"
                         android:duplicateParentState="true"/>
                 </FrameLayout>
             </LinearLayout>
@@ -201,7 +194,6 @@
                         android:textColor="@color/primaryText"
                         android:textIsSelectable="false"
                         android:textSize="@dimen/material_text_subhead"
-                        android:id="@+id/activity_main_text3"
                         android:typeface="serif"
                         android:duplicateParentState="true"/>
                     <ImageView
@@ -210,7 +202,6 @@
                         android:layout_height="@dimen/arrowSize"
                         android:contentDescription="@string/img_description2"
                         android:layout_gravity="center_vertical|end"
-                        android:id="@+id/activity_main_image3"
                         android:duplicateParentState="true"/>
                 </FrameLayout>
             </LinearLayout>

@@ -39,7 +39,6 @@
                     android:text="@string/stickerName1"
                     android:textColor="@color/primaryText"
                     android:layout_gravity="center"
-                    android:id="@+id/activity4_1_2_text1"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
@@ -65,7 +64,6 @@
                     android:text="@string/stickerName2"
                     android:textColor="@color/primaryText"
                     android:layout_gravity="center"
-                    android:id="@+id/activity4_1_2_text2"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
@@ -99,7 +97,6 @@
                     android:text="@string/stickerName3"
                     android:textColor="@color/primaryText"
                     android:layout_gravity="center"
-                    android:id="@+id/activity4_1_2_text3"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
@@ -125,7 +122,6 @@
                     android:text="@string/stickerName4"
                     android:textColor="@color/primaryText"
                     android:layout_gravity="center"
-                    android:id="@+id/activity4_1_2_text4"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
             </LinearLayout>
@@ -158,7 +154,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/stickerName5"
                     android:textColor="@color/primaryText"
-                    android:id="@+id/activity4_1_2_text5"
                     android:layout_gravity="center"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
@@ -184,7 +179,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/stickerName6"
                     android:textColor="@color/primaryText"
-                    android:id="@+id/activity4_1_2_text6"
                     android:layout_gravity="center"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
@@ -218,7 +212,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/stickerName7"
                     android:textColor="@color/primaryText"
-                    android:id="@+id/activity4_1_2_text7"
                     android:layout_gravity="center"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
@@ -244,7 +237,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/stickerName8"
                     android:textColor="@color/primaryText"
-                    android:id="@+id/activity4_1_2_text8"
                     android:layout_gravity="center"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
@@ -278,7 +270,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/stickerName9"
                     android:textColor="@color/primaryText"
-                    android:id="@+id/activity4_1_2_text9"
                     android:layout_gravity="center"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
@@ -304,7 +295,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/stickerName10"
                     android:textColor="@color/primaryText"
-                    android:id="@+id/activity4_1_2_text10"
                     android:layout_gravity="center"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
@@ -338,7 +328,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/stickerName11"
                     android:textColor="@color/primaryText"
-                    android:id="@+id/activity4_1_2_text11"
                     android:layout_gravity="center"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
@@ -364,7 +353,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/stickerName12"
                     android:textColor="@color/primaryText"
-                    android:id="@+id/activity4_1_2_text12"
                     android:layout_gravity="center"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
@@ -398,7 +386,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/stickerName13"
                     android:textColor="@color/primaryText"
-                    android:id="@+id/activity4_1_2_text13"
                     android:layout_gravity="center"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
@@ -424,7 +411,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/stickerName14"
                     android:textColor="@color/primaryText"
-                    android:id="@+id/activity4_1_2_text14"
                     android:layout_gravity="center"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
@@ -458,7 +444,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/stickerName15"
                     android:textColor="@color/primaryText"
-                    android:id="@+id/activity4_1_2_text15"
                     android:layout_gravity="center"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
@@ -484,7 +469,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/stickerName16"
                     android:textColor="@color/primaryText"
-                    android:id="@+id/activity4_1_2_text16"
                     android:layout_gravity="center"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
@@ -518,7 +502,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/stickerName17"
                     android:textColor="@color/primaryText"
-                    android:id="@+id/activity4_1_2_text17"
                     android:layout_gravity="center"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
@@ -544,7 +527,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/stickerName18"
                     android:textColor="@color/primaryText"
-                    android:id="@+id/activity4_1_2_text18"
                     android:layout_gravity="center"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>
@@ -578,7 +560,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/stickerName19"
                     android:textColor="@color/primaryText"
-                    android:id="@+id/activity4_1_2_text19"
                     android:layout_gravity="center"
                     android:textSize="@dimen/material_text_subhead"
                     android:paddingTop="@dimen/item_vertical_padding"/>

@@ -31,7 +31,6 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/activity1_1_title"
-                    android:id="@+id/activity1_2_title"
                     android:textColor="@color/primaryTextInverted"
                     android:textSize="@dimen/material_text_headline"
                     android:typeface="serif"
@@ -210,7 +209,6 @@
 
             <Button
                 style="@style/btnlook"
-                android:id="@+id/activity1_2_button1"
                 android:text="@string/activity1_1_button1"
                 android:layout_weight="8"
                 android:onClick="activity12button1_Click"/>

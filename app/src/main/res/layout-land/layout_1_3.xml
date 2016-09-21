@@ -42,7 +42,6 @@
 
             <Button
                 style="@style/btnlook"
-                android:id="@+id/activity1_4_button1"
                 android:text="@string/activity1_3_button1"
                 android:layout_weight="8"
                 android:onClick="activity14button1_Click"/>

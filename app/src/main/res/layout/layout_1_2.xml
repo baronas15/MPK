@@ -29,7 +29,6 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/activity1_2_title"
-                    android:id="@+id/activity1_3_title"
                     android:layout_gravity="bottom|center_horizontal"
                     android:textColor="@color/primaryTextInverted"
                     android:textSize="@dimen/material_text_headline"
@@ -43,7 +42,6 @@
 
                 <Button
                     style="@style/btnlook"
-                    android:id="@+id/activity1_3_button1"
                     android:layout_gravity="center"
                     android:text="@string/activity1_2_button1"
                     android:onClick="activity13button1_Click" />
@@ -61,7 +59,6 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/activity1_3_image"
                 android:layout_gravity="center"
                 android:src="@drawable/mind_grow"
                 android:contentDescription="@string/activity1_2_img_description"

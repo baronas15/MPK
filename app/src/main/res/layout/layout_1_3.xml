@@ -45,7 +45,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/activity1_3_button1"
-                android:id="@+id/activity1_4_button1"
                 android:background="@drawable/roundedbutton"
                 android:textColor="@drawable/roundedbuttontext"
                 android:layout_weight="8"
