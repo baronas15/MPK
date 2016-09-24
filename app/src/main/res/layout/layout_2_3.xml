@@ -129,129 +129,89 @@
         </LinearLayout>
 
         <TextView
-            style="@style/paragraph_headingPrimary"
-            android:text="5 DINGSTYS NEMEDITUOTI"/>
-
+            style="@style/layout_header"
+            android:text="Kaip atlikti kūno skenavimą ir kitas meditacijas"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#f6f7eb">
+            android:background="#ece2d0">
             <TextView
                 style="@style/paragraph_heading"
-                android:text="Norite tyliai praleisti laiką su savo mintimis, tačiau randate dingsčių to nedaryti. Trumpam apžvelkite jas. Jos gali būti ne tokios reikšmingos."
-            />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#393e41">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="150dp"
-                    android:padding="15dp">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/boring"
-                        android:adjustViewBounds="true"
-                        />
-                </FrameLayout>
-
-                <TextView
-                    style="@style/paragraph_headingInverted"
-                    android:layout_gravity="center"
-                    android:text="1. Skamba nuobodžiai! Žinoma, bet taip pat palengvėja, kai turi laiko ir nesi įsipareigojęs būti kažkuo ar ką nors daryti."
-                    />
-            </LinearLayout>
-
+                android:text="Kas benutiktų (pvz. užmigote, nukrypo dėmesys, nuolat galvojate apie kitus dalykus ar apie kitą kūno vietą, arba nieko nejaučiate), tiesiog tęskite pratimą. Tai, ką patiriate, yra jūsų šios akimirkos išgyvenimai, todėl būkite jiems atviri."/>
             <TextView
-                style="@style/paragraph_headingInverted"
-                android:text="2. Negaliu ramiai išsėdėti. Nieko tokio, jei nenustygstate vietoje. Meditacija yra procesas, kuris vystosi laikui bėgant. Niekas nepradeda sėdėdamas kaip akmeninė statula."
-                />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    style="@style/paragraph_headingInverted"
-                    android:layout_weight="4"
-                    android:layout_width="1dp"
-                    android:layout_gravity="center"
-                    android:text="3. Neturiu laiko. Laiko trūkumas šiais laikais slegiamus visus. Tačiau pertraukėlė nuo „skubėk-skubėk-skubėk“ režimo gali padėti jums geriau išnaudoti laiką."
-                    />
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="150dp"
-                    android:padding="15dp"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/hourglass"
-                        android:adjustViewBounds="true"
-                        android:layout_gravity="center"
-                        />
-                </FrameLayout>
-
-
-            </LinearLayout>
-
+                style="@style/paragraph_firstLine"
+                android:background="#d4cbbb"
+                android:text="Jeigu dėmesys nuolat nukrypsta, užfiksuokite jį atitraukiančias mintis kaip praeinančius įvykius ir švelniai grąžinkite dėmesį prie kūno skenavimo ar pasirinkto kito dėmesio objekto."/>
             <TextView
-                style="@style/paragraph_headingInverted"
-                android:text="4. Bijau būti vienas. Jūs nesate vienas. Mūsų kultūra nuvertino laiko skyrimą vienatvei. Taip buvo ne visada. Ir tai nėra taip baisu, kaip galvojate."
-                />
+                style="@style/paragraph_firstLine"
+                android:text="Negalvokite apie tokius dalykus kaip „sėkmė“, „nesėkmė“, „geras pratimo atlikimas“ ar „pastangos apvalyti kūną“. Čia ne varžybos, kuriose žūtbūt siekiama tikslo. Tereikia dažnai ir reguliariai treniruotis, būti atviram patyrimui ir žvelgti į jį smalsiai."/>
             <TextView
-                style="@style/paragraph_headingInverted"
-                android:text="5. Mano mintys per greitos. Tai ir leiskite joms būti greitoms. Jei kurį laiką pasėdėsite, jos nurims... ir vėl pagreitės. Jums nereikia rasti idealaus ritmo savo protui."
-                />
+                style="@style/paragraph_firstLine"
+                android:background="#d4cbbb"
+                android:text="Atsisakykite visų lūkesčių, susijusių su tuo, kaip kūno skenavimas ir kitos praktokos turėtų jums padėti. Įsivaizduokite, kad pasėjote sėklą. Kuo dažniau aplink ją krapštinėsitės ir jai trukdysite, tuo sunkiau jai bus išdygti ir augti. Tad tiesiog sukurkite kūno „skenavimui“ ir kitoms meditacijoms/praktikoms tinkamas sąlygas – ramybę, taiką ir nuolatines pratybas. Daugiau niekuo nereikia rūpintis, nes kuo labiau stengsitės sustiprinti meditacijų poveikį jums, tuo silpnesnis jis bus."/>
+            <TextView
+                style="@style/paragraph_firstLine"
+                android:text="Pamėginkite kas akimirką žvelgti į patiriamus išgyvenimus sakydami sau: „Šiuo metu tiesiog taip yra“. Jei stengsitės kovoti su nemaloniomis mintimis, jausmais ar kūno pojūčiais, tai tik atitrauks jūsų dėmesį ir neleis užsiimti niekuo kitu. Būkite atviri, nekovokite, susitelkite į dabartį ir priimkite viską taip, kaip yra. Tiesiog praktikuokitės."/>
         </LinearLayout>
 
         <TextView
-            style="@style/paragraph_headingPrimary"
-            android:text="5 PRIEŽASTYS VIS TIEK PABANDYTI"/>
+            style="@style/layout_header"
+            android:text="Atlikus pratimus, siūlome apmąstyti:"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#f6f7eb">
+            android:background="#0b4f6c">
             <TextView
-                style="@style/paragraph_heading"
-                android:text="Mes lengvai galime rasti dingsčių, kodėl negalime medituoti, tačiau taip pat lengva rasti daug priežasčių tai daryti. Štai keletas jų."
-                />
+                style="@style/paragraph_firstLineInverted"
+                android:text="Dėmesingumo kokybė"/>
+            <TextView
+                style="@style/paragraph_primaryTextInverted"
+                android:text="Ar jūsų dėmesingumas buvo budrus ir esantis dabartyje, ar buvo išankstinių nuostatų? Praktikavimo metu dėmesys daugiau koncentravosi „į vidų“ ar „į išorę“? Ką pastebėjote ar patyrėte aplinkoje? Kaip tai veikė jūsų vidinius potyrius?"/>
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#393e41">
+            android:background="#fbfbff">
             <TextView
-                style="@style/paragraph_headingInverted"
-                android:text="1. Supraskite savo skausmą. Dvasinis skausmas ir nerimas yra užkulisiniai garsai, kurie gali būti daug ko, ką mes darome, priežastimi. Tai yra proga tiesiogiai pamatyti, kas tai sukelia."
-                />
+                style="@style/paragraph_firstLine"
+                android:text="Pojūčių įvardinimas"/>
             <TextView
-                style="@style/paragraph_headingInverted"
-                android:text="2. Sumažinkite įtampą. Šiais laikais yra daug įrodymų, kad per didelis stresas sukelia daugelį ligų ir pablogina sveikatos būklę. Sąmoningas dėmesingumas sumažina stresą."
-                />
-            <TextView
-                style="@style/paragraph_headingInverted"
-                android:text="3. Lengviau susisiekite. Ar kada pastebėjote, kad tuščiai žvelgiate į draugą, mylimąjį, vaiką, ir visai nesuvokiate, ką jie sako? Sąmoningas dėmesingumas padeda sutelkti visą savo dėmesį į juos."
-                />
-            <TextView
-                style="@style/paragraph_headingInverted"
-                android:text="4. Pagerinkite dėmesio koncentravimą. Tikriausiai erzina, kai mūsų mintys nuklysta nuo to, ką veikiame, ir patraukia šešiomis kryptimis. Meditacija ištreniruoja mūsų įgimtą savybę sutelkti dėmesį."
-                />
-            <TextView
-                style="@style/paragraph_headingInverted"
-                android:text="5. Sumažinkite smegenų tauškėjimą. Tarškantis, plepantis balsas mūsų galvose, atrodo, niekada mūsų neapleidžia. Ar ne laikas padaryti pertrauką?"
-                />
+                style="@style/paragraph_primaryText"
+                android:text="Ką ir kur jautėte? Kokie tiksliau pojūčiai buvo (pabandyti atskirti juos vieną nuo kito ir įvardinti – šaltis, karštis, dilgčiojimas, spalvos, garsai ir t.t.t.)? Kaip,- jei keitėsi? Kokie pojūčiai yra šiuo metu?"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#757575">
+            <TextView
+                style="@style/paragraph_firstLineInverted"
+                android:text="Jausmų įvardinimas"/>
+            <TextView
+                style="@style/paragraph_primaryTextInverted"
+                android:text="Kokias emocijas ir jausmus jautėte? Tai buvo viena ar kelios emocijos? Kokios tiksliau emocijos/jausmai buvo (pabandyti atskirti juos vieną nuo kito ir įvardinti)? Kaip jei keitėsi? Kokie jausmai yra šiuo metu? Ką būtent tos ar kitos emocijos/jausmai jums reiškė? Galėjo reikšti? Reiškia dabar?"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#20bf55">
+            <TextView
+                style="@style/paragraph_firstLineInverted"
+                android:text="Minčių įvardijimas"/>
+            <TextView
+                style="@style/paragraph_primaryTextInverted"
+                android:text="Kokias mintis pastebėjote? Kokia forma: vaizdiniai, paveikslai, atsiminimai, asociacijos, klausimai ir t.t.? Pabandykime atskirti juos vieną nuo kito ir įvardinti. Kokios mintys buvo užvaldę daugiausiai? Kaip jas priėmėte? Ar (kaip) grįž(dav)ote į realybę?  Ką būtent tos ar kitos mintys jums reiškė? Galėjo reikšti? Reiškia dabar? Koks jūsų buvęs ir dabartinis požiūris šių minčių atžvilgiu? Kokių įžvalgų pasiekėte?"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/paragraph_firstLine"
+            android:background="#ece2d0"
+            android:text="Kartais pagelbsti nusistatyti reguliarų laiką ir vietą, kad praktikuotumėtės. Kartais jums gali būti sunku tiesiogiai jausti kai kuriuos teigiamus jausmus, paminėtus kiekvienoje meditacijos rūšyje. Nieko tokio! Tiesiog medituojant ir suteikiant sau progą jausti šiuos teigiamus jausmus yra didžiulis žingsnis. Prisiminkite: geriau daryti 1 minutę nei nedaryti išviso. Sąmoningas buvimas kiekvieną akimirką leidžia žmogui laisvai kontroliuoti savo emocijas, suprasti savo mintis, pasirinkti tai, ko reikia būtent jam."/>
 
         <TextView
             style="@style/paragraph_headingPrimary"

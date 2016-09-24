@@ -2,70 +2,26 @@ package lt.mpk.mpk.activities;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import lt.mpk.mpk.R;
 
-public class activity2 extends AppCompatActivity {
-    private int enterAnim = R.anim.slide_in_right;
-    private int exitAnim = R.anim.slide_out_right;
+public class activity2_5 extends AppCompatActivity {
     private DrawerLayout mDrawer;
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_activity2);
-
-        LinearLayout l1 = (LinearLayout) findViewById(R.id.activity2_item1);
-        l1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(activity2.this, activity2_1.class));
-                overridePendingTransition(enterAnim,exitAnim);
-            }
-        });
-        LinearLayout l2 = (LinearLayout) findViewById(R.id.activity2_item2);
-        l2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(activity2.this, activity2_2.class));
-                overridePendingTransition(enterAnim,exitAnim);
-            }
-        });
-        LinearLayout l3 = (LinearLayout) findViewById(R.id.activity2_item3);
-        l3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(activity2.this, activity2_3.class));
-                overridePendingTransition(enterAnim,exitAnim);
-            }
-        });
-        LinearLayout l4 = (LinearLayout) findViewById(R.id.activity2_item4);
-        l4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(activity2.this, activity2_4.class));
-                overridePendingTransition(enterAnim,exitAnim);
-            }
-        });
-        LinearLayout l5 = (LinearLayout) findViewById(R.id.activity2_item5);
-        l5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(activity2.this, activity2_5.class));
-                overridePendingTransition(enterAnim,exitAnim);
-            }
-        });
+        setContentView(R.layout.activity_activity2_5);
 
         //region Toolbar_NavDrawer
         toolbar = (Toolbar) findViewById(R.id.toolbar);
