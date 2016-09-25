@@ -163,10 +163,19 @@
                         android:adjustViewBounds="true"
                         android:src="@drawable/kaunas"/>
                 </FrameLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/nav_drawer_content_divider"
+                android:layout_marginLeft="@dimen/nav_drawer_edge_margin"
+                android:layout_marginRight="@dimen/nav_drawer_edge_margin"
+                android:layout_marginBottom="@dimen/nav_drawer_content_divider"
+                android:baselineAligned="false">
+
                 <FrameLayout
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:id="@+id/drawer_item_8"
                     android:minHeight="48dp"
                     android:layout_marginLeft="@dimen/nav_drawer_content_divider">
@@ -175,7 +184,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/kmvsb_land"/>
+                        android:src="@drawable/kaunovsb"/>
                 </FrameLayout>
             </LinearLayout>
             <LinearLayout
@@ -183,6 +192,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/nav_drawer_content_divider"
                 android:layout_marginLeft="@dimen/nav_drawer_edge_margin"
+                android:layout_marginRight="@dimen/nav_drawer_edge_margin"
                 android:layout_marginBottom="@dimen/nav_drawer_content_divider">
                 <FrameLayout
                     android:layout_width="wrap_content"
