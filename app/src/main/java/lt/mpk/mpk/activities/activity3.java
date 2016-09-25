@@ -119,6 +119,15 @@ public class activity3 extends AppCompatActivity {
                 mDrawer.closeDrawers();
             }
         });
+        FrameLayout f9 = (FrameLayout) findViewById(R.id.drawer_item_9);
+        f9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.avmi.lt/"));
+                startActivity(browserIntent);
+                mDrawer.closeDrawers();
+            }
+        });
         //endregion
     }
 

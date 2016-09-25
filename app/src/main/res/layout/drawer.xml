@@ -178,6 +178,22 @@
                         android:src="@drawable/kmvsb_land"/>
                 </FrameLayout>
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/nav_drawer_content_divider"
+                android:layout_marginLeft="@dimen/nav_drawer_edge_margin"
+                android:layout_marginBottom="@dimen/nav_drawer_content_divider">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/drawer_item_9">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/avmi"/>
+                </FrameLayout>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
