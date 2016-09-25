@@ -113,7 +113,7 @@ public class activity1_2 extends AppCompatActivity {
             }
         });
         FrameLayout f9 = (FrameLayout) findViewById(R.id.drawer_item_9);
-        f8.setOnClickListener(new View.OnClickListener() {
+        f9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.avmi.lt/"));
