@@ -1,33 +1,24 @@
-package lt.mpk.mpk.activities;
+package lt.mpk.mpk.activities.flow;
 
-import android.content.Intent;
-import android.net.Uri;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import lt.mpk.mpk.NavDrawer;
 import lt.mpk.mpk.R;
+import lt.mpk.mpk.app;
 import lt.mpk.mpk.tabs.TabFragment1;
 import lt.mpk.mpk.tabs.TabFragment2;
 import lt.mpk.mpk.tabs.TabFragment3;
 import lt.mpk.mpk.tabs.TabFragment4;
 import lt.mpk.mpk.tabs.TabFragment5;
-import lt.mpk.mpk.app;
 
 public class activity1_3 extends NavDrawer {
     @Override
@@ -98,7 +89,7 @@ public class activity1_3 extends NavDrawer {
     class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
 
-        public ViewPagerAdapter(FragmentManager manager) {
+        ViewPagerAdapter(FragmentManager manager) {
             super(manager);
         }
 
@@ -112,7 +103,7 @@ public class activity1_3 extends NavDrawer {
             return mFragmentList.size();
         }
 
-        public void addFrag(Fragment fragment) {
+        void addFrag(Fragment fragment) {
             mFragmentList.add(fragment);
         }
     }

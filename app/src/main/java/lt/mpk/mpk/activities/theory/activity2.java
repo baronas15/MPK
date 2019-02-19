@@ -1,4 +1,4 @@
-package lt.mpk.mpk.activities;
+package lt.mpk.mpk.activities.theory;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,8 +9,8 @@ import lt.mpk.mpk.NavDrawer;
 import lt.mpk.mpk.R;
 
 public class activity2 extends NavDrawer {
-    private int enterAnim = R.anim.slide_in_right;
-    private int exitAnim = R.anim.slide_out_right;
+    private final int enterAnim = R.anim.slide_in_right;
+    private final int exitAnim = R.anim.slide_out_right;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

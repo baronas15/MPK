@@ -12,20 +12,19 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import lt.mpk.mpk.activities.activity2;
-import lt.mpk.mpk.activities.activity3;
-import lt.mpk.mpk.activities.activity4;
+import lt.mpk.mpk.activities.theory.activity2;
+import lt.mpk.mpk.activities.meditationList.activity3;
+import lt.mpk.mpk.activities.achivements.activity4;
 import lt.mpk.mpk.activities.main;
 
 public class NavDrawer extends AppCompatActivity {
     private DrawerLayout mDrawer;
-    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         android.support.v7.app.ActionBar ab = getSupportActionBar();

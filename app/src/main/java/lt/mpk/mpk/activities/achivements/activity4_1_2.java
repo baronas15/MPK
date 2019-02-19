@@ -1,23 +1,14 @@
-package lt.mpk.mpk.activities;
+package lt.mpk.mpk.activities.achivements;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import lt.mpk.mpk.NavDrawer;
 import lt.mpk.mpk.R;
 
 public class activity4_1_2 extends NavDrawer {
-    int imageFields[] = { R.id.activity4_1_2_image1, R.id.activity4_1_2_image2,
+    private final int[] imageFields = { R.id.activity4_1_2_image1, R.id.activity4_1_2_image2,
             R.id.activity4_1_2_image3, R.id.activity4_1_2_image4,
             R.id.activity4_1_2_image5, R.id.activity4_1_2_image6,
             R.id.activity4_1_2_image7, R.id.activity4_1_2_image8,

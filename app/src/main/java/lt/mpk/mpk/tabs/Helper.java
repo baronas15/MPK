@@ -9,7 +9,7 @@ import android.widget.CompoundButton;
 import lt.mpk.mpk.R;
 import lt.mpk.mpk.app;
 
-public class Helper {
+class Helper {
     public void checkBoxChangeListener(final View r, final int i, final int x, final int y, final Context context){
         CheckBox cBox = r.findViewById( i );
         if (cBox != null) {

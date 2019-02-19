@@ -1,4 +1,4 @@
-package lt.mpk.mpk.activities;
+package lt.mpk.mpk.activities.theory;
 
 import android.os.Bundle;
 

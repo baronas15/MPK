@@ -28,26 +28,26 @@
             tools:replace="android:value"
             android:name="android.support.VERSION"
             android:value="26.1.0" />
-        <activity android:name=".activities.activity1" />
-        <activity android:name=".activities.activity2" />
-        <activity android:name=".activities.activity3" />
-        <activity android:name=".activities.activity4" />
-        <activity android:name=".activities.activity1_1" />
-        <activity android:name=".activities.activity1_2" />
-        <activity android:name=".activities.activity1_3" />
+        <activity android:name=".activities.flow.activity1" />
+        <activity android:name=".activities.theory.activity2" />
+        <activity android:name=".activities.meditationList.activity3" />
+        <activity android:name=".activities.achivements.activity4" />
+        <activity android:name=".activities.flow.activity1_1" />
+        <activity android:name=".activities.flow.activity1_2" />
+        <activity android:name=".activities.flow.activity1_3" />
         <activity
-            android:name=".activities.activity1_5"
+            android:name=".activities.flow.activity1_5"
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden">
         </activity>
         <activity android:name=".activities.activity_sticker" />
-        <activity android:name=".activities.activity1_4" />
-        <activity android:name=".activities.activity4_1_2" />
-        <activity android:name=".activities.activity2_1" />
-        <activity android:name=".activities.activity2_2" />
-        <activity android:name=".activities.activity2_3" />
-        <activity android:name=".activities.activity2_4"></activity>
-        <activity android:name=".activities.activity2_5" />
+        <activity android:name=".activities.flow.activity1_4" />
+        <activity android:name=".activities.achivements.activity4_1_2" />
+        <activity android:name=".activities.theory.activity2_1" />
+        <activity android:name=".activities.theory.activity2_2" />
+        <activity android:name=".activities.theory.activity2_3" />
+        <activity android:name=".activities.theory.activity2_4" />
+        <activity android:name=".activities.theory.activity2_5" />
     </application>
 
 </manifest>

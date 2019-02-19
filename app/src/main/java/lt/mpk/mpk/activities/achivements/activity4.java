@@ -1,4 +1,4 @@
-package lt.mpk.mpk.activities;
+package lt.mpk.mpk.activities.achivements;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,8 +16,8 @@ import lt.mpk.mpk.NavDrawer;
 import lt.mpk.mpk.R;
 
 public class activity4 extends NavDrawer {
-    private int enterAnim = R.anim.slide_in_down;
-    private int exitAnim = R.anim.slide_out_down;
+    private final int enterAnim = R.anim.slide_in_down;
+    private final int exitAnim = R.anim.slide_out_down;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -152,7 +152,7 @@ public class activity4 extends NavDrawer {
         super.onCreate(savedInstanceState);
     }
 
-    public String milliSecondsToTimer(long milliseconds){
+    private String milliSecondsToTimer(long milliseconds){
         String finalTimerString = "";
         String secondsString;
 

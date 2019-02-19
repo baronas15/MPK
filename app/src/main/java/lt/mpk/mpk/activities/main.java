@@ -8,10 +8,14 @@ import android.widget.LinearLayout;
 
 import lt.mpk.mpk.NavDrawer;
 import lt.mpk.mpk.R;
+import lt.mpk.mpk.activities.achivements.activity4;
+import lt.mpk.mpk.activities.flow.activity1;
+import lt.mpk.mpk.activities.meditationList.activity3;
+import lt.mpk.mpk.activities.theory.activity2;
 
 public class main extends NavDrawer {
-    private int enterAnim = R.anim.slide_in_right;
-    private int exitAnim = R.anim.slide_out_right;
+    private final int enterAnim = R.anim.slide_in_right;
+    private final int exitAnim = R.anim.slide_out_right;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

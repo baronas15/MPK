@@ -1,4 +1,4 @@
-package lt.mpk.mpk.activities;
+package lt.mpk.mpk.activities.flow;
 
 import android.content.Intent;
 import android.os.Bundle;

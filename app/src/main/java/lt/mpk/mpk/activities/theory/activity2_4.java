@@ -1,14 +1,14 @@
-package lt.mpk.mpk.activities;
+package lt.mpk.mpk.activities.theory;
 
 import android.os.Bundle;
 
 import lt.mpk.mpk.NavDrawer;
 import lt.mpk.mpk.R;
 
-public class activity2_1 extends NavDrawer {
+public class activity2_4 extends NavDrawer {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setContentView(R.layout.activity_activity2_1);
+        setContentView(R.layout.activity_activity2_4);
         super.onCreate(savedInstanceState);
     }
 

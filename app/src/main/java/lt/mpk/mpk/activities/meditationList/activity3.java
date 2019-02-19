@@ -1,4 +1,4 @@
-package lt.mpk.mpk.activities;
+package lt.mpk.mpk.activities.meditationList;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,9 +7,10 @@ import android.widget.Button;
 
 import lt.mpk.mpk.NavDrawer;
 import lt.mpk.mpk.R;
+import lt.mpk.mpk.activities.flow.activity1_5;
 
 public class activity3 extends NavDrawer {
-    private String INTENT_EXTRAS = "playAudioNumber";
+    private final String INTENT_EXTRAS = "playAudioNumber";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

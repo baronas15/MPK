@@ -1,4 +1,4 @@
-package lt.mpk.mpk.activities;
+package lt.mpk.mpk.activities.flow;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -14,6 +14,8 @@ import android.widget.TextView;
 import java.util.Calendar;
 
 import lt.mpk.mpk.R;
+import lt.mpk.mpk.activities.activity_sticker;
+import lt.mpk.mpk.activities.main;
 
 import static android.media.MediaPlayer.create;
 
@@ -26,9 +28,9 @@ public class activity1_5 extends AppCompatActivity {
     private TextView tx1;
     private TextView tx2;
 
-    private Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler();
 
-    int meditationNumber = -1;
+    private int meditationNumber = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -200,13 +202,13 @@ public class activity1_5 extends AppCompatActivity {
         editor.apply();
     }
 
-    public void updateProgressBar() {
+    private void updateProgressBar() {
         mHandler.postDelayed(mUpdateTimeTask, 100);
     }
     /**
      * Background Runnable thread
      * */
-    private Runnable mUpdateTimeTask = new Runnable()
+    private final Runnable mUpdateTimeTask = new Runnable()
     {
         public void run()
         {
@@ -239,7 +241,7 @@ public class activity1_5 extends AppCompatActivity {
      * Timer Format
      * Hours:Minutes:Seconds
      * */
-    public String milliSecondsToTimer(long milliseconds){
+    private String milliSecondsToTimer(long milliseconds){
         String finalTimerString = "";
         String secondsString;
 
@@ -265,7 +267,7 @@ public class activity1_5 extends AppCompatActivity {
     /**
      * Function to get Progress percentage
      * */
-    public int getProgressPercentage(long currentDuration, long totalDuration){
+    private int getProgressPercentage(long currentDuration, long totalDuration){
         Double percentage;
 
         long currentSeconds = (int) (currentDuration / 1000);
@@ -282,7 +284,7 @@ public class activity1_5 extends AppCompatActivity {
      * Function to change progress to timer
      * returns current duration in milliseconds
      * */
-    public int progressToTimer(int progress, int totalDuration) {
+    private int progressToTimer(int progress, int totalDuration) {
         int currentDuration;
         totalDuration = totalDuration / 1000;
         currentDuration = (int) ((((double)progress) / 100) * totalDuration);
