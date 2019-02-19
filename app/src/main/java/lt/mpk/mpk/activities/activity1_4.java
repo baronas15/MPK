@@ -17,16 +17,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import lt.mpk.mpk.NavDrawer;
 import lt.mpk.mpk.R;
 import lt.mpk.mpk.app;
 
-public class activity1_4 extends AppCompatActivity {
-    private DrawerLayout mDrawer;
-    private Toolbar toolbar;
-
+public class activity1_4 extends NavDrawer {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity1_4);
 
         //region PopulateView
@@ -37,7 +34,7 @@ public class activity1_4 extends AppCompatActivity {
         int emo3 = a.getEmotional3();
         int phys = a.getPhysical();
 
-        LinearLayout lay = (LinearLayout) findViewById(R.id.selectspace);
+        LinearLayout lay = findViewById(R.id.selectspace);
 
         if(emo1 == 1 || emo1 == 7 || emo2 == 2 || emo2 == 8 || emo3 == 3 || emo3 == 9 || phys == 4){
             createView(lay,R.string.meditation_title1,R.string.meditation_description1, 1);
@@ -120,124 +117,19 @@ public class activity1_4 extends AppCompatActivity {
         editor.apply();
         //endregion
 
-        //region Toolbar_NavDrawer
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        android.support.v7.app.ActionBar ab = getSupportActionBar();
-        ab.setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
-        ab.setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("MPK");
-
-        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-
-        ImageView f1 = (ImageView) findViewById(R.id.drawer_item_1);
-        f1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mpk.lt"));
-                startActivity(browserIntent);
-                mDrawer.closeDrawers();
-            }
-        });
-        FrameLayout f2 = (FrameLayout) findViewById(R.id.drawer_item_2);
-        f2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), main.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("EXIT", true);
-                startActivity(intent);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
-                mDrawer.closeDrawers();
-            }
-        });
-        FrameLayout f3 = (FrameLayout) findViewById(R.id.drawer_item_3);
-        f3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), activity2.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("EXIT", true);
-                startActivity(intent);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
-                mDrawer.closeDrawers();
-            }
-        });
-        FrameLayout f4 = (FrameLayout) findViewById(R.id.drawer_item_4);
-        f4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), activity3.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("EXIT", true);
-                startActivity(intent);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
-                mDrawer.closeDrawers();
-            }
-        });
-        FrameLayout f5 = (FrameLayout) findViewById(R.id.drawer_item_5);
-        f5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), activity4.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("EXIT", true);
-                startActivity(intent);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
-                mDrawer.closeDrawers();
-            }
-        });
-        FrameLayout f7 = (FrameLayout) findViewById(R.id.drawer_item_7);
-        f7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kaunas.lt/"));
-                startActivity(browserIntent);
-                mDrawer.closeDrawers();
-            }
-        });
-        FrameLayout f8 = (FrameLayout) findViewById(R.id.drawer_item_8);
-        f8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kaunovsb.lt/"));
-                startActivity(browserIntent);
-                mDrawer.closeDrawers();
-            }
-        });
-        FrameLayout f9 = (FrameLayout) findViewById(R.id.drawer_item_9);
-        f9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.avmi.lt/"));
-                startActivity(browserIntent);
-                mDrawer.closeDrawers();
-            }
-        });
-        //endregion
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                mDrawer.openDrawer(GravityCompat.START);
-                return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+        super.onCreate(savedInstanceState);
     }
 
     private void createView(LinearLayout main, int titleRes, int descRes,final int num){
         View debugLayout = getLayoutInflater().inflate(R.layout.meditation_item, main, false);
-        TextView t1 = (TextView) debugLayout.findViewById(R.id.itemTitle);
+        TextView t1 = debugLayout.findViewById(R.id.itemTitle);
         t1.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
         t1.setText(titleRes);
-        TextView t2 = (TextView) debugLayout.findViewById(R.id.itemDescription);
+        TextView t2 = debugLayout.findViewById(R.id.itemDescription);
         t2.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.primaryText));
         t2.setText(descRes);
 
-        Button b = (Button) debugLayout.findViewById(R.id.itemButton1);
+        Button b = debugLayout.findViewById(R.id.itemButton1);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

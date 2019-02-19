@@ -20,8 +20,8 @@ public class activity_sticker extends Activity {
         if (extras != null) {
             String value = extras.getString("sticker");
 
-            TextView tx = (TextView)this.findViewById(R.id.activity_sticker_text1);
-            ImageView im = (ImageView)this.findViewById(R.id.activity_sticker_image1);
+            TextView tx = this.findViewById(R.id.activity_sticker_text1);
+            ImageView im = this.findViewById(R.id.activity_sticker_image1);
 
             switch(value){
                 case "1": tx.setText(R.string.stickerAward1); im.setImageDrawable(getResources().getDrawable(R.drawable.start));break;
@@ -45,7 +45,7 @@ public class activity_sticker extends Activity {
                 case "19": tx.setText(R.string.stickerAward19); im.setImageDrawable(getResources().getDrawable(R.drawable.total_count100h));break;
             }
         }
-        Button b = (Button)this.findViewById(R.id.activity_sticker_button_1);
+        Button b = this.findViewById(R.id.activity_sticker_button_1);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

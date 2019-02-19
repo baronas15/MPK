@@ -3,20 +3,14 @@ package lt.mpk.mpk.activities;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
-import android.net.Uri;
-import android.os.Handler;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.MenuItem;
+import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
 import java.util.Calendar;
 
 import lt.mpk.mpk.R;
@@ -26,9 +20,6 @@ import static android.media.MediaPlayer.create;
 public class activity1_5 extends AppCompatActivity {
     private SharedPreferences settings;
     private SharedPreferences.Editor editor;
-
-    private DrawerLayout mDrawer;
-    private Toolbar toolbar;
 
     private SeekBar seekbar;
     private MediaPlayer mediaPlayer;
@@ -63,9 +54,9 @@ public class activity1_5 extends AppCompatActivity {
         }
 
         mediaPlayer = create(this, audioToPlay);
-        seekbar = (SeekBar)this.findViewById(R.id.seekBar);
-        tx1 = (TextView)this.findViewById(R.id.activity1_5_text1);
-        tx2 = (TextView)this.findViewById(R.id.activity1_5_text2);
+        seekbar = this.findViewById(R.id.seekBar);
+        tx1 = this.findViewById(R.id.activity1_5_text1);
+        tx2 = this.findViewById(R.id.activity1_5_text2);
 
         seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -93,7 +84,7 @@ public class activity1_5 extends AppCompatActivity {
         tx1.setText(String.format("%s", milliSecondsToTimer(mediaPlayer.getCurrentPosition())));
         tx2.setText(String.format("%s", milliSecondsToTimer(mediaPlayer.getDuration())));
 
-        final Button play_button = (Button)this.findViewById(R.id.activity1_5_button1);
+        final Button play_button = this.findViewById(R.id.activity1_5_button1);
         play_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 seekbar.setProgress(0);

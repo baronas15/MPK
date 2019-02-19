@@ -22,9 +22,9 @@ public class TabFragment2 extends Fragment {
 
         app a = (app)getActivity().getApplicationContext();
 
-        CheckBox c1 = (CheckBox)rootView.findViewById(R.id.checkBox4);
-        CheckBox c2 = (CheckBox)rootView.findViewById(R.id.checkBox5);
-        CheckBox c3 = (CheckBox)rootView.findViewById(R.id.checkBox6);
+        CheckBox c1 = rootView.findViewById(R.id.checkBox4);
+        CheckBox c2 = rootView.findViewById(R.id.checkBox5);
+        CheckBox c3 = rootView.findViewById(R.id.checkBox6);
 
         if(a.getEmotional1() == 4)
             c1.setChecked(true);

@@ -2,34 +2,25 @@ package lt.mpk.mpk.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.support.v4.content.ContextCompat;
 import android.util.TypedValue;
 import android.view.Gravity;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import lt.mpk.mpk.NavDrawer;
 import lt.mpk.mpk.R;
 
-public class activity4 extends AppCompatActivity {
+public class activity4 extends NavDrawer {
     private int enterAnim = R.anim.slide_in_down;
     private int exitAnim = R.anim.slide_out_down;
 
-    private DrawerLayout mDrawer;
-    private Toolbar toolbar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity4);
         SharedPreferences settings = getSharedPreferences("Stickers", 0);
 
@@ -45,7 +36,7 @@ public class activity4 extends AppCompatActivity {
                 params.gravity = Gravity.CENTER;
                 tx.setLayoutParams(params);
 
-                FrameLayout frame = (FrameLayout) findViewById(R.id.activity4_lastSticker);
+                FrameLayout frame = findViewById(R.id.activity4_lastSticker);
                 frame.addView(tx);
                 break;
             case 1: addImageView(R.drawable.start); break;
@@ -71,7 +62,7 @@ public class activity4 extends AppCompatActivity {
 
         //endregion
         //region Area 2
-        TextView text2 = (TextView) findViewById(R.id.activity4_stickerCount);
+        TextView text2 = findViewById(R.id.activity4_stickerCount);
         int stickerCount = 0;
 
         for (int i = 1; i <= 19; i++){
@@ -80,7 +71,7 @@ public class activity4 extends AppCompatActivity {
         }
         text2.setText(stickerCount+"/19");
 
-        LinearLayout l2 = (LinearLayout) findViewById(R.id.activity4_layout2);
+        LinearLayout l2 = findViewById(R.id.activity4_layout2);
         l2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,12 +81,12 @@ public class activity4 extends AppCompatActivity {
         });
         //endregion
         //region Area 3
-        TextView textItem5 = (TextView) findViewById(R.id.activity4_timer);
+        TextView textItem5 = findViewById(R.id.activity4_timer);
         long time = settings.getInt("totalTime",0) * 100;
         textItem5.setText(milliSecondsToTimer(time));
         //endregion
         //region Area 4
-        TextView topEmo = (TextView)findViewById(R.id.activity4_topEmotion);
+        TextView topEmo = findViewById(R.id.activity4_topEmotion);
         int[] emoCount = new int[15];
         for (int i = 1; i <= 15; i++){
             emoCount[i-1] = settings.getInt("emotion"+i,0);
@@ -146,7 +137,7 @@ public class activity4 extends AppCompatActivity {
             }
         }
 
-        TextView textItem4 = (TextView) findViewById(R.id.activity4_topMeditation);
+        TextView textItem4 = findViewById(R.id.activity4_topMeditation);
         switch (maxIndex){
             case 0: textItem4.setText(R.string.meditation_title1); break;
             case 1: textItem4.setText(R.string.meditation_title2); break;
@@ -158,101 +149,7 @@ public class activity4 extends AppCompatActivity {
         }
         //endregion
 
-        //region Toolbar_NavDrawer
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        android.support.v7.app.ActionBar ab = getSupportActionBar();
-        ab.setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
-        ab.setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("MPK");
-
-        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-
-        ImageView f1 = (ImageView) findViewById(R.id.drawer_item_1);
-        f1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mpk.lt"));
-                startActivity(browserIntent);
-                mDrawer.closeDrawers();
-            }
-        });
-        FrameLayout f2 = (FrameLayout) findViewById(R.id.drawer_item_2);
-        f2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), main.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("EXIT", true);
-                startActivity(intent);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
-                mDrawer.closeDrawers();
-            }
-        });
-        FrameLayout f3 = (FrameLayout) findViewById(R.id.drawer_item_3);
-        f3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), activity2.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("EXIT", true);
-                startActivity(intent);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
-                mDrawer.closeDrawers();
-            }
-        });
-        FrameLayout f4 = (FrameLayout) findViewById(R.id.drawer_item_4);
-        f4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), activity3.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("EXIT", true);
-                startActivity(intent);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
-                mDrawer.closeDrawers();
-            }
-        });
-        FrameLayout f5 = (FrameLayout) findViewById(R.id.drawer_item_5);
-        f5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), activity4.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("EXIT", true);
-                startActivity(intent);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
-                mDrawer.closeDrawers();
-            }
-        });
-        FrameLayout f7 = (FrameLayout) findViewById(R.id.drawer_item_7);
-        f7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kaunas.lt/"));
-                startActivity(browserIntent);
-                mDrawer.closeDrawers();
-            }
-        });
-        FrameLayout f8 = (FrameLayout) findViewById(R.id.drawer_item_8);
-        f8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kaunovsb.lt/"));
-                startActivity(browserIntent);
-                mDrawer.closeDrawers();
-            }
-        });
-        FrameLayout f9 = (FrameLayout) findViewById(R.id.drawer_item_9);
-        f9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.avmi.lt/"));
-                startActivity(browserIntent);
-                mDrawer.closeDrawers();
-            }
-        });
-        //endregion
+        super.onCreate(savedInstanceState);
     }
 
     public String milliSecondsToTimer(long milliseconds){
@@ -290,18 +187,8 @@ public class activity4 extends AppCompatActivity {
 
         iv.setImageDrawable(getResources().getDrawable(ResId));
 
-        FrameLayout frame = (FrameLayout) findViewById(R.id.activity4_lastSticker);
+        FrameLayout frame = findViewById(R.id.activity4_lastSticker);
         frame.addView(iv);
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                mDrawer.openDrawer(GravityCompat.START);
-                return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     @Override

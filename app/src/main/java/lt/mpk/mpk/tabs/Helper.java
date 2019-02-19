@@ -11,14 +11,14 @@ import lt.mpk.mpk.app;
 
 public class Helper {
     public void checkBoxChangeListener(final View r, final int i, final int x, final int y, final Context context){
-        CheckBox cBox = ( CheckBox ) r.findViewById( i );
+        CheckBox cBox = r.findViewById( i );
         if (cBox != null) {
             cBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     app a = ((app)context.getApplicationContext());
 
-                    CheckBox cBox = ( CheckBox ) r.findViewById( i );
+                    CheckBox cBox = r.findViewById( i );
                     if(isChecked){
                         cBox.setBackgroundColor(ContextCompat.getColor(context.getApplicationContext(), R.color.checkboxBackgroundSelected));
                         cBox.setTextColor(ContextCompat.getColor(context.getApplicationContext(), R.color.checkboxTextSelected));
