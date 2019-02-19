@@ -17,7 +17,23 @@ public class activity1 extends NavDrawer {
     protected void onCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_activity1);
 
-        //region Activity1
+        startBubbleAnimation();
+
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+    }
+
+    public void activity1button1_Click(View v){
+        startActivity(new Intent(activity1.this, activity1_1.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
+    }
+
+    private void startBubbleAnimation() {
         app a = ((app)getApplicationContext());
         a.setEmotional1(-1);
         a.setEmotional2(-1);
@@ -73,19 +89,5 @@ public class activity1 extends NavDrawer {
             @Override
             public void onAnimationRepeat(Animation animation) {}
         });
-        //endregion
-
-        super.onCreate(savedInstanceState);
-    }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
-    }
-
-    public void activity1button1_Click(View v){
-        startActivity(new Intent(activity1.this, activity1_1.class));
-        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
     }
 }
